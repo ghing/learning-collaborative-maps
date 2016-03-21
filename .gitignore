@@ -1,2 +1,6 @@
 node_modules
 .learning-collaborative-maps
+css
+js/*.js
+js/*.map
+.sass-cache

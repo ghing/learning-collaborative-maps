@@ -23,6 +23,16 @@ To run this pipeline to regenerate the schools.json file:
     npm run schoolsjson
 
 
+Building front-end assets
+-------------------------
+
+    npm run build
+
+Running development server
+--------------------------
+
+    npm run serve
+
 Collaborators
 -------------
 
