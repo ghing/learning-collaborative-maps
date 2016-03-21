@@ -1,0 +1,24 @@
+{
+  "name": "learning-collaborative-maps",
+  "version": "1.0.0",
+  "description": "Interactive map to help coordinate healthy relationship education in the Chicago area.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "download:educationalentities": "mkdir -p .learning-collaborative-maps/cache; curl -o .learning-collaborative-maps/cache/dir_ed_entities.xlsx http://www.isbe.net/research/xls/dir_ed_entities.xls",
+    "filterschools": "./scripts/filter_schools.js .learning-collaborative-maps/cache/dir_ed_entities.xlsx > .learning-collaborative-maps/cache/dir_ed_entities__cook_schools.csv",
+    "geocodeschools": "cat .learning-collaborative-maps/cache/dir_ed_entities__cook_schools.csv | ./scripts/geocode_schools.js  > .learning-collaborative-maps/cache/dir_ed_entities__cook_schools__with_coordinates.csv",
+    "schoolsjson": "mkdir -p data && cat .learning-collaborative-maps/cache/dir_ed_entities__cook_schools__with_coordinates.csv | ./scripts/generate_schools_json.js > data/schools.json"
+  },
+  "author": "Geoff Hing <geoffhing@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "csv": "^0.4.6",
+    "geocodio": "^2.0.0",
+    "xlsx": "^0.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ghing/learning-collaborative-maps.git"    
+  }
+}
