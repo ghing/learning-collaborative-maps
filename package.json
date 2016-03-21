@@ -17,7 +17,8 @@
     "watch:app": "watchify --external d3 --external leaflet --external react --external react-dom --external xhr-promise --debug -p [minifyify --map app.min.js.map --output js/app.min.js.map] -t [ babelify --presets [ es2015 react ] ] --standalone LearningCollaborative --outfile js/app.min.js js/src/app.js",
     "watch:sass": "sass --watch sass/styles.scss:css/styles.css",
     "watch": "parallelshell 'npm run watch:app' 'npm run watch:sass'",
-    "serve": "http-server"
+    "serve": "http-server",
+    "deploy": "mkdir -p dist/js && mkdir -p dist/css && cp index.html dist && cp -r css/* dist/css && cp js/*.js* dist/js && mkdir -p dist/data && cp data/* dist/data && gh-pages --dist dist"
   },
   "author": "Geoff Hing <geoffhing@gmail.com>",
   "license": "MIT",
