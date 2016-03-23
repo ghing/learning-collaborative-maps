@@ -10,6 +10,7 @@
     "geocodeschools": "cat .learning-collaborative-maps/cache/dir_ed_entities__cook_schools.csv | ./scripts/geocode_schools.js  > .learning-collaborative-maps/cache/dir_ed_entities__cook_schools__with_coordinates.csv",
     "createschools": "cat .learning-collaborative-maps/cache/dir_ed_entities__cook_schools__with_coordinates.csv | ./scripts/create_schools.js",
     "createagencies": "./scripts/create_agencies.js",
+    "createprograms": "./scripts/create_programs.js",
     "build:vendorjs": "mkdir -p public/js && browserify --require leaflet --require react --require react-dom --require xhr-promise --require flux --require object-assign --require keymirror --debug -p [minifyify --map vendor.min.js.map --output public/js/vendor.min.js.map] > public/js/vendor.min.js",
     "build:app": "mkdir -p public/js && browserify --external leaflet --external react --external react-dom --external xhr-promise --external flux --external object-assign --external keymirror --debug -p [minifyify --map learningcollaborative.min.js.map --output public/js/learningcollaborative.min.js.map] -t [ babelify --presets [ es2015 react ] ] --standalone LearningCollaborative js/src/learningcollaborative.js > public/js/learningcollaborative.min.js",
     "build:vendorstyles": "mkdir -p public/css && cp -r node_modules/leaflet/dist/images public/css && cat node_modules/leaflet/dist/leaflet.css >> public/css/vendor.css",
@@ -23,6 +24,7 @@
   "author": "Geoff Hing <geoffhing@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "async": "^1.5.2",
     "babel": "^6.5.2",
     "babel-preset-es2015": "^6.6.0",
     "babel-preset-react": "^6.5.0",

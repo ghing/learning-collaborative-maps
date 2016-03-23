@@ -17,7 +17,7 @@ function createSchools(schools, db, callback) {
 function getSchools(condition, db, callback) {
   var collection = db.collection('schools');
 
-  collection.find({}).toArray(function(err, docs) {
+  collection.find(condition).toArray(function(err, docs) {
     console.log("Retrieved " + docs.length + " schools");
     callback(docs);
   });
@@ -77,6 +77,39 @@ function getAgencies(condition, db, callback) {
     console.log("Retrieved " + docs.length + " agencies");
     callback(docs);
   });
+}
+
+function deleteSchoolPrograms(school, db, callback) {
+  var collection = db.collection('schools');
+  collection.updateOne(
+    {
+      'rcdts': school.rcdts
+    },
+    {
+      $set: {
+        'programs': []
+      }
+    },
+    function(err, results) {
+      callback();
+    }
+  );
+}
+
+function addSchoolProgram(school, program, db, callback) {
+  db.collection('schools').updateOne(
+    {
+      rcdts: school.rcdts
+    },
+    {
+      $push: {
+        programs: program
+      }
+    },
+    function(err, results) {
+      callback();
+    }
+  );
 }
 
 
@@ -148,6 +181,40 @@ app.delete('/api/1/schools', function(req, res) {
     res.json();
   });
 });
+
+app.param('rcdts', function(req, res, next, rcdts) {
+  getSchools({rcdts: rcdts}, dbConnection, function(schools) {
+    req.school = schools[0];
+    next();
+  });
+});
+
+app.get('/api/1/schools/:rcdts', function(req, res) {
+  res.json(req.school);
+});
+
+app.delete('/api/1/schools/:rcdts/programs', function(req, res) {
+  deleteSchoolPrograms(req.school, dbConnection, function() {
+    res.json();
+  });
+});
+
+app.post('/api/1/schools/:rcdts/programs', function(req, res) {
+  var program = req.body;
+  var agencyUrlBits = program.agency.split('/');
+  var agencySlug = agencyUrlBits[agencyUrlBits.length - 1];
+  getAgencies({'slug': agencySlug}, dbConnection, function(agencies) {
+    var agency = agencies[0];
+    var programProps = {
+      agency: agency._id,
+      age_group: program.age_group
+    }
+    addSchoolProgram(req.school, programProps, dbConnection, function() {
+      res.json();
+    })
+  });
+});
+
 
 MongoClient.connect(DATABASE_URL, function(err, db) {
   dbConnection = db;
