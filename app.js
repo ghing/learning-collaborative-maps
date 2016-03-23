@@ -30,11 +30,11 @@ function deleteSchools(condition, db, callback) {
   });
 }
 
-function schoolGeoJson(school) {
-  var coordinates = [school.lng, school.lat];
-  var props = Object.keys(school).reduce(function(props, prop) {
+function featureGeoJson(feature) {
+  var coordinates = [feature.lng, feature.lat];
+  var props = Object.keys(feature).reduce(function(props, prop) {
     if (prop != 'lat' && prop != 'lng') {
-      props[prop] = school[prop]; 
+      props[prop] = feature[prop]; 
     }
     return props;
   }, {});
@@ -48,12 +48,37 @@ function schoolGeoJson(school) {
   };
 }
 
-function schoolsGeoJson(schools) {
+function geoJsonCollection(features) {
   return {
     type: "FeatureCollection",
-    features: schools.map(schoolGeoJson)
+    features: features.map(featureGeoJson)
   };
 }
+
+function createAgencies(agencies, db, callback) {
+  var collection = db.collection('agencies');
+  collection.insertMany(agencies, function(err, result) {
+    console.log("Created " + result.insertedCount + " agencies");
+    callback(result);
+  });
+}
+
+function deleteAgencies(condition, db, callback) {
+  db.collection('agencies').deleteMany(condition, function(err, results) {
+    console.log("Deleted agencies");
+    callback();
+  });
+}
+
+function getAgencies(condition, db, callback) {
+  var collection = db.collection('agencies');
+
+  collection.find({}).toArray(function(err, docs) {
+    console.log("Retrieved " + docs.length + " agencies");
+    callback(docs);
+  });
+}
+
 
 var app = express();
 var dbConnection;
@@ -68,11 +93,39 @@ app.get('/', function (req, res) {
     res.render('index');
 });
 
+app.get('/api/1/agencies', function(req, res) {
+  var format = req.query.format || 'json';
+  getAgencies({}, dbConnection, function(agencies) {
+    if (format == 'geojson') {
+      res.json(geoJsonCollection(agencies));
+    }
+    else {
+      res.json(agencies);
+    }
+  });
+});
+
+app.post('/api/1/agencies', function(req, res) {
+  var agencies = req.body;
+  if (!agencies.length) {
+    agencies = [agencies]; 
+  }
+  createAgencies(agencies, dbConnection, function() {
+    res.json(agencies);
+  });
+});
+
+app.delete('/api/1/agencies', function(req, res) {
+  deleteAgencies({}, dbConnection, function() {
+    res.json();
+  });
+});
+
 app.get('/api/1/schools', function(req, res) {
   var format = req.query.format || 'json';
   getSchools({}, dbConnection, function(schools) {
     if (format == 'geojson') {
-      res.json(schoolsGeoJson(schools));
+      res.json(geoJsonCollection(schools));
     }
     else {
       res.json(schools);
@@ -93,7 +146,7 @@ app.post('/api/1/schools', function(req, res) {
 app.delete('/api/1/schools', function(req, res) {
   deleteSchools({}, dbConnection, function() {
     res.json();
-  })
+  });
 });
 
 MongoClient.connect(DATABASE_URL, function(err, db) {
