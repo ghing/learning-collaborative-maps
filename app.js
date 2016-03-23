@@ -14,10 +14,25 @@ function createSchools(schools, db, callback) {
   });
 }
 
-function getSchools(condition, db, callback) {
-  var collection = db.collection('schools');
+function fixProgramAgency(agencyLookup, program) {
+  var agency = agencyLookup[program.agency];
 
-  collection.find(condition).toArray(function(err, docs) {
+  program.agency = '/api/1/agencies/' + agency.slug;
+
+  return program; 
+}
+
+function fixSchoolProgramAgencies(agencyLookup, school) {
+  if (!school.programs) {
+    return school;
+  }
+
+  school.programs = school.programs.map(fixProgramAgency.bind(undefined, agencyLookup));
+  return school;
+}
+
+function getSchools(condition, db, callback) {
+  db.collection('schools').find(condition).toArray(function(err, docs) {
     console.log("Retrieved " + docs.length + " schools");
     callback(docs);
   });
@@ -154,15 +169,37 @@ app.delete('/api/1/agencies', function(req, res) {
   });
 });
 
+app.param('agencySlug', function(req, res, next, agencySlug) {
+  getAgencies({slug: agencySlug}, dbConnection, function(agencies) {
+    req.agency = agencies[0];
+    next();
+  });
+});
+
+app.get('/api/1/agencies/:agencySlug', function(req, res) {
+  res.json(req.agency);
+});
+
+
 app.get('/api/1/schools', function(req, res) {
   var format = req.query.format || 'json';
-  getSchools({}, dbConnection, function(schools) {
-    if (format == 'geojson') {
-      res.json(geoJsonCollection(schools));
-    }
-    else {
-      res.json(schools);
-    }
+
+  getAgencies({}, dbConnection, function(agencies) {
+    var agencyLookup = agencies.reduce(function(lookup, agency) {
+      lookup[agency._id] = agency;
+      return lookup;
+    }, {});
+
+    getSchools({}, dbConnection, function(schools) {
+      schools = schools.map(fixSchoolProgramAgencies.bind(undefined, agencyLookup));
+
+      if (format == 'geojson') {
+        res.json(geoJsonCollection(schools));
+      }
+      else {
+        res.json(schools);
+      }
+    });
   });
 });
 
