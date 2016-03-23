@@ -16,5 +16,4 @@ export const LearningCollaborativeMapApp = function(options) {
       options.container
     );
   });
-
 };

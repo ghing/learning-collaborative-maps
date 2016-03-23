@@ -1,0 +1,11 @@
+<div id="map-container" class="map-container"></div>  
+<script src="js/vendor.min.js"></script>
+<script src="js/learningcollaborative.min.js"></script>
+<script>
+(function(window, LearningCollaborative) {
+  var app = new LearningCollaborative.LearningCollaborativeMapApp({
+    schoolsJSONURL: '/api/1/schools?format=geojson',  
+    container: window.document.getElementById('map-container')
+  });
+})(window, window.LearningCollaborative);    
+</script>

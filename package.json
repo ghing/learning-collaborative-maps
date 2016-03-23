@@ -8,17 +8,16 @@
     "download:educationalentities": "mkdir -p .learning-collaborative-maps/cache; curl -o .learning-collaborative-maps/cache/dir_ed_entities.xlsx http://www.isbe.net/research/xls/dir_ed_entities.xls",
     "filterschools": "./scripts/filter_schools.js .learning-collaborative-maps/cache/dir_ed_entities.xlsx > .learning-collaborative-maps/cache/dir_ed_entities__cook_schools.csv",
     "geocodeschools": "cat .learning-collaborative-maps/cache/dir_ed_entities__cook_schools.csv | ./scripts/geocode_schools.js  > .learning-collaborative-maps/cache/dir_ed_entities__cook_schools__with_coordinates.csv",
-    "schoolsjson": "mkdir -p data && cat .learning-collaborative-maps/cache/dir_ed_entities__cook_schools__with_coordinates.csv | ./scripts/generate_schools_json.js > data/schools.json",
-    "build:vendorjs": "browserify --require leaflet --require react --require react-dom --require xhr-promise --debug -p [minifyify --map vendor.min.js.map --output js/vendor.min.js.map] > js/vendor.min.js",
-    "build:app": "browserify --external leaflet --external react --external --react-dom --external xhr-promise --debug -p [minifyify --map app.min.js.map --output js/app.min.js.map] -t [ babelify --presets [ es2015 react ] ] --standalone LearningCollaborative js/src/app.js > js/app.min.js",
-    "build:vendorstyles": "cp -r node_modules/leaflet/dist/images css && cat node_modules/leaflet/dist/leaflet.css >> css/vendor.css",
-    "build:styles": "mkdir -p css && sass sass/styles.scss css/styles.css",
+    "createschools": "cat .learning-collaborative-maps/cache/dir_ed_entities__cook_schools__with_coordinates.csv | ./scripts/create_schools.js",
+    "build:vendorjs": "mkdir -p public/js && browserify --require leaflet --require react --require react-dom --require xhr-promise --debug -p [minifyify --map vendor.min.js.map --output public/js/vendor.min.js.map] > public/js/vendor.min.js",
+    "build:app": "mkdir -p public/js && browserify --external leaflet --external react --external react-dom --external xhr-promise --debug -p [minifyify --map learningcollaborative.min.js.map --output public/js/learningcollaborative.min.js.map] -t [ babelify --presets [ es2015 react ] ] --standalone LearningCollaborative js/src/learningcollaborative.js > public/js/learningcollaborative.min.js",
+    "build:vendorstyles": "mkdir -p public/css && cp -r node_modules/leaflet/dist/images public/css && cat node_modules/leaflet/dist/leaflet.css >> public/css/vendor.css",
+    "build:styles": "mkdir -p css && sass sass/styles.scss public/css/styles.css",
     "build": "npm run build:vendorjs && npm run build:app && npm run build:vendorstyles && npm run build:styles",
-    "watch:app": "watchify --external d3 --external leaflet --external react --external react-dom --external xhr-promise --debug -p [minifyify --map app.min.js.map --output js/app.min.js.map] -t [ babelify --presets [ es2015 react ] ] --standalone LearningCollaborative --outfile js/app.min.js js/src/app.js",
+    "watch:app": "watchify --external d3 --external leaflet --external react --external react-dom --external xhr-promise --debug -p [minifyify --map learningcollaborative.min.js.map --output public/js/learningcollaborative.min.js.map] -t [ babelify --presets [ es2015 react ] ] --standalone LearningCollaborative --outfile public/js/learningcollaborative.min.js public/js/src/learningcollaborative.js",
     "watch:sass": "sass --watch sass/styles.scss:css/styles.css",
     "watch": "parallelshell 'npm run watch:app' 'npm run watch:sass'",
-    "serve": "http-server",
-    "deploy": "mkdir -p dist/js && mkdir -p dist/css && cp index.html dist && cp -r css/* dist/css && cp js/*.js* dist/js && mkdir -p dist/data && cp data/* dist/data && gh-pages --dist dist"
+    "serve": "nodemon app.js"
   },
   "author": "Geoff Hing <geoffhing@gmail.com>",
   "license": "MIT",
@@ -32,7 +31,9 @@
     "geocodio": "^2.0.0",
     "http-server": "^0.9.0",
     "minifyify": "^7.3.2",
+    "nodemon": "^1.9.1",
     "parallelshell": "^2.0.0",
+    "request": "^2.69.0",
     "watchify": "^3.7.0",
     "xlsx": "^0.8.0"
   },
@@ -41,8 +42,12 @@
     "url": "https://github.com/ghing/learning-collaborative-maps.git"
   },
   "dependencies": {
+    "body-parser": "^1.15.0",
     "bootstrap": "^4.0.0-alpha.2",
+    "express": "^4.13.4",
+    "express-handlebars": "^3.0.0",
     "leaflet": "^0.7.7",
+    "mongodb": "^2.1.10",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
     "xhr-promise": "^2.0.0"
