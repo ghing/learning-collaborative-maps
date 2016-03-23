@@ -1,7 +1,16 @@
 import L from 'leaflet';
 import React from 'react';
 
+import SchoolStore from '../stores/SchoolStore';
+
 const LearningCollaborativeMap = React.createClass({
+  getInitialState: function() {
+    return {
+      schools: SchoolStore.getAll()
+      
+    };
+  },
+
   getDefaultProps: function() {
     return {
       center: [41.881832, -87.623177],
@@ -17,11 +26,28 @@ const LearningCollaborativeMap = React.createClass({
     }
   },
 
+  componentWillUnmount: function() {
+    TodoStore.removeChangeListener(this._onChange);
+  },
+
   render: function() {
     return <div ref="mapContainer" className="map-container-inner" />; 
   },
 
   componentDidMount: function() {
+    SchoolStore.addChangeListener(this._onChange);
+    if (this.state.schools.length) {
+      this._initializeMap();
+    }
+  },
+
+  componentDidUpdate: function() {
+    if (this.state.schools.length) {
+      this._initializeMap();
+    }
+  },
+
+  _initializeMap: function() {
     let component = this;
     let map = L.map(this.refs.mapContainer)
       .setView(this.props.center, this.props.initialZoom);
@@ -31,7 +57,7 @@ const LearningCollaborativeMap = React.createClass({
       attribution: 'Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
     }).addTo(map);
 
-    var schoolMarkers = L.geoJson(this.props.schools, {
+    var schoolMarkers = L.geoJson(this.state.schools, {
       pointToLayer: function(feature, latlng) {
         return L.circleMarker(latlng, component.props.makerOptions);
       },
@@ -41,6 +67,12 @@ const LearningCollaborativeMap = React.createClass({
     }).addTo(map); 
 
     map.fitBounds(schoolMarkers.getBounds());
+  },
+
+  _onChange: function() {
+    this.setState({
+      schools: SchoolStore.getAll()
+    });
   }
 });
 
