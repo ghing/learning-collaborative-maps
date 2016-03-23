@@ -31,7 +31,18 @@ Building front-end assets
 Running development server
 --------------------------
 
+Start Mongo (assuming you installed it on a Mac, using Homebrew):
+
+    mongod --config /usr/local/etc/mongod.conf
+
+Set the database URL as an environment variable:
+
+   export LC_DATABASE_URL="mongodb://localhost:27017/learning_collaborative"
+
+Run the Express app:
+
     npm run serve
+
 
 Collaborators
 -------------
