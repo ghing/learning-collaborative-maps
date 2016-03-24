@@ -4,6 +4,7 @@ var exphbs  = require('express-handlebars');
 var MongoClient = require('mongodb').MongoClient;
 
 var DATABASE_URL = process.env.LC_DATABASE_URL;
+var PORT = process.env.PORT || 3000;
 
 
 function createSchools(schools, db, callback) {
@@ -254,8 +255,12 @@ app.post('/api/1/schools/:rcdts/programs', function(req, res) {
 
 
 MongoClient.connect(DATABASE_URL, function(err, db) {
+  if (err) {
+    console.error("Could not connect to database. Exiting.");
+    process.exit(1);
+  }
   dbConnection = db;
-  app.listen(3000, function() {
-    console.log('Example app listening on port 3000!');
+  app.listen(PORT, function() {
+    console.log('Example app listening on port ' + PORT + '!');
   });
 });

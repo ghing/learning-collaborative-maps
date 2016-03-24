@@ -44,6 +44,30 @@ Run the Express app:
     npm run serve
 
 
+Provisioning the app
+--------------------
+
+I decided to deploy this app using Heroku.
+
+Based on [Getting Started on Heroku with Node.js](https://devcenter.heroku.com/articles/getting-started-with-nodejs).
+
+This is based on [Deploying Node.js Apps on Heroku](https://devcenter.heroku.com/articles/deploying-nodejs)
+
+    heroku login
+    heroku create learning-collaborative-maps
+    heroku addons:create mongolab:sandbox
+
+Log into Heroku and go to the panel for mLab and add a new database user.
+
+Then set the `LC_DATABASE_URL` configuration variable:
+
+    heroku config:set LC_DATABASE_URL="mongodb://learningcollaborative:<your_password_here>@ds015869.mlab.com:15869/heroku_7md41k60"
+
+Deploying the app
+-----------------
+
+    git push heroku master
+
 Collaborators
 -------------
 
