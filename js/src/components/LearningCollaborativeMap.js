@@ -76,7 +76,6 @@ const LearningCollaborativeMap = React.createClass({
           else {
             agencyBits = programs[0].agency.split('/');
             agencySlug = agencyBits[agencyBits.length - 1]; 
-            console.log(agencySlug);
             markerOptions.fillColor = AgencyStore.getColorScale()(agencySlug);
           }
         }
