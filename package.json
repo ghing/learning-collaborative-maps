@@ -21,7 +21,7 @@
     "build:styles": "mkdir -p css && sass sass/styles.scss public/css/styles.css",
     "build": "npm run build:vendorjs && npm run build:app && npm run build:vendorstyles && npm run build:styles",
     "watch:app": "watchify $npm_package_config_externalargs --debug -p [minifyify --map learningcollaborative.min.js.map --output public/js/learningcollaborative.min.js.map] -t [ babelify --presets [ es2015 react ] ] --standalone LearningCollaborative --outfile public/js/learningcollaborative.min.js js/src/learningcollaborative.js",
-    "watch:sass": "sass --watch sass/styles.scss:css/styles.css",
+    "watch:sass": "sass --watch sass/styles.scss:public/css/styles.css",
     "watch": "parallelshell 'npm run watch:app' 'npm run watch:sass'",
     "serve": "nodemon app.js",
     "start": "node app.js"
