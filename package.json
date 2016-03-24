@@ -4,8 +4,8 @@
   "description": "Interactive map to help coordinate healthy relationship education in the Chicago area.",
   "main": "index.js",
   "config": {
-    "requireargs": "--require leaflet --require react --require react-dom --require xhr-promise --require flux --require object-assign --require keymirror", 
-    "externalargs": "--external leaflet --external react --external react-dom --external xhr-promise --external flux --external object-assign --external keymirror"
+    "requireargs": "--require leaflet --require react --require react-dom --require xhr-promise --require flux --require object-assign --require keymirror --require d3", 
+    "externalargs": "--external leaflet --external react --external react-dom --external xhr-promise --external flux --external object-assign --external keymirror --external d3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

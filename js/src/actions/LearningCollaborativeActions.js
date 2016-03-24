@@ -7,6 +7,13 @@ const LearningCollaborativeActions = {
       actionType: LearningCollaborativeConstants.SCHOOLS_SET,
       schools: schools
     });
+  },
+
+  setAgencies: function(agencies) {
+    AppDispatcher.handleViewAction({
+      actionType: LearningCollaborativeConstants.AGENCIES_SET,
+      agencies: agencies
+    });
   }
 };
 

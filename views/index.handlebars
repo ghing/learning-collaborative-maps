@@ -5,6 +5,7 @@
 (function(window, LearningCollaborative) {
   var app = new LearningCollaborative.LearningCollaborativeMapApp({
     schoolsJSONURL: '/api/1/schools?format=geojson',  
+    agenciesJSONURL: '/api/1/agencies?format=geojson',
     container: window.document.getElementById('map-container')
   });
 })(window, window.LearningCollaborative);    
