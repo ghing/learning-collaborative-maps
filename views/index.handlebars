@@ -1,4 +1,4 @@
-<div id="map-container" class="map-container"></div>  
+<div id="app-container"></div>  
 <script src="js/vendor.min.js"></script>
 <script src="js/learningcollaborative.min.js"></script>
 <script>
@@ -6,7 +6,7 @@
   var app = new LearningCollaborative.LearningCollaborativeMapApp({
     schoolsJSONURL: '/api/1/schools?format=geojson',  
     agenciesJSONURL: '/api/1/agencies?format=geojson',
-    container: window.document.getElementById('map-container')
+    container: window.document.getElementById('app-container')
   });
 })(window, window.LearningCollaborative);    
 </script>

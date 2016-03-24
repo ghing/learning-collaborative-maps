@@ -5,6 +5,8 @@ import React from 'react';
 import SchoolStore from '../stores/SchoolStore';
 import AgencyStore from '../stores/AgencyStore';
 
+import MapDrawer from './MapDrawer';
+
 const LearningCollaborativeMap = React.createClass({
   getInitialState: function() {
     return {
@@ -35,7 +37,12 @@ const LearningCollaborativeMap = React.createClass({
   },
 
   render: function() {
-    return <div ref="mapContainer" className="map-container-inner" />; 
+    return (
+      <div className="app-container"> 
+        <div ref="mapContainer" className="map-container"></div> 
+        <MapDrawer school={this.state.selectedSchool}/>
+      </div>  
+    );
   },
 
   componentDidMount: function() {
@@ -54,8 +61,12 @@ const LearningCollaborativeMap = React.createClass({
 
   _initializeMap: function() {
     let component = this;
-    let map = L.map(this.refs.mapContainer)
+    let map = L.map(this.refs.mapContainer, {
+        zoomControl: false
+      })
       .setView(this.props.center, this.props.initialZoom);
+
+    new L.Control.Zoom({ position: 'bottomright' }).addTo(map);  
   
     L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 18,
@@ -83,7 +94,9 @@ const LearningCollaborativeMap = React.createClass({
         return L.circleMarker(latlng, markerOptions);
       },
       onEachFeature: function(feature, layer) {
-        layer.bindPopup(`<h2 class="school-name">${feature.properties.FacilityName}</h2>`);
+        layer.on('click', function(e) {
+          component._handleClickSchool(feature);
+        });
       }
     }).addTo(map); 
 
@@ -94,6 +107,12 @@ const LearningCollaborativeMap = React.createClass({
     this.setState({
       schools: SchoolStore.getAll(),
       agencies: AgencyStore.getAll()
+    });
+  },
+
+  _handleClickSchool: function(school) {
+    this.setState({
+      selectedSchool: school
     });
   }
 });
