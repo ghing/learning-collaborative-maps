@@ -88,7 +88,7 @@ function deleteAgencies(condition, db, callback) {
 function getAgencies(condition, db, callback) {
   var collection = db.collection('agencies');
 
-  collection.find({}).toArray(function(err, docs) {
+  collection.find(condition).toArray(function(err, docs) {
     console.log("Retrieved " + docs.length + " agencies");
     callback(docs);
   });
@@ -245,7 +245,7 @@ app.post('/api/1/schools/:rcdts/programs', function(req, res) {
     var programProps = {
       agency: agency._id,
       age_group: program.age_group
-    }
+    };
     addSchoolProgram(req.school, programProps, dbConnection, function() {
       res.json();
     })
