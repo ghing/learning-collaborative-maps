@@ -63,6 +63,10 @@ Then set the `LC_DATABASE_URL` configuration variable:
 
     heroku config:set LC_DATABASE_URL="mongodb://learningcollaborative:<your_password_here>@ds015869.mlab.com:15869/heroku_7md41k60"
 
+Set the `NPM_CONFIG_PRODUCTION` environment variable so that the `devDependencies` in `package.json` are installed.  We need these to build our static assets in the `postinstall` script:
+
+    heroku config:set NPM_CONFIG_PRODUCTION=false
+
 Deploying the app
 -----------------
 
