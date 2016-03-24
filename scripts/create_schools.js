@@ -43,7 +43,7 @@ var i = 0;
 request({
   url: SCHOOLS_ENDPOINT,
   method: 'DELETE',
-}, function (error, response, body) {
+}, function(error, response, body) {
   reader.on('readable', function() {
     var row;
     var schools = [];
@@ -51,6 +51,7 @@ request({
     while(row = reader.read()) {
       if (i == 0) {
         columnNames = row.slice();  
+        i += 1;
         continue;
       } 
 
@@ -62,6 +63,8 @@ request({
           url: SCHOOLS_ENDPOINT,
           method: 'POST',
           json: schools
+        }, function(error, response, body) {
+          // TODO: Handle error
         });
         schools = []; 
       }
@@ -75,6 +78,8 @@ request({
         url: SCHOOLS_ENDPOINT,
         method: 'POST',
         json: schools
+      }, function(error, response, body) {
+        // TODO: Handle error
       });
     }
   });
