@@ -24,7 +24,8 @@
     "watch:sass": "sass --watch sass/styles.scss:public/css/styles.css",
     "watch": "parallelshell 'npm run watch:app' 'npm run watch:sass'",
     "serve": "nodemon app.js",
-    "start": "node app.js"
+    "start": "node app.js",
+    "postinstall": "npm run build"
   },
   "author": "Geoff Hing <geoffhing@gmail.com>",
   "license": "MIT",
