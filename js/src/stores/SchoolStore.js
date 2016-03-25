@@ -1,16 +1,23 @@
 import assign from 'object-assign';
 import {EventEmitter} from 'events';
+import Bloodhound from 'typeahead.js/dist/bloodhound';
 
-import AppDispatcher from '../dispatcher/AppDispatcher'; 
+import AppDispatcher from '../dispatcher/AppDispatcher';
 import LearningCollaborativeConstants from '../constants/LearningCollaborativeConstants';
 
 const CHANGE_EVENT = 'change';
 
 let _schools = []; // Collection of school items
 
+var _engine;
+
 let SchoolStore = assign({}, EventEmitter.prototype, {
   getAll: function() {
     return _schools;
+  },
+
+  getEngine: function() {
+    return _engine;
   },
 
   emitChange: function() {
@@ -33,6 +40,12 @@ let SchoolStore = assign({}, EventEmitter.prototype, {
       case LearningCollaborativeConstants.SCHOOLS_SET:
         schools = action.schools;
         _schools = schools;
+        _engine = new Bloodhound({
+          local: _schools,
+          queryTokenizer: Bloodhound.tokenizers.whitespace,
+          datumTokenizer: school => Bloodhound.tokenizers.whitespace(school.properties.FacilityName),
+          identify: school => school.properties.rcdts
+        });
         SchoolStore.emitChange();
         break;
     }

@@ -4,8 +4,8 @@
   "description": "Interactive map to help coordinate healthy relationship education in the Chicago area.",
   "main": "app.js",
   "config": {
-    "requireargs": "--require leaflet --require react --require react-dom --require xhr-promise --require flux --require object-assign --require keymirror --require d3",
-    "externalargs": "--external leaflet --external react --external react-dom --external xhr-promise --external flux --external object-assign --external keymirror --external d3"
+    "requireargs": "--require leaflet --require react --require react-dom --require xhr-promise --require flux --require object-assign --require keymirror --require d3 --require typeahead.js",
+    "externalargs": "--external leaflet --external react --external react-dom --external xhr-promise --external flux --external object-assign --external keymirror --external d3 --external typeahead.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -21,7 +21,7 @@
     "build:styles": "mkdir -p css && node-sass sass/styles.scss public/css/styles.css",
     "build": "npm run build:vendorjs && npm run build:app && npm run build:vendorstyles && npm run build:styles",
     "watch:app": "watchify $npm_package_config_externalargs --debug -p [minifyify --map learningcollaborative.min.js.map --output public/js/learningcollaborative.min.js.map] -t [ babelify --presets [ es2015 react ] ] --standalone LearningCollaborative --outfile public/js/learningcollaborative.min.js js/src/learningcollaborative.js",
-    "watch:sass": "node-sass --watch sass/styles.scss:public/css/styles.css",
+    "watch:sass": "node-sass --watch sass --output public/css",
     "watch": "parallelshell 'npm run watch:app' 'npm run watch:sass'",
     "serve": "nodemon app.js",
     "start": "node app.js",
@@ -64,6 +64,7 @@
     "object-assign": "^4.0.1",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
+    "typeahead.js": "^0.11.1",
     "xhr-promise": "^2.0.0"
   },
   "engines": {

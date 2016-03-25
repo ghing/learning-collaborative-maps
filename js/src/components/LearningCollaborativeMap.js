@@ -40,7 +40,7 @@ const LearningCollaborativeMap = React.createClass({
     return (
       <div className="app-container"> 
         <div ref="mapContainer" className="map-container"></div> 
-        <MapDrawer school={this.state.selectedSchool}/>
+        <MapDrawer school={this.state.selectedSchool} engine={SchoolStore.getEngine()} handleSelectSchool={this._handleSelectSchool} />
       </div>  
     );
   },
@@ -95,7 +95,7 @@ const LearningCollaborativeMap = React.createClass({
       },
       onEachFeature: function(feature, layer) {
         layer.on('click', function(e) {
-          component._handleClickSchool(feature);
+          component._handleClickSchoolMarker(feature);
         });
       }
     }).addTo(map); 
@@ -110,10 +110,17 @@ const LearningCollaborativeMap = React.createClass({
     });
   },
 
-  _handleClickSchool: function(school) {
+  _handleClickSchoolMarker: function(school) {
     this.setState({
       selectedSchool: school
     });
+  },
+
+  _handleSelectSchool: function(school) {
+    this.setState({
+      selectedSchool: school
+    });
+    // TODO: Zoom map to school
   }
 });
 
