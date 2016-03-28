@@ -7,12 +7,17 @@ import LearningCollaborativeConstants from '../constants/LearningCollaborativeCo
 
 const CHANGE_EVENT = 'change';
 
-let _agencies = []; // Collection of school items
+let _agencies = []; // Collection of agency items
+let _agencyLookup = {};
 let _agencyColorScale = d3.scale.category20();
 
 let AgencyStore = assign({}, EventEmitter.prototype, {
   getAll: function() {
     return _agencies;
+  },
+
+  getLookup: function() {
+    return _agencyLookup;
   },
 
   getColorScale: function() {
@@ -39,6 +44,10 @@ let AgencyStore = assign({}, EventEmitter.prototype, {
       case LearningCollaborativeConstants.AGENCIES_SET:
         agencies = action.agencies;
         _agencies = agencies;
+        _agencyLookup = _agencies.reduce(function(lookup, agency) {
+          lookup[agency.properties.slug] = agency;
+          return lookup;
+        }, {});
         _agencyColorScale.domain(_agencies.map(function(agency) {
           return agency.properties.slug;
         }));

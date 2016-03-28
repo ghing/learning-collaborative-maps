@@ -34,12 +34,10 @@ let SchoolStore = assign({}, EventEmitter.prototype, {
 
   dispatcherIndex: AppDispatcher.register(function(payload) {
     let action = payload.action;
-    let schools;
 
     switch(action.actionType) {
       case LearningCollaborativeConstants.SCHOOLS_SET:
-        schools = action.schools;
-        _schools = schools;
+        _schools = action.schools;
         _engine = new Bloodhound({
           local: _schools,
           queryTokenizer: Bloodhound.tokenizers.whitespace,
@@ -47,6 +45,9 @@ let SchoolStore = assign({}, EventEmitter.prototype, {
           identify: school => school.properties.rcdts
         });
         SchoolStore.emitChange();
+        break;
+      case LearningCollaborativeConstants.CREATE_PROGRAM:
+        // TODO: Create program using action.school, action.agency and action.ageGroup
         break;
     }
 

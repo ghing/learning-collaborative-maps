@@ -2,6 +2,7 @@ import assign from 'object-assign';
 import L from 'leaflet';
 import React from 'react';
 
+import LearningCollaborativeActions from '../actions/LearningCollaborativeActions';
 import SchoolStore from '../stores/SchoolStore';
 import AgencyStore from '../stores/AgencyStore';
 
@@ -12,6 +13,7 @@ const LearningCollaborativeMap = React.createClass({
     return {
       schools: SchoolStore.getAll(),
       agencies: AgencyStore.getAll(),
+      agencyLookup: AgencyStore.getLookup(),
       agencyColorScale: AgencyStore.getColorScale()
     };
   },
@@ -40,7 +42,12 @@ const LearningCollaborativeMap = React.createClass({
     return (
       <div className="app-container"> 
         <div ref="mapContainer" className="map-container"></div> 
-        <MapDrawer school={this.state.selectedSchool} engine={SchoolStore.getEngine()} handleSelectSchool={this._handleSelectSchool} />
+        <MapDrawer school={this.state.selectedSchool}
+                   engine={SchoolStore.getEngine()}
+                   handleSelectSchool={this._handleSelectSchool}
+                   agencies={this.state.agencies}
+                   agencyLookup={this.state.agencyLookup}
+                   createProgram={LearningCollaborativeActions.createProgram} />
       </div>  
     );
   },
@@ -106,7 +113,8 @@ const LearningCollaborativeMap = React.createClass({
   _onChange: function() {
     this.setState({
       schools: SchoolStore.getAll(),
-      agencies: AgencyStore.getAll()
+      agencies: AgencyStore.getAll(),
+      agencyLookup: AgencyStore.getLookup()
     });
   },
 
