@@ -46,9 +46,6 @@ let SchoolStore = assign({}, EventEmitter.prototype, {
         });
         SchoolStore.emitChange();
         break;
-      case LearningCollaborativeConstants.CREATE_PROGRAM:
-        // TODO: Create program using action.school, action.agency and action.ageGroup
-        break;
     }
 
     return true;

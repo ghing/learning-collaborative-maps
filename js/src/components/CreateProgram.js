@@ -33,7 +33,7 @@ const CreateProgram = React.createClass({
           <label htmlFor="age-group">Age Group</label>
           <input type="text" value={this.state.ageGroup} onChange={this.handleChangeAgeGroup} />
         </fieldset>
-        <button type="submit" className="btn btn-primary" value="Add Program" disabled={this.buttonDisabled()} />
+        <button type="submit" className="btn btn-primary" disabled={this.buttonDisabled()}>Add Program</button>
       </form>
     );
   },

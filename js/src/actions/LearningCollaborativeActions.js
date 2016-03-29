@@ -1,4 +1,5 @@
 import AppDispatcher from '../dispatcher/AppDispatcher';
+import LearningCollaborativeApi from '../LearningCollaborativeApi';
 import LearningCollaborativeConstants from '../constants/LearningCollaborativeConstants';
 
 const LearningCollaborativeActions = {
@@ -23,6 +24,7 @@ const LearningCollaborativeActions = {
       agency: agency,
       ageGroup: ageGroup
     });
+    LearningCollaborativeApi.createProgram(school, agency, ageGroup);
   }
 };
 
