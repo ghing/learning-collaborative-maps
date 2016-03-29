@@ -1,6 +1,6 @@
 import XMLHttpRequestPromise from 'xhr-promise';
 
-import LearningCollaborativeServerActions from './action.LearningCollaborativeServerActions';
+import LearningCollaborativeServerActions from './actions/LearningCollaborativeServerActions';
 
 const SCHOOLS_JSON_URL = '/api/1/schools?format=geojson';
 const AGENCIES_JSON_URL = '/api/1/agencies?format=geojson';
@@ -30,11 +30,10 @@ const LearningCollaborativeApi = {
   createProgram: function(school, agency, ageGroup, programType) {
     let xhrPromise = new XMLHttpRequestPromise();
     return xhrPromise.send({
-      method: 'POST',
-    let xhrPromise = new XMLHttpRequestPromise();
-    return xhrPromise.send({
-      url: SCHOOL_PROGRAM_JSON_URL.
+      url: SCHOOL_PROGRAM_JSON_URL,
       method: 'POST'
-  });
+    });
+  }
+};
 
 export default LearningCollaborativeApi;
