@@ -6,10 +6,20 @@ import AppDispatcher from '../dispatcher/AppDispatcher';
 import LearningCollaborativeConstants from '../constants/LearningCollaborativeConstants';
 
 const CHANGE_EVENT = 'change';
+const RECEIVE_PROGRAM_EVENT = 'receive:program';
 
 let _schools = []; // Collection of school items
+let _schoolLookup = {};
+let _programTypes = [
+  'Dating/Partner Violence',
+  'Dating/Partner Violence/Bullying',
+  'Prevention + Intervention',
+  'Sexual Health',
+  'Sexual Violence',
+  'Sexual Violence/Exploitation'
+];
 
-var _engine;
+let _engine;
 
 let SchoolStore = assign({}, EventEmitter.prototype, {
   getAll: function() {
@@ -18,6 +28,10 @@ let SchoolStore = assign({}, EventEmitter.prototype, {
 
   getEngine: function() {
     return _engine;
+  },
+
+  getProgramTypes: function() {
+    return _programTypes;
   },
 
   emitChange: function() {
@@ -32,12 +46,28 @@ let SchoolStore = assign({}, EventEmitter.prototype, {
     this.removeListener(CHANGE_EVENT, callback);
   },
 
+  emitReceiveProgram: function(program) {
+    this.emit(RECEIVE_PROGRAM_EVENT, program);
+  },
+
+  addReceiveProgramListener: function(callback) {
+    this.on(RECEIVE_PROGRAM_EVENT, callback);
+  },
+
+  removeReceiveProgramListener: function(callback) {
+    this.removeListener(RECEIVE_PROGRAM_EVENT, callback);
+  },
+
   dispatcherIndex: AppDispatcher.register(function(payload) {
     let action = payload.action;
 
     switch(action.actionType) {
       case LearningCollaborativeConstants.SCHOOLS_SET:
         _schools = action.schools;
+        _schoolLookup = _schools.reduce((lookup, school) => {
+           lookup[school.properties.rcdts] = school;
+           return lookup;
+        }, {});
         _engine = new Bloodhound({
           local: _schools,
           queryTokenizer: Bloodhound.tokenizers.whitespace,
@@ -45,6 +75,9 @@ let SchoolStore = assign({}, EventEmitter.prototype, {
           identify: school => school.properties.rcdts
         });
         SchoolStore.emitChange();
+        break;
+      case LearningCollaborativeConstants.RECEIVE_PROGRAM:
+        SchoolStore.emitReceiveProgram(action.program);
         break;
     }
 

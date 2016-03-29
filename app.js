@@ -245,10 +245,11 @@ app.post('/api/1/schools/:rcdts/programs', function(req, res) {
     var agency = agencies[0];
     var programProps = {
       agency: agency._id,
-      age_group: program.age_group
+      age_group: program.age_group,
+      program_type: program.program_type
     };
     addSchoolProgram(req.school, programProps, dbConnection, function() {
-      res.json();
+      res.json(program);
     })
   });
 });

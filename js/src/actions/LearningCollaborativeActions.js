@@ -1,6 +1,7 @@
 import AppDispatcher from '../dispatcher/AppDispatcher';
-import LearningCollaborativeApi from '../LearningCollaborativeApi';
+import LearningCollaborativeApi from '../utils/LearningCollaborativeApi';
 import LearningCollaborativeConstants from '../constants/LearningCollaborativeConstants';
+import LearningCollaborativeServerActions from './LearningCollaborativeServerActions';
 
 const LearningCollaborativeActions = {
   setSchools: function(schools) {
@@ -17,14 +18,17 @@ const LearningCollaborativeActions = {
     });
   },
 
-  createProgram: function(school, agency, ageGroup) {
+  createProgram: function(school, agency, ageGroup, programType) {
     AppDispatcher.handleViewAction({
       actionType: LearningCollaborativeConstants.CREATE_PROGRAM,
       school: school,
       agency: agency,
-      ageGroup: ageGroup
+      ageGroup: ageGroup,
+      programType: programType
     });
-    LearningCollaborativeApi.createProgram(school, agency, ageGroup);
+    LearningCollaborativeApi.createProgram(school, agency, ageGroup, programType).then(program => {
+      LearningCollaborativeServerActions.receiveProgram(program);
+    });
   }
 };
 

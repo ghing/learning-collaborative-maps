@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import LearningCollaborativeApi from './LearningCollaborativeApi';
+import LearningCollaborativeApi from './utils/LearningCollaborativeApi';
 import LearningCollaborativeActions from './actions/LearningCollaborativeActions';
 import LearningCollaborativeMap from './components/LearningCollaborativeMap'; 
 
@@ -11,11 +11,6 @@ export const LearningCollaborativeMapApp = function(options) {
     options.container
   );
 
-  LearningCollaborativeApi.schools().then(schools => {
-    LearningCollaborativeActions.setSchools(schools);
-  });
-
-  LearningCollaborativeApi.agencies().then(agencies => {
-    LearningCollaborativeActions.setAgencies(agencies);
-  });
+  LearningCollaborativeApi.schools().then(LearningCollaborativeActions.setSchools);
+  LearningCollaborativeApi.agencies().then(LearningCollaborativeActions.setAgencies);
 };

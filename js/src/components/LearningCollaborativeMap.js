@@ -34,7 +34,8 @@ const LearningCollaborativeMap = React.createClass({
   },
 
   componentWillUnmount: function() {
-    TodoStore.removeChangeListener(this._onChange);
+    SchoolStore.removeChangeListener(this._onChange);
+    SchoolStore.removeReceiveProgramListener(this._onReceiveProgram);
     AgencyStore.removeChangeListener(this._onChange);
   },
 
@@ -47,6 +48,7 @@ const LearningCollaborativeMap = React.createClass({
                    handleSelectSchool={this._handleSelectSchool}
                    agencies={this.state.agencies}
                    agencyLookup={this.state.agencyLookup}
+                   programTypes={SchoolStore.getProgramTypes()}
                    createProgram={LearningCollaborativeActions.createProgram} />
       </div>  
     );
@@ -54,6 +56,7 @@ const LearningCollaborativeMap = React.createClass({
 
   componentDidMount: function() {
     SchoolStore.addChangeListener(this._onChange);
+    SchoolStore.addReceiveProgramListener(this._onReceiveProgram);
     AgencyStore.addChangeListener(this._onChange);
     if (this.state.schools.length && this.state.agencies.length) {
       this._initializeMap();
@@ -116,6 +119,19 @@ const LearningCollaborativeMap = React.createClass({
       agencies: AgencyStore.getAll(),
       agencyLookup: AgencyStore.getLookup()
     });
+  },
+
+  _onReceiveProgram: function(program) {
+    if (this.state.selectedSchool) {
+      let school = this.state.selectedSchool;
+      if (!school.properties.programs) {
+        school.properties.programs = [];
+      }
+      school.properties.programs.push(program);
+      this.setState({
+        selectedSchool: school
+      });
+    }
   },
 
   _handleClickSchoolMarker: function(school) {

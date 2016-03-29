@@ -4,8 +4,8 @@
   "description": "Interactive map to help coordinate healthy relationship education in the Chicago area.",
   "main": "app.js",
   "config": {
-    "requireargs": "--require leaflet --require react --require react-dom --require xhr-promise --require flux --require object-assign --require keymirror --require d3 --require jquery --require typeahead.js",
-    "externalargs": "--external leaflet --external react --external react-dom --external xhr-promise --external flux --external object-assign --external keymirror --external d3 --external jquery --external typeahead.js"
+    "requireargs": "--require leaflet --require react --require react-dom --require es6-promise --require isomorphic-fetch --require flux --require object-assign --require keymirror --require d3 --require jquery --require typeahead.js",
+    "externalargs": "--external leaflet --external react --external react-dom --external es6-promise --external isomorphic-fetch --external flux --external object-assign --external keymirror --external d3 --external jquery --external typeahead.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -55,9 +55,11 @@
     "body-parser": "^1.15.0",
     "bootstrap": "^4.0.0-alpha.2",
     "d3": "^3.5.16",
+    "es6-promise": "^3.1.2",
     "express": "^4.13.4",
     "express-handlebars": "^3.0.0",
     "flux": "^2.1.1",
+    "isomorphic-fetch": "^2.2.1",
     "jquery": "^2.2.2",
     "keymirror": "^0.1.1",
     "leaflet": "^0.7.7",
