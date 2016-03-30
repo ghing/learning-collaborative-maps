@@ -9,7 +9,7 @@ const MapDrawer = React.createClass({
     return (
       <div className="map-drawer">
         <SchoolSearch engine={this.props.engine} handleSelectSchool={this.props.handleSelectSchool} />
-        <SchoolDetail school={this.props.school} />
+        <SchoolDetail school={this.props.school} agencyLookup={this.props.agencyLookup} />
         <CreateProgram school={this.props.school}
                        agencies={this.props.agencies}
                        agencyLookup={this.props.agencyLookup}
