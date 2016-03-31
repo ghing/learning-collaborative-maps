@@ -6,8 +6,8 @@ import 'typeahead.js/dist/typeahead.jquery.js';
 const SchoolSearch = React.createClass({
   render: function() {
     return (
-      <form>
-        <input type="text" ref="searchInput" />
+      <form className="school-search">
+        <input type="text" className="form-control" placeholder="Enter a school name to search" ref="searchInput" />
       </form>
     );
   },

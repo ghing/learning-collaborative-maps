@@ -1,6 +1,13 @@
+@import 'bootstrap';
+
 .app-container {
+  height: 100%;
+  width: 100%;
+}
+
+.app-container--outer {
+  height: 100vh;
   width: 100vw;
-  height: 100vh; 
 }
 
 .map-container {
@@ -15,5 +22,18 @@
   height: 100%;
   width: 30%;
 
+  @include make-container();
+
   background-color: #fff;
+}
+
+.school-search {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  // Typeahead.js wraps the input in a span.twitter-typeahead
+  // Set it's width, or it's too short!
+  .twitter-typeahead {
+    width: 100%;
+  }
 }

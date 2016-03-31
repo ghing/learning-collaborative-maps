@@ -35,7 +35,12 @@ const CreateProgram = React.createClass({
         </fieldset>
         <fieldset className="form-group">
           <label htmlFor="age-group">Age Group</label>
-          <input type="text" value={this.state.ageGroup} onChange={this.handleChangeAgeGroup} />
+          <input type="text"
+                 id="age-group"
+                 className="form-control"
+                 placeholder="Example: 6th Grade, Grades 9-12"
+                 value={this.state.ageGroup}
+                 onChange={this.handleChangeAgeGroup} />
         </fieldset>
         <fieldset className="form-group">
           <label htmlFor="program-type">Program Type</label>
