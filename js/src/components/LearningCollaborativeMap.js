@@ -103,6 +103,17 @@ const LearningCollaborativeMap = React.createClass({
         return L.circleMarker(latlng, markerOptions);
       },
       onEachFeature: function(feature, layer) {
+        layer.bindPopup(feature.properties.FacilityName, {
+          // Move the popup arrow higher above the default.
+          // Otherwise you can't click on the marker.
+          offset: [0, 0]
+        });
+        layer.on('mouseover', function (e) {
+            this.openPopup();
+        });
+        layer.on('mouseout', function (e) {
+            this.closePopup();
+        });
         layer.on('click', function(e) {
           component._handleClickSchoolMarker(feature);
         });
