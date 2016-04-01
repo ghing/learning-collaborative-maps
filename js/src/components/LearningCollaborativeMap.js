@@ -33,16 +33,10 @@ const LearningCollaborativeMap = React.createClass({
     }
   },
 
-  componentWillUnmount: function() {
-    SchoolStore.removeChangeListener(this._onChange);
-    SchoolStore.removeReceiveProgramListener(this._onReceiveProgram);
-    AgencyStore.removeChangeListener(this._onChange);
-  },
-
   render: function() {
     return (
-      <div className="app-container"> 
-        <div ref="mapContainer" className="map-container"></div> 
+      <div className="app-container">
+        <div ref="mapContainer" className="map-container"></div>
         <MapDrawer school={this.state.selectedSchool}
                    engine={SchoolStore.getEngine()}
                    handleSelectSchool={this._handleSelectSchool}
@@ -50,7 +44,7 @@ const LearningCollaborativeMap = React.createClass({
                    agencyLookup={this.state.agencyLookup}
                    programTypes={SchoolStore.getProgramTypes()}
                    createProgram={LearningCollaborativeActions.createProgram} />
-      </div>  
+      </div>
     );
   },
 
@@ -58,32 +52,35 @@ const LearningCollaborativeMap = React.createClass({
     SchoolStore.addChangeListener(this._onChange);
     SchoolStore.addReceiveProgramListener(this._onReceiveProgram);
     AgencyStore.addChangeListener(this._onChange);
-    if (this.state.schools.length && this.state.agencies.length) {
-      this._initializeMap();
-    }
+
+    this.setState({
+      map: this._initializeMap()
+    });
   },
 
-  componentDidUpdate: function() {
-    if (this.state.schools.length && this.state.agencies.length) {
-      this._initializeMap();
-    }
+  componentWillUnmount: function() {
+    SchoolStore.removeChangeListener(this._onChange);
+    SchoolStore.removeReceiveProgramListener(this._onReceiveProgram);
+    AgencyStore.removeChangeListener(this._onChange);
   },
 
   _initializeMap: function() {
-    let component = this;
     let map = L.map(this.refs.mapContainer, {
         zoomControl: false
       })
       .setView(this.props.center, this.props.initialZoom);
-
-    new L.Control.Zoom({ position: 'bottomright' }).addTo(map);  
-  
+    new L.Control.Zoom({ position: 'bottomright' }).addTo(map);
     L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 18,
       attribution: 'Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
     }).addTo(map);
+    return map;
+  },
 
-    var schoolMarkers = L.geoJson(this.state.schools, {
+  _getSchoolMarkers: function(schools) {
+    let component = this;
+
+    return L.geoJson(schools, {
       pointToLayer: function(feature, latlng) {
         let markerOptions = assign({}, component.props.markerOptions);
         let programs = feature.properties.programs;
@@ -96,7 +93,7 @@ const LearningCollaborativeMap = React.createClass({
           }
           else {
             agencyBits = programs[0].agency.split('/');
-            agencySlug = agencyBits[agencyBits.length - 1]; 
+            agencySlug = agencyBits[agencyBits.length - 1];
             markerOptions.fillColor = AgencyStore.getColorScale()(agencySlug);
           }
         }
@@ -108,16 +105,21 @@ const LearningCollaborativeMap = React.createClass({
           component._handleClickSchoolMarker(feature);
         });
       }
-    }).addTo(map); 
-
-    map.fitBounds(schoolMarkers.getBounds());
+    });
   },
 
   _onChange: function() {
+    let schools = SchoolStore.getAll();
+    let map = this.state.map;
+    let schoolMarkers = this._getSchoolMarkers(schools).addTo(map);
+    map.fitBounds(schoolMarkers.getBounds());
+
     this.setState({
-      schools: SchoolStore.getAll(),
+      schools: schools,
       agencies: AgencyStore.getAll(),
-      agencyLookup: AgencyStore.getLookup()
+      agencyLookup: AgencyStore.getLookup(),
+      map: map,
+      schoolMarkers: schoolMarkers
     });
   },
 
