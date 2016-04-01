@@ -90,7 +90,11 @@ const CreateProgram = React.createClass({
   },
 
   buttonDisabled: function() {
-    return this.state.agency && this.state.ageGroup;
+    if (!this.state.ageGroup) {
+      return true;
+    }
+
+    return false;
   }
 });
 
