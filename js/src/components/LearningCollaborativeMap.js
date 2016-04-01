@@ -23,7 +23,7 @@ const LearningCollaborativeMap = React.createClass({
       center: [41.881832, -87.623177],
       initialZoom: 13,
       markerOptions: {
-        radius: 2,
+        radius: 6,
         fillColor: "#ff7800",
         color: "#000",
         weight: 1,
@@ -97,6 +97,8 @@ const LearningCollaborativeMap = React.createClass({
             markerOptions.fillColor = AgencyStore.getColorScale()(agencySlug);
           }
         }
+
+        console.log(markerOptions);
 
         return L.circleMarker(latlng, markerOptions);
       },
