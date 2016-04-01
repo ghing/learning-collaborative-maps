@@ -98,8 +98,6 @@ const LearningCollaborativeMap = React.createClass({
           }
         }
 
-        console.log(markerOptions);
-
         return L.circleMarker(latlng, markerOptions);
       },
       onEachFeature: function(feature, layer) {
