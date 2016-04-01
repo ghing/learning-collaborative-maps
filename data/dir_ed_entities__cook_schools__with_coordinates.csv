@@ -1,0 +1,1229 @@
+"Region-2
+County-3
+District-4",Type,School,FacilityName,Address,City,Zip,GradeServed,lat,lng
+050160150,04,1011,Plum Grove Jr High School,2600 Plum Grove Rd,Rolling Meadows,60008 2042,7-8,42.073127,-88.053659
+050160150,04,1014,Carl Sandburg Jr High School,2600 Martin Ln,Rolling Meadows,60008 2722,7-8,42.074553,-88.012548
+050160150,04,1016,Winston Campus Jr High,120 N Babcock Dr,Palatine,60074 5599,7-8,42.112511,-88.021915
+050160150,04,1018,Walter R Sundling Jr High Sch,1100 N Smith St,Palatine,60067 2606,7-8,42.132208,-88.048485
+050160150,04,2001,Jane Addams Elem School,1020 E Sayles Dr,Palatine,60074 7274,K-6,42.123385,-88.018239
+050160150,04,2003,Central Road Elem School,3800 Central Rd,Rolling Meadows,60008 2554,P-6,42.066891,-88.024443
+050160150,04,2004,Marion Jordan Elem School,100 N Harrison Ave,Palatine,60067 0913,K-6,42.112377,-88.072856
+050160150,04,2005,Kimball Hill Elem School,2905 Meadow Dr,Rolling Meadows,60008 1801,P-6,42.080407,-88.015192
+050160150,04,2006,Hunting Ridge Elem School,1105 W Illinois Ave,Palatine,60067 6628,P-6,42.095446,-88.07088
+050160150,04,2007,Lake Louise Elem School,500 N Jonathan Dr,Palatine,60074 4114,K-6,42.1181,-88.007697
+050160150,04,2008,Lincoln Elementary School,1021 N Ridgewood Ln,Palatine,60067 3448,K-6,42.130188,-88.036534
+050160150,04,2009,Stuart R Paddock School,225 W Washington St,Palatine,60067 6147,K-6,42.108396,-88.046802
+050160150,04,2010,Pleasant Hill Elem School,434 W Illinois Ave,Palatine,60067 6745,P-6,42.096025,-88.054161
+050160150,04,2013,Gray M Sanborn Elem School,101 N Oak St,Palatine,60067 5246,P-6,42.111808,-88.038742
+050160150,04,2015,Virginia Lake Elem School,925 N Glenn Dr,Palatine,60074 7189,K-6,42.12643,-88.022897
+050160150,04,2018,Willow Bend Elem School,4700 Barker Ave,Rolling Meadows,60008 3202,K-6,42.062265,-88.019175
+050160150,04,2019,Winston Campus Elementary,900 E Palatine Rd,Palatine,60074 5552,K-6,42.110364,-88.021829
+050160150,04,2020,Thomas Jefferson Elem School,3805 Winston Dr,Hoffman Estates,60192 1851,P-6,42.092625,-88.098958
+050160150,04,2023,Frank C Whiteley Elem School,4335 Haman Ave,Hoffman Estates,60192 1306,P-6,42.102865,-88.104386
+050160150,04,3001,John G Conyers Learning Academy,2800 Central Rd,Rolling Meadows,60008 2535,P-8,42.066844,-88.015569
+050160210,04,1002,Cooper Middle School,1050 Plum Grove Cir,Buffalo Grove,60089 1911,6-8,42.14934,-87.985129
+050160210,04,1006,Oliver W Holmes Middle School,221 S Wolf Rd,Wheeling,60090 4843,6-8,42.135269,-87.914894
+050160210,04,1007,Jack London Middle School,1001 W Dundee Rd,Wheeling,60090 3908,6-8,42.139922,-87.903854
+050160210,04,2003,Eugene Field Elem School,51 Saint Armand Ln,Wheeling,60090 3924,K-5,42.140549,-87.944923
+050160210,04,2004,Robert Frost Elem School,1805 N Aspen Dr,Mt Prospect,60056 1682,K-5,42.099766,-87.89963
+050160210,04,2007,Joyce Kilmer Elem School,655 Golfview Ter,Buffalo Grove,60089 3536,K-5,42.141216,-87.965728
+050160210,04,2009,Henry W Longfellow Elem School,501 S Arlington Heights Rd,Buffalo Grove,60089 3245,P-5,42.146525,-87.985447
+050160210,04,2010,Edgar A Poe Elem School,2800 N Highland Ave,Arlington Heights,60004 2116,P-5,42.12618,-87.985138
+050160210,04,2011,J W Riley Elem School,1209 E Burr Oak Dr,Arlington Heights,60004 1660,P-5,42.128035,-87.968615
+050160210,04,2013,Booth Tarkington Elem School,310 Scott St,Wheeling,60090 4432,P-5,42.133862,-87.950749
+050160210,04,2014,Mark Twain Elem School,515 E Merle Ln,Wheeling,60090 4749,P-5,42.129873,-87.932203
+050160210,04,2015,Walt Whitman Elem School,133 Wille Ave,Wheeling,60090 3127,P-5,42.137442,-87.909456
+050160210,04,3001,Nathaniel Hawthorne Early Childhood Sch,200 Glendale St,Wheeling,60090 2948,P,42.141666,-87.919394
+050160230,02,1002,MacArthur Middle School,700 N Schoenbeck Rd,Prospect Heights,60070 1231,6-8,42.10846,-87.94661
+050160230,02,2001,Dwight D Eisenhower Elem School,700 N Schoenbeck Rd,Prospect Heights,60070 1231,P-1,42.10846,-87.94661
+050160230,02,2004,Betsy Ross Elem School,700 N Schoenbeck Rd,Prospect Heights,60070 1231,2-3,42.10846,-87.94661
+050160230,02,2005,Anne Sullivan Elem School,700 N Schoenbeck Rd,Prospect Heights,60070 1231,4-5,42.10846,-87.94661
+050160250,02,1014,South Middle School,400 S Highland Ave,Arlington Heights,60005 1868,6-8,42.07726,-87.985388
+050160250,02,1015,Thomas Middle School,1430 N Belmont Ave,Arlington Heights,60004 4832,6-8,42.103122,-87.978159
+050160250,02,2002,Dryden Elem School,722 S Dryden Pl,Arlington Heights,60005 2764,K-5,42.071505,-87.971034
+050160250,02,2004,Greenbrier Elem School,2330 N Verde Dr,Arlington Heights,60004 2867,P-5,42.118771,-87.998523
+050160250,02,2005,Ivy Hill Elem School,2211 N Burke Dr,Arlington Heights,60004 3249,K-5,42.11564,-87.972556
+050160250,02,2009,Olive-Mary Stitt School,303 E Olive St,Arlington Heights,60004 4754,K-5,42.099007,-87.97918
+050160250,02,2011,Patton Elem School,1616 N Patton Ave,Arlington Heights,60004 3637,K-5,42.106851,-87.996216
+050160250,02,2016,Westgate Elem School,500 S Dwyer Ave,Arlington Heights,60005 2261,K-5,42.074917,-87.997741
+050160250,02,2018,Windsor Elementary School,1315 E Miner St,Arlington Heights,60004 6339,K-5,42.084415,-87.967195
+050160260,02,1006,River Trails Middle School,1000 N Wolf Rd,Mt Prospect,60056 1551,"P,6-8",42.083394,-87.90786
+050160260,02,2001,Euclid Elem School,1211 N Wheeling Rd,Mt Prospect,60056 1221,P-5,42.086253,-87.927179
+050160260,02,2003,Indian Grove Elem School,1340 N Burning Bush Ln,Mt Prospect,60056 1854,P-5,42.090471,-87.898065
+050160270,02,1005,Wood Oaks Jr High School,1250 Sanders Rd,Northbrook,60062 2900,6-8,42.1294,-87.879939
+050160270,02,2002,Hickory Point Elem School,500 Laburnum Dr,Northbrook,60062 2227,P-2,42.143818,-87.868031
+050160270,02,2004,Shabonee School,1000 Pfingsten Rd,Northbrook,60062 3316,3-5,42.133391,-87.848518
+050160280,02,1004,Northbrook Junior High School,1475 Maple Ave,Northbrook,60062 5418,6-8,42.12531,-87.815155
+050160280,02,2002,Greenbriar Elem School,1225 Greenbriar Ln,Northbrook,60062 4522,K-5,42.130457,-87.833758
+050160280,02,2003,Meadowbrook Elem School,1600 Walters Ave,Northbrook,60062 4604,P-5,42.12715,-87.819378
+050160280,02,2006,Westmoor Elem School,2500 Cherry Ln,Northbrook,60062 4414,P-5,42.131212,-87.843694
+050160290,02,2001,Middlefork Primary School,405 Wagner Rd,Northfield,60093 2921,P-3,42.097849,-87.780615
+050160290,02,2002,Sunset Ridge Elem School,525 Sunset Ridge Rd,Northfield,60093 1025,4-8,42.105431,-87.790088
+050160300,02,1001,Maple School,2370 Shermer Rd,Northbrook,60062 6729,6-8,42.110027,-87.829387
+050160300,02,2002,Willowbrook Elem School,2500 Happy Hollow Rd,Glenview,60026 1117,P-5,42.101523,-87.841851
+050160300,02,2003,Wescott Elementary School,1820 Western Ave,Northbrook,60062 6052,1-5,42.119142,-87.839047
+050160310,02,1001,Field School,2055 Landwehr Rd,Northbrook,60062 6413,6-8,42.114686,-87.858507
+050160310,02,2002,Henry Winkelman Elem School,1919 Landwehr Rd,Glenview,60026 1243,P-5,42.090956,-87.858788
+050160340,04,1006,Attea Middle School,2500 Chestnut Ave,Glenview,60026 7785,6-8,42.087255,-87.816384
+050160340,04,1007,Springman Middle School,2701 Central Rd,Glenview,60025 4134,6-8,42.065558,-87.825169
+050160340,04,2001,Glen Grove Elem School,3900 Glenview Rd,Glenview,60025 2421,3-5,42.073268,-87.854106
+050160340,04,2002,Henking Elem School,2941 Linneman St,Glenview,60025 4035,P-2,42.069539,-87.834333
+050160340,04,2003,Hoffman Elem School,2000 Harrison St,Glenview,60025 4940,3-5,42.062628,-87.808828
+050160340,04,2004,Lyon Elem School,1335 Waukegan Rd,Glenview,60025 3064,P-2,42.08913,-87.798006
+050160340,04,2005,Pleasant Ridge Elem School,1730 Sunset Ridge Rd,Glenview,60025 2210,3-5,42.086143,-87.790771
+050160340,04,2008,Westbrook Elementary School,1333 Greenwood Rd,Glenview,60026 2502,P-2,42.08226,-87.839335
+050160350,02,1001,Central School,620 Greenwood Ave,Glencoe,60022 1650,5-8,42.132303,-87.760148
+050160350,02,2001,West School,1010 Forestway Dr,Glencoe,60022 1049,3-4,42.136711,-87.774976
+050160350,02,2002,South Elem School,266 Linden Ave,Glencoe,60022 2165,P-2,42.12405,-87.750408
+050160360,02,1005,Carleton W Washburne School,515 Hibbard Rd,Winnetka,60093 1617,7-8,42.105166,-87.751317
+050160360,02,2001,Crow Island Elem School,1112 Willow Rd,Winnetka,60093 3645,K-4,42.101265,-87.746009
+050160360,02,2002,Greeley Elem School,275 Fairview Ave,Winnetka,60093 4208,K-4,42.098639,-87.721669
+050160360,02,2003,Hubbard Woods Elem School,1110 Chatfield Rd,Winnetka,60093 1809,K-4,42.114825,-87.746477
+050160360,02,2004,The Skokie School,520 Glendale Ave,Winnetka,60093 2135,5-6,42.105747,-87.746164
+050160370,02,1001,Marie Murphy School,2921 Illinois Rd,Wilmette,60091 1103,"P,6-8",42.084902,-87.74972
+050160370,02,2003,Avoca West Elem School,235 Beech Dr,Glenview,60025 3274,K-5,42.076792,-87.766561
+050160380,02,2001,The Joseph Sears School,542 Abbotsford Rd,Kenilworth,60043 1161,P-8,42.089528,-87.716881
+050160390,02,1008,Wilmette Junior High School,620 Locust Rd,Wilmette,60091 2200,7-8,42.074016,-87.741962
+050160390,02,2002,Central Elem School,910 Central Ave,Wilmette,60091 2608,K-4,42.076727,-87.701157
+050160390,02,2003,Harper Elem School,1101 Dartmouth St,Wilmette,60091 1362,K-4,42.083941,-87.735863
+050160390,02,2005,McKenzie Elem School,649 Prairie Ave,Wilmette,60091 2531,K-4,42.074212,-87.712084
+050160390,02,2006,Romona Elem School,600 Romona Rd,Wilmette,60091 2125,P-4,42.074811,-87.746967
+050160390,02,2007,Highcrest Middle School,569 Hunter Rd,Wilmette,60091 2209,5-6,42.074979,-87.732304
+050160540,04,1001,Jane Addams JHS,700 S Springinsguth Rd,Schaumburg,60193 2445,7-8,42.013679,-88.119216
+050160540,04,1012,Robert Frost JHS,320 W Wise Rd,Schaumburg,60193 4015,7-8,42.005153,-88.087673
+050160540,04,1018,Dwight D Eisenhower JHS,800 Hassell Rd,Hoffman Estates,60169 2656,7-8,42.06299,-88.099226
+050160540,04,1019,Margaret Mead JHS,1765 Biesterfield Rd,Elk Grove Village,60007 7072,7-8,42.009626,-88.052658
+050160540,04,1020,Helen Keller JHS,820 Bode Rd,Schaumburg,60194 2750,7-8,42.041384,-88.09898
+050160540,04,2002,Buzz Aldrin Elem School,617 Boxwood Dr,Schaumburg,60193 2713,K-6,42.014163,-88.096714
+050160540,04,2003,Neil Armstrong Elem School,1320 Kingsdale Rd,Hoffman Estates,60169 1217,K-6,42.049802,-88.115754
+050160540,04,2005,Campanelli Elem School,310 S Springinsguth Rd,Schaumburg,60193 1209,K-6,42.019633,-88.119318
+050160540,04,2006,Winston Churchill Elem School,1520 Jones Rd,Schaumburg,60195 4237,K-6,42.054338,-88.099539
+050160540,04,2007,Michael Collins Elem School,407 Summit Dr,Schaumburg,60193 3050,K-6,42.026796,-88.069444
+050160540,04,2008,Everett Dirksen Elementary Sch,116 W Beech Dr,Schaumburg,60193 1547,K-6,42.020991,-88.082955
+050160540,04,2009,Thomas Dooley Elem School,622 Norwood Ln,Schaumburg,60193 2640,K-6,42.014097,-88.104828
+050160540,04,2010,Fairview Elem School,375 Arizona Blvd,Hoffman Estates,60169 1922,K-6,42.039941,-88.071028
+050160540,04,2011,Anne Fox Elem School,1035 Parkview Dr,Hanover Park,60133 2637,K-6,42.009216,-88.134562
+050160540,04,2013,Hanover Highlands Elem School,1451 Cypress Ave,Hanover Park,60133 3705,K-6,41.998607,-88.140393
+050160540,04,2015,Nathan Hale Elem School,1300 W Wise Rd,Schaumburg,60193 3627,K-6,42.004226,-88.113413
+050160540,04,2018,Lakeview Elem School,615 Lakeview Ln,Hoffman Estates,60169 3007,K-6,42.039501,-88.093679
+050160540,04,2019,MacArthur International Spanish Academy,1800 Chippendale Rd,Hoffman Estates,60169 6947,K-6,42.059924,-88.106584
+050160540,04,2022,John Muir Literacy Academy,1973 Kensington Ln,Hoffman Estates,60169 2518,K-6,42.060076,-88.127196
+050160540,04,2023,Adolph Link Elem School,900 W Glenn Trl,Elk Grove Village,60007 3025,K-6,42.006688,-88.038424
+050160540,04,2026,Albert Einstein Elem School,1100 Laurie Ln,Hanover Park,60133 2343,K-6,42.015567,-88.135565
+050160540,04,2027,Hoover Math and Science Academy,315 N Springinsguth Rd,Schaumburg,60194 4063,K-6,42.032901,-88.119134
+050160540,04,2028,Adlai Stevenson Elem School,1414 Armstrong Ln,Elk Grove Village,60007 3158,K-6,41.998564,-88.040382
+050160540,04,2029,Frederick Nerge Elem School,660 N Woodfield Trl,Roselle,60172 1058,K-6,41.996423,-88.068027
+050160540,04,2030,Enders-Salk Elem School,345 N Salem Dr,Schaumburg,60194 4339,K-6,42.032458,-88.100948
+050160540,04,2031,Elizabeth Blackwell Elem School,345 N Walnut Ln,Schaumburg,60194 3864,K-6,42.031448,-88.132423
+050160540,04,2032,Lincoln Prairie School,500 Hillcrest Blvd,Hoffman Estates,60169 4122,K-8,42.06025,-88.091037
+050160540,04,3111,The District 54 Early Learning Center,520 E Schaumburg Rd,Schaumburg,60194 3510,P,42.028036,-88.066098
+050160570,02,1004,Lincoln Middle School,700 W Lincoln St,Mt Prospect,60056 3010,6-8,42.059099,-87.946477
+050160570,02,2002,Fairview Elem School,300 N Fairview Ave,Mt Prospect,60056 2376,2-5,42.071897,-87.945366
+050160570,02,2005,Lions Park Elem School,300 E Council Trl,Mt Prospect,60056 3930,2-5,42.055668,-87.931944
+050160570,02,2008,Westbrook Early Learning Cntr,103 S Busse Rd,Mt Prospect,60056 2903,P-1,42.063096,-87.960279
+050160590,04,1010,Grove Jr High School,777 W Elk Grove Blvd,Elk Grove Village,60007 4221,6-8,42.008303,-87.993482
+050160590,04,1012,Holmes Jr High School,1900 W Lonnquist Blvd,Mt Prospect,60056 3536,"P,6-8",42.051715,-87.965892
+050160590,04,1016,Friendship Jr High School,550 Elizabeth Ln,Des Plaines,60018 5573,6-8,42.026991,-87.934365
+050160590,04,2001,Brentwood Elem School,260 Dulles Rd,Des Plaines,60016 2723,K-5,42.045012,-87.92717
+050160590,04,2002,Adm Richard E Byrd Elem School,265 Wellington Ave,Elk Grove Village,60007 3405,K-5,41.997234,-88.00888
+050160590,04,2003,Clearmont Elem School,280 Clearmont Dr,Elk Grove Village,60007 4006,K-5,41.999343,-87.98963
+050160590,04,2006,Devonshire School,1401 Pennsylvania Ave,Des Plaines,60018 1120,K-5,42.025718,-87.926351
+050160590,04,2008,Forest View Elem School,1901 W Estates Dr,Mt Prospect,60056 3521,K-5,42.05504,-87.966976
+050160590,04,2009,Robert Frost Elem School,1308 S Cypress Dr,Mt Prospect,60056 5004,K-5,42.042891,-87.953142
+050160590,04,2014,John Jay Elem School,1835 W Pheasant Trl,Mt Prospect,60056 4556,K-5,42.041633,-87.96576
+050160590,04,2016,Juliette Low Elem School,1530 S Highland Ave,Arlington Heights,60005 3630,K-5,42.055653,-87.986701
+050160590,04,2018,Rupley Elem School,305 Oakton St,Elk Grove Village,60007 1727,K-5,42.021945,-87.986088
+050160590,04,2019,Salt Creek Elem School,65 Jf Kennedy Blvd,Elk Grove Village,60007 3629,K-5,42.00369,-87.99991
+050160590,04,2020,Ridge Family Center for Learning,650 Ridge Ave,Elk Grove Village,60007 4229,K-5,42.010721,-87.989431
+050160620,04,1001,Algonquin Middle School,767 E Algonquin Rd,Des Plaines,60016 6251,6-8,42.03072,-87.904883
+050160620,04,1003,Chippewa Middle School,123 N 8th Ave,Des Plaines,60016 2145,6-8,42.057793,-87.909039
+050160620,04,2001,Iroquois Community School,1836 E Touhy Ave,Des Plaines,60018 3629,K-8,42.008268,-87.938222
+050160620,04,2002,Central Elem School,1526 E Thacker St,Des Plaines,60016 6432,K-5,42.037446,-87.886637
+050160620,04,2004,Cumberland Elem School,700 E Golf Rd,Des Plaines,60016 2311,K-5,42.053981,-87.906599
+050160620,04,2005,Forest Elem School,1375 S 5th Ave,Des Plaines,60018 1430,P-5,42.027559,-87.906448
+050160620,04,2008,North Elementary School,1789 Rand Rd,Des Plaines,60016 3509,K-5,42.044665,-87.879074
+050160620,04,2009,Orchard Place Elem School,2727 Maple St,Des Plaines,60018 3843,K-5,42.004117,-87.879483
+050160620,04,2010,Plainfield Elem School,1850 Plainfield Dr,Des Plaines,60018 2053,K-5,42.018662,-87.901808
+050160620,04,2011,South Elem School,1535 Everett Ave,Des Plaines,60018 2318,K-5,42.020409,-87.886122
+050160620,04,2012,Terrace Elem School,735 S Westgate Rd,Des Plaines,60016 2951,K-5,42.040004,-87.918474
+050160630,02,1003,Gemini Jr High School,8955 N Greenwood Ave,Niles,60714 1416,7-8,42.042852,-87.840363
+050160630,02,2006,V H Nelson Elem School,8901 N Ozanam Ave,Niles,60714 1711,K-6,42.042057,-87.820833
+050160630,02,2008,Stevenson School,9000 Capitol Dr,Des Plaines,60016 5007,K-6,42.043239,-87.85186
+050160630,02,2009,Mark Twain Elem School,9401 N Hamlin Ave,Niles,60714 5869,K-6,42.050479,-87.850217
+050160630,02,2010,Washington Elem School,2710 Golf Rd,Glenview,60025 4669,K-6,42.054961,-87.828504
+050160630,02,2011,Melzer School,9400 Oriole Ave,Morton Grove,60053 1008,P-6,42.052192,-87.815843
+050160630,02,2012,Apollo Elem School,10100 Dee Rd,Des Plaines,60016 1512,P-6,42.065168,-87.856653
+050160640,04,1006,Emerson Middle School,8101 N Cumberland Ave,Niles,60714 2736,6-8,42.027064,-87.835796
+050160640,04,1007,Lincoln Middle School,200 S Lincoln Ave,Park Ridge,60068 3812,6-8,42.008482,-87.8433
+050160640,04,2001,George B Carpenter Elem School,300 N Hamlin Ave,Park Ridge,60068 2924,K-5,42.014408,-87.850416
+050160640,04,2004,Eugene Field Elem School,707 Wisner St,Park Ridge,60068 2708,K-5,42.020117,-87.824521
+050160640,04,2005,Franklin Elementary School,2401 Manor Ln,Park Ridge,60068 1559,K-5,42.032059,-87.856702
+050160640,04,2011,Theodore Roosevelt Elem School,1001 S Fairview Ave,Park Ridge,60068 4712,K-5,41.999686,-87.834358
+050160640,04,2012,George Washington Elem School,1500 Stewart Ave,Park Ridge,60068 3867,K-5,42.005166,-87.84561
+050160640,04,3001,Jefferson School,8200 W Greendale Ave,Niles,60714 2713,P,42.027642,-87.830316
+050160650,04,1002,Chute Middle School,1400 Oakton St,Evanston,60202 2721,6-8,42.026562,-87.692032
+050160650,04,1007,Haven Middle School,2417 Prairie Ave,Evanston,60201 2214,6-8,42.061863,-87.69859
+050160650,04,1012,Nichols Middle School,800 Greenleaf St,Evanston,60202 1334,6-8,42.037729,-87.682125
+050160650,04,2004,Dawes Elementary School,440 Dodge Ave,Evanston,60202 3254,K-5,42.025013,-87.699643
+050160650,04,2005,Dewey Elem School,1551 Wesley Ave,Evanston,60201 4121,K-5,42.045486,-87.69202
+050160650,04,2009,Lincoln Elem School,910 Forest Ave,Evanston,60202 1474,K-5,42.034065,-87.674925
+050160650,04,2010,Lincolnwood Elem School,2600 Colfax St,Evanston,60201 2107,K-5,42.06064,-87.709212
+050160650,04,2014,Oakton Elem School,436 Ridge Ave,Evanston,60202 2861,K-5,42.025791,-87.685502
+050160650,04,2015,Orrington Elem School,2636 Orrington Ave,Evanston,60201 1761,K-5,42.065349,-87.679638
+050160650,04,2019,Walker Elem School,3601 Church St,Evanston,60203 1605,K-5,42.048263,-87.717985
+050160650,04,2020,Washington Elem School,914 Ashland Ave,Evanston,60202 1606,K-5,42.034737,-87.69305
+050160650,04,2021,Willard Elem School,2700 Hurd Ave,Evanston,60201 1268,K-5,42.066551,-87.716541
+050160650,04,2022,Dr ML King Jr Literary & Fine Arts Sch,2424 Lake St,Evanston,60201 3932,K-8,42.043918,-87.707195
+050160650,04,2023,Kingsley Elementary School,2300 Green Bay Rd,Evanston,60201 2229,K-5,42.059478,-87.694604
+050160650,04,2024,Dr Bessie Rhodes Sch Global Studies,3701 Davis St,Skokie,60076 1744,K-8,42.046415,-87.720551
+050160650,04,3017,Rice Childrens Center,1101 Washington St,Evanston,60202 1619,3-8,42.032662,-87.686493
+050160650,04,3020,Joseph E Hill Education Center,1500 McDaniel Ave,Evanston,60201 3976,P,42.046552,-87.708336
+050160670,02,1002,Golf Middle School,9401 Waukegan Rd,Morton Grove,60053 1353,5-8,42.051785,-87.799458
+050160670,02,2003,Hynes Elem School,9000 Belleforte Ave,Morton Grove,60053 2019,P-4,42.046614,-87.80342
+050160680,02,1002,Old Orchard Jr High School,9310 Kenton Ave,Skokie,60076 1336,"P,6-8",42.053166,-87.742274
+050160680,02,2001,Devonshire Elem School,9040 Kostner Ave,Skokie,60076 1657,K-5,42.045054,-87.737497
+050160680,02,2004,Jane Stenson School,9201 Lockwood Ave,Skokie,60077 1137,K-5,42.047949,-87.759098
+050160680,02,2005,Highland Elementary School,9700 Crawford Ave,Skokie,60076 1106,K-5,42.057212,-87.727442
+050160690,02,1003,Lincoln Jr High School,7839 Lincoln Ave,Skokie,60077 3640,6-8,42.023644,-87.754109
+050160690,02,2001,Thomas Edison Elem School,8200 Gross Point Rd,Morton Grove,60053 3534,3-5,42.030167,-87.764555
+050160690,02,2004,Madison Elem School,5100 Madison St,Skokie,60077 2554,P-2,42.032097,-87.754929
+050160700,02,2003,Park View Elem School,6200 Lake St,Morton Grove,60053 2416,P-8,42.041053,-87.783636
+050160710,02,2001,Clarence E Culver School,6901 W Oakton St,Niles,60714 3024,P-8,42.02624,-87.800488
+050160720,02,2002,Fairview South Elementary School,7040 Laramie Ave,Skokie,60077 3443,P-8,42.009179,-87.757884
+050160730,02,2001,East Prairie Elem School,3907 Dobson St,Skokie,60076 3718,P-8,42.01976,-87.726636
+050160735,02,1003,Oliver McCracken Middle School,8000 E Prairie Rd,Skokie,60076 3402,6-8,42.026421,-87.725763
+050160735,02,2002,John Middleton Elem School,8300 Saint Louis Ave,Skokie,60076 2930,1-5,41.626371,-87.705614
+050160735,02,2003,Elizabeth Meyer School,8100 Tripp Ave,Skokie,60076 3250,"P,K",42.028214,-87.734172
+050160740,02,1001,Lincoln Hall Middle School,6855 N Crawford Ave,Lincolnwood,60712 4601,6-8,42.00545,-87.728567
+050160740,02,2003,Rutledge Hall Elem School,6850 N East Prairie Rd,Lincolnwood,60712 2547,3-5,42.004729,-87.726162
+050160740,02,2004,Todd Hall Elem School,3925 W Lunt Ave,Lincolnwood,60712 2548,P-2,42.008273,-87.726729
+050162020,17,0001,Evanston Twp High School,1600 Dodge Ave,Evanston,60201 3449,9-12,42.047188,-87.699017
+050162030,17,0001,New Trier Township H S Winnetka,385 Winnetka Ave,Winnetka,60093 4238,10-12,42.093706,-87.71913
+050162030,17,0002,New Trier Township H S Northfield,7 Happ Rd,Northfield,60093 3411,9,42.086518,-87.766153
+050162070,17,0001,Maine East High School,2601 Dempster St,Park Ridge,60068 1155,9-12,42.03961,-87.848702
+050162070,17,0003,Maine South High School,1111 S Dee Rd,Park Ridge,60068 4379,9-12,42.001089,-87.854733
+050162070,17,0004,Maine West High School,1755 S Wolf Rd,Des Plaines,60018 1923,9-12,42.020588,-87.908849
+050162070,17,3002,Ralph J Frost Academy,1177 S Dee Rd,Park Ridge,60068 4379,9-12,42.000907,-87.854855
+050162110,17,0001,J B Conant High School,700 E Cougar Trl,Hoffman Estates,60169 3659,9-12,42.035666,-88.062673
+050162110,17,0002,Wm Fremd High School,1000 S Quentin Rd,Palatine,60067 7018,9-12,42.092141,-88.063283
+050162110,17,0003,Palatine High School,1111 N Rohlwing Rd,Palatine,60074 3777,9-12,42.130367,-88.02392
+050162110,17,0004,Schaumburg High School,1100 W Schaumburg Rd,Schaumburg,60194 4150,9-12,42.028638,-88.05297
+050162110,17,0006,Hoffman Estates High School,1100 W Higgins Rd,Hoffman Estates,60169 4050,9-12,42.051565,-88.107562
+050162110,17,3001,Higgins Education Center,1100 W Higgins Rd,Hoffman Estates,60169 4050,9-12,42.051565,-88.107562
+050162110,17,3002,District 211 Academy - North,335 E Illinois Ave,Palatine,60067 7132,9-12,42.095614,-88.035675
+050162140,17,0002,Elk Grove High School,500 W Elk Grove Blvd,Elk Grove Village,60007 4272,9-12,42.012988,-87.99749
+050162140,17,0004,John Hersey High School,1900 E Thomas St,Arlington Heights,60004 4320,9-12,42.102521,-87.960019
+050162140,17,0005,Prospect High School,801 W Kensington Rd,Mt Prospect,60056 1112,9-12,42.080954,-87.946492
+050162140,17,0006,Wheeling High School,900 S Elmhurst Rd,Wheeling,60090 5507,9-12,42.14285,-87.936425
+050162140,17,0007,Rolling Meadows High School,2901 Central Rd,Rolling Meadows,60008 2536,9-12,42.066551,-88.017175
+050162140,17,0008,Buffalo Grove High School,1100 W Dundee Rd,Buffalo Grove,60089 4054,9-12,42.138955,-87.982761
+050162140,17,3001,The Academy at Forest View,2121 S Goebbert Rd,Arlington Heights,60005 4205,9-12,42.047102,-87.974737
+050162140,17,3004,Young Adult Program,2901 Central Rd,Rolling Meadows,60008 2536,10-12,42.066551,-88.017175
+050162140,17,3005,Vanguard School,2121 S Goebbert Rd,Arlington Heights,60005 4205,9-12,42.047102,-87.974737
+050162140,17,3006,Newcomer Center,2121 S Goebbert Rd,Arlington Heights,60005 4205,9-11,42.047102,-87.974737
+050162140,17,3007,Sigwalt CLS Center,2702 Sigwalt St,Rolling Meadows,60008 1741,12,42.082842,-88.014498
+050162190,17,0002,Niles North High School,9800 Lawler Ave,Skokie,60077 1215,9-12,42.061151,-87.752887
+050162190,17,0003,Niles West High School,5701 Oakton St,Skokie,60077 2630,9-12,42.026585,-87.768808
+050162190,17,3001,Niles Central,7700 Gross Point Rd,Skokie,60077 2614,9-12,42.019391,-87.775555
+050162250,17,0001,Glenbrook North High School,2300 Shermer Rd,Northbrook,60062 6722,9-12,42.110914,-87.829534
+050162250,17,0002,Glenbrook South High School,4000 W Lake Ave,Glenview,60026 1239,9-12,42.08742,-87.853214
+050162250,17,3001,Glenbrook Evening High School,4000 W Lake Ave,Glenview,60026 1239,9-12,42.08742,-87.853214
+050162250,17,3002,Glenbrook Off-Campus Center,1835 Landwehr Rd,Glenview,60026 1241,9-12,42.091465,-87.858937
+060160780,02,2001,Rosemont Elem School,6101 Ruby St,Rosemont,60018 4450,P-8,41.989586,-87.871005
+060160790,02,2001,Pennoyer Elem School,5200 N Cumberland Ave,Norridge,60706 1499,P-8,41.974016,-87.836635
+060160800,02,2001,J Giles Elem School,4251 N Oriole Ave,Norridge,60706 1144,P-8,41.95708,-87.816899
+060160800,02,2002,J Leigh Elem School,8151 W Lawrence Ave,Norridge,60706 3136,P-8,41.966547,-87.831303
+060160810,02,1001,Lincoln Middle School,9750 Soreng Ave,Schiller Park,60176 2105,6-8,41.951343,-87.869673
+060160810,02,2001,John F Kennedy Elem School,3945 Wehrman Ave,Schiller Park,60176 1814,P-3,41.949588,-87.878109
+060160810,02,2003,Washington Elem School,4835 Michigan Ave,Schiller Park,60176 1111,4-5,41.966947,-87.868403
+060160830,02,1003,Mannheim Middle School,2600 Hyde Park Ave,Melrose Park,60164 1536,6-8,41.925675,-87.886932
+060160830,02,2002,Scott Elementary School,2250 Scott St,Melrose Park,60164 2008,K-5,41.919651,-87.874647
+060160830,02,2004,Roy Elem School,533 N Roy Ave,Northlake,60164 1762,K-5,41.919726,-87.898707
+060160830,02,2005,Westdale Elem School,99 Diversey Ave,Northlake,60164 1401,K-5,41.929003,-87.903151
+060160830,02,3001,Enger School,10401 Grand Ave,Franklin Park,60131 2208,P-8,41.930429,-87.884681
+060160830,02,3002,Mannheim Early Childhood Center,101 W Diversey,NorthLake,60164,"P,K",41.929004,-87.903136
+060160840,02,1002,Hester Jr High School,2836 Gustav St,Franklin Park,60131 2905,6-8,41.9303,-87.866623
+060160840,02,2003,North Elem School,9500 Gage Ave,Franklin Park,60131 2133,P-5,41.938492,-87.863174
+060160840,02,2004,Dan H Pietrini Elem School,9750 Fullerton Ave,Franklin Park,60131 3207,P-5,41.92238,-87.869386
+060160840,02,2005,Passow Elementary School,2838 Calwagner St,Franklin Park,60131 2649,K-5,41.930368,-87.86784
+060160845,02,2001,Rhodes Elem School,8931 Fullerton Ave,River Grove,60171 1810,P-8,41.922905,-87.846555
+060160855,02,2001,River Grove Elem School,2650 Thatcher Ave,River Grove,60171 1650,P-8,41.92791,-87.835582
+060160860,02,2001,Union Ridge Elem School,4600 N Oak Park Ave,Harwood Heights,60706 4823,P-8,41.964854,-87.797692
+060160870,02,1005,MacArthur Middle School,1310 N Wolf Rd,Berkeley,60163 1220,6-8,41.890786,-87.903456
+060160870,02,1006,Northlake Middle School,202 S Lakewood Ave,Northlake,60164 2581,6-8,41.903505,-87.901767
+060160870,02,2003,Jefferson Elementary School,225 46th Ave,Bellwood,60104 1315,P-5,41.888602,-87.889533
+060160870,02,2007,J W Riley Elem School,123 S Wolf Rd,Northlake,60164 2353,K-5,41.904725,-87.903074
+060160870,02,2008,Sunnyside Elementary School,5412 Saint Charles Rd,Berkeley,60163 1244,K-5,41.889146,-87.903477
+060160870,02,2010,Whittier Elementary School,338 Whitehall Ave,Northlake,60164 1864,P-5,41.912455,-87.891666
+060160880,02,1007,Roosevelt Middle School,2500 Oak St,Bellwood,60104 1525,6-8,41.885012,-87.887613
+060160880,02,2001,Grant Elem School,1300 N 34th Ave,Melrose Park,60160 2835,1-5,41.898439,-87.875065
+060160880,02,2003,Lincoln Elementary School,3420 Jackson St,Bellwood,60104 2419,K-5,41.87427,-87.87461
+060160880,02,2005,McKinley Elem School,3317 Butterfield Rd,Bellwood,60104 1450,K-5,41.885115,-87.873705
+060160880,02,2006,Thurgood Marshall Elem School,2501 Oak St,Bellwood,60104 1537,K-5,41.885538,-87.864803
+060160880,02,2009,Grant Primary,1801 N 36th Ave,Stone Park,60165 1031,K,41.905427,-87.877619
+060160880,02,3003,Early Childhood Cntr/Lincoln Primary,3519 Wilcox Ave,Bellwood,60104 2174,P,41.876365,-87.875844
+060160890,02,2001,Jane Addams Elem School,910 Division St,Melrose Park,60160 2235,P-5,41.90061,-87.844788
+060160890,02,2002,Emerson Elem School,311 Washington Blvd,Maywood,60153 2154,P-5,41.882463,-87.837198
+060160890,02,2003,Garfield Elem School,1514 S 9th Ave,Maywood,60153 1951,K-5,41.874194,-87.843769
+060160890,02,2004,Irving Elem School,805 S 17th Ave,Maywood,60153 1701,6-8,41.880474,-87.853706
+060160890,02,2006,Lincoln Elem School,811 Chicago Ave,Maywood,60153 1172,P-5,41.893647,-87.842509
+060160890,02,2007,Melrose Park Elem School,1715 W Lake St,Melrose Park,60160 3818,K-5,41.892861,-87.854731
+060160890,02,2008,Roosevelt Elem School,1927 S 15th Ave,Broadview,60155 3005,K-5,41.8691,-87.850633
+060160890,02,2010,Stevenson Elem School,1630 N 20th Ave,Melrose Park,60160 1904,6-8,41.902925,-87.858379
+060160890,02,2012,Washington Elem School,1111 Washington Blvd,Maywood,60153 1559,P-2,41.882595,-87.846493
+060160900,02,1002,Roosevelt School,7560 Oak Ave,River Forest,60305 1842,5-8,41.89214,-87.81384
+060160900,02,2001,Lincoln Elem School,511 Park Ave,River Forest,60305 1712,K-4,41.888425,-87.819489
+060160900,02,2005,Willard Elem School,1250 Ashland Ave,River Forest,60305 1028,P-4,41.902239,-87.817046
+060160910,02,1001,Forest Park Middle School,925 Beloit Ave,Forest Park,60130 2301,6-8,41.869913,-87.811826
+060160910,02,2001,Betsy Ross Elem School,1315 Marengo Ave,Forest Park,60130 2434,K-2,41.862706,-87.806708
+060160910,02,2003,Field Stevenson Elem School,925 Beloit Ave,Forest Park,60130 2301,3-5,41.869913,-87.811826
+060160910,02,2004,Garfield Elem School,543 Hannah Ave,Forest Park,60130 1909,P-2,41.876917,-87.809646
+060160910,02,2005,Grant-White Elem School,147 Circle Ave,Forest Park,60130 1215,3-5,41.87409,-87.808178
+060160920,02,2001,Lindop Elem School,2400 S 18th Ave,Broadview,60155 3930,P-8,41.860219,-87.854115
+060160925,02,1001,Westchester Middle School,1620 Norfolk Ave,Westchester,60154 4430,6-8,41.856065,-87.87123
+060160925,02,2002,Westchester Intermediate School,10900 Canterbury St,Westchester,60154 3457,3-5,41.855432,-87.894478
+060160925,02,2003,Westchester Primary School,2400 Downing Ave,Westchester,60154 5102,P-2,41.844669,-87.888956
+060160930,02,2001,Hillside Elem School,4804 Harrison St,Hillside,60162 1601,K-8,41.870143,-87.902869
+060160940,02,2001,Komarek Elem School,8940 W 24th St,North Riverside,60546 1158,P-8,41.846101,-87.84631
+060160950,02,1001,S E Gross  Middle School,3524 Maple Ave,Brookfield,60513 1250,"P,6-8",41.82708,-87.851644
+060160950,02,2002,Brook Park Elem School,1214 Raymond Ave,La Grange Park,60526 1362,K-5,41.836711,-87.855413
+060160960,02,1004,L J Hauser Jr High School,65 Woodside Rd,Riverside,60546 1974,6-8,41.830075,-87.821617
+060160960,02,2001,A F Ames Elem School,86 Southcote Rd,Riverside,60546 1633,K-5,41.84008,-87.818823
+060160960,02,2002,Blythe Park Elem School,735 Leesley Rd,Riverside,60546 1717,K-5,41.836495,-87.807509
+060160960,02,2003,Central Elem School,61 Woodside Rd,Riverside,60546 1974,K-5,41.830005,-87.821583
+060160960,02,2005,Hollywood Elem School,3423 Hollywood Ave,Brookfield,60513 1701,P-5,41.829349,-87.834395
+060160970,02,1003,Gwendolyn Brooks Middle School,325 S Kenilworth Ave,Oak Park,60302 3597,6-8,41.88293,-87.797164
+060160970,02,1004,Percy Julian Middle School,416 S Ridgeland Ave,Oak Park,60302 4010,6-8,41.881426,-87.784349
+060160970,02,2001,William Beye Elem School,230 N Cuyler Ave,Oak Park,60302 2301,K-5,41.890797,-87.782985
+060160970,02,2003,William Hatch Elem School,1000 N Ridgeland Ave,Oak Park,60302 1443,P-5,41.903641,-87.784177
+060160970,02,2005,Oliver W Holmes Elem School,508 N Kenilworth Ave,Oak Park,60302 1612,K-5,41.895128,-87.797863
+060160970,02,2006,Irving Elem School,1125 S Cuyler Ave,Oak Park,60304 2203,K-5,41.868074,-87.782976
+060160970,02,2007,Abraham Lincoln Elem School,1111 S Grove Ave,Oak Park,60304 1908,K-5,41.868398,-87.795319
+060160970,02,2008,Longfellow Elem School,715 Highland Ave,Oak Park,60304 1526,P-5,41.875783,-87.782011
+060160970,02,2009,Horace Mann Elem School,921 N Kenilworth Ave,Oak Park,60302 1315,K-5,41.902014,-87.798181
+060160970,02,2010,Whittier Elem School,715 N Harvey Ave,Oak Park,60302 1741,P-5,41.898495,-87.781899
+060160980,02,1004,Lincoln Middle School,6432 16th St,Berwyn,60402 1358,6-8,41.857849,-87.785055
+060160980,02,2001,Prairie Oak School,1427 Oak Park Ave,Berwyn,60402 1229,P-5,41.861033,-87.79348
+060160980,02,2002,Karel Havlicek Elem School,6401 15th St,Berwyn,60402 1133,P-5,41.859683,-87.78443
+060160980,02,2003,Jefferson Elem School,7035 16th St,Berwyn,60402 1369,P-5,41.857922,-87.800096
+060160990,02,1002,Unity Jr High School,2115 S 54th Ave,Cicero,60804 2209,7-8,41.852055,-87.758878
+060160990,02,2001,Daniel Burnham Elem School,1630 S 59th Ave,Cicero,60804 1742,K-6,41.857734,-87.771609
+060160990,02,2002,Cicero East Elem School,2324 S 49th Ave,Cicero,60804 2447,4-6,41.848503,-87.74678
+060160990,02,2003,Columbus  East Elem School,3100 S 54th Ave,Cicero,60804 3953,4-6,41.836305,-87.758589
+060160990,02,2004,Drexel Elem School,5407 W 36th St,Cicero,60804 4432,P-6,41.827175,-87.758683
+060160990,02,2005,Goodwin Elementary School,2625 S Austin Blvd,Cicero,60804 3139,P-6,41.843078,-87.773368
+060160990,02,2006,Abe Lincoln Elem School,3545 S 61st Ave,Cicero,60804 4145,P-6,41.828107,-87.775385
+060160990,02,2007,McKinley Elem School,5900 W 14th St,Cicero,60804 1052,P-2,41.861993,-87.771569
+060160990,02,2008,T Roosevelt Elem School,1500 S 50th Ave,Cicero,60804 1544,3-6,41.860187,-87.749463
+060160990,02,2009,Sherlock Elem School,5347 W 22nd Pl,Cicero,60804 2805,P-2,41.850027,-87.757593
+060160990,02,2010,Woodrow Wilson Elem School,2310 S 57th Ave,Cicero,60804 2638,P-6,41.848677,-87.766453
+060160990,02,2011,Woodbine Elem School,3003 S 50th Ct,Cicero,60804 3514,P-3,41.838312,-87.750286
+060160990,02,2013,Liberty Elem School,4946 W 13th St,Cicero,60804 1416,P-3,41.864151,-87.748718
+060160990,02,2014,Cicero West Elementary School,4937 W 23rd St,Cicero,60804 2433,P-3,41.849254,-87.747491
+060160990,02,2015,Columbus West Elementary School,5425 W 31st St,Cicero,60804 3989,P-6,41.836287,-87.759843
+060161000,02,1002,Heritage Middle School,6850 31st St,Berwyn,60402 3058,6-8,41.835772,-87.794565
+060161000,02,1003,Freedom Middle School,3016 Ridgeland Ave,Berwyn,60402 2700,6-8,41.836416,-87.78329
+060161000,02,2001,Emerson Elem School,6850 31st St,Berwyn,60402 3058,K-5,41.835772,-87.794565
+060161000,02,2003,Irving Elem School,3501 Clinton Ave,Berwyn,60402 3324,P-5,41.82873,-87.796312
+060161000,02,2004,Komensky Elem School,2515 Cuyler Ave,Berwyn,60402 2619,P-5,41.844973,-87.782011
+060161000,02,2006,Pershing Elem School,6537 37th St,Berwyn,60402 4080,P-5,41.825243,-87.786589
+060161000,02,2007,Piper School,2435 Kenilworth Ave,Berwyn,60402 2546,K-5,41.846051,-87.795529
+060161000,02,2008,Hiawatha Elem School,6539 26th St,Berwyn,60402 2637,K-5,41.843493,-87.78717
+060161010,02,1006,McClure Jr High School,4225 Wolf Rd,Western Springs,60558 1453,6-8,41.813261,-87.898649
+060161010,02,2001,Field Park Elem School,4335 Howard Ave,Western Springs,60558 1221,K-5,41.811798,-87.894988
+060161010,02,2002,Forest Hills Elem School,5020 Central Ave,Western Springs,60558 1801,P-5,41.79844,-87.90478
+060161010,02,2005,John Laidlaw Elem School,4072 Forest Ave,Western Springs,60558 1050,K-5,41.815051,-87.907359
+060161020,02,1004,Park Junior High School,325 N Park Rd,La Grange Park,60526 1802,7-8,41.820774,-87.880974
+060161020,02,2001,Congress Park Elem School,9311 Shields Ave,Brookfield,60513 1825,K-6,41.81252,-87.853726
+060161020,02,2002,Cossitt Ave Elem School,115 W Cossitt Ave,La Grange,60525 2331,K-6,41.812498,-87.871171
+060161020,02,2003,Forest Road Elem School,901 Forest Rd,La Grange Park,60526 1602,1-6,41.830628,-87.867975
+060161020,02,2007,Ogden Ave Elem School,501 W Ogden Ave,La Grange,60525 1850,K-6,41.818311,-87.876034
+060161020,02,2008,Barnsdale Road School,920 Barnsdale Rd,La Grange Park,60526 1609,"P,K",41.831203,-87.865905
+060161030,02,2002,Edison Elem School,4100 Scoville Ave,Stickney,60402 4428,P-5,41.817684,-87.786265
+060161030,02,2004,Home Elem School,4400 Home Ave,Stickney,60402 4316,P-5,41.812072,-87.797189
+060161030,02,2005,Lincoln Elem School,4300 Grove Ave,Brookfield,60513 2580,P-5,41.81276,-87.841413
+060161030,02,2006,J W Robinson Jr Elem School,4431 Gage Ave,Lyons,60534 1929,K-5,41.811018,-87.814819
+060161030,02,2007,Washington Middle School,8101 Ogden Ave,Lyons,60534 1700,6-8,41.81718,-87.8251
+060161030,02,2008,Costello School,4632 Clyde Ave,Lyons,60534 1758,P-5,41.806871,-87.827964
+060161050,02,1001,Wm F Gurrie Middle School,1001 S Spring Ave,La Grange,60525 2760,7-8,41.795973,-87.875036
+060161050,02,2002,Hodgkins Elem School,6516 Kane Ave,Hodgkins,60525 7618,K-6,41.771755,-87.853394
+060161050,02,2003,Ideal Elem School,9901 W 58th St,Countryside,60525 5122,P-6,41.784915,-87.865537
+060161050,02,2004,Seventh Ave Elem School,701 7th Ave,La Grange,60525 6705,K-6,41.801629,-87.866678
+060161050,02,2005,Spring Ave Elem School,1001 S Spring Ave,La Grange,60525 2760,P-6,41.795973,-87.875036
+060161060,02,1003,Highlands Middle School,1850 W Plainfield Rd,La Grange Highlands,60525 3730,6-8,41.78193,-87.891615
+060161060,02,2001,Highlands Elem School,5850 Laurel Ave,La Grange Highlands,60525 7018,P-5,41.7835,-87.890641
+060161070,02,1001,Pleasantdale Middle Sch,7450 Wolf Rd,Burr Ridge,60527 7714,5-8,41.754348,-87.896543
+060161070,02,2002,Pleasantdale Elementary School,8100 School St,La Grange,60525 5225,P-4,41.741069,-87.892983
+060162000,13,0001,Oak Park & River Forest High Sch,201 N Scoville Ave,Oak Park,60302 2264,9-12,41.890448,-87.788007
+060162010,17,0001,J Sterling Morton East High Sch,2423 S Austin Blvd,Cicero,60804 2616,10-12,41.846793,-87.773464
+060162010,17,0002,J Sterling Morton West High Sch,2400 Home Ave,Berwyn,60402 2110,9-12,41.846692,-87.798385
+060162010,17,0003,J Sterling Morton Freshman Cntr,1801 S 55th Ave,Cicero,60804 1819,9,41.855921,-87.761439
+060162010,17,3001,J Sterling Morton Alternative Sch,1874 S 54th Ave,Cicero,60804 1814,9-12,41.854982,-87.759259
+060162040,17,0001,Lyons Twp High Sch,100 S Brainard Ave,La Grange,60525 2101,9-12,41.812043,-87.879474
+060162080,17,0001,Riverside Brookfield Twp HS,160 Ridgewood Rd,Riverside,60546 2408,9-12,41.827513,-87.831131
+060162090,17,0001,Proviso East High School,807 S 1st Ave,Maywood,60153 2307,9-12,41.880814,-87.834217
+060162090,17,0002,Proviso West High School,4701 Harrison St,Hillside,60162 1616,9-12,41.869879,-87.901374
+060162090,17,0003,Proviso Math and Science Academy,8601 Roosevelt Rd,Forest Park,60130 2532,9-12,41.864625,-87.833128
+060162120,16,0001,East Leyden High School,3400 Rose St,Franklin Park,60131 2155,9-12,41.940554,-87.86569
+060162120,16,0002,West Leyden High School,1000 N Wolf Rd,Northlake,60164 1438,9-12,41.925839,-87.904119
+060162340,16,0001,Ridgewood Comm High School,7500 W Montrose Ave,Norridge,60706 1153,9-12,41.959661,-87.815809
+060164010,26,0001,Elmwood Park High School,8201 W Fullerton Ave,Elmwood Park,60707 2449,9-12,41.922901,-87.832048
+060164010,26,1001,Elm Middle School,7607 W Cortland St,Elmwood Park,60707 3646,7-8,41.914039,-87.816066
+060164010,26,2003,Elmwood Elem School,2319 N 76th Ave,Elmwood Park,60707 3027,1-6,41.921871,-87.815809
+060164010,26,2004,John Mills Elem School,2824 N 76th Ave,Elmwood Park,60707 1438,1-6,41.931116,-87.816426
+060164010,26,2005,Early Childhood Center,4 W Conti Pkwy,Elmwood Park,60707 4506,"P,K",41.927923,-87.817383
+070161040,02,1001,Heritage Middle School,6021 S 74th Ave,Summit,60501 1500,6-8,41.78289,-87.805837
+070161040,02,2001,Dr Donald Wharton Elem School,7555 W 64th St,Summit,60501 1925,5,41.775048,-87.809245
+070161040,02,2003,Otis P Graves Elem School,6021 S 74th Ave,Summit,60501 1500,P-4,41.78289,-87.805837
+070161040,02,2004,W W Walker Elem School,7735 W 66th Pl,Bedford Park,60501 1903,K-4,41.77093,-87.813484
+070161040,02,2005,Walsh Elem School,5640 S 75th Ave,Summit,60501 1346,K-4,41.788758,-87.808751
+070161080,02,2001,Willow Springs Elem School,8345 Archer Ave,Willow Springs,60480 1402,K-8,41.738362,-87.865269
+070161090,02,1006,Geo T Wilkins Jr High School,8001 S 82nd Ave,Justice,60458 1569,7-8,41.745928,-87.823916
+070161090,02,2001,Bridgeview Elem School,7800 S Thomas Ave,Bridgeview,60455 1524,K-6,41.74956,-87.805961
+070161090,02,2002,Frank A Brodnicki Elem School,8641 W 75th St,Justice,60458 1114,K-6,41.754581,-87.834959
+070161090,02,2004,Robina Lyle Elementary School,7801 W 75th St,Bridgeview,60455 1288,K-6,41.755235,-87.814568
+070161090,02,2006,George T Wilkins Elem School,8001 S 82nd Ave,Justice,60458 1569,K-6,41.745928,-87.823916
+070161090,02,3001,Gladness V Player Early Childhood Center,8600 S Roberts Rd,Justice,60458 2307,P,41.734769,-87.818607
+070161100,02,2002,Charles J Sahs Elem School,5001 S Long Ave,Chicago,60638 1733,P-8,41.802086,-87.757682
+070161110,02,1001,Liberty Junior High School,5900 W 81st St,Burbank,60459 1900,7-8,41.74486,-87.768371
+070161110,02,2001,Luther Burbank Elem School,8235 Linder Ave,Burbank,60459 2066,K-6,41.742735,-87.758001
+070161110,02,2002,Richard Byrd Elementary School,8259 Lavergne Ave,Burbank,60459 2794,K-6,41.742516,-87.745841
+070161110,02,2005,J B Kennedy Elem School,7644 Central Ave,Burbank,60459 1308,K-6,41.749455,-87.760806
+070161110,02,2006,Maddock Elementary School,8258 Sayre Ave,Burbank,60459 1631,P-6,41.741616,-87.79474
+070161110,02,2007,F B Mccord Elem School,8450 Nashville Ave,Burbank,60459 2335,K-6,41.738301,-87.78487
+070161110,02,2010,Edward J Tobin Elem School,8501 Narragansett Ave,Burbank,60459 2474,K-6,41.73765,-87.779823
+070161110,02,2011,Harry E Fry School,7805 Mobile Ave,Burbank,60459 1109,K-6,41.750257,-87.77771
+07016113A,02,1002,Old Quarry Middle Sch,16100 W 127th St,Lemont,60439 7462,6-8,41.656183,-88.014514
+07016113A,02,2002,Oakwood School,1130 Kim Pl,Lemont,60439 4317,P-2,41.660955,-87.997033
+07016113A,02,2004,River Valley School,15425 E 127th St,Lemont,60439 4494,3-5,41.656831,-87.995368
+070161170,02,1001,H H Conrady Jr High School,7950 W 97th St,Hickory Hills,60457 2327,6-8,41.715078,-87.816495
+070161170,02,2002,Dorn Primary Center,7840 W 92nd St,Hickory Hills,60457 2012,P-1,41.724227,-87.814133
+070161170,02,2003,Glen Oaks Elem School,9045 S 88th Ave,Hickory Hills,60457 1252,2-5,41.727667,-87.837479
+070161170,02,2004,Oak Ridge Elem School,8791 W 103rd St,Palos Hills,60465 1633,2-5,41.703478,-87.83641
+070161170,02,2005,Dr Kenneth M Sorrick School,7825 W 103rd St,Palos Hills,60465 1676,P-1,41.703987,-87.811202
+070161180,04,1004,Palos South Middle School,13100 S 82nd Ave,Palos Park,60464 2191,6-8,41.654612,-87.820417
+070161180,04,2002,Palos East Elementary School,7700 W 127th St,Palos Heights,60463 1257,K-5,41.660631,-87.810049
+070161180,04,2003,Palos West Elementary School,12700 S 104th Ave,Palos Park,60464 1510,P-5,41.65905,-87.873958
+070161220,02,1005,Simmons Middle School,6450 W 95th St,Oak Lawn,60453 2262,6-8,41.719725,-87.781096
+070161220,02,2001,Columbus Manor Elem School,9700 Mayfield Ave,Oak Lawn,60453 3638,P-5,41.715905,-87.767546
+070161220,02,2002,Ernest F Kolb Elem School,9620 Normandy Ave,Oak Lawn,60453 2131,K-5,41.717664,-87.787323
+070161220,02,2003,Harnew Elem School,9101 Meade Ave,Oak Lawn,60453 1570,P-5,41.727061,-87.772819
+070161220,02,2004,George W Lieb Elem School,9101 Pembroke Ln,Bridgeview,60455 2221,K-5,41.7268,-87.791662
+070161230,02,1001,Oak Lawn-Hometown Middle Sch,5345 W 99th St,Oak Lawn,60453 3815,6-8,41.712382,-87.754777
+070161230,02,2003,J Covington Elem School,9130 S 52nd Ave,Oak Lawn,60453 1742,K-5,41.726048,-87.750912
+070161230,02,2006,J M Hannum Elem School,9800 S Tripp Ave,Oak Lawn,60453 3554,K-5,41.714727,-87.727254
+070161230,02,2007,Hometown Elem School,8870 S Duffy Ave,Hometown,60456 1140,P-5,41.730245,-87.729722
+070161230,02,2008,Kolmar Avenue Elem School,10425 S Kolmar Ave,Oak Lawn,60453 4847,P-5,41.703373,-87.733994
+070161230,02,2010,Sward Elem School,9830 Brandt Ave,Oak Lawn,60453 3029,K-5,41.713905,-87.744825
+070161240,02,1001,Central Middle School,9400 S Sawyer Ave,Evergreen Park,60805 2328,6-8,41.722399,-87.703111
+070161240,02,2002,Northeast Elem School,9058 S California Ave,Evergreen Park,60805 1300,P-5,41.728672,-87.692308
+070161240,02,2003,Northwest School,3630 W 92nd St,Evergreen Park,60805 1401,P-5,41.726237,-87.712856
+070161240,02,2004,Southeast Elem School,9800 S Francisco Ave,Evergreen Park,60805 2624,K-5,41.715251,-87.694254
+070161240,02,2005,Southwest Elem School,9900 S Central Park Ave,Evergreen Park,60805 3305,K-5,41.713163,-87.711355
+070161250,02,1001,Hamlin Upper Grade Center,12150 S Hamlin Ave,Alsip,60803 1218,6-8,41.671761,-87.71477
+070161250,02,2003,Lawn Manor School,4300 W 108th Pl,Oak Lawn,60453 5354,P-2,41.695893,-87.727853
+070161250,02,2004,Meadow Lane School,11800 S Meadow Lane Dr,Merrionette Park,60803 5824,3-5,41.6829,-87.697494
+070161260,02,1005,Prairie Jr High School,11910 S Kostner Ave,Alsip,60803 2307,7-8,41.676401,-87.729593
+070161260,02,2001,Hazelgreen Elem School,11751 S Lawler Ave,Alsip,60803 4931,P-6,41.678947,-87.745242
+070161260,02,2002,Lane Elem School,4600 W 123rd St,Alsip,60803 2522,P-6,41.668993,-87.733452
+070161260,02,2004,Stony Creek Elem School,11700 S Kolin Ave,Alsip,60803 2141,P-6,41.680312,-87.728223
+070161270,02,1005,Worth Jr High School,11151 S New England Ave,Worth,60482 1808,6-8,41.689342,-87.791491
+070161270,02,2001,Worth Elem School,11158 S Oak Park Ave,Worth,60482 2100,P-5,41.689102,-87.788644
+070161270,02,2004,Worthwoods Elem School,11000 S Oketo Ave,Worth,60482 1009,K-5,41.69184,-87.802501
+070161270,02,3001,Worthridge School,11218 S Ridgeland Ave,Worth,60482 1970,P,41.68818,-87.778908
+070161275,02,1001,Elden D Finley Jr High School,10835 Lombard Ave,Chicago Ridge,60415 2110,6-8,41.695276,-87.773966
+070161275,02,2003,Ridge Central Elem School,10800 Lyman Ave,Chicago Ridge,60415 2250,P-5,41.695776,-87.771681
+070161275,02,2004,Ridge Lawn Elementary School,5757 105th St,Chicago Ridge,60415 2087,P-5,41.701671,-87.764192
+070161280,02,1003,Independence Jr High School,6610 W Highland Dr,Palos Heights,60463 2217,6-8,41.657574,-87.783194
+070161280,02,2002,Chippewa Elem School,12425 S Austin Ave,Palos Heights,60463 1895,1-3,41.665426,-87.768232
+070161280,02,2005,Navajo Heights Elem School,12401 S Oak Park Ave,Palos Heights,60463 1673,4-5,41.666492,-87.787531
+070161280,02,2006,Indian Hill,12800 S Austin Ave,Palos Heights,60463 2341,"P,K",41.65942,-87.767988
+070161300,02,1001,Everett F Kerr Middle School,12915 Maple Ave,Blue Island,60406 2014,6-8,41.658429,-87.684789
+070161300,02,1002,Nathan Hale Middle School,5220 135th St,Crestwood,60445 1502,6-8,41.647139,-87.748203
+070161300,02,1003,Veterans Memorial Middle Sch,12320 Greenwood Ave,Blue Island,60406 1558,6-8,41.669358,-87.682891
+070161300,02,2004,Nathan Hale Intermediate,5312 135th St,Crestwood,60445 1504,4-5,41.647102,-87.750514
+070161300,02,2008,Paul Revere Intermediate School,12331 Gregory St,Blue Island,60406 1630,4-5,41.668888,-87.678402
+070161300,02,2010,Whittier Elementary School,13043 Maple Ave,Blue Island,60406 2338,4-5,41.656107,-87.684684
+070161300,02,2011,Lincoln Elem School,2140 Broadway St,Blue Island,60406 3051,K-3,41.650764,-87.67419
+070161300,02,2012,Nathan Hale Primary School,5324 135th St,Crestwood,60445 1504,P-3,41.647092,-87.750743
+070161300,02,2018,Paul Revere Primary School,2300 123rd Pl,Blue Island,60406 1672,K-3,41.668846,-87.676936
+070161300,02,2019,George Washington Elementary Sch,12545 S Homan Ave,Alsip,60803 4114,K-5,41.6646,-87.704856
+070161300,02,3001,Horace Mann School,2975 W Broadway St,Blue Island,60406,P,41.650364,-87.679184
+070161320,02,2001,Burr Oak Elem School,1440 W 125th St,Calumet Park,60827 6025,3-5,41.666801,-87.657513
+070161320,02,2002,Calumet Elem School,1440 W Vermont Ave,Calumet Park,60827 6328,6-8,41.659294,-87.657125
+070161320,02,2003,Burr Oak Academy,1441 W 124th St,Calumet Park,60827 5831,P-2,41.668612,-87.658035
+070161330,02,2001,Gen George Patton Elem School,13700 S Stewart Ave,Riverdale,60827 1629,P-8,41.646208,-87.631752
+070161330,02,3001,School Dist 133 Annex,150 W 137th St,Riverdale,60827 1613,P,41.646576,-87.625593
+070161350,02,1004,Orland Jr High School,14855 West Ave,Orland Park,60462 3144,6-8,41.621262,-87.862987
+070161350,02,1005,Jerling Junior High School,8851 W 151st St,Orland Park,60462 3450,6-8,41.616124,-87.83506
+070161350,02,1006,Century Junior High School,10801 W 159th St,Orland Park,60467 4533,6-8,41.60052,-87.891446
+070161350,02,2001,High Point Elem School,14825 West Ave,Orland Park,60462 3144,3-5,41.621581,-87.863015
+070161350,02,2002,Orland Park Elem School,9960 W 143rd St,Orland Park,60462 2008,P-2,41.63007,-87.882644
+070161350,02,2007,Prairie Elem School,14200 S 82nd Ave,Orland Park,60462 2306,K-3,41.632588,-87.819856
+070161350,02,2008,Liberty Elem School,8801 W 151st St,Orland Park,60462 3450,3-5,41.616422,-87.834317
+070161350,02,2010,Orland Center School,9407 W 151st St,Orland Park,60462 3205,K-2,41.615917,-87.848586
+070161350,02,2012,Centennial School,14101 Creek Crossing Dr,Orland Park,60467 7480,P-3,41.632773,-87.897886
+070161350,02,2013,Meadow Ridge School,10959 W 159th St,Orland Park,60467 4548,3-5,41.600526,-87.891156
+070161400,02,1003,Virgil I Grissom Middle School,17000 80th Ave,Tinley Park,60477 7806,6-8,41.58246,-87.812957
+070161400,02,1004,Prairie View Middle School,8500 175th St,Tinley Park,60487 2272,6-8,41.572538,-87.824685
+070161400,02,2001,Fernway Park Elem School,16600 S 88th Ave,Orland Park,60462 5702,P-5,41.621696,-87.834515
+070161400,02,2004,Helen Keller Elem School,7846 163rd St,Tinley Park,60477 1229,P-5,41.594915,-87.810349
+070161400,02,2005,John A Bannes Elem School,16835 Odell Ave,Tinley Park,60477 2672,P-5,41.585215,-87.796679
+070161400,02,2006,Christa McAuliffe School,8944 174th St,Tinley Park,60487 7307,P-5,41.574669,-87.837949
+070161400,02,2007,Millennium Elem School,17830 84th Ave,Tinley Park,60487 2373,P-5,41.564381,-87.8224
+070161420,02,1001,Jack Hille Middle School,5800 151st St,Oak Forest,60452 1940,6-8,41.617642,-87.760854
+070161420,02,2002,Ridge Early Childhood Center,5151 149th St,Oak Forest,60452 1417,"P,K",41.621244,-87.746485
+070161420,02,2003,Lee R Foster Elem School,5931 School St,Oak Forest,60452 1957,1-5,41.6147,-87.765671
+070161420,02,2004,Kerkstra Elem School,14950 Laramie Ave,Oak Forest,60452 1323,1-5,41.620464,-87.74701
+070161430,02,2001,Central Park Elem School,3621 151st St,Midlothian,60445 3701,P-8,41.618505,-87.710133
+070161430,02,2002,Kolmar Elem School,4500 143rd St,Midlothian,60445 2612,K-8,41.632796,-87.731744
+070161430,02,2004,Springfield Elem School,14620 Springfield Ave,Midlothian,60445 2833,P-6,41.62704,-87.7155
+070161430,02,2005,Spaulding School,14811 Turner Ave,Midlothian,60445 3628,P-3,41.623607,-87.701314
+070161435,02,1003,Kellar School,14123 S Lydia Ave,Robbins,60472 2255,6-8,41.636743,-87.709318
+070161435,02,2001,Childs Elem School,14123 S Lydia Ave,Robbins,60472 2255,K-3,41.636743,-87.709318
+070161435,02,2006,Posen Elem School,14545 S California Ave,Posen,60469 1201,4-5,41.628037,-87.688517
+070161435,02,2007,Turner Elem School,3847 W 135th St,Robbins,60472 1148,"P,K",41.647392,-87.715908
+070161435,02,2010,Gordon School,14100 S Harrison Ave,Posen,60469 1047,K-3,41.636965,-87.687799
+070161440,02,1002,Prairie-Hills Junior High School,16315 Richmond,Markham,60428,6-8,41.597671,-87.686807
+070161440,02,2003,Fieldcrest Elem School,4100 Wagman St,Oak Forest,60452 4342,K-5,41.594841,-87.722175
+070161440,02,2004,Highlands Elem School,3420 Laurel Ln,Hazel Crest,60429 1011,K-5,41.579673,-87.700204
+070161440,02,2005,Markham Park Elem School,16239 Lawndale Ave,Markham,60428 4440,K-5,41.594615,-87.706395
+070161440,02,2007,Nob Hill Elem School,3701 168th St,Country Club Hills,60478 2123,K-5,41.58449,-87.707166
+070161440,02,2009,Chateaux School,3600 Chambord Ln,Hazel Crest,60429 2247,P-5,41.56414,-87.701338
+070161440,02,2010,Mae Jemison School,3450 W 177th St,Hazel Crest,60429 2002,P-5,41.568266,-87.700544
+070161450,02,1001,Arbor Park Middle School,17303 Central Ave,Oak Forest,60452 4920,5-8,41.606454,-87.756126
+070161450,02,2002,Kimberly Heights Elem School,6141 Kimberly Dr,Tinley Park,60477 1970,"P,K",41.590773,-87.768374
+070161450,02,2003,Scarlet Oak Elem School,5731 Albert Dr,Oak Forest,60452 2803,3-4,41.607795,-87.758971
+070161450,02,2004,Morton Gingerwood Elem School,16936 Forest Ave,Oak Forest,60452 4517,1-2,41.584827,-87.738336
+070161460,04,1001,Central Middle School,18146 Oak Park Ave,Tinley Park,60477 3944,6-8,41.564643,-87.784125
+070161460,04,2002,Bert H Fulton School,6601 171st St,Tinley Park,60477 3514,P-5,41.580491,-87.779878
+070161460,04,2003,Memorial Elem School,6701 179th St,Tinley Park,60477 4116,P-5,41.566134,-87.781621
+070161460,04,2005,Walter F Fierke Ed Center,6535 Victoria Dr,Oak Forest,60452 2659,P-5,41.609686,-87.779492
+070161460,04,2006,Arnold W Kruse Ed Center,7617 Hemlock Dr,Orland Park,60462 4253,P-5,41.611266,-87.804083
+070161470,02,1001,Rosa L Parks Middle School,14700 Robey Ave,Dixmoor,60426 1526,6-8,41.622497,-87.665695
+070161470,02,2004,Lincoln Elem School,14100 Honore Ave,Dixmoor,60426 1115,P-5,41.633358,-87.662148
+070161470,02,2006,Washington Elem School,15248 Lincoln Ave,Harvey,60426 2949,P-5,41.612643,-87.663361
+070161470,02,2007,Martin L King Elem School,14600 Seeley Ave,Dixmoor,60426 1052,P-5,41.624298,-87.666929
+070161480,02,1002,Roosevelt Junior High School,111 W 146th St,Dolton,60419 1453,7-8,41.629973,-87.589361
+070161480,02,1003,Lincoln Junior High School,14151 Lincoln Ave,Dolton,60419 1023,7-8,41.637697,-87.605583
+070161480,02,1004,Washington Junior High,13900 S School St,Riverdale,60827 1925,7-8,41.642541,-87.629353
+070161480,02,2002,Riverdale School,325 W 142nd St,Riverdale,60827 2344,K-4,41.636954,-87.629941
+070161480,02,2003,Lincoln Elementary School,14151 Lincoln Ave,Dolton,60419 1023,K-6,41.637697,-87.605583
+070161480,02,2005,Roosevelt Elem School,111 W 146th St,Dolton,60419 1453,K-6,41.629973,-87.589361
+070161480,02,2006,Washington Elem School,13900 S School St,Riverdale,60827 1925,K-6,41.642541,-87.629353
+070161480,02,2007,Franklin Elementary School,14701 Chicago Rd,Dolton,60419 2015,K-6,41.628175,-87.607512
+070161480,02,2010,Park Elementary School,14200 S Wentworth Ave,Riverdale,60827 2520,K-6,41.636883,-87.62693
+070161480,02,3002,Early Childhood Cntr,560 W 144th St,Riverdale,60827 2605,P,41.633307,-87.635807
+070161490,02,1004,S T E M Academy,1650 Pulaski Rd,Calumet City,60409 3828,7-8,41.61565,-87.567992
+070161490,02,1005,Creative Communications Acad,1650 Pulaski Rd,Calumet City,60409 3828,7-8,41.61565,-87.567992
+070161490,02,1006,School of Fine Arts,1650 Pulaski Rd,Calumet City,60409 3828,7-8,41.61565,-87.567992
+070161490,02,2002,Diekman Elem School,15121 Dorchester Ave,Dolton,60419 2941,P-6,41.620538,-87.583047
+070161490,02,2005,Caroline Sibley Elem School,1550 Sibley Blvd,Calumet City,60409 2333,K-6,41.622925,-87.563401
+070161490,02,2006,Berger-Vandenberg Elem School,14833 Avalon Ave,Dolton,60419 2452,K-6,41.624899,-87.586735
+070161490,02,2009,Carol Moseley Braun School,1655 153rd St,Calumet City,60409 3842,1-6,41.617178,-87.564253
+070161490,02,2010,New Beginnings Learning Academy,15703 Clyde Ave,South Holland,60473 1920,K-6,41.609377,-87.573381
+070161500,02,1005,McKinley Jr High School,16949 Cottage Grove Ave,South Holland,60473 3089,6-8,41.587649,-87.597503
+070161500,02,2001,Greenwood Elem School,16800 Greenwood Ave,South Holland,60473 3193,P-3,41.590271,-87.591033
+070161500,02,2002,McKinley Elem School,850 E 170th St,South Holland,60473 3413,4-5,41.586459,-87.596183
+070161510,02,1001,Coolidge Middle School,15500 7th Ave,Phoenix,60426 2566,6-8,41.607989,-87.627308
+070161510,02,2002,Eisenhower School,16001 Minerva Ave,South Holland,60473 1776,2-3,41.604368,-87.590053
+070161510,02,2004,Madison School,15700 Orchid Dr,South Holland,60473 1300,4-5,41.610297,-87.604315
+070161510,02,2006,Taft School,393 E 163rd St,Harvey,60426 5951,P-1,41.593807,-87.633762
+070161520,02,1001,Brooks Middle School,14741 Wallace St,Harvey,60426 2448,7-8,41.621372,-87.631518
+070161520,02,2001,Bryant Elem School,14700 Main St,Harvey,60426 1923,K-6,41.622466,-87.643006
+070161520,02,2002,Maya Angelou Elem Sch,15748 Page Ave,Harvey,60426 4222,K-6,41.603574,-87.659723
+070161520,02,2004,Holmes Elem School,16000 Carse Ave,Harvey,60426 5212,K-6,41.599797,-87.639027
+070161520,02,2005,Lowell-Longfellow Elem School,15636 Lexington Ave,Harvey,60426 4313,K-6,41.605631,-87.6496
+070161520,02,2007,Sandburg Elem School,14500 Myrtle Ave,Harvey,60426 1235,K-6,41.627495,-87.652534
+070161520,02,2008,Whittier Elem School,71 E 152nd St,Harvey,60426 3154,K-6,41.613698,-87.651679
+070161520,02,3001,Riley Preschool,16001 Lincoln Ave,Harvey,60426 4916,P,41.599154,-87.663173
+070161520,02,3002,Early Childhood Center,71 E 152nd St,Harvey,60426 3154,P,41.613698,-87.651679
+070161520,02,3003,Field School,14700 Wallace St,Harvey,60426 2449,12,41.622467,-87.631678
+070161525,02,2001,Barack H Obama Learning Academy,16448 S Park Ave,Markham,60428,P-8,41.590929,-87.653524
+070161525,02,2005,Jesse C White Learning Academy,16910 S Western Ave,Hazel Crest,60429,P-8,41.582675,-87.675262
+070161530,02,1003,James Hart School,18220 Morgan St,Homewood,60430 2471,7-8,41.559505,-87.641519
+070161530,02,2002,Winston Churchill School,1300 190th St,Homewood,60430 4216,3-4,41.544382,-87.647386
+070161530,02,2005,Willow School,1804 Willow Rd,Homewood,60430 3322,P-2,41.553644,-87.660452
+070161530,02,2006,Millennium School,18211 Aberdeen St,Homewood,60430 2417,5-6,41.559098,-87.64348
+070161540,02,2002,Wolcott School,200 N Wolcott St,Thornton,60476 1254,K-8,41.569713,-87.614615
+070161545,02,2001,Burnham Elem School,13945 S Green Bay Ave,Burnham,60633 1671,P-8,41.641592,-87.541256
+070161550,02,1001,Wentworth Jr High School,560 Superior Ave,Calumet City,60409 3439,6-8,41.619625,-87.544564
+070161550,02,2002,Wilson Elementary School,560 Wentworth Ave,Calumet City,60409 3493,P-2,41.61957,-87.530078
+070161550,02,2004,Wentworth Intermediate School,530 Superior Ave,Calumet City,60409 3439,3-5,41.620756,-87.544572
+070161560,02,2001,Lincoln Elem School,410 157th St,Calumet City,60409 4704,P-8,41.610449,-87.534892
+070161570,02,1001,Schrum Memorial School,485 165th St,Calumet City,60409 6255,6-8,41.590171,-87.53824
+070161570,02,2001,Hoover Elem School,1260 Superior Ave,Calumet City,60409 5731,P-5,41.599821,-87.544126
+070161580,02,1004,Memorial Jr High School,2721 Ridge Rd,Lansing,60438 2933,6-8,41.564578,-87.550483
+070161580,02,2001,Coolidge Elementary School,17845 Henry St,Lansing,60438 2357,K-5,41.571549,-87.53437
+070161580,02,2005,Oak Glen Elem School,2101 182nd St,Lansing,60438 1734,K-5,41.564578,-87.565443
+070161580,02,2006,Reavis Elem School,17121 Roy St,Lansing,60438 1377,K-5,41.584351,-87.536869
+070161580,02,3001,Lester Crawl Primary Ctr,18300 Greenbay Ave,Lansing,60438 3009,P-1,41.562884,-87.540994
+070161590,02,1001,Colin Powell Middle Sch,20600 Matteson Ave,Matteson,60443 2920,6-8,41.522004,-87.73969
+070161590,02,2002,Sieden Prairie Elementary School,725 Notre Dame Dr,Matteson,60443 1526,K-5,41.513265,-87.750319
+070161590,02,2004,Neil Armstrong Elem School,5030 Imperial Dr,Richton Park,60471 1604,P-5,41.477622,-87.739061
+070161590,02,2005,Woodgate Elem School,101 Central Ave,Matteson,60443 1111,P-5,41.525318,-87.751618
+070161590,02,2006,Marya Yates Elementary School,6131 Allemong Dr,Matteson,60443 1061,P-5,41.522162,-87.764508
+070161600,02,1001,Southwood Middle School,18635 Lee St,Country Club Hills,60478 5203,7-8,41.549559,-87.729193
+070161600,02,2003,Zenon J Sykuta  School,4301 180th St,Country Club Hills,60478 5101,P-3,41.563561,-87.718595
+070161600,02,2004,Meadowview  School,4701 179th St,Country Club Hills,60478 4700,4-6,41.565816,-87.731361
+070161610,02,1003,Parker Junior High School,2810 School St,Flossmoor,60422 1125,6-8,41.545077,-87.685643
+070161610,02,2001,Flossmoor Hills Elem School,3721 Beech St,Flossmoor,60422 1020,P-5,41.54776,-87.706767
+070161610,02,2002,Heather Hill Elem School,1439 Lawrence Cres,Flossmoor,60422 1716,K-5,41.53553,-87.68406
+070161610,02,2006,Serena Hills Elem School,255 Pleasant Dr,Chicago Heights,60411 1035,K-5,41.532709,-87.652714
+070161610,02,2007,Western Avenue Elem School,940 Western Ave,Flossmoor,60422 1366,P-5,41.545384,-87.674887
+070161620,02,1004,O W Huth Middle School,3718 213th Pl,Matteson,60443 2575,7-8,41.501582,-87.706459
+070161620,02,2001,Arcadia Elem School,20519 Arcadian Dr,Olympia Fields,60461 1396,K-3,41.515762,-87.702833
+070161620,02,2003,Indiana Elem School,165 Indiana St,Park Forest,60466 1078,4-6,41.501056,-87.693394
+070161620,02,2005,Matteson Elem School,21245 Main St,Matteson,60443 2561,1-3,41.5031,-87.703236
+070161620,02,2008,Sauk Elem School,4435 S Churchill Dr,Richton Park,60471 1101,4-6,41.485626,-87.724243
+070161620,02,2009,Illinois School,210 Illinois St,Park Forest,60466 1100,K-8,41.502363,-87.67874
+070161620,02,2010,Richton Square School,22700 Richton Square Rd,Richton Park,60471 2504,"P,K",41.476859,-87.708033
+070161630,02,1010,Michelle Obama Sch of Technology and the Arts,215 Wilson St,Park Forest,60466 1528,4-8,41.487242,-87.696322
+070161630,02,2002,Barack Obama Sch of Leadership and STEM,401 Concord Dr,Chicago Heights,60411 3916,4-8,41.497374,-87.661497
+070161630,02,2003,Blackhawk Primary Center,130 Blackhawk Dr,Park Forest,60466 2316,K-3,41.445437,-87.677647
+070161630,02,2007,Mohawk Primary Center,301 Mohawk St,Park Forest,60466 1907,K-3,41.478437,-87.694995
+070161630,02,2008,21st Century Primary Center,240 S Orchard Dr,Park Forest,60466 2045,K-3,41.477028,-87.681397
+070161630,02,3001,Algonquin Primary Center,170 Algonquin St,Park Forest,60466 1425,P,41.493937,-87.667895
+070161670,02,1002,Brookwood Jr High School,201 E Glenwood Lansing Rd,Glenwood,60425 1742,7-8,41.542776,-87.606099
+070161670,02,2001,Brookwood Middle School,200 E Glenwood Lansing Rd,Glenwood,60425 1751,5-6,41.542476,-87.606099
+070161670,02,2003,Longwood Elem School,441 N Longwood Dr,Glenwood,60425 1211,P-4,41.554303,-87.631127
+070161670,02,2004,Hickory Bend Elem School,600 E 191st Pl,Glenwood,60425 1924,K-4,41.541657,-87.593862
+070161680,04,1003,Rickover Jr High School,22151 Torrence Ave,Sauk Village,60411 5141,6-8,41.488516,-87.557875
+070161680,04,2001,Strassburg Elem,2002 223rd St,Sauk Village,60411 5029,3-5,41.484424,-87.567578
+070161680,04,2002,Wagoner Elem,1831 215th Pl,Sauk Village,60411 4405,P-2,41.496641,-87.571345
+070161690,02,1001,Cottage Grove Upper Grade Center,800 E 14th St,Ford Heights,60411 2085,5-8,41.506124,-87.596933
+070161690,02,2002,Medgar Evers Primary Academic Center,1101 E 10th St,Ford Heights,60411 2230,P-4,41.513684,-87.590711
+070161700,02,2001,Washington-McKinley Elem Sch,25 W 16th Pl,Chicago Heights,60411 3475,K-8,41.501327,-87.642207
+070161700,02,2002,Roosevelt Elem School,1345 Sunnyside Ave,Chicago Heights,60411 2571,K-8,41.507031,-87.65236
+070161700,02,2005,Wilson Elem School,422 W 16th Pl,Chicago Heights,60411 3224,K-8,41.501189,-87.660518
+070161700,02,2007,Garfield Elem School,140 E 23rd St,Chicago Heights,60411 4247,K-8,41.494181,-87.632028
+070161700,02,2008,U S Grant Elem School,2712 Miller Ave,South Chicago Heights,60411 4742,K-8,41.489531,-87.640427
+070161700,02,2009,Greenbriar Elem School,101 W Greenbriar Ave,Chicago Heights,60411 1709,K-8,41.524264,-87.645015
+070161700,02,2011,Jefferson Elem School,176 E 11th St,Chicago Heights,60411 2937,K-8,41.511453,-87.632657
+070161700,02,2012,Kennedy Elem School,1013 Division St,Chicago Heights,60411 2481,K-8,41.513178,-87.664514
+070161700,02,2013,Lincoln Elem School,1520 Center Ave,Chicago Heights,60411 3634,K-4,41.503652,-87.629193
+070161700,02,3001,Highland School,828 Willow Dr,Chicago Heights,60411 2169,P,41.516225,-87.649322
+070161710,02,1001,Heritage Middle School,19250 Burnham Ave,Lansing,60438 3822,5-8,41.546,-87.539359
+070161710,02,2001,Nathan Hale Elem School,19055 Burnham Ave,Lansing,60438 3605,P-4,41.549476,-87.539098
+070161720,02,2001,Sandridge Elem School,2950 Glenwood Dyer Rd,Lynwood,60411 9755,P-8,41.51806,-87.545395
+070161940,02,1001,Columbia Central School,94 Richton Rd,Steger,60475 1821,5-8,41.463634,-87.653026
+070161940,02,2002,Steger Intermediate Center,100 Richton Rd,Steger,60475 1826,2-4,41.464367,-87.655974
+070161940,02,2005,Steger Primary Center,3341 Miller Ave,South Chicago Heights,60411 5415,P-1,41.478854,-87.64021
+070162050,17,0001,Thornton Township High School,15001 Broadway Ave,Harvey,60426 2272,9-12,41.617333,-87.644594
+070162050,17,0002,Thornridge High School,15000 Cottage Grove Ave,Dolton,60419 2738,9-12,41.62241,-87.597809
+070162050,17,0003,Thornwood High School,17101 S Park Ave,South Holland,60473 3484,9-12,41.586251,-87.607176
+070162060,17,0001,Bloom High School,101 W 10th St,Chicago Heights,60411 2100,9-12,41.513192,-87.645238
+070162060,17,0002,Bloom Trail High School,22331 Cottage Grove Ave,Chicago Heights,60411 5652,9-12,41.515714,-87.597042
+070162060,17,3001,Dist 206 Alternative High School,100 W 10th St,Chicago Heights,60411 2002,9-12,41.513492,-87.645238
+070162100,17,0001,Lemont Twp High School,800 Porter St,Lemont,60439 3777,9-12,41.674727,-87.993335
+070162150,17,0001,Thornton Fractnl No High School,755 Pulaski Rd,Calumet City,60409 4030,9-12,41.615318,-87.543591
+070162150,17,0002,Thornton Fractnl So High School,18500 Burnham Ave,Lansing,60438 3046,9-12,41.559093,-87.5393
+070162170,16,0001,Argo Community High School,7329 W 63rd St,Summit,60501 1817,9-12,41.777062,-87.803973
+070162180,16,0001,DD Eisenhower High Sch (Campus),12700 Sacramento Ave,Blue Island,60406 1822,9-12,41.662309,-87.694874
+070162180,16,0004,H L Richards High Sch(Campus),10601 Central Ave,Oak Lawn,60453 5038,9-12,41.702356,-87.759528
+070162180,16,0007,A B Shepard High Sch (Campus),13049 S Ridgeland Ave,Palos Heights,60463 2625,9-12,41.654008,-87.777188
+070162180,16,3001,Delta Learning Center,3940 W Midlothian Tpke,Robbins,60472 1539,9-12,41.641238,-87.720068
+070162200,17,0001,Reavis High School,6034 W 77th St,Burbank,60459 3112,9-12,41.75228,-87.779501
+070162270,17,0001,Rich East Campus High School,300 Sauk Trl,Park Forest,60466 1640,9-12,41.480462,-87.693595
+070162270,17,0002,Rich Central Campus High School,3600 W 203rd St,Olympia Fields,60461 1025,9-12,41.520854,-87.703766
+070162270,17,0003,Rich South Campus High School,5000 Sauk Trl,Richton Park,60471 1000,9-12,41.484174,-87.73844
+070162280,16,0001,Bremen High School,15203 Pulaski Rd,Midlothian,60445 3755,9-12,41.616384,-87.717176
+070162280,16,0002,Tinley Park High School,6111 175th St,Tinley Park,60477 3018,9-12,41.573348,-87.767363
+070162280,16,0003,Hillcrest High School,17401 Pulaski Rd,Country Club Hills,60478 4600,9-12,41.572999,-87.713632
+070162280,16,0004,Oak Forest High School,15201 Central Ave,Oak Forest,60452 2101,9-12,41.615944,-87.75643
+070162290,16,0001,Oak Lawn Comm High School,9400 Southwest Hwy,Oak Lawn,60453 2372,9-12,41.722481,-87.765742
+070162300,13,0001,Carl Sandburg High School,13300 S La Grange Rd,Orland Park,60462 1325,9-12,41.651764,-87.854075
+070162300,13,0002,Amos Alonzo Stagg High School,8015 W 111th St,Palos Hills,60465 2203,9-12,41.689324,-87.816993
+070162300,13,0003,Victor J Andrew High School,9001 171st St,Orland Hills,60487 6185,9-12,41.57959,-87.837486
+070162310,16,0001,Evergreen Park High School,9901 S Kedzie Ave,Evergreen Park,60805 3416,9-12,41.71361,-87.701584
+070162330,16,0001,Homewood-Flossmoor High School,999 Kedzie Ave,Flossmoor,60422 2248,9-12,41.53895,-87.693946
+070169010,25,001C,Southland College Prep,4601 Sauk Trl,Richton Park,60471 1470,9-12,41.48416,-87.727185
+150162990,25,0001,Amundsen High School,5110 N Damen Ave,Chicago,60625 1317,9-12,41.974699,-87.679362
+150162990,25,0003,Bogan High School,3939 W 79th St,Chicago,60652 2301,9-12,41.749525,-87.720292
+150162990,25,0006,Carver Military Academy HS,13100 S Doty Ave,Chicago,60827 1597,9-12,41.65903,-87.584206
+150162990,25,0011,Farragut Career Academy HS,2345 S Christiana Ave,Chicago,60623 3217,"P,9-12",41.849108,-87.708683
+150162990,25,0012,Fenger Academy High School,11220 S Wallace St,Chicago,60628 4728,9-12,41.690221,-87.637619
+150162990,25,0013,Foreman High School,3235 N Leclaire Ave,Chicago,60641 4290,9-12,41.939378,-87.754111
+150162990,25,0014,Back of The Yards IB HS,2111 W 47th St,Chicago,60609 4011,9-10,41.808346,-87.677303
+150162990,25,0015,Gage Park High School,5630 S Rockwell St,Chicago,60629 1030,9-12,41.791392,-87.689007
+150162990,25,0016,Harlan Community Academy HS,9652 S Michigan Ave,Chicago,60628 1415,7-12,41.718931,-87.620676
+150162990,25,0017,Harper High School,6520 S Wood St,Chicago,60636 3002,9-12,41.775396,-87.669137
+150162990,25,0019,Hirsch Metropolitan High School,7740 S Ingleside Ave,Chicago,60619 3207,9-12,41.754241,-87.6018
+150162990,25,0020,Hubbard High School,6200 S Hamlin Ave,Chicago,60629 4030,9-12,41.780404,-87.717903
+150162990,25,0021,Hyde Park Academy High School,6220 S Stony Island Ave,Chicago,60637 2998,9-12,41.782398,-87.58666
+150162990,25,0022,Kelly High School,4136 S California Ave,Chicago,60632 1817,9-12,41.818708,-87.694677
+150162990,25,0023,Kelvyn Park High School,4343 W Wrightwood Ave,Chicago,60639 2060,7-12,41.927854,-87.735619
+150162990,25,0024,Kennedy High School,6325 W 56th St,Chicago,60638 2539,9-12,41.790394,-87.780044
+150162990,25,0025,Kenwood Academy High School,5015 S Blackstone Ave,Chicago,60615 3086,7-12,41.803994,-87.590385
+150162990,25,0026,Lake View High School,4015 N Ashland Ave,Chicago,60613 2593,9-12,41.954555,-87.668904
+150162990,25,0027,Lane Technical High School,2501 W Addison St,Chicago,60618 5902,7-12,41.94657,-87.691935
+150162990,25,0029,Marshall Metropolitan High School,3250 W Adams St,Chicago,60624 2901,9-12,41.87852,-87.707074
+150162990,25,0030,Mather High School,5835 N Lincoln Ave,Chicago,60659 4610,9-12,41.987722,-87.702583
+150162990,25,0031,Morgan Park High School,1744 W Pryor Ave,Chicago,60643 3497,7-12,41.691591,-87.664286
+150162990,25,0034,Phillips Academy High School,244 E Pershing Rd,Chicago,60653 2222,9-12,41.823944,-87.619968
+150162990,25,0035,Roosevelt High School,3436 W Wilson Ave,Chicago,60625 5318,9-12,41.964903,-87.71407
+150162990,25,0036,Schurz High School,3601 N Milwaukee Ave,Chicago,60641 3033,9-12,41.946116,-87.735626
+150162990,25,0037,Senn High School,5900 N Glenwood Ave,Chicago,60660 3312,9-12,41.989156,-87.665112
+150162990,25,0039,King College Prep High School,4445 S Drexel Blvd,Chicago,60653 3551,9-12,41.81421,-87.603848
+150162990,25,003C,Perspectives Charter High School,1930 S Archer Ave,Chicago,60616 6505,6-12,41.856038,-87.628554
+150162990,25,0041,Steinmetz College Prep HS,3030 N Mobile Ave,Chicago,60634 4041,9-12,41.935957,-87.783566
+150162990,25,0042,Sullivan High School,6631 N Bosworth Ave,Chicago,60626 4223,9-12,42.002305,-87.66914
+150162990,25,0043,Taft High School,6530 W Bryn Mawr Ave,Chicago,60631 3185,7-12,41.983033,-87.790786
+150162990,25,0044,Tilden Career Communty Academy HS,4747 S Union Ave,Chicago,60609 4437,9-12,41.807771,-87.642931
+150162990,25,0046,Von Steuben Metro Science HS,5039 N Kimball Ave,Chicago,60625 4905,9-12,41.974068,-87.713516
+150162990,25,0047,Lincoln Park High School,2001 N Orchard St,Chicago,60614 4404,9-12,41.918063,-87.646118
+150162990,25,0048,Washington G High School,3535 E 114th St,Chicago,60617 7021,9-12,41.688074,-87.53952
+150162990,25,0049,Wells Community Academy HS,936 N Ashland Ave,Chicago,60622 5118,9-12,41.898897,-87.667519
+150162990,25,004C,Youth Connections Charter HS,10 W 35th St,Chicago,60616 3717,10-12,41.831175,-87.626191
+150162990,25,0052,Crane Medical Prep HS,2245 W Jackson Blvd,Chicago,60612 2910,9-11,41.877437,-87.682866
+150162990,25,0053,Disney II Magnet HS,3900 N Lawndale Ave,Chicago,60618 3108,7-11,41.952084,-87.720208
+150162990,25,005C,North Lawndale Charter HS,1313 S Sacramento Dr,Chicago,60623 2218,8-12,41.865612,-87.701074
+150162990,25,006C,Noble Street Charter Schools,1 N State St Fl 7TH,Chicago,60602 3302,6-12,41.882451,-87.627853
+150162990,25,007C,Young Womens Leadership Chartr HS,2641 S Calumet Ave,Chicago,60616 2901,9-12,41.845221,-87.618704
+150162990,25,008C,Aspira Charter Schools,1711 N California Ave,Chicago,60647 5103,6-12,41.912158,-87.696891
+150162990,25,009C,Ace Technical Charter High School,5410 S State St,Chicago,60609 6342,9-12,41.796094,-87.625889
+150162990,25,010C,Urban Prep Chtr Acad Englewood HS,6201 S Stewart Ave,Chicago,60621 3247,9-12,41.781495,-87.634939
+150162990,25,012C,IHSCA Charter High School,2520 S Western Ave,Chicago,60608 4809,9-12,41.845943,-87.685627
+150162990,25,013C,Urban Prep Chtr Acad Bronzeville HS,521 E 35th St,Chicago,60616 3889,9-12,41.830972,-87.614292
+150162990,25,015C,EPIC Academy High School,8255 S Houston Ave,Chicago,60617 2191,9-12,41.745491,-87.550203
+150162990,25,016C,Urban Prep Chtr Acad West Campus HS,1326 W 14th Pl,Chicago,60608 2106,9-12,41.862615,-87.659486
+150162990,25,017C,Prologue - Johnston Fine Arts HS,1551 W 95th St,Chicago,60643 1329,9-12,41.721115,-87.662287
+150162990,25,019C,Legal Prep Academy Charter HS,4319 W Washington Blvd,Chicago,60624 2232,9-12,41.881801,-87.733398
+150162990,25,020C,IJLA Charter High School,2570 S Blue Island Ave,Chicago,60608 4817,7-12,41.845496,-87.684091
+150162990,25,022C,Intrinsic Charter High School,4540 W Belmont Ave,Chicago,60641 4541,"7,9-10",41.939063,-87.740497
+150162990,25,0526,Chicago Vocational Career Acad HS,2100 E 87th St,Chicago,60617 3011,9-12,41.737251,-87.57268
+150162990,25,0531,Dunbar Vocational Career Acad HS,3000 S King Dr,Chicago,60616 3452,9-12,41.840528,-87.617316
+150162990,25,0533,Jones College Prep High School,700 S State St,Chicago,60605 2109,9-12,41.872797,-87.627626
+150162990,25,0534,Prosser Career Academy HS,2148 N Long Ave,Chicago,60639 2914,9-12,41.920238,-87.761093
+150162990,25,0536,Richards Career Academy HS,5009 S Laflin St,Chicago,60609 4940,9-12,41.803021,-87.662241
+150162990,25,0537,Simeon Career Academy High School,8147 S Vincennes Ave,Chicago,60620 1761,9-12,41.745827,-87.635351
+150162990,25,0543,Corliss High School,821 E 103rd St,Chicago,60628 3003,9-12,41.707344,-87.60351
+150162990,25,0545,Clemente Community Academy HS,1147 N Western Ave,Chicago,60622 2931,9-12,41.902308,-87.686861
+150162990,25,0616,Manley Career Academy High School,2935 W Polk St,Chicago,60612 3904,9-12,41.870876,-87.69924
+150162990,25,0617,Curie Metropolitan High School,4959 S Archer Ave,Chicago,60632 3622,9-12,41.802975,-87.721746
+150162990,25,0763,Julian High School,10330 S Elizabeth St,Chicago,60643 2394,9-12,41.706241,-87.65381
+150162990,25,0764,Young Magnet High School,211 S Laflin St,Chicago,60607 5305,7-12,41.878808,-87.664198
+150162990,25,0766,Robeson High School,6835 S Normal Blvd,Chicago,60621 2535,9-12,41.769876,-87.637121
+150162990,25,0767,Juarez Community Academy HS,2150 S Laflin St,Chicago,60608 4409,9-12,41.853033,-87.663781
+150162990,25,0772,Chicago HS for Agricult Sciences,3857 W 111th St,Chicago,60655 4009,9-12,41.691137,-87.719221
+150162990,25,0779,Hancock College Preparatory HS,4034 W 56th St,Chicago,60629 4442,9-12,41.791532,-87.724375
+150162990,25,0788,Brooks College Prep Academy HS,250 E 111th St,Chicago,60628 4324,9-12,41.69266,-87.629057
+150162990,25,0794,Northside College Preparatory Hs,5501 N Kedzie Ave,Chicago,60625 3923,9-12,41.981158,-87.708661
+150162990,25,0795,Chicago Military Academy HS,3519 S Giles Ave,Chicago,60653 1105,9-12,41.830736,-87.619182
+150162990,25,0796,Payton College Preparatory HS,1034 N Wells St,Chicago,60610 2513,9-12,41.901406,-87.634534
+150162990,25,0799,Hope College Prep High School,5515 S Lowe Ave,Chicago,60621 2920,9-12,41.793757,-87.641347
+150162990,25,0803,Phoenix Military Academy HS,145 S Campbell Ave,Chicago,60612 2923,9-12,41.883944,-87.688401
+150162990,25,0818,Spry Community Links High School,2400 S Marshall Blvd,Chicago,60623 4146,9-12,41.848228,-87.699132
+150162990,25,0820,Chicago Academy High School,3400 N Austin Ave,Chicago,60634 4229,9-12,41.942262,-87.776356
+150162990,25,0824,Bowen High School,2710 E 89th St,Chicago,60617 3192,9-12,41.733797,-87.558101
+150162990,25,0825,North-Grand High School,4338 W Wabansia Ave,Chicago,60639 4837,9-12,41.911742,-87.735049
+150162990,25,0826,Raby High School,3545 W Fulton Blvd,Chicago,60624 1928,9-12,41.886152,-87.714648
+150162990,25,0827,Clark Acad Prep Magnet High Schl,5101 W Harrison St,Chicago,60644 5102,9-12,41.872833,-87.75207
+150162990,25,0828,Rickover Naval Academy High Schl,5900 N Glenwood Ave,Chicago,60660 3312,9-12,41.989156,-87.665112
+150162990,25,0829,Uplift Community High School,900 W Wilson Ave,Chicago,60640 5707,9-12,41.965315,-87.652399
+150162990,25,0830,World Language High School,3120 S Kostner Ave,Chicago,60623 4842,9-12,41.836653,-87.734215
+150162990,25,0831,Douglass Academy High School,543 N Waller Ave,Chicago,60644 1451,9-12,41.890484,-87.767787
+150162990,25,0832,Devry Advantage Academy High Schl,3300 N Campbell Ave,Chicago,60618 5916,11-12,41.941332,-87.690801
+150162990,25,0833,Lindblom Math & Science Acad HS,6130 S Wolcott Ave,Chicago,60636 2100,7-12,41.782453,-87.671713
+150162990,25,0834,Bronzeville Scholastic HS,4934 S Wabash Ave,Chicago,60615 2115,9-12,41.804983,-87.624497
+150162990,25,0835,School of Social Justice HS,3120 S Kostner Ave,Chicago,60623 4842,9-12,41.836653,-87.734215
+150162990,25,0836,Multicultural Acad of Scholarshp HS,3120 S Kostner Ave,Chicago,60623 4842,9-12,41.836653,-87.734215
+150162990,25,0837,Infinity Math  Science & Tech HS,3120 S Kostner Ave,Chicago,60623 4842,9-12,41.836653,-87.734215
+150162990,25,0839,Austin Bus & Entrepreneurship HS,231 N Pine Ave,Chicago,60644 2333,9-12,41.884715,-87.763188
+150162990,25,0840,Austin Polytechnical Academy HS,231 N Pine Ave,Chicago,60644 2333,9-12,41.884715,-87.763188
+150162990,25,0841,Collins Academy High School,1313 S Sacramento Dr,Chicago,60623 2218,9-12,41.865612,-87.701074
+150162990,25,0842,Marine Math and Science Academy HS,145 S Campbell Ave,Chicago,60612 2923,10-12,41.883944,-87.688401
+150162990,25,0843,Team Englewood Comm Acad HS,6201 S Stewart Ave,Chicago,60621 3247,9-12,41.781495,-87.634939
+150162990,25,0844,Voise Academy High School,231 N Pine Ave,Chicago,60644 2333,9-12,41.884715,-87.763188
+150162990,25,0846,Community Services West High Sch,1239 S Pulaski Rd,Chicago,60623 1234,11-12,41.865473,-87.724997
+150162990,25,0847,Orr Academy High School,730 N Pulaski Rd,Chicago,60624 1063,9-12,41.894092,-87.726194
+150162990,25,0848,Air Force Acad High School,3630 S Wells St,Chicago,60609 1833,9-12,41.828495,-87.632804
+150162990,25,0849,Alcott Humanities High School,2957 N Hoyne Ave,Chicago,60618 8208,9-12,41.935118,-87.680502
+150162990,25,0850,Chicago Technology Academy HS,1301 W 14th St,Chicago,60608 1409,9-12,41.863535,-87.659024
+150162990,25,0851,Chicago HS for the Arts,2714 W Augusta Blvd,Chicago,60622 4459,9-12,41.899445,-87.694793
+150162990,25,0855,Ogden Int High School,1250 W Erie St,Chicago,60642 5714,6-12,41.893629,-87.658368
+150162990,25,0856,Williams Medical Prep High Sch,4934 S Wabash Ave,Chicago,60615 2115,9-12,41.804983,-87.624497
+150162990,25,0857,Westinghouse High School,3223 W Franklin Blvd,Chicago,60624 1502,9-12,41.889899,-87.708111
+150162990,25,0859,Solorio Academy High School,5400 S St Louis Ave,Chicago,60632 3287,9-12,41.795081,-87.710949
+150162990,25,0860,South Shore Intl Col Prep HS,1955 E 75th St,Chicago,60649 3688,9-12,41.758717,-87.576994
+150162990,25,0861,Goode STEM Academy HS,7651 S Homan Ave,Chicago,60652 1525,9-12,41.753975,-87.707309
+150162990,25,0862,Chicago Excel Academy HS,1257 W 111th St,Chicago,60643 4509,9-12,41.692072,-87.653266
+150162990,25,201C,Chicago International Charter,11 E Adams St Ste 600,Chicago,60603 6330,K-12,41.879343,-87.627534
+150162990,25,203C,Shabazz International Chrtr Schls,7823 S Ellis Ave,Chicago,60619 3213,"K-8,12",41.752754,-87.600219
+150162990,25,2046,Jackson M Elem School,917 W 88th St,Chicago,60620 3204,P-8,41.734359,-87.646637
+150162990,25,2048,Green  W Elem School,1150 W 96th St,Chicago,60643 1461,P-8,41.719063,-87.652158
+150162990,25,204C,Univ of Chicago Charter Schools,1313 E 60th St,Chicago,60637 2830,K-12,41.785919,-87.594189
+150162990,25,2051,Addams Elem School,10810 S Avenue H,Chicago,60617 6726,P-8,41.698935,-87.539057
+150162990,25,2052,Agassiz Elem School,2851 N Seminary Ave,Chicago,60657 4363,P-8,41.93372,-87.656174
+150162990,25,2053,Alcott Elem School,2625 N Orchard St,Chicago,60614 1573,P-8,41.929824,-87.646329
+150162990,25,2054,Aldridge Elem School,630 E 131st St,Chicago,60827 1309,P-8,41.65747,-87.607112
+150162990,25,2058,Armour Elem School,950 W 33rd Pl,Chicago,60608 6712,P-8,41.833935,-87.649696
+150162990,25,2059,Armstrong G Elem IntL Studies,2110 W Greenleaf Ave,Chicago,60645 3620,P-8,42.010251,-87.683671
+150162990,25,205C,UNO Academy Charter Schools,954 W Washington Blvd Fl 3,Chicago,60607 2224,K-12,41.883225,-87.651271
+150162990,25,2062,Audubon Elem School,3500 N Hoyne Ave,Chicago,60618 6112,P-8,41.945158,-87.680928
+150162990,25,2063,Avalon Park Elem School,8045 S Kenwood Ave,Chicago,60619 3494,P-8,41.748784,-87.591627
+150162990,25,2066,Barnard Elem Comp Math & Sci Ctr,10354 S Charles St,Chicago,60643 2998,P-8,41.705994,-87.658497
+150162990,25,2067,Barry Elem School,2828 N Kilbourn Ave,Chicago,60641 5381,P-6,41.932133,-87.739415
+150162990,25,2068,Barton Elem School,7650 S Wolcott Ave,Chicago,60620 5227,P-8,41.754794,-87.670986
+150162990,25,2069,Bass Elem School,1140 W 66th St,Chicago,60621 1240,P-8,41.774317,-87.653279
+150162990,25,206C,Locke A Elem Charter Academy,3141 W Jackson Blvd,Chicago,60612 2729,P-8,41.877186,-87.70457
+150162990,25,2070,Bateman Elem School,4220 N Richmond St,Chicago,60618 2616,P-8,41.958187,-87.702189
+150162990,25,2072,Nicholson Technology Acad Elem Sch,6006 S Peoria St,Chicago,60621 2114,P-8,41.784014,-87.647157
+150162990,25,2078,Beaubien Elem School,5025 N Laramie Ave,Chicago,60630 2326,P-8,41.972359,-87.757522
+150162990,25,2079,Beethoven Elem School,25 W 47th St,Chicago,60609 4627,P-8,41.809346,-87.628186
+150162990,25,2080,Beidler Elem School,3151 W Walnut St,Chicago,60612 1836,P-8,41.885261,-87.704846
+150162990,25,2081,Belding Elem School,4257 N Tripp Ave,Chicago,60641 2042,P-8,41.958273,-87.73395
+150162990,25,2082,Bell Elem School,3730 N Oakley Ave,Chicago,60618 4813,K-8,41.949144,-87.686045
+150162990,25,2083,Bennett Elem School,10115 S Prairie Ave,Chicago,60628 2135,P-8,41.710643,-87.617356
+150162990,25,2086,Black Magnet Elem School,9101 S Euclid Ave,Chicago,60617 3749,K-8,41.729895,-87.576753
+150162990,25,2087,Blaine Elem School,1420 W Grace St,Chicago,60613 2802,P-8,41.950543,-87.665325
+150162990,25,2088,Bond Elem School,7050 S May St,Chicago,60621 1114,P-8,41.765963,-87.653077
+150162990,25,2089,Boone Elem School,6710 N Washtenaw Ave,Chicago,60645 4511,P-8,42.003245,-87.697497
+150162990,25,208C,LEARN Charter Schools,1132 S Homan Ave,Chicago,60624 4344,K-8,41.867187,-87.710718
+150162990,25,2090,Bradwell Comm Arts & Sci Elem Sch,7736 S Burnham Ave,Chicago,60649 4702,P-8,41.754809,-87.557192
+150162990,25,2092,Haley Elem Academy,11411 S Eggleston Ave,Chicago,60628 4737,P-8,41.686822,-87.633598
+150162990,25,2093,Brennemann Elem School,4251 N Clarendon Ave,Chicago,60613 1523,P-8,41.959971,-87.649705
+150162990,25,2094,Brentano Elem Math & Science Acad,2723 N Fairfield Ave,Chicago,60647 1827,P-8,41.930614,-87.696239
+150162990,25,2095,Bridge Elem School,3800 N New England Ave,Chicago,60634 2346,P-8,41.949212,-87.798555
+150162990,25,2096,Bright Elem School,10740 S Calhoun Ave,Chicago,60617 6418,P-8,41.700215,-87.562133
+150162990,25,2097,Brown  W Elem School,54 N Hermitage Ave,Chicago,60612 2631,P-8,41.882934,-87.670564
+150162990,25,2098,Brownell Elem School,6741 S Michigan Ave,Chicago,60637 3920,P-6,41.772112,-87.621723
+150162990,25,2100,Bouchet Elem Math & Science Acad,7355 S Jeffery Blvd,Chicago,60649 3121,P-8,41.761322,-87.576044
+150162990,25,2101,Budlong Elem School,2701 W Foster Ave,Chicago,60625 3507,P-8,41.975678,-87.697299
+150162990,25,2102,Burbank Elem School,2035 N Mobile Ave,Chicago,60639 3809,P-8,41.917228,-87.782648
+150162990,25,2103,Burke Elem School,5356 S King Dr,Chicago,60615 3643,P-8,41.797423,-87.616201
+150162990,25,2104,Burley Elem School,1630 W Barry Ave,Chicago,60657 3016,P-8,41.938011,-87.669228
+150162990,25,2105,Burnham Elem Inclusive Academy,9928 S Crandon Ave,Chicago,60617 5294,P-8,41.714782,-87.567178
+150162990,25,2106,Castellanos Elem School,2524 S Central Park Ave,Chicago,60623 3940,4-8,41.845767,-87.714977
+150162990,25,2107,Burnside Elem Scholastic Academy,650 E 91st Pl,Chicago,60619 7698,P-8,41.728533,-87.608425
+150162990,25,2108,Burr Elem School,1621 W Wabansia Ave,Chicago,60622 1439,P-8,41.91229,-87.6685
+150162990,25,2109,Burroughs Elem School,3542 S Washtenaw Ave,Chicago,60632 1639,P-8,41.829062,-87.692502
+150162990,25,2110,Brunson Math & Sci Specialty Elem,932 N Central Ave,Chicago,60651 2705,P-8,41.897597,-87.765642
+150162990,25,2112,Byrne Elem School,5329 S Oak Park Ave,Chicago,60638 1117,K-8,41.79539,-87.791515
+150162990,25,2113,Caldwell Elem Acad of Math & Sci,8546 S Cregier Ave,Chicago,60617 2296,P-8,41.739519,-87.580774
+150162990,25,2118,Cameron Elem School,1234 N Monticello Ave,Chicago,60651 2217,P-8,41.903349,-87.71795
+150162990,25,2119,Canty Elem School,3740 N Panama Ave,Chicago,60634 2021,P-8,41.947514,-87.829311
+150162990,25,2120,Carnegie Elem School,1414 E 61st Pl,Chicago,60637 2999,P-8,41.783436,-87.591108
+150162990,25,2122,Carroll Elem School,2929 W 83rd St,Chicago,60652 3400,P-8,41.742449,-87.695854
+150162990,25,2123,Carter Elem School,5740 S Michigan Ave,Chicago,60637 1156,P-8,41.79032,-87.622506
+150162990,25,2126,Cassell Elem School,11314 S Spaulding Ave,Chicago,60655 2736,K-8,41.687694,-87.703268
+150162990,25,2127,Cather Elem School,2908 W Washington Blvd,Chicago,60612 1934,P-8,41.883019,-87.698943
+150162990,25,2128,Chalmers Elem Specialty School,2745 W Roosevelt Rd,Chicago,60608 1047,P-8,41.866387,-87.694559
+150162990,25,2129,Chappell Elem School,2135 W Foster Ave,Chicago,60625 1268,P-8,41.975832,-87.68269
+150162990,25,2130,Chase Elem School,2021 N Point St,Chicago,60647 4016,P-8,41.917841,-87.694182
+150162990,25,2132,Clay Elem School,13231 S Burley Ave,Chicago,60633 1492,P-8,41.654941,-87.544569
+150162990,25,2133,Cleveland Elem School,3121 W Byron St,Chicago,60618 3403,P-8,41.951973,-87.706288
+150162990,25,2134,Clinton Elem School,6110 N Fairfield Ave,Chicago,60659 2647,P-8,41.992377,-87.698394
+150162990,25,2135,Clissold Elem School,2350 W 110th Pl,Chicago,60643 3993,K-8,41.693105,-87.67988
+150162990,25,2136,Coles Elem Language Academy,8441 S Yates Blvd,Chicago,60617 1995,P-8,41.741903,-87.565937
+150162990,25,2138,Columbus Elem School,1003 N Leavitt St,Chicago,60622 3522,P-8,41.899513,-87.681896
+150162990,25,2139,Cook Elem School,8150 S Bishop St,Chicago,60620 3854,P-8,41.745836,-87.659834
+150162990,25,2141,Coonley Elem School,4046 N Leavitt St,Chicago,60618 2922,K-8,41.955193,-87.683792
+150162990,25,2142,Cooper Elem Dual Language Academy,1624 W 19th St,Chicago,60608 2902,P-5,41.856108,-87.666418
+150162990,25,2145,Corkery Elem School,2510 S Kildare Ave,Chicago,60623 3660,P-8,41.845658,-87.731235
+150162990,25,2147,Crown Elem Comm Acd Fine Arts Ctr,2128 S Saint Louis Ave,Chicago,60623 3121,P-8,41.711376,-87.708854
+150162990,25,2148,Darwin Elem School,3116 W Belden Ave,Chicago,60647 2806,P-8,41.923383,-87.706256
+150162990,25,2149,Davis N Elem School,3014 W 39th Pl,Chicago,60632 2402,P-8,41.821923,-87.699833
+150162990,25,214C,Asian Human Services -Passage Chrtr,1643 W Bryn Mawr Ave,Chicago,60660 4106,P-8,41.983304,-87.670889
+150162990,25,2150,Dawes Elem School,3810 W 81st Pl,Chicago,60652 2400,P-8,41.745148,-87.717071
+150162990,25,2153,Deneen Elem School,7240 S Wabash Ave,Chicago,60619 1092,P-8,41.76298,-87.623397
+150162990,25,2154,Dett Elem School,2131 W Monroe St,Chicago,60612 3014,P-8,41.879811,-87.679739
+150162990,25,2155,Chopin Elem School,2450 W Rice St,Chicago,60622 4612,P-8,41.896788,-87.68796
+150162990,25,2158,Dever Elem School,3436 N Osceola Ave,Chicago,60634 3344,P-8,41.942118,-87.813149
+150162990,25,2159,Dewey Elem Academy of Fine Arts,5415 S Union Ave,Chicago,60609 5244,P-8,41.795683,-87.642615
+150162990,25,2160,Disney Elem Magnet School,4140 N Marine Dr,Chicago,60613 2311,P-8,41.956792,-87.646048
+150162990,25,2161,Dixon Elem School,8306 S Saint Lawrence Ave,Chicago,60619 5791,P-8,41.812808,-87.611531
+150162990,25,2167,Dore Elem School,6108 S Natoma Ave,Chicago,60638 4116,P-8,41.781094,-87.787649
+150162990,25,2169,Drake Elem School,2710 S Dearborn St,Chicago,60616 2684,P-8,41.844266,-87.628596
+150162990,25,2172,Drummond Elem School,1845 W Cortland St,Chicago,60622 1036,P-8,41.915851,-87.674093
+150162990,25,2173,Dubois Elem School,330 E 133rd St,Chicago,60827 1807,P-8,41.653794,-87.616704
+150162990,25,2175,Dulles Elem School,6311 S Calumet Ave,Chicago,60637 3198,P-8,41.778973,-87.617105
+150162990,25,2177,Dunne Technology Acad Elem Sch,10845 S Union Ave,Chicago,60628 3115,P-8,41.697032,-87.639953
+150162990,25,2179,Dvorak Technology Acad Elem Sch,3615 W 16th St,Chicago,60623 2001,P-8,41.858814,-87.715726
+150162990,25,217C,Chicago Math & Sci Elem Charter,7212 N Clark St,Chicago,60626 2416,6-12,42.012832,-87.674815
+150162990,25,2180,Earle Elem School,2040 W 62nd St,Chicago,60636 2153,P-8,41.781293,-87.675276
+150162990,25,2181,Eberhart Elem School,3400 W 65th Pl,Chicago,60629 3402,K-8,41.774188,-87.707877
+150162990,25,2182,Ebinger Elem School,7350 W Pratt Ave,Chicago,60631 1121,K-8,42.004491,-87.810644
+150162990,25,2183,Edgebrook Elem School,6525 N Hiawatha Ave,Chicago,60646 2938,K-8,41.999573,-87.76179
+150162990,25,2184,Edison Elem Regional Gifted Cntr,4929 N Sawyer Ave,Chicago,60625 5008,K-8,41.970781,-87.709611
+150162990,25,2185,Edwards Elem School,4815 S Karlov Ave,Chicago,60632 4123,P-8,41.80575,-87.725822
+150162990,25,2187,Ellington Elem School,243 N Parkside Ave,Chicago,60644 2243,P-8,41.884849,-87.76652
+150162990,25,218C,Namaste Elem Charter School,3737 S Paulina St,Chicago,60609 2047,K-8,41.825833,-87.667688
+150162990,25,2190,Ericson Elem Scholastic Academy,3600 W 5th Ave,Chicago,60624 3162,P-8,41.875528,-87.715722
+150162990,25,2191,Esmond Elem School,1865 W Montvale Ave,Chicago,60643 4217,P-8,41.689362,-87.669119
+150162990,25,2192,Everett Elem School,3419 S Bell Ave,Chicago,60608 6010,P-5,41.83165,-87.681271
+150162990,25,2193,Evers Elem School,9811 S Lowe Ave,Chicago,60628 1014,P-8,41.715978,-87.639274
+150162990,25,2194,Falconer Elem School,3020 N Lamon Ave,Chicago,60641 5195,P-6,41.935793,-87.749368
+150162990,25,2195,Faraday Elem School,3250 W Monroe St,Chicago,60624 2919,P-8,41.879786,-87.707108
+150162990,25,2198,Farnsworth Elem School,5414 N Linder Ave,Chicago,60630 1329,P-8,41.979584,-87.766115
+150162990,25,219C,Erie Elem Charter School,1405 N Washtenaw Ave,Chicago,60622 1632,K-8,41.906675,-87.69431
+150162990,25,2202,Fernwood Elem School,10041 S Union Ave,Chicago,60628 1824,P-8,41.711676,-87.640387
+150162990,25,2203,Field Elem School,7019 N Ashland Blvd,Chicago,60626 2716,4-8,42.009632,-87.669939
+150162990,25,2204,Fiske Elem School,6020 S Langley Ave,Chicago,60637 2595,P-8,41.785439,-87.608678
+150162990,25,2206,Fort Dearborn Elem School,9025 S Throop St,Chicago,60620 3523,P-8,41.729993,-87.65545
+150162990,25,2207,Franklin Elem Fine Arts Center,225 W Evergreen Ave,Chicago,60610 1813,K-8,41.906814,-87.636528
+150162990,25,2209,Fuller Elem School,4214 S Saint Lawrence Ave,Chicago,60653 2926,P-8,41.818072,-87.611827
+150162990,25,220C,Galapagos Elem Charter School,3814 W Iowa St,Chicago,60651 3708,K-8,41.897379,-87.721995
+150162990,25,2210,Fulton Elem School,5300 S Hermitage Ave,Chicago,60609 5726,P-8,41.797487,-87.668328
+150162990,25,2211,Funston Elem School,2010 N Central Park Ave,Chicago,60647 3659,P-8,41.917657,-87.716931
+150162990,25,2212,Gale Elem Community Academy,1631 W Jonquil Ter,Chicago,60626 1103,P-8,42.02132,-87.671897
+150162990,25,2213,Gallistel Elem Language Academy,10347 S Ewing Ave,Chicago,60617 6028,P-8,41.707382,-87.535133
+150162990,25,2214,Garvy  J Elem School,5225 N Oak Park Ave,Chicago,60656 2139,K-8,41.975999,-87.796202
+150162990,25,2215,Gary Elem School,3740 W 31st St,Chicago,60623 5035,"P,3-8",41.837143,-87.718037
+150162990,25,221C,Legacy Elem Charter School,4217 W 18th St,Chicago,60623 2325,P-8,41.856809,-87.730466
+150162990,25,2220,Goethe Elem School,2236 N Rockwell St,Chicago,60647 3004,P-8,41.922568,-87.69293
+150162990,25,2222,Owens Community Academy ES,12302 S State St,Chicago,60628 6811,P-8,41.67069,-87.622588
+150162990,25,2223,Goudy Technology Academy,5120 N Winthrop Ave,Chicago,60640 3112,P-8,41.975427,-87.657942
+150162990,25,2224,Graham  A Elem School,4436 S Union Ave,Chicago,60609 3465,P-8,41.813441,-87.643388
+150162990,25,2226,Gray Elem School,3730 N Laramie Ave,Chicago,60641 3338,P-8,41.948887,-87.757003
+150162990,25,2227,Greeley Elem School,832 W Sheridan Rd,Chicago,60613 3004,P-8,41.952586,-87.650284
+150162990,25,2229,Greene N Elem School,3525 S Honore St,Chicago,60609 1210,P-5,41.829961,-87.67161
+150162990,25,222C,Bronzeville Lighthouse Elem Chrtr,8 W Root St,Chicago,60609 2931,K-8,41.819344,-87.626533
+150162990,25,2230,Gregory Math & Sci Elem Academy,3715 W Polk St,Chicago,60624 4016,P-8,41.870673,-87.718555
+150162990,25,2231,Gresham Elem School,8524 S Green St,Chicago,60620 3234,P-8,41.739234,-87.645077
+150162990,25,2232,Grimes Elem School,5450 W 64th Pl,Chicago,60638 5634,P-8,41.775547,-87.757832
+150162990,25,2235,Haines Elem School,247 W 23rd Pl,Chicago,60616 1907,P-8,41.849896,-87.633134
+150162990,25,2236,Gillespie Elem School,9301 S State St,Chicago,60619 7296,P-8,41.725534,-87.62383
+150162990,25,2239,Hale Elem School,6140 S Melvina Ave,Chicago,60638 4300,P-8,41.780685,-87.77664
+150162990,25,2240,Hamilton Elem School,1650 W Cornelia Ave,Chicago,60657 1228,P-8,41.945295,-87.670307
+150162990,25,2241,Hamline Elem School,4747 S Bishop St,Chicago,60609 4206,P-8,41.807709,-87.661149
+150162990,25,2242,Hammond Elem School,2819 W 21st Pl,Chicago,60623 3503,P-8,41.852953,-87.696085
+150162990,25,2244,Harte Elem School,1556 E 56th St,Chicago,60637 1911,P-8,41.793508,-87.58754
+150162990,25,2246,Harvard Elem School,7525 S Harvard Ave,Chicago,60620 1616,P-8,41.757658,-87.632704
+150162990,25,2247,Haugan Elem School,4540 N Hamlin Ave,Chicago,60625 5928,P-6,41.963559,-87.723154
+150162990,25,2249,Hawthorne Elem Scholastic Academy,3319 N Clifton Ave,Chicago,60657 2224,K-8,41.94219,-87.657663
+150162990,25,224C,Providence-Englewood Elem Charter,6515 S Ashland Ave,Chicago,60636 3003,K-8,41.775576,-87.663964
+150162990,25,2252,Hayt Elem School,1518 W Granville Ave,Chicago,60660 1812,P-8,41.994611,-87.668053
+150162990,25,2254,Healy Elem School,3010 S Parnell Ave,Chicago,60616 3199,P-8,41.83965,-87.640384
+150162990,25,2255,Hearst Elem School,4640 S Lamon Ave,Chicago,60638 2044,P-8,41.808668,-87.74578
+150162990,25,2256,Hedges Elem School,4747 S Winchester Ave,Chicago,60609 4140,P-8,41.807673,-87.673304
+150162990,25,2257,Hefferan Elem School,4409 W Wilcox St,Chicago,60624 2550,P-8,41.878597,-87.735618
+150162990,25,2258,Henderson Elem School,5650 S Wolcott Ave,Chicago,60636 1127,P-8,41.791045,-87.671792
+150162990,25,2259,Hendricks Elem Community Academy,4316 S Princeton Ave,Chicago,60609 3643,P-8,41.815849,-87.633706
+150162990,25,225C,Chicago Virtual Charter School,38 S Peoria St,Chicago,60607 2628,K-12,41.88128,-87.649835
+150162990,25,2260,Henry Elem School,4250 N Saint Louis Ave,Chicago,60618 1121,P-6,41.99895,-87.716729
+150162990,25,2263,Herzl Elem School,3711 W Douglas Blvd,Chicago,60623 1413,P-8,41.862218,-87.717832
+150162990,25,2265,Hibbard Elem School,3244 W Ainslie St,Chicago,60625 5018,P-6,41.970405,-87.709999
+150162990,25,2266,Higgins Elem Community Academy,11710 S Morgan St,Chicago,60643 5249,P-8,41.681067,-87.647038
+150162990,25,2267,King Academy of Social Justice,644 W 71st St,Chicago,60621 2357,P-8,41.765406,-87.640996
+150162990,25,2268,Hitch Elem School,5625 N McVicker Ave,Chicago,60646 6102,P-8,41.983213,-87.77924
+150162990,25,2269,Holden Elem School,1104 W 31st St,Chicago,60608 5602,P-8,41.838091,-87.653941
+150162990,25,226C,Polaris Elem Charter Academy,620 N Sawyer Ave,Chicago,60624 1528,K-8,41.892252,-87.707826
+150162990,25,2270,Holmes Elem School,955 W Garfield Blvd,Chicago,60621 2240,P-8,41.794405,-87.648871
+150162990,25,2273,Howe Elem School,720 N Lorel Ave,Chicago,60644 1666,P-8,41.89336,-87.759429
+150162990,25,2275,Hoyne Elem School,8905 S Crandon Ave,Chicago,60617 3095,K-8,41.733368,-87.568189
+150162990,25,2276,Hughes  C Elem School,4247 W 15th St,Chicago,60623 1929,P-8,41.860438,-87.732492
+150162990,25,227C,Amandla Charter School,6800 S Stewart Ave,Chicago,60621 2441,5-12,41.770319,-87.635041
+150162990,25,2280,Hurley Elem School,3849 W 69th Pl,Chicago,60629 4210,P-8,41.766726,-87.718579
+150162990,25,2281,Irving Elem School,749 S Oakley Blvd,Chicago,60612 3514,P-8,41.872126,-87.683591
+150162990,25,2283,Jackson A Elem Language Acad,1340 W Harrison St,Chicago,60607 3317,K-8,41.874302,-87.661489
+150162990,25,2284,Jahn Elem School,3149 N Wolcott Ave,Chicago,60657 2044,P-8,41.938936,-87.675757
+150162990,25,2285,Jamieson Elem School,5650 N Mozart St,Chicago,60659 4823,P-8,41.98402,-87.700545
+150162990,25,2287,Jenner Elem Academy of the Arts,1119 N Cleveland Ave,Chicago,60610 2426,P-8,41.902469,-87.641056
+150162990,25,2288,Jensen Elem Scholastic Academy,3030 W Harrison St,Chicago,60612 3343,P-8,41.873887,-87.701699
+150162990,25,2289,Pilsen Elem Community Academy,1420 W 17th St,Chicago,60608 2121,P-8,41.858917,-87.662058
+150162990,25,228C,Catalyst Charter-Circle Rock ES,5608 W Washington Blvd,Chicago,60644 3009,K-8,41.882388,-87.765287
+150162990,25,2290,Johnson Elem School,1420 S Albany Ave,Chicago,60623 2205,P-8,41.862294,-87.70319
+150162990,25,2292,Jungman Elem School,1746 S Miller St,Chicago,60608 2313,P-8,41.858485,-87.65236
+150162990,25,2293,Kellogg Elem School,9241 S Leavitt St,Chicago,60643 6318,K-8,41.725537,-87.6772
+150162990,25,2294,Kershaw Elem School,6450 S Lowe Ave,Chicago,60621 2706,P-8,41.777054,-87.640953
+150162990,25,2296,Kilmer Elem School,6700 N Greenview Ave,Chicago,60626 4208,P-8,42.003736,-87.66811
+150162990,25,2299,Kinzie Elem School,5625 S Mobile Ave,Chicago,60638 3459,P-8,41.789176,-87.779091
+150162990,25,229C,Academy for Global Citizenship,4647 W 47th St,Chicago,60632 4847,K-8,41.807515,-87.739741
+150162990,25,2300,Kipling Elem School,9351 S Lowe Ave,Chicago,60620 2324,K-8,41.724231,-87.639498
+150162990,25,2303,Lozano Elem Bilingual & Intl Ctr,1501 N Greenview Ave,Chicago,60642 2355,P-8,41.908693,-87.665201
+150162990,25,2304,Kozminski Elem Community Academy,936 E 54th St,Chicago,60615 5074,P-8,41.798068,-87.602666
+150162990,25,2306,LaSalle Elem Language Academy,1734 N Orleans St,Chicago,60614 5797,K-8,41.913303,-87.637587
+150162990,25,2309,Lawndale Elem Community Academy,3500 W Douglas Blvd,Chicago,60623 1634,P-8,41.862728,-87.712881
+150162990,25,230C,Rowe Elementary,1424 N Cleaver St,Chicago,60642 2331,K-8,41.908046,-87.664118
+150162990,25,2311,Lewis Elem School,1431 N Leamington Ave,Chicago,60651 1444,P-8,41.906445,-87.754499
+150162990,25,2313,Libby Elem School,5300 S Loomis Blvd,Chicago,60609 5948,K-8,41.79759,-87.659824
+150162990,25,2314,Lincoln Elem School,615 W Kemper Pl,Chicago,60614 3319,K-8,41.924738,-87.645694
+150162990,25,2315,Linne Elem School,3221 N Sacramento Ave,Chicago,60618 5825,P-8,41.939748,-87.702585
+150162990,25,2316,Lloyd Elem School,2103 N Lamon Ave,Chicago,60639 3238,P-5,41.918791,-87.748473
+150162990,25,2317,Locke  J Elem School,2828 N Oak Park Ave,Chicago,60634 4866,P-8,41.931373,-87.79563
+150162990,25,2319,Lovett Elem School,6333 W Bloomingdale Ave,Chicago,60639 3817,P-8,41.912946,-87.784278
+150162990,25,231C,Nkrumah Academy Charter ES,314 W 108th St,Chicago,60628 3332,K-8,41.698109,-87.630681
+150162990,25,2321,Lowell Elem School,3320 W Hirsch St,Chicago,60651 2361,P-8,41.906591,-87.709848
+150162990,25,2323,Lyon Elem School,2941 N McVicker Ave,Chicago,60634 5146,K-8,41.933699,-87.777113
+150162990,25,2324,Madison Elem School,7433 S Dorchester Ave,Chicago,60619 2194,P-8,41.759957,-87.590685
+150162990,25,2326,Manierre Elem School,1420 N Hudson Ave,Chicago,60610 1124,P-8,41.908137,-87.639857
+150162990,25,2328,Mann Elem School,8050 S Chappel Ave,Chicago,60617 1091,P-8,41.748873,-87.574868
+150162990,25,232C,Catalyst Charter - Maria ES,6727 S California Ave,Chicago,60629 1816,K-12,41.771337,-87.693043
+150162990,25,2330,Marquette Elem School,6550 S Richmond St,Chicago,60629 2821,P-8,41.774481,-87.697085
+150162990,25,2331,Marsh Elem School,9822 S Exchange Ave,Chicago,60617 5446,P-8,41.716872,-87.55253
+150162990,25,2334,Mason Elem School,4217 W 18th St,Chicago,60623 2325,P-8,41.856809,-87.730466
+150162990,25,2337,Mayer Elem School,2250 N Clifton Ave,Chicago,60614 3523,P-8,41.922604,-87.657303
+150162990,25,2339,McClellan Elem School,3527 S Wallace St,Chicago,60609 1737,P-8,41.830333,-87.641072
+150162990,25,233C,Montessori of Englewood Chtr ES,6550 S Seeley Ave,Chicago,60636 2500,P-5,41.774761,-87.675155
+150162990,25,2341,McCormick Elem School,2712 S Sawyer Ave,Chicago,60623 4738,P-5,41.842451,-87.706348
+150162990,25,2344,McCutcheon Elem School,4865 N Sheridan Rd,Chicago,60640 3717,P-8,41.970838,-87.654715
+150162990,25,2345,McDade Elem Classical School,8801 S Indiana Ave,Chicago,60619 6692,K-6,41.734752,-87.619326
+150162990,25,2346,McKay Elem School,6901 S Fairfield Ave,Chicago,60629 1912,P-8,41.768347,-87.691896
+150162990,25,2349,McPherson Elem School,4728 N Wolcott Ave,Chicago,60640 4364,P-8,41.967482,-87.676316
+150162990,25,234C,KIPP Chicago Charter Schools,4818 W Ohio St,Chicago,60644 1702,K-8,41.891526,-87.746174
+150162990,25,2352,Melody Elem School,3937 W Wilcox St,Chicago,60624 2833,P-8,41.878726,-87.724758
+150162990,25,2353,Mitchell Elem School,2233 W Ohio St,Chicago,60612 1519,P-8,41.892024,-87.682574
+150162990,25,2354,Mollison Elem School,4415 S Dr Martin L King Jr Dr,Chicago,60653 3310,P-8,41.814286,-87.616313
+150162990,25,2355,Monroe Elem School,3651 W Schubert Ave,Chicago,60647 1157,P-8,41.929926,-87.718714
+150162990,25,2356,Moos Elem School,1711 N California Ave,Chicago,60647 5103,P-8,41.912158,-87.696891
+150162990,25,2357,Morrill Elem Math & Sci School,6011 S Rockwell St,Chicago,60629 1133,P-8,41.784478,-87.688514
+150162990,25,2358,Inter-American Elem Magnet School,851 W Waveland Ave,Chicago,60613 4301,P-8,41.948946,-87.650653
+150162990,25,235C,Christopher House Chrt ES,5235 W Belden St,Chicago,60639 3001,K-3,41.922115,-87.757371
+150162990,25,2361,Mount Greenwood Elem School,10841 S Homan Ave,Chicago,60655 2611,K-8,41.696228,-87.70579
+150162990,25,2362,Mount Vernon Elem School,10540 S Morgan St,Chicago,60643 3098,P-8,41.702485,-87.647714
+150162990,25,2363,Mozart Elem School,2200 N Hamlin Ave,Chicago,60647 2222,P-8,41.921034,-87.721777
+150162990,25,2365,Murphy Elem School,3539 W Grace St,Chicago,60618 4237,P-8,41.950011,-87.716596
+150162990,25,2366,Murray Elem Language Academy,5335 S Kenwood Ave,Chicago,60615 5393,K-8,41.798384,-87.59325
+150162990,25,2367,Brown R Elem Community Acad,12607 S Union Ave,Chicago,60628 7021,P-8,41.664994,-87.63892
+150162990,25,2368,Nash Elem School,4837 W Erie St,Chicago,60644 1720,P-8,41.892102,-87.747468
+150162990,25,2369,Neil Elem School,8555 S Michigan Ave,Chicago,60619 5687,P-8,41.739053,-87.620914
+150162990,25,236C,Chicago Collegiate Charter School,11816 S Indiana Ave,Chicago,60628 6227,4-6,41.679394,-87.618012
+150162990,25,2370,Nettelhorst Elem School,3252 N Broadway St,Chicago,60657 3521,P-8,41.941411,-87.64459
+150162990,25,2371,Newberry Elem Math & Science Acad,700 W Willow St,Chicago,60614 5108,P-8,41.913715,-87.645951
+150162990,25,2372,Carver Primary School,901 E 133rd Pl,Chicago,60827 1427,P-8,41.653062,-87.60195
+150162990,25,2373,Nightingale Elem School,5250 S Rockwell St,Chicago,60632 1540,P-8,41.798313,-87.689198
+150162990,25,2374,Nixon Elem School,2121 N Keeler Ave,Chicago,60639 3603,P-6,41.919314,-87.731371
+150162990,25,2375,Nobel Elem School,4127 W Hirsch St,Chicago,60651 1806,P-8,41.906089,-87.729686
+150162990,25,2376,Norwood Park Elem School,5900 N Nina Ave,Chicago,60631 2408,P-8,41.988228,-87.802923
+150162990,25,2380,Ogden Elem School,24 W Walton St,Chicago,60610 3304,K-5,41.900071,-87.629089
+150162990,25,2381,Oglesby Elem School,7646 S Green St,Chicago,60620 2854,P-8,41.755238,-87.645523
+150162990,25,2382,OKeeffe Elem School,6940 S Merrill Ave,Chicago,60649 1721,P-8,41.769093,-87.572863
+150162990,25,2383,Onahan Elem School,6634 W Raven St,Chicago,60631 2503,P-8,41.993857,-87.793091
+150162990,25,2384,Oriole Park Elem School,5424 N Oketo Ave,Chicago,60656 1747,P-8,41.978226,-87.812096
+150162990,25,2385,Piccolo Elem Specialty School,1040 N Keeler Ave,Chicago,60651 3514,P-8,41.899979,-87.731294
+150162990,25,2386,Otis Elem School,525 N Armour St,Chicago,60642 6105,P-8,41.891392,-87.665674
+150162990,25,2387,OToole Elem School,6550 S Seeley Ave,Chicago,60636 2500,P-8,41.774761,-87.675155
+150162990,25,2389,Owen Elem Scholastic Academy,8247 S Christiana Ave,Chicago,60652 3300,K-8,41.743414,-87.70572
+150162990,25,238C,Frazier Prep Acad Charter ES,3711 W Douglas Blvd,Chicago,60623 1413,P-8,41.862218,-87.717832
+150162990,25,2391,Palmer Elem School,5051 N Kenneth Ave,Chicago,60630 2620,P-8,41.972693,-87.739151
+150162990,25,2392,Parker Elem Community Academy,6800 S Stewart Ave,Chicago,60621 2441,P-8,41.770319,-87.635041
+150162990,25,2394,Park Manor Elem School,7037 S Rhodes Ave,Chicago,60637 4617,P-8,41.7669,-87.611815
+150162990,25,2395,Parkside Elem Community Academy,6938 S East End Ave,Chicago,60649 1422,P-8,41.769024,-87.583008
+150162990,25,2396,Pasteur Elem School,5825 S Kostner Ave,Chicago,60629 5238,P-8,41.787205,-87.732635
+150162990,25,2398,Peck Elem School,3826 W 58th St,Chicago,60629 3849,P-8,41.787964,-87.719047
+150162990,25,2399,Peirce Elem Intl Studies School,1423 W Bryn Mawr Ave,Chicago,60660 4224,P-8,41.98339,-87.665445
+150162990,25,239C,Horizon Sci Academy - Chatham Charter,8522 S Lafayette Ave,Chicago,60620 1308,K-8,41.740921,-87.625712
+150162990,25,2400,Penn Elem School,1616 S Avers Ave,Chicago,60623 2401,P-8,41.857997,-87.721333
+150162990,25,2401,Washington  H Elem School,9130 S University Ave,Chicago,60619 7922,P-8,41.728939,-87.596307
+150162990,25,2402,Pershing Elem Humanities Magnet,3200 S Calumet Ave,Chicago,60616 4866,P-8,41.836432,-87.618228
+150162990,25,2403,Peterson Elem School,5510 N Christiana Ave,Chicago,60625 4606,P-8,41.98141,-87.712617
+150162990,25,2404,Pickard Elem School,2301 W 21st Pl,Chicago,60608 3809,P-8,41.853132,-87.683235
+150162990,25,2405,Pirie Elem Fine Arts & Academic C,650 E 85th St,Chicago,60619 6112,P-6,41.740396,-87.608743
+150162990,25,2406,Plamondon Elem School,2642 W 15th Pl,Chicago,60608 1703,K-8,41.860336,-87.691696
+150162990,25,2409,Portage Park Elem School,5330 W Berteau Ave,Chicago,60641 1398,P-8,41.95706,-87.760419
+150162990,25,240C,Horizon Sci Academy - Southwest Charter,5401 S Western Blvd,Chicago,60609 5438,K-8,41.798829,-87.683458
+150162990,25,2410,Prescott Elem School,1632 W Wrightwood Ave,Chicago,60614 2268,P-8,41.928907,-87.669542
+150162990,25,2412,Prussing Elem School,4650 N Menard Ave,Chicago,60630 3348,P-8,41.965359,-87.772443
+150162990,25,2413,Pulaski Intl Sch of Chicago,2230 W McLean Ave,Chicago,60647 4410,P-8,41.918562,-87.683215
+150162990,25,2414,Pullman Elem School,11311 S Forrestville Ave,Chicago,60628 5107,P-8,41.688818,-87.60939
+150162990,25,2416,Ravenswood Elem School,4332 N Paulina St,Chicago,60613 1220,P-8,41.960338,-87.670946
+150162990,25,2417,Ray Elem School,5631 S Kimbark Ave,Chicago,60637 1605,P-8,41.792733,-87.59472
+150162990,25,2419,Reavis Elem Math & Sci Spec Schl,834 E 50th St,Chicago,60615 2620,P-8,41.804246,-87.605716
+150162990,25,241C,Great Lakes Academy Charter ES,8401 S Saginaw Ave,Chicago,60617 2029,K-1,41.742875,-87.560017
+150162990,25,2421,Reilly Elem School,3650 W School St,Chicago,60618 5358,P-8,41.941166,-87.719045
+150162990,25,2422,Reinberg Elem School,3425 N Major Ave,Chicago,60634 4334,P-8,41.942982,-87.76894
+150162990,25,2423,Revere Elem School,1010 E 72nd St,Chicago,60619 1398,P-8,41.764262,-87.600271
+150162990,25,2426,Rogers Elem School,7345 N Washtenaw Ave,Chicago,60645 1429,P-8,42.014964,-87.697149
+150162990,25,2428,Ruggles Elem School,7831 S Prairie Ave,Chicago,60619 2893,P-8,41.752319,-87.618034
+150162990,25,2429,Ryder Elem Math & Sci Spec School,8716 S Wallace St,Chicago,60620 2124,P-8,41.735817,-87.638894
+150162990,25,242C,Foundations College Prep Charter,1233 W 109th Pl,Chicago,60643 3706,6-7,41.695109,-87.652922
+150162990,25,2434,Sauganash Elem School,6040 N Kilpatrick Ave,Chicago,60646 5816,K-8,41.990683,-87.74605
+150162990,25,2435,Sawyer Elem School,5248 S Sawyer Ave,Chicago,60632 3131,K-8,41.798076,-87.705067
+150162990,25,2436,Sayre Elem Language Academy,1850 N Newland Ave,Chicago,60707 3305,P-8,41.913546,-87.798737
+150162990,25,2437,Ashe Elem School,8505 S Ingleside Ave,Chicago,60619 6390,K-8,41.740693,-87.60115
+150162990,25,2438,Scammon Elem School,4201 W Henderson St,Chicago,60641 4627,P-8,41.94191,-87.732104
+150162990,25,2442,Schmid Elem School,9755 S Greenwood Ave,Chicago,60628 1610,P-8,41.717555,-87.596915
+150162990,25,2444,Schubert Elem School,2727 N Long Ave,Chicago,60639 1529,P-5,41.930367,-87.761148
+150162990,25,2446,Seward Elem Communication Arts Ac,4600 S Hermitage Ave,Chicago,60609 3831,P-8,41.810239,-87.668662
+150162990,25,244C,Moving Everest Charter School,416 N Laramie Ave,Chicago,60644 1906,K-1,41.887989,-87.755491
+150162990,25,2451,Sheridan Elem Math & Science Acad,533 W 27th St,Chicago,60616 2574,K-8,41.844372,-87.614536
+150162990,25,2452,Mireles Elem Academy,9000 S Exchange Ave,Chicago,60617 4296,P-8,41.731738,-87.552681
+150162990,25,2453,Sherman Elem School,1000 W 52nd St,Chicago,60609 6012,P-8,41.799529,-87.650155
+150162990,25,2454,Sherwood Elem School,245 W 57th St,Chicago,60621 4055,P-8,41.791033,-87.632301
+150162990,25,2455,Shields Elem School,4250 S Rockwell St,Chicago,60632 1216,P-4,41.816507,-87.689704
+150162990,25,2456,Shoesmith Elem School,1330 E 50th St,Chicago,60615 2992,K-6,41.804361,-87.593921
+150162990,25,2457,Shoop Math-Sci Tech Elem Academy,11140 S Bishop St,Chicago,60643 3607,P-8,41.691442,-87.658725
+150162990,25,2458,Skinner Elem School,111 S Throop St,Chicago,60607 2530,P-8,41.879151,-87.659342
+150162990,25,2459,Smyser Elem School,4310 N Melvina Ave,Chicago,60634 1542,P-8,41.958787,-87.782009
+150162990,25,2460,Smyth  J Elem School,1059 W 13th St,Chicago,60608 1526,P-8,41.865125,-87.673749
+150162990,25,2461,Solomon Elem School,6206 N Hamlin Ave,Chicago,60659 1096,P-8,41.993825,-87.724079
+150162990,25,2462,Spencer Technology Acad Elem Sch,214 N Lavergne Ave,Chicago,60644 2517,P-8,41.884568,-87.750471
+150162990,25,2464,Stagg Elem School,7424 S Morgan St,Chicago,60621 1047,P-8,41.758699,-87.649254
+150162990,25,2465,Stevenson Elem School,8010 S Kostner Ave,Chicago,60652 2110,P-8,41.747295,-87.731714
+150162990,25,2468,Stone Elem Scholastic Academy,6239 N Leavitt St,Chicago,60659 3007,K-8,41.994469,-87.684712
+150162990,25,2469,Spry Elem Community School,2400 S Marshall Blvd,Chicago,60623 4146,P-8,41.848228,-87.699132
+150162990,25,2472,Stowe Elem School,3444 W Wabansia Ave,Chicago,60647 4813,P-8,41.912015,-87.712399
+150162990,25,2474,Sullivan Elem School,8331 S Mackinaw Ave,Chicago,60617 2626,P-8,41.744213,-87.542896
+150162990,25,2475,Sumner Elem Math & Sci Comm Acad,4320 W 5th Ave,Chicago,60624 3401,P-8,41.870979,-87.733219
+150162990,25,2476,Sutherland Elem School,10015 S Leavitt St,Chicago,60643 1991,K-8,41.711654,-87.676788
+150162990,25,2477,Swift Elem Specialty School,5900 N Winthrop Ave,Chicago,60660 3520,P-8,41.989452,-87.658342
+150162990,25,2478,Talcott Elem School,1840 W Ohio St,Chicago,60622 5505,P-8,41.892482,-87.672932
+150162990,25,2479,Tanner Elem School,7350 S Evans Ave,Chicago,60619 1990,P-8,41.761273,-87.606847
+150162990,25,2480,Taylor Elem School,9912 S Avenue H,Chicago,60617 5597,P-8,41.715028,-87.538833
+150162990,25,2484,Thorp  J N Elem School,8914 S Buffalo Ave,Chicago,60617 3416,P-8,41.73355,-87.544526
+150162990,25,2486,Thorp  O A Elem Scholastic Acad,6024 W Warwick Ave,Chicago,60634 2554,K-8,41.948644,-87.777178
+150162990,25,2487,Tilton Elem School,223 N Keeler Ave,Chicago,60624 2209,P-8,41.884042,-87.730523
+150162990,25,2488,Tonti Elem School,5815 S Homan Ave,Chicago,60629 3636,P-5,41.787733,-87.708147
+150162990,25,2490,Twain Elem School,5134 S Lotus Ave,Chicago,60638 1630,P-8,41.799467,-87.758981
+150162990,25,2491,Vanderpoel Elem Magnet School,9510 S Prospect Ave,Chicago,60643 1296,K-8,41.721031,-87.665673
+150162990,25,2492,Lavizzo Elem School,138 W 109th St,Chicago,60628 3433,P-8,41.696337,-87.626413
+150162990,25,2494,Volta Elem School,4950 N Avers Ave,Chicago,60625 6011,P-8,41.971161,-87.724479
+150162990,25,2497,Wacker Elem School,9746 S Morgan St,Chicago,60643 1541,P-8,41.716759,-87.6481
+150162990,25,2498,Wadsworth Elem School,6650 S Ellis Ave,Chicago,60637 4216,P-8,41.774078,-87.601073
+150162990,25,2500,Walsh Elem School,2015 S Peoria St,Chicago,60608 3432,P-8,41.855211,-87.648055
+150162990,25,2501,Ward  J Elem School,2701 S Shields Ave,Chicago,60616 2624,P-8,41.844171,-87.635466
+150162990,25,2502,Warren Elem School,9239 S Jeffery Ave,Chicago,60617 3795,P-8,41.727227,-87.575325
+150162990,25,2503,Washington  G Elem School,3611 E 114th St,Chicago,60617 7498,P-8,41.688223,-87.538896
+150162990,25,2504,Waters Elem School,4540 N Campbell Ave,Chicago,60625 3006,K-8,41.963819,-87.691351
+150162990,25,2505,Webster Elem School,4055 W Arthington St,Chicago,60624 3502,P-8,41.869858,-87.726569
+150162990,25,2506,Wentworth Elem School,1340 W 71st St,Chicago,60636 4150,P-8,41.765145,-87.657897
+150162990,25,2507,Westcott Elem School,409 W 80th St,Chicago,60620 1135,P-8,41.748801,-87.634602
+150162990,25,2510,Pritzker Elem School,2009 W Schiller St,Chicago,60622 1915,P-8,41.906987,-87.677521
+150162990,25,2512,Whistler Elem School,11533 S Ada St,Chicago,60643 5198,P-8,41.684305,-87.655355
+150162990,25,2513,Whitney Elem School,2815 S Komensky Ave,Chicago,60623 4450,P-8,41.840424,-87.725514
+150162990,25,2514,Whittier Elem School,1900 W 23rd St,Chicago,60608 4208,P-8,41.850227,-87.674786
+150162990,25,2516,Wildwood Elem School,6950 N Hiawatha Ave,Chicago,60646 1340,K-8,42.007628,-87.778459
+150162990,25,2521,Woodson South Elem School,4414 S Evans Ave,Chicago,60653 3519,P-8,41.814509,-87.608458
+150162990,25,2525,Young Elem School,1434 N Parkside Ave,Chicago,60651 1106,P-8,41.906366,-87.767163
+150162990,25,2542,Yates Elem School,1839 N Richmond St,Chicago,60647 5125,P-8,41.914597,-87.700225
+150162990,25,2597,Hernandez Middle School,3510 W 55th St,Chicago,60632 3284,6-8,41.793546,-87.711394
+150162990,25,2603,Dirksen Elem School,8601 W Foster Ave,Chicago,60656 2721,P-8,41.973937,-87.841549
+150162990,25,2605,Depriest Elem School,139 S Parkside Ave,Chicago,60644 3944,P-8,41.878373,-87.766284
+150162990,25,2617,Cuffe Math-Sci Tech Elem Academy,8324 S Racine Ave,Chicago,60620 3118,P-8,41.742767,-87.65368
+150162990,25,2618,Foster Park Elem School,8530 S Wood St,Chicago,60620 4734,P-8,41.738797,-87.66815
+150162990,25,2620,Hughes L Elem School,240 W 104th St,Chicago,60628 2510,P-8,41.705417,-87.629088
+150162990,25,2622,Grissom Elem School,12810 S Escanaba Ave,Chicago,60633 1298,P-8,41.662644,-87.553347
+150162990,25,2634,McNair Elem School,4820 W Walton St,Chicago,60651 3209,P-8,41.897887,-87.746655
+150162990,25,2636,Hay Elem Community Academy,1018 N Laramie Ave,Chicago,60651 2930,P-8,41.898917,-87.755845
+150162990,25,2637,Cullen Elem School,10650 S Eberhart Ave,Chicago,60628 2954,K-8,41.700942,-87.611304
+150162990,25,2700,Clark  G R Elem School,1045 S Monitor Ave,Chicago,60644 5434,P-8,41.868351,-87.770399
+150162990,25,2703,Lee Elem School,6448 S Tripp Ave,Chicago,60629 5121,P-8,41.775878,-87.728943
+150162990,25,2704,Langford A Elem School,6010 S Throop St,Chicago,60636 1816,P-8,41.784746,-87.657212
+150162990,25,2706,Salazar Elem Bilingual Center,160 W Wendell St,Chicago,60610 2727,P-8,41.90148,-87.633916
+150162990,25,2714,Leland Elem School,512 S Lavergne Ave,Chicago,60644 4948,P-8,41.873889,-87.749328
+150162990,25,2724,Robinson Elem School,4225 S Lake Park Ave,Chicago,60653 3064,P-3,41.817856,-87.599365
+150162990,25,2726,Hanson Park Elem School,5411 W Fullerton Ave,Chicago,60639 1459,P-8,41.92389,-87.761317
+150162990,25,2729,White Elem Career Academy,1136 W 122nd St,Chicago,60643 5542,P-8,41.672379,-87.650344
+150162990,25,2737,McDowell Elem School,1419 E 89th St,Chicago,60619 7196,P-5,41.73306,-87.589973
+150162990,25,2739,Keller Elem Gifted Magnet School,3020 W 108th St,Chicago,60655 2112,1-8,41.697239,-87.697097
+150162990,25,2743,Earhart Elem Opt for Knowl School,1710 E 93rd St,Chicago,60617 3697,K-8,41.726175,-87.582214
+150162990,25,2766,Till Elem Math & Science Academy,6543 S Champlain Ave,Chicago,60637 3441,P-8,41.775937,-87.60933
+150162990,25,2767,Ward  L Elem School,646 N Lawndale Ave,Chicago,60624 1254,P-8,41.892623,-87.718816
+150162990,25,2768,Smith  W Elem School,744 E 103rd St,Chicago,60628 1657,P-8,41.707077,-87.641867
+150162990,25,2773,Garvey  M Elem School,10309 S Morgan St,Chicago,60643 3096,P-8,41.706574,-87.647536
+150162990,25,2775,Joplin Elem School,7931 S Honore St,Chicago,60620 4560,P-8,41.749748,-87.669333
+150162990,25,2783,Cardenas Elem School,2345 S Millard Ave,Chicago,60623 3110,P-3,41.849024,-87.715994
+150162990,25,2785,Powell Elem Paideia Comm Academy,7511 S South Shore Dr,Chicago,60649 4305,K-8,41.759361,-87.555768
+150162990,25,2799,Curtis Elem School,32 E 115th St,Chicago,60628 5510,P-8,41.685155,-87.624119
+150162990,25,2800,Beasley Elem Magnet Academic Ctr,5255 S State St,Chicago,60609 6303,P-8,41.799624,-87.625676
+150162990,25,2802,Mays Elem Academy,6656 S Normal Blvd,Chicago,60621 2558,P-8,41.773424,-87.636976
+150162990,25,2804,Metcalfe Elem Community Academy,12339 S Normal Ave,Chicago,60628 6413,P-8,41.669935,-87.634286
+150162990,25,2805,Decatur Classical Elem School,7030 N Sacramento Ave,Chicago,60645 2848,K-6,42.011183,-87.704619
+150162990,25,2806,Kanoon Elem Magnet School,2233 S Kedzie Ave,Chicago,60623 3317,P-8,41.851123,-87.705083
+150162990,25,2807,Randolph Elem School,7316 S Hoyne Ave,Chicago,60636 3755,P-8,41.762139,-87.67604
+150162990,25,2809,Poe Elem Classical School,10538 S Langley Ave,Chicago,60628 3092,K-6,41.702491,-87.606456
+150162990,25,2811,Gunsaulus Elem Scholastic Academy,4420 S Sacramento Ave,Chicago,60632 2509,P-8,41.813278,-87.699414
+150162990,25,2823,Ninos Heroes Elem Academic Ctr,8344 S Commercial Ave,Chicago,60617 2145,P-8,41.743231,-87.551856
+150162990,25,2825,De Diego Elem Community Academy,1313 N Claremont Ave,Chicago,60622 2910,P-8,41.905063,-87.685709
+150162990,25,2826,Turner-Drew Elem Language Academy,9300 S Princeton Ave,Chicago,60620 1514,K-8,41.72712,-87.630029
+150162990,25,2828,Sabin Elem Magnet School,2216 W Hirsch St,Chicago,60622 1837,K-8,41.906885,-87.68292
+150162990,25,2829,Saucedo Elem Scholastic Academy,2850 W 24th Blvd,Chicago,60623 3508,P-8,41.848025,-87.696174
+150162990,25,2837,Daley Elem Academy,5024 S Wolcott Ave,Chicago,60609 4856,P-8,41.802626,-87.672229
+150162990,25,2838,Madero Middle School,3202 W 28th St,Chicago,60623 4708,6-8,41.840715,-87.70554
+150162990,25,2842,Orozco Elem Fine Arts & Sciences,1940 W 18th St,Chicago,60608 1903,P-8,41.857829,-87.674422
+150162990,25,2844,Morton Elem Career Academy,431 N Troy St,Chicago,60612 1713,P-8,41.889992,-87.705151
+150162990,25,2850,Albany Park Multicultural Elem,4929 N Sawyer Ave,Chicago,60625 5008,7-8,41.970781,-87.709611
+150162990,25,2855,South Loop Elem School,1212 S Plymouth Ct,Chicago,60605 2718,P-8,41.867029,-87.628656
+150162990,25,2856,Lenart Elem Regional Gifted Ctr,8101 S La Salle St,Chicago,60620 1223,P-8,41.747387,-87.628152
+150162990,25,2862,Casals Elem School,3501 W Potomac Ave,Chicago,60651 2231,P-8,41.904735,-87.714177
+150162990,25,2864,Perez Elem School,1241 W 19th St,Chicago,60608 3200,P-8,41.856257,-87.658206
+150162990,25,2867,Ruiz Elem School,2410 S Leavitt St,Chicago,60608 4032,P-8,41.84815,-87.680786
+150162990,25,2870,Brighton Park Elem School,3825 S Washtenaw Ave,Chicago,60632 1633,P-8,41.824116,-87.692045
+150162990,25,2873,Evergreen Academy Elem School,3537 S Paulina St,Chicago,60609 1229,6-8,41.829645,-87.667784
+150162990,25,2876,Carson Elem School,5516 S Maplewood Ave,Chicago,60629 1023,P-8,41.793502,-87.687847
+150162990,25,2877,McAuliffe Elem School,1841 N Springfield Ave,Chicago,60647 4600,P-8,41.91434,-87.723872
+150162990,25,2878,Galileo Elem Math & Sci Schol Acd,820 S Carpenter St,Chicago,60607 4237,K-8,41.871366,-87.653408
+150162990,25,2881,Logandale Middle School,3212 W George St,Chicago,60618 7529,P-8,41.934036,-87.707989
+150162990,25,2882,Marshall Middle School,3900 N Lawndale Ave,Chicago,60618 3108,7-8,41.952084,-87.720208
+150162990,25,2886,Chavez Elem Multicultural Acad Ct,4747 S Marshfield Ave,Chicago,60609 4159,P-8,41.807732,-87.666015
+150162990,25,2889,Jordan Elem Community School,7414 N Wolcott Ave,Chicago,60626 1519,P-8,42.017268,-87.677799
+150162990,25,2892,Kellman Corporate Community Elem,3030 W Arthington St,Chicago,60612 3903,P-8,41.870239,-87.701581
+150162990,25,2893,Finkl Elem School,2332 S Western Ave,Chicago,60608 3818,P-8,41.849603,-87.685721
+150162990,25,2895,Ariel Elem Community Academy,1119 E 46th St,Chicago,60653 4403,P-8,41.811289,-87.598949
+150162990,25,2896,Little Village Elem School,2620 S Lawndale Ave,Chicago,60623 4519,P-8,41.843973,-87.717369
+150162990,25,2897,Zapata Elem Academy,2728 S Kostner Ave,Chicago,60623 4218,P-8,41.842417,-87.734391
+150162990,25,2898,Ortiz De Dominguez Elem School,3000 S Lawndale Ave,Chicago,60623 4524,P-2,41.838697,-87.717081
+150162990,25,2900,Lara Elem Academy,4619 S Wolcott Ave,Chicago,60609 3855,P-8,41.810023,-87.672147
+150162990,25,2901,Telpochcalli Elem School,2832 W 24th Blvd,Chicago,60623 3524,P-8,41.84803,-87.695854
+150162990,25,2902,Wells Preparatory Elem Academy,249 E 37th St,Chicago,60653 1001,P-8,41.827281,-87.620152
+150162990,25,2903,Woodlawn Elem Community School,6657 S Kimbark Ave,Chicago,60637 4481,P-6,41.77403,-87.594363
+150162990,25,2904,Christopher Elem School,5042 S Artesian Ave,Chicago,60632 1414,K-8,41.802174,-87.685661
+150162990,25,2908,West Park Elem Academy,1425 N Tripp Ave,Chicago,60651 1829,P-8,41.908397,-87.732452
+150162990,25,2912,Marine Leadership Academy - Ames,1920 N Hamlin Ave,Chicago,60647 3411,7-12,41.916818,-87.721802
+150162990,25,2913,Fairfield Elem Academy,6201 S Fairfield Ave,Chicago,60629 2309,P-8,41.781107,-87.692225
+150162990,25,2914,Sandoval Elem School,5534 S Saint Louis Ave,Chicago,60629 3810,P-5,41.711376,-87.708854
+150162990,25,2915,Northwest Middle School,5252 W Palmer St,Chicago,60639 3047,6-8,41.920655,-87.75229
+150162990,25,2916,Hampton Elem Fine & Perf Arts Sch,3434 W 77th St,Chicago,60652 1453,K-8,41.753211,-87.709203
+150162990,25,2918,Colemon J Elem Academy,1441 W 119th St,Chicago,60643 5094,P-8,41.677418,-87.659379
+150162990,25,2919,Columbia Explorers Elem Academy,4520 S Kedzie Ave,Chicago,60632 2904,P-8,41.81133,-87.70425
+150162990,25,2920,Chicago Academy Elem School,3400 N Austin Ave,Chicago,60634 4229,P-8,41.942262,-87.776356
+150162990,25,2921,Courtenay Elem Language Arts Ctr,4420 N Beacon St,Chicago,60640 5732,P-8,41.962034,-87.663888
+150162990,25,2922,Ashburn Community Elem School,8300 S Saint Louis Ave,Chicago,60652 3224,P-8,41.711376,-87.708854
+150162990,25,2923,Belmont-Cragin Elem School,5252 W Palmer St,Chicago,60639 3047,P-8,41.920655,-87.75229
+150162990,25,2924,National Teachers Elem Academy,55 W Cermak Rd,Chicago,60616 2001,P-8,41.852775,-87.625103
+150162990,25,2926,Talman Elem School,5450 S Talman Ave,Chicago,60632 1520,P-8,41.79465,-87.690322
+150162990,25,2927,Dodge Elem School,431 N Troy St,Chicago,60612 1713,P-8,41.889992,-87.705151
+150162990,25,2930,New Field Elem School,1707 W Morse Ave,Chicago,60626 3203,P-3,42.007645,-87.672412
+150162990,25,2933,Durkin Park Elem School,8445 S Kolin Ave,Chicago,60652 3131,P-8,41.739383,-87.729937
+150162990,25,2934,Calmeca Acad Elem School,3456 W 38th St,Chicago,60632 3304,P-8,41.824459,-87.710713
+150162990,25,2935,North River Elem School,4416 N Troy St,Chicago,60625 4520,P-8,41.96152,-87.707183
+150162990,25,2936,Claremont Academy Elem School,2300 W 64th St,Chicago,60636 2458,P-8,41.777278,-87.681021
+150162990,25,2937,Doolittle Elem School,535 E 35th St,Chicago,60616 4111,P-8,41.830984,-87.613633
+150162990,25,2941,Suder Montessori Elem Magnet Schl,2022 W Washington Blvd,Chicago,60612 2429,P-8,41.883284,-87.677347
+150162990,25,2943,Tarkington Elem School,3330 W 71st St,Chicago,60629 3503,P-8,41.764485,-87.705628
+150162990,25,2945,Frazier Perspectives Magnet ES,4027 W Grenshaw St,Chicago,60624 3930,K-8,41.866922,-87.725818
+150162990,25,2949,Disney II Elem School,3815 N Kedvale Ave,Chicago,60641 3113,P-6,41.950254,-87.730595
+150162990,25,2951,Plato Learning Acad  Elem School,5545 W Harrison St,Chicago,60644 5367,K-8,41.872698,-87.762819
+150162990,25,2953,Edison Park Elem School,6220 N Olcott Ave,Chicago,60631 1815,P-8,41.994202,-87.813812
+150162990,25,2954,Davis M Magnet Elem School,6740 S Paulina St,Chicago,60636 3307,K-8,41.771436,-87.666577
+150162990,25,2955,LaSalle II Lang Acad Elem Sch,1148 N Honore St,Chicago,60622 3705,P-8,41.902576,-87.673726
+150162990,25,2958,Prieto Math-Science Elem Sch,2231 N Central Ave,Chicago,60639 2956,P-8,41.923374,-87.765973
+150162990,25,2959,Skinner North Elem Sch,640 W Scott St,Chicago,60610 1093,K-8,41.905172,-87.644902
+150162990,25,2960,South Shore Fine Arts Elem Sch,1415 E 70th St,Chicago,60637 4879,P-8,41.767687,-87.590495
+150162990,25,2961,Hope Inst Learning Acad Elem School,1628 W Washington Blvd,Chicago,60612 2613,K-5,41.883436,-87.667584
+150162990,25,2963,Camras Elem School,3000 N Mango Ave,Chicago,60634 5216,P-8,41.935027,-87.770015
+150162990,25,2964,Garcia Lorca Elem School,3231 N Springfield Ave,Chicago,60618 5109,P-8,41.940337,-87.724778
+150162990,25,2965,West Ridge Elem School,6700 N Whipple St,Chicago,60645 4123,P-8,42.003054,-87.705806
+150162990,25,2966,Azuela Elem School,4707 W Marquette Rd,Chicago,60629 5641,P-8,41.771013,-87.739754
+150162990,25,2967,STEM Magnet Academy Elem,1522 W Fillmore St,Chicago,60607 4614,K-7,41.868653,-87.664362
+150162990,25,2968,Shields Middle School,2611 W 48th St,Chicago,60632 1402,5-8,41.806421,-87.689781
+150162990,25,3075,Jefferson Alt High School,1100 S Hamilton Ave,Chicago,60612 4207,6-12,41.867502,-87.680448
+150162990,25,3116,Montefiore Special Elem School,1310 S Ashland Ave,Chicago,60608 1345,4-8,41.864704,-87.666483
+150162990,25,3600,York Alternative High School,2700 S California Ave,Chicago,60608 5108,9-12,41.841161,-87.695278
+150162990,25,3715,Graham  R Training Center,2347 S Wabash Ave,Chicago,60616 2111,9-12,41.850222,-87.625291
+150162990,25,3732,Simpson Acad HS for Young Women,1321 S Paulina St,Chicago,60608 1221,6-12,41.86437,-87.668682
+150162990,25,3735,Rudolph Elem Learning Center,110 N Paulina St,Chicago,60612 2600,P-5,41.883408,-87.669358
+150162990,25,3743,Northside Learning Center,3730 W Bryn Mawr Ave,Chicago,60659 3134,9-12,41.983041,-87.722106
+150162990,25,3753,Vaughn Occupational High School,4355 N Linder Ave,Chicago,60641 1322,9-12,41.959926,-87.764609
+150162990,25,3760,Beard Elem School,6445 W Strong St,Chicago,60656 4011,P-3,41.97035,-87.790405
+150162990,25,3761,Blair Early Childhood Center,6751 W 63rd Pl,Chicago,60638 4829,P-2,41.7765,-87.789609
+150162990,25,3762,Stock Early Childhood Center,7507 W Birchwood Ave,Chicago,60631 4322,P,42.016823,-87.814181
+150162990,25,3765,Southside Occupational Acad HS,7342 S Hoyne Ave,Chicago,60636 3755,11-12,41.762048,-87.675888
+150162990,25,3777,Camelot Safe Academy School,7877 S Coles Ave,Chicago,60649 4817,4-11,41.752834,-87.550972
+150162990,25,3781,Vick Early Childhood & Family Ctr,2554 W 113th St,Chicago,60655 1430,P,41.688264,-87.685138
+150162990,25,3784,Peace and Education Coalition HS,4946 S Paulina St,Chicago,60609 4833,10-12,41.804297,-87.667438
+150162990,25,3787,Thomas Early Childhood Center,3625 S Hoyne Ave,Chicago,60609 1147,P,41.828092,-87.677509
+150162990,25,3788,Prologue Early College HS,1135 N Cleaver St,Chicago,60642 4002,9-12,41.902956,-87.663664
+150162990,25,3793,Banner West Academy HS,5035 W North Ave,Chicago,60639 4565,9-12,41.909394,-87.752272
+150162990,25,3794,Pathways in Education HS,3270 W 87th St,Chicago,60652 3768,9-12,41.735181,-87.711744
+150162990,25,3796,Excel Academy - Englewood HS,7141 S Morgan St,Chicago,60621 5000,9-12,41.764403,-87.649099
+150162990,25,3797,Magic Johnson Academy HS,3222 W Roosevelt Rd,Chicago,60624 4332,9-12,41.866543,-87.706443
+150162990,25,3799,Winnie Mandela High School,7847 S Jeffery Blvd,Chicago,60649 5028,9-12,41.752302,-87.575852
+150162990,25,3800,Ombudsman Chicago HS,7500 N Harlem Ave,Chicago,60631 4400,9-12,42.0173,-87.806572
+150162990,25,3804,Little Black Pearl Arts Acad HS,1060 E 47th St,Chicago,60653 3600,9-12,41.809752,-87.600466
+150162990,25,3805,Excel Academy - Woodlawn HS,6145 S Ingleside Ave,Chicago,60637 2696,9,41.783405,-87.602604
+150162990,25,3806,Excel Academy - Southwest HS,7014 S Washtenaw Ave,Chicago,60629,10,41.766135,-87.690774
+150162990,25,3807,Camelot Safe Academy - Garfield Park,241 N Kolmar,Chicago,60624,6-12,41.884122,-87.739059
+150169000,25,201C,Horizon Science Acad-McKinley Park,2245 W Pershing Rd,Chicago,60609 2211,K-10,41.822853,-87.683517
+150169010,25,201C,Horizon Science Acad-Belmont,5035 W North Ave,Chicago,60639 4565,K-7,41.909394,-87.752272
