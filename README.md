@@ -8,20 +8,40 @@ Assumptions
 
 * Geocod.io API KEY (just needed to generate schools list)
 
-Generating schools GeoJSON
---------------------------
+Data sources
+------------
 
-There is a GeoJSON file of Cook County Schools in `data/schools.json`.  This is generated from the Illinois State Board of Education (ISBE) [Directory of Educational Entities](http://www.isbe.net/research/htmls/directories.htm).
+### Schools
 
-This package includes scripts to download the directory spreadsheet, filter it to required fields, geocode the addresses and generate GeoJSON.
+The schools on the map are generated from the [Directory of Educational Entities](http://www.isbe.net/research/htmls/directories.htm) from Illinois State Board of Education (ISBE).
 
-To run this pipeline to regenerate the schools.json file:
+### Agencies
+
+The agencies were exported from [a Google Spreadsheet](https://docs.google.com/spreadsheets/d/1_DRDNFkjbnRXOj2UgEEi108coHNcSki8JAZTDeuXHvc/edit) populated by Matt Walsh.
+
+### Programs
+
+The programs were exported from [a Google Spreadsheet](https://docs.google.com/spreadsheets/d/1_DRDNFkjbnRXOj2UgEEi108coHNcSki8JAZTDeuXHvc/edit) populated by Matt Walsh.
+
+Data pipeline
+-------------
+
+This package includes scripts to download the directory spreadsheet, filter it to required fields, geocode the addresses and load the information into a database.
+
+To run this pipeline to load the schools:
 
     npm run download:educationalentities
     npm run filterschools
     npm run geocodeschools
-    npm run schoolsjson
+    npm run createschools 
 
+To load agencies, first export the agency worksheet from the Google Spreadsheet, as CSV:
+    
+    cat agencies.csv | npm run createagencies
+
+To load programs:
+
+    npm run createprograms
 
 Building front-end assets
 -------------------------
