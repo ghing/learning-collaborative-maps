@@ -160,7 +160,7 @@ app.post('/api/1/agencies', function(req, res) {
     agencies = [agencies]; 
   }
   createAgencies(agencies, dbConnection, function() {
-    res.json(agencies);
+    res.status(201).json(agencies);
   });
 });
 
@@ -210,7 +210,7 @@ app.post('/api/1/schools', function(req, res) {
     schools = [schools]; 
   }
   createSchools(schools, dbConnection, function() {
-    res.json(schools);
+    res.status(201).json(schools);
   });
 });
 
@@ -249,7 +249,7 @@ app.post('/api/1/schools/:rcdts/programs', function(req, res) {
       program_type: program.program_type
     };
     addSchoolProgram(req.school, programProps, dbConnection, function() {
-      res.json(program);
+      res.status(201).json(program);
     })
   });
 });
