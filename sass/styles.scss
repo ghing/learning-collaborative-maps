@@ -37,3 +37,19 @@
     width: 100%;
   }
 }
+
+.tt-menu {
+  // Style the typeahead suggestions
+
+  // Background color and width are most important because
+  // the menu is transparent by default and not 100%, so
+  // it looks strange when it appears over other content.
+  background-color: #fff;
+  width: 100%;
+
+  border: 1px solid #ccc;
+
+  // Match the Bootstrap input styles
+  padding: $input-padding-y $input-padding-x;
+  @include border-radius($input-border-radius);
+}
