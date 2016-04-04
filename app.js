@@ -22,6 +22,20 @@ app.use(bodyParser.json());
 // create.
 // TODO: Set location header for creates
 
+
+function getSchoolsWithProgramAgencies(dbConnection, callback) {
+  dbApi.getAgencies({}, dbConnection, function(agencies) {
+    var agencyLookup = agencies.reduce(function(lookup, agency) {
+      lookup[agency.slug] = agency;
+      return lookup;
+    }, {});
+
+    dbApi.getSchools({}, dbConnection, function(schools) {
+      callback(null, schools.map(dbApi.fixSchoolProgramAgencies.bind(undefined, agencyLookup)));
+    });
+  });
+}
+
 app.get('/', function (req, res) {
     res.render('index');
 });
@@ -48,6 +62,7 @@ app.post('/api/1/agencies', function(req, res) {
   });
 });
 
+
 app.delete('/api/1/agencies', function(req, res) {
   dbApi.deleteAgencies({}, dbConnection, function() {
     res.json();
@@ -68,24 +83,14 @@ app.get('/api/1/agencies/:agencySlug', function(req, res) {
 
 app.get('/api/1/schools', function(req, res) {
   var format = req.query.format || 'json';
-
-  dbApi.getAgencies({}, dbConnection, function(agencies) {
-    var agencyLookup = agencies.reduce(function(lookup, agency) {
-      lookup[agency.slug] = agency;
-      return lookup;
-    }, {});
-
-    dbApi.getSchools({}, dbConnection, function(schools) {
-      schools = schools.map(dbApi.fixSchoolProgramAgencies.bind(undefined, agencyLookup));
-
-      if (format == 'geojson') {
-        res.json(dbApi.geoJsonCollection(schools));
-      }
-      else {
-        res.json(schools);
-      }
-    });
-  });
+  getSchoolsWithProgramAgencies(dbConnection, function(err, schools) {
+    if (format == 'geojson') {
+      res.json(dbApi.geoJsonCollection(schools));
+    }
+    else {
+      res.json(schools);
+    }
+  });  
 });
 
 app.post('/api/1/schools', function(req, res) {
@@ -136,6 +141,23 @@ app.post('/api/1/schools/:rcdts/programs', function(req, res) {
       res.status(201).json(program);
     })
   });
+});
+
+app.get('/api/1/programs', function(req, res) {
+  getSchoolsWithProgramAgencies(dbConnection, function(err, schools) {
+    res.json({
+      programs: schools.reduce(function(programs, school) {
+        if (school.programs) {
+          school.programs.forEach(function(program) {
+            programs.push(Object.assign({}, program, {
+              school: '/api/1/schools/' + school.rcdts
+            }));
+          });
+        }
+        return programs;
+      }, [])
+    });
+  });  
 });
 
 app.delete('/api/1/programs', function(req, res) {
