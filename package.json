@@ -15,6 +15,7 @@
     "createschools": "cat data/dir_ed_entities__cook_schools__with_coordinates.csv | ./scripts/create_schools.js",
     "createagencies": "./scripts/create_agencies.js",
     "createprograms": "./scripts/create_programs.js",
+    "deleteprograms": "./scripts/delete_programs.js",
     "build:vendorjs": "mkdir -p public/js && browserify $npm_package_config_requireargs --debug -p [minifyify --map vendor.min.js.map --output public/js/vendor.min.js.map] > public/js/vendor.min.js",
     "build:app": "mkdir -p public/js && browserify $npm_package_config_externalargs --debug -p [minifyify --map learningcollaborative.min.js.map --output public/js/learningcollaborative.min.js.map] -t [ babelify --presets [ es2015 react ] ] --standalone LearningCollaborative js/src/learningcollaborative.js > public/js/learningcollaborative.min.js",
     "build:vendorstyles": "mkdir -p public/css && cp -r node_modules/leaflet/dist/images public/css && cat node_modules/leaflet/dist/leaflet.css | cleancss --source-map --output public/css/vendor.css",

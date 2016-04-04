@@ -71,7 +71,7 @@ app.get('/api/1/schools', function(req, res) {
 
   dbApi.getAgencies({}, dbConnection, function(agencies) {
     var agencyLookup = agencies.reduce(function(lookup, agency) {
-      lookup[agency._id] = agency;
+      lookup[agency.slug] = agency;
       return lookup;
     }, {});
 
@@ -128,13 +128,19 @@ app.post('/api/1/schools/:rcdts/programs', function(req, res) {
   dbApi.getAgencies({'slug': agencySlug}, dbConnection, function(agencies) {
     var agency = agencies[0];
     var programProps = {
-      agency: agency._id,
+      agency: agency.slug,
       age_group: program.age_group,
       program_type: program.program_type
     };
     dbApi.addSchoolProgram(req.school, programProps, dbConnection, function() {
       res.status(201).json(program);
     })
+  });
+});
+
+app.delete('/api/1/programs', function(req, res) {
+  dbApi.deletePrograms(dbConnection, function() {
+    res.json();
   });
 });
 
