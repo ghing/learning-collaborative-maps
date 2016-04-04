@@ -138,6 +138,11 @@ app.set('view engine', 'handlebars');
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
 
+// TODO: Handle errors, return error response.
+// TODO: Figure out REST semantics for bulk create or just get rid of bulk
+// create.
+// TODO: Set location header for creates
+
 app.get('/', function (req, res) {
     res.render('index');
 });
