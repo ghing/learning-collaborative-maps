@@ -64,6 +64,21 @@ const LearningCollaborativeMap = React.createClass({
     AgencyStore.removeChangeListener(this._onChange);
   },
 
+  componentDidUpdate: function(prevProps, prevState) {
+    // HACK: Always redraw the marker, to detect possible color changes
+    // based on a school's programs.  If we want to redraw only if the
+    // programs change, we should represent the selected school using
+    // something like Immutable.js
+    if (this.state.selectedSchool) {
+      let schoolProps = this.state.selectedSchool.properties;
+      let programs = this.state.selectedSchool.properties.programs;
+      if (programs && programs.length) {
+        let marker = this.state.schoolMarkerLookup[schoolProps.rcdts];
+        marker.setStyle(this._styleSchoolMarker(this.state.selectedSchool));
+      }
+    }
+  },
+
   _initializeMap: function() {
     let map = L.map(this.refs.mapContainer, {
         zoomControl: false
@@ -77,29 +92,34 @@ const LearningCollaborativeMap = React.createClass({
     return map;
   },
 
+  _styleSchoolMarker: function(feature) {
+    let markerOptions = assign({}, this.props.markerOptions);
+    let programs = feature.properties.programs;
+    let agencyBits;
+    let agencySlug;
+
+    if (programs && programs.length) {
+      if (programs.length > 1) {
+        markerOptions.fillColor = 'black';
+      }
+      else {
+        agencyBits = programs[0].agency.split('/');
+        agencySlug = agencyBits[agencyBits.length - 1];
+        markerOptions.fillColor = AgencyStore.getColorScale()(agencySlug);
+      }
+    }
+    return markerOptions;
+  },
+
   _getSchoolMarkers: function(schools) {
     let component = this;
 
-    return L.geoJson(schools, {
+    let markerLookup = {};
+    let schoolMarkers = L.geoJson(schools, {
       pointToLayer: function(feature, latlng) {
-        let markerOptions = assign({}, component.props.markerOptions);
-        let programs = feature.properties.programs;
-        let agencyBits;
-        let agencySlug;
-
-        if (programs && programs.length) {
-          if (programs.length > 1) {
-            markerOptions.fillColor = 'black';
-          }
-          else {
-            agencyBits = programs[0].agency.split('/');
-            agencySlug = agencyBits[agencyBits.length - 1];
-            markerOptions.fillColor = AgencyStore.getColorScale()(agencySlug);
-          }
-        }
-
-        return L.circleMarker(latlng, markerOptions);
+        return L.circleMarker(latlng, {});
       },
+      style: component._styleSchoolMarker,
       onEachFeature: function(feature, layer) {
         layer.bindPopup(feature.properties.FacilityName, {
           // Move the popup arrow higher above the default.
@@ -115,14 +135,18 @@ const LearningCollaborativeMap = React.createClass({
         layer.on('click', function(e) {
           component._handleClickSchoolMarker(feature);
         });
+        markerLookup[feature.properties.rcdts] = layer;
       }
     });
+
+    return [schoolMarkers, markerLookup];
   },
 
   _onChange: function() {
     let schools = SchoolStore.getAll();
     let map = this.state.map;
-    let schoolMarkers = this._getSchoolMarkers(schools).addTo(map);
+    let [schoolMarkers, markerLookup] = this._getSchoolMarkers(schools);
+    schoolMarkers.addTo(map);
     map.fitBounds(schoolMarkers.getBounds());
 
     this.setState({
@@ -130,7 +154,8 @@ const LearningCollaborativeMap = React.createClass({
       agencies: AgencyStore.getAll(),
       agencyLookup: AgencyStore.getLookup(),
       map: map,
-      schoolMarkers: schoolMarkers
+      schoolMarkers: schoolMarkers,
+      schoolMarkerLookup: markerLookup
     });
   },
 
