@@ -42,16 +42,31 @@ let AgencyStore = assign({}, EventEmitter.prototype, {
     switch(action.actionType) {
       case LearningCollaborativeConstants.AGENCIES_SET:
         _agencies = action.agencies;
+        _agencies.sort((a, b) => {
+          if (a.properties.agency < b.properties.agency) {
+            return -1;
+          }
+
+          if (a.properties.agency > b.properties.agency) {
+            return 1;
+          }
+
+          return 0;
+        });
+
         _agencyLookup = _agencies.reduce(function(lookup, agency) {
           lookup[agency.properties.slug] = agency;
           return lookup;
         }, {});
+
         _agencyColorScale.domain(_agencies.map(function(agency) {
           return agency.properties.slug;
         }));
+
         _agencyColorScale.range(_agencies.map(function(agency) {
           return agency.properties.marker_color;
         }));
+
         AgencyStore.emitChange();
         break;
     }
