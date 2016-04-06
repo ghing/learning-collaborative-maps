@@ -38,12 +38,10 @@ let AgencyStore = assign({}, EventEmitter.prototype, {
 
   dispatcherIndex: AppDispatcher.register(function(payload) {
     let action = payload.action;
-    let agencies;
 
     switch(action.actionType) {
       case LearningCollaborativeConstants.AGENCIES_SET:
-        agencies = action.agencies;
-        _agencies = agencies;
+        _agencies = action.agencies;
         _agencyLookup = _agencies.reduce(function(lookup, agency) {
           lookup[agency.properties.slug] = agency;
           return lookup;
