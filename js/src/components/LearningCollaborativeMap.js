@@ -8,6 +8,21 @@ import AgencyStore from '../stores/AgencyStore';
 
 import MapDrawer from './MapDrawer';
 
+function agencySlugFromUrl(urlPath) {
+  let pathBits = urlPath.split('/');
+  return pathBits[pathBits.length - 1];
+}
+
+function distinctProgramAgencies(programs) {
+  let agencySet = new Set();
+  programs.forEach(program => {
+    let agencySlug = agencySlugFromUrl(program.agency);
+    agencySet.add(agencySlug);
+  });
+  // Convert set to list
+  return [...agencySet]; 
+} 
+
 const LearningCollaborativeMap = React.createClass({
   getInitialState: function() {
     return {
@@ -99,13 +114,13 @@ const LearningCollaborativeMap = React.createClass({
     let agencySlug;
 
     if (programs && programs.length) {
-      if (programs.length > 1) {
-        markerOptions.fillColor = 'black';
+      let agencies = distinctProgramAgencies(programs);
+
+      if (agencies.length == 1) {
+        markerOptions.fillColor = AgencyStore.getColorScale()(agencies[0]);
       }
       else {
-        agencyBits = programs[0].agency.split('/');
-        agencySlug = agencyBits[agencyBits.length - 1];
-        markerOptions.fillColor = AgencyStore.getColorScale()(agencySlug);
+        markerOptions.fillColor = 'black';
       }
     }
     return markerOptions;
