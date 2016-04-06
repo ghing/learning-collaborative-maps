@@ -3,8 +3,9 @@ import React from 'react';
 const CreateProgram = React.createClass({
   getInitialState: function() {
     return {
-      agency: null,
-      ageGroup: null
+      agency: undefined,
+      ageGroup: undefined,
+      programType: undefined
     };
   },
 
@@ -33,7 +34,7 @@ const CreateProgram = React.createClass({
       <form className="create-program" onSubmit={this.handleSubmit}>
         <fieldset className="form-group">
           <label htmlFor="agency">Agency</label>
-          <select className="form-control" id="agency" value={this.state.agency ? this.state.agency.properties.slug : undefined} onChange={this.handleChangeAgency} ref="agency">
+          <select className="form-control" id="agency" value={this.state.agency ? this.state.agency.properties.slug : ''} onChange={this.handleChangeAgency} ref="agency">
             {agencyOptions}
           </select>
         </fieldset>
@@ -48,7 +49,7 @@ const CreateProgram = React.createClass({
         </fieldset>
         <fieldset className="form-group">
           <label htmlFor="program-type">Program Type</label>
-          <select className="form-control" id="program-type" value={this.state.programType} onChange={this.handleChangeProgramType} ref="programType">
+          <select className="form-control" id="program-type" value={this.state.programType ? this.state.programType : ''} onChange={this.handleChangeProgramType} ref="programType">
             {programTypeOptions}
           </select>
         </fieldset>
@@ -84,6 +85,14 @@ const CreateProgram = React.createClass({
     let programType = this.state.programType;
 
     this.props.createProgram(this.props.school, agency, this.state.ageGroup, programType);
+
+    // Try to reset the form values.  For some reason, the selects aren't
+    // getting reset.
+    this.setState({
+      agency: undefined,
+      ageGroup: undefined,
+      programType: undefined
+    });
   },
 
   buttonDisabled: function() {
