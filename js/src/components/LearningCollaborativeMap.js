@@ -20,8 +20,8 @@ function distinctProgramAgencies(programs) {
     agencySet.add(agencySlug);
   });
   // Convert set to list
-  return [...agencySet]; 
-} 
+  return [...agencySet];
+}
 
 const LearningCollaborativeMap = React.createClass({
   getInitialState: function() {
@@ -39,12 +39,13 @@ const LearningCollaborativeMap = React.createClass({
       initialZoom: 13,
       markerOptions: {
         radius: 6,
-        fillColor: "#ff7800",
+        fillColor: "#bdbdbd",
         color: "#000",
         weight: 1,
         opacity: 1,
         fillOpacity: 0.8
-      }
+      },
+      multipleAgencyFillColor: 'black'
     }
   },
 
@@ -110,8 +111,6 @@ const LearningCollaborativeMap = React.createClass({
   _styleSchoolMarker: function(feature) {
     let markerOptions = assign({}, this.props.markerOptions);
     let programs = feature.properties.programs;
-    let agencyBits;
-    let agencySlug;
 
     if (programs && programs.length) {
       let agencies = distinctProgramAgencies(programs);
@@ -120,7 +119,7 @@ const LearningCollaborativeMap = React.createClass({
         markerOptions.fillColor = AgencyStore.getColorScale()(agencies[0]);
       }
       else {
-        markerOptions.fillColor = 'black';
+        markerOptions.fillColor = this.props.multipleAgencyFillColor;
       }
     }
     return markerOptions;
