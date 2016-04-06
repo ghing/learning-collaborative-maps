@@ -17,13 +17,17 @@ const CreateProgram = React.createClass({
       return false;
     }
 
-    let agencyOptions = this.props.agencies.map(function(agency) {
+    let agencyOptions = [
+      <option value="" key=""></option>
+    ].concat(this.props.agencies.map(function(agency) {
       return <option value={agency.properties.slug} key={agency.properties.slug}>{agency.properties.agency}</option>;
-    });
+    }));
 
-    let programTypeOptions = this.props.programTypes.map(programType => {
+    let programTypeOptions = [
+      <option value="" key=""></option>
+    ].concat(this.props.programTypes.map(programType => {
       return <option value={programType} key={programType}>{programType}</option>;
-    });
+    }));
 
     return (
       <form className="create-program" onSubmit={this.handleSubmit}>
@@ -77,20 +81,21 @@ const CreateProgram = React.createClass({
     event.preventDefault();
 
     let agency = this.state.agency;
-    if (!agency) {
-      agency = this.props.agencyLookup[this.refs.agency.value];
-    }
-
     let programType = this.state.programType;
-    if (!programType) {
-      programType = this.refs.programType.value;
-    }
 
     this.props.createProgram(this.props.school, agency, this.state.ageGroup, programType);
   },
 
   buttonDisabled: function() {
+    if (!this.state.agency) {
+      return true;
+    }
+
     if (!this.state.ageGroup) {
+      return true;
+    }
+
+    if (!this.state.programType) {
       return true;
     }
 
