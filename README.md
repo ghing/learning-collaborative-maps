@@ -48,7 +48,7 @@ To load agencies, first export the agency worksheet from the Google Spreadsheet,
 
 To load programs:
 
-    npm run createprograms
+    cat data/programs.json | npm run createprograms
 
 Building front-end assets
 -------------------------
