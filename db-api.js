@@ -1,3 +1,6 @@
+var ObjectID = require('mongodb').ObjectID;
+
+
 function createSchools(schools, db, callback) {
   var collection = db.collection('schools');
   collection.insertMany(schools, function(err, result) {
@@ -105,13 +108,21 @@ function deleteSchoolPrograms(school, db, callback) {
 }
 
 function addSchoolProgram(school, program, db, callback) {
+  var insertProgram = Object.assign({}, program);
+
+  // If a program does not have an ID specified,
+  // create one
+  if (!insertProgram._id) {
+    insertProgram._id = new ObjectID();
+  }
+
   db.collection('schools').updateOne(
     {
       rcdts: school.rcdts
     },
     {
       $push: {
-        programs: program
+        programs: insertProgram
       }
     },
     function(err, results) {
