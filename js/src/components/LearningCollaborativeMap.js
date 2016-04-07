@@ -81,18 +81,28 @@ const LearningCollaborativeMap = React.createClass({
   },
 
   componentDidUpdate: function(prevProps, prevState) {
-    // HACK: Always redraw the marker, to detect possible color changes
-    // based on a school's programs.  If we want to redraw only if the
-    // programs change, we should represent the selected school using
-    // something like Immutable.js
     if (this.state.selectedSchool) {
       let schoolProps = this.state.selectedSchool.properties;
       let programs = this.state.selectedSchool.properties.programs;
+      // HACK: Always redraw the marker, to detect possible color changes
+      // based on a school's programs.  If we want to redraw only if the
+      // programs change, we should represent the selected school using
+      // something like Immutable.js
       if (programs && programs.length) {
         let marker = this.state.schoolMarkerLookup[schoolProps.rcdts];
         marker.setStyle(this._styleSchoolMarker(this.state.selectedSchool));
       }
+
+      if (this.state.schoolSelectMethod == 'search') {
+        let center = new L.LatLng(
+          this.state.selectedSchool.geometry.coordinates[1],
+          this.state.selectedSchool.geometry.coordinates[0]
+        );
+        let zoom = 15;
+        this.state.map.setView(center, zoom);
+      }
     }
+
   },
 
   _initializeMap: function() {
@@ -188,15 +198,16 @@ const LearningCollaborativeMap = React.createClass({
 
   _handleClickSchoolMarker: function(school) {
     this.setState({
-      selectedSchool: school
+      selectedSchool: school,
+      schoolSelectMethod: 'click'
     });
   },
 
   _handleSelectSchool: function(school) {
     this.setState({
-      selectedSchool: school
+      selectedSchool: school,
+      schoolSelectMethod: 'search'
     });
-    // TODO: Zoom map to school
   }
 });
 
