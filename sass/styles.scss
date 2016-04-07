@@ -53,3 +53,8 @@
   padding: $input-padding-y $input-padding-x;
   @include border-radius($input-border-radius);
 }
+
+.contact-info {
+  position: absolute;
+  bottom: 0;
+}

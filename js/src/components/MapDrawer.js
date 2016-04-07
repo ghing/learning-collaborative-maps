@@ -3,6 +3,7 @@ import React from 'react';
 import SchoolDetail from './SchoolDetail';
 import SchoolSearch from './SchoolSearch';
 import CreateProgram from './CreateProgram';
+import ContactInfo from './ContactInfo';
 
 const MapDrawer = React.createClass({
   render: function() {
@@ -15,6 +16,7 @@ const MapDrawer = React.createClass({
                        agencyLookup={this.props.agencyLookup}
                        programTypes={this.props.programTypes}
                        createProgram={this.props.createProgram} />
+        <ContactInfo contactEmail={this.props.contactEmail} />                 
       </div>
     );
   }

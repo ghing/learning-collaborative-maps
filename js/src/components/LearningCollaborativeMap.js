@@ -45,7 +45,8 @@ const LearningCollaborativeMap = React.createClass({
         opacity: 1,
         fillOpacity: 0.8
       },
-      multipleAgencyFillColor: 'black'
+      multipleAgencyFillColor: 'black',
+      contactEmail: 'Mwalsh@betweenfriendschicago.org'
     }
   },
 
@@ -59,7 +60,8 @@ const LearningCollaborativeMap = React.createClass({
                    agencies={this.state.agencies}
                    agencyLookup={this.state.agencyLookup}
                    programTypes={SchoolStore.getProgramTypes()}
-                   createProgram={LearningCollaborativeActions.createProgram} />
+                   createProgram={LearningCollaborativeActions.createProgram}
+                   contactEmail={this.props.contactEmail} />
       </div>
     );
   },
