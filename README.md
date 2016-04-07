@@ -28,11 +28,18 @@ Data pipeline
 
 This package includes scripts to download the directory spreadsheet, filter it to required fields, geocode the addresses and load the information into a database.
 
-To run this pipeline to load the schools:
+To run this pipeline to prepare the school data:
 
     npm run download:educationalentities
     npm run filterschools
     npm run geocodeschools
+
+To load the schools and other data, you will need to have a running instance of the app, either on your local machine, or deployed somewhere.  See below for instructions on deployment or running the development server.  Then set the `LC_API_URL` accordingly.  For example, if running locally:
+
+    export LC_API_URL="http://localhost:3000/api/1"    
+
+Then run the npm script to create the schools:
+
     npm run createschools 
 
 To load agencies, first export the agency worksheet from the Google Spreadsheet, as CSV:
@@ -63,6 +70,26 @@ Run the Express app:
 
     npm run serve
 
+Configuration
+-------------
+
+Configuration is handled through environment variables.
+
+### LC_DATABASE_URL
+
+URL of the MongoDB database where data for this app will be stored.
+
+Example:
+
+    export LC_DATABASE_URL="mongodb://localhost:27017/learning_collaborative"
+
+### LC_API_URL
+
+URL of a running instance of the application.  This will be used by data loading scripts to use the REST API to delete and create objects in the database.
+
+Example:
+
+    export LC_API_URL="http://localhost:3000/api/1"    
 
 Provisioning the app
 --------------------
