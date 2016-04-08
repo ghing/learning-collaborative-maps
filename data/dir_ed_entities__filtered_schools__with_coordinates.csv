@@ -1227,3 +1227,704 @@ District-4",Type,School,FacilityName,Address,City,Zip,GradeServed,lat,lng
 150162990,25,3807,Camelot Safe Academy - Garfield Park,241 N Kolmar,Chicago,60624,6-12,41.884122,-87.739059
 150169000,25,201C,Horizon Science Acad-McKinley Park,2245 W Pershing Rd,Chicago,60609 2211,K-10,41.822853,-87.683517
 150169010,25,201C,Horizon Science Acad-Belmont,5035 W North Ave,Chicago,60639 4565,K-7,41.909394,-87.752272
+190220860,17,0001,Hinsdale Central High School,5500 S Grant St,Hinsdale,60521 4578,9-12,41.788975,-87.931519
+190220860,17,0002,Hinsdale South High School,7401 Clarendon Hills Rd,Darien,60561 4288,9-12,41.754691,-87.954369
+190220860,17,3001,Hinsdale Twp HSD 86 Adult Opportunities Program,42 63rd St,Willowbrook,60527 2981,12,41.774327,-87.950434
+190220870,17,0001,Glenbard East High School,1014 S Main St,Lombard,60148 3938,9-12,41.866383,-88.017817
+190220870,17,0002,Glenbard North High School,990 Kuhn Rd,Carol Stream,60188 9227,9-12,41.930081,-88.140275
+190220870,17,0003,Glenbard West High School,670 Crescent Blvd,Glen Ellyn,60137 4286,9-12,41.880113,-88.05901
+190220870,17,0004,Glenbard South High School,23W200 Butterfield Rd,Glen Ellyn,60137 6974,9-12,41.830934,-88.057504
+190220880,16,0001,Addison Trail High School,213 N Lombard Rd,Addison,60101 1906,9-12,41.921761,-88.02465
+190220880,16,0002,Willowbrook High School,1250 S Ardmore Ave,Villa Park,60181 3205,9-12,41.86665,-87.978415
+56099070C,04,2001,Laraway Elem School,1705 Richards St,Joliet,60433 3127,2-8,41.49232,-88.07113
+56099070C,04,2002,Oak Valley Elem School,1705 Richards St,Joliet,60433 3127,P-1,41.49232,-88.07113
+05016001Y,01,0000,Beacon Academy,622 Davis St,Evanston,60201 4491,9-10,42.04618,-87.680119
+05016005X,16,0000,Glencoe Montessori,556 Vernon Ave,Glencoe,60022 1647,"P,K",42.13076,-87.756976
+05016006S,05,0000,Yeshiva Netzach Eliyahu,3050 W Touhy Ave,Chicago,60645 2834,9-12,42.011771,-87.70622
+05016007Z,14,0000,Sterling Central - Chicago Campus,404 E Devon Ave,Elk Grove Village,60007 4637,3-12,41.992926,-87.988754
+05016008Z,01,0000,North Shore Country Day School,310 Green Bay Rd,Winnetka,60093 4009,P-12,42.125694,-87.750505
+05016047X,01,0000,Angel Town Private School,1920 E Touhy Ave,Des Plaines,60018 3631,"P,K",42.00827,-87.938125
+05016049Y,14,0000,Loyola Academy,1100 Laramie Ave,Wilmette,60091 1021,9-12,42.083051,-87.761414
+05016059X,16,0000,Park View Montessori Inc,805 N Burning Bush Ln,Mt Prospect,60056 1913,U,42.081373,-87.897992
+05016069Y,10,0000,Notre Dame College Prep,7655 W Dempster St,Niles,60714 2033,9-12,42.040401,-87.816985
+05016071X,16,0000,Glenview Montessori School,305 Waukegan Rd,Northfield,60093 2719,"P,K",42.147242,-87.831588
+05016076Y,10,0000,Regina Dominican High School,701 Locust Rd,Wilmette,60091 2217,9-12,42.074779,-87.7421
+05016078X,05,0000,Cheder Lubavitch,5201 Howard St,Skokie,60077 2808,P-8,42.01925,-87.757463
+05016091Z,20,0000,Brentwood Baptist Christian Acad,588 Dara James Rd,Des Plaines,60016 2711,P-12,42.041265,-87.928044
+05016100X,16,0000,Chiaravalle Montessori School,425 Dempster St,Evanston,60201 4706,P-8,42.041297,-87.677368
+05016102X,06,0000,St Peter Lutheran School,111 W Olive St,Arlington Heights,60004 4766,P-8,42.099037,-87.984185
+05016106Z,20,0000,Logos Christian Academy,7280 N Caldwell Ave,Niles,60714 4502,P-12,42.013884,-87.790388
+05016113Y,10,0000,St Viator High School,1213 E Oakton St,Arlington Heights,60004 5041,9-12,42.095308,-87.967287
+05016115X,16,0000,Skokie Montessori School,8401 Karlov Ave,Skokie,60076 2102,P-6,42.03336,-87.730403
+05016122X,16,0000,Kripa Montessori Sch H E,1015 W Golf Rd,Hoffman Estates,60169 1339,"P,K",42.04816,-88.104614
+05016123Y,05,0000,Fasman Yeshiva High School,7135 Carpenter Rd,Skokie,60077 3248,9-12,42.009453,-87.761671
+05016124X,01,0000,A Mothers Touch Learning Academy,1666 Rand Rd,Des Plaines,60016 3552,"P,K",42.046341,-87.88282
+05016125X,01,0000,A Mothers Touch Creative Learning Center,125 N Dryden Ave,Arlington Heights,60004 5703,"P,K",42.084217,-87.970615
+05016128X,06,0000,Immanuel Lutheran,832 Lee St,Des Plaines,60016 6408,P-2,42.038187,-87.890536
+05016130X,01,0000,Barbereux School,3333 Culver St,Evanston,60201 1113,"P,K",42.063761,-87.726098
+05016131S,05,0000,ATT-P Tach Special Education  Prog,3531 Madison St,Skokie,60076,1-8,42.031626,-87.718091
+05016133X,25,0000,Kingsway Preparatory School,2010 Dewey Ave,Evanston,60201 3021,P-3,42.054968,-87.695915
+05016143Y,10,0000,J Slowacki School,181 W Dundee Rd,Wheeling,60090 4861,P-10,42.139332,-87.919682
+05016146X,06,0000,St Paul Lutheran School,18 S School St,Mt Prospect,60056 3304,P-8,42.065955,-87.931371
+05016148X,16,0000,Buffalo Grove Montessori,950 Ellen Dr,Buffalo Grove,60089 3707,"P,K",42.295658,-87.931966
+05016154X,06,0000,Immanuel Lutheran School,200 N Plum Grove Rd,Palatine,60067 5233,P-8,42.114123,-88.043754
+05016156X,06,0000,St Andrews Lutheran School,260 N Northwest Hwy,Park Ridge,60068 3376,P-8,42.014266,-87.834557
+05016160X,06,0000,St Peter Lutheran School,208 E Schaumburg Rd,Schaumburg,60194 3517,P-8,42.027708,-88.073924
+05016161X,06,0000,St Paul Lutheran Academy,5201 Galitz St,Skokie,60077 2737,P-8,42.024684,-87.757436
+05016170X,23,0000,Hadi School of Excellence,375 S Roselle Rd,Schaumburg,60193 5544,P-4,42.020716,-88.07982
+05016171Z,14,0000,Christian Liberty Academy,502 W Euclid Ave,Arlington Heights,60004 5402,K-12,42.088467,-87.988741
+05016188X,01,0000,Mosaic Early Childhood Ctr Inc,4023 Dempster St,Skokie,60076 2127,"P,K",42.040615,-87.728549
+05016212X,05,0000,Arie Crown Hebrew Day School,4600 Main St,Skokie,60076 2034,P-8,42.033359,-87.742476
+05016213X,16,0000,Childrens Lrning Path Montessori,1133 Pfingsten Rd,Northbrook,60062 4449,"P,K",42.132134,-87.848394
+05016218X,05,0000,Hillel Torah North Suburban Day Sch,7120 Laramie Ave,Skokie,60077 3445,P-8,42.010429,-87.757849
+05016219X,16,0000,Northwest Suburban Montessori Sch,800 N Fernandez Ave,Arlington Hts,60004 5336,"P,K",42.091717,-87.99141
+05016222X,17,0000,Plato Academy,733 Lee St # 110,Des Plaines,60016 6580,P-8,42.039543,-87.889122
+05016230X,05,0000,Sager Solomon Schechter Day Sch,3210 Dundee Rd,Northbrook,60062 2341,K-8,42.138498,-87.858486
+05016233X,14,0000,Childrens Land,1814 Waukegan Rd,Glenview,60025 2112,"P,K",42.088393,-87.798195
+05016244X,16,0000,Childrens Learning World,8101 W Golf Rd,Niles,60714 1110,U,42.054623,-87.830043
+05016246X,25,0000,Faith Christian Academy,1932 Dewey Ave,Evanston,60201 3408,"P,K",42.052907,-87.695949
+05016255X,16,0000,Montessori Learning Center Inc,1819 N Yale Ave,Arlington Heights,60004 3656,"P,K",42.108861,-87.999394
+05016275X,01,0000,Science Academy of Chicago,501 Midway Dr,Mount Prospect,60056 7000,K-8,42.080732,-87.832197
+05016276X,10,0000,St Faith Hope & Charity,180 Ridge Ave,Winnetka,60093 3839,P-8,42.096652,-87.732228
+05016277X,10,0000,St Joseph,1740 Lake Ave,Wilmette,60091 1574,P-8,42.079171,-87.719395
+05016278X,10,0000,St Francis Xavier,808 Linden Ave,Wilmette,60091 2711,P-8,42.073994,-87.69923
+05016287X,01,0000,Baker Demonstration School,201 Sheridan Rd,Wilmette,60091 3452,P-8,42.092685,-87.709289
+05016296X,10,0000,St Peter School,8140 Niles Center Rd,Skokie,60077 2520,P-8,42.02862,-87.754316
+05016298X,10,0000,St Joan of Arc School-Skokie,9245 Lawndale Ave,Evanston,60203 1508,P-8,42.048894,-87.720219
+05016303X,10,0000,St Colette School,3900 Pheasant Dr,Rolling Meadows,60008 2637,P-8,42.070406,-88.018848
+05016309X,10,0000,St Alphonsus Liguori,411 N Wheeling Rd,Prospect Heights,60070 1322,P-8,42.103878,-87.927082
+05016311X,10,0000,St Paul of the Cross School,140 S Northwest Hwy,Park Ridge,60068 4253,P-8,42.009404,-87.826935
+05016312X,10,0000,Mary Seat of Wisdom,1352 S Cumberland Ave,Park Ridge,60068 5240,P-8,41.994174,-87.836664
+05016320Y,05,0000,Rochelle Zell Jewish High School,1095 Lake Cook Rd,Deerfield,60015 5221,P-12,42.153021,-87.855148
+05016322X,23,0000,Al Huda Academy,435 Springsouth Rd,Schaumburg,60193 3547,P-5,41.999632,-88.119377
+05016380X,17,0000,Hellenic American Academy,1085 Lake Cook Rd,Deerfield,60015 5221,P-8,42.153019,-87.85483
+05016387X,02,0000,Childrens Christian Learning Ctr,1900 Nerge Rd,Elk Grove Village,60007 2907,"P,K",41.999125,-88.055342
+05016414X,17,0000,Guardian Angel Orthodox Day Sch,2350 E Dempster St,Des Plaines,60016 4839,P-4,42.039292,-87.864983
+05016419X,10,0000,St Theresa School,445 N Benton St,Palatine,60067 3501,P-8,42.118838,-88.041145
+05016420X,10,0000,St Thomas of Villanova,1141 E Anderson Dr,Palatine,60074 4146,P-8,42.117223,-88.015391
+05016469X,10,0000,St Norbert School,1817 Walters Ave,Northbrook,60062 4534,P-8,42.127195,-87.827456
+05016479Z,20,0000,Schaumburg Christian School,200 N Roselle Rd,Schaumburg,60194 3523,P-12,42.031156,-88.079881
+05016494X,10,0000,Holy Family Catholic Academy,2515 Palatine Rd,Inverness,60067 4567,P-4,42.110429,-88.106839
+05016503X,10,0000,St Emily School,1400 E Central Rd,Mt Prospect,60056 2650,P-8,42.066303,-87.915812
+05016504X,10,0000,St Raymond School,300 S Elmhurst Ave,Mt Prospect,60056 3129,P-8,42.06072,-87.94093
+05016508X,10,0000,St John Brebeuf School,8301 N Harlem Ave,Niles,60714 2616,P-8,42.033288,-87.806234
+05016512X,10,0000,St Catherine Laboure,3425 Thornwood Ave,Glenview,60026 1555,P-8,42.083792,-87.841051
+05016523X,10,0000,St Hubert School,255 Flagstaff Ln,Hoffman Estates,60169 3252,P-8,42.040697,-88.085317
+05016526X,10,0000,Sacred Heart School,1095 Gage St,Winnetka,60093 1704,P-8,42.116919,-87.744912
+05016553X,10,0000,Queen of the Rosary School,690 W Elk Grove Blvd,Elk Grove Village,60007 4262,P-8,42.013006,-87.997586
+05016556X,10,0000,St Athanasius School,2510 Ashland Ave,Evanston,60201 2319,K-8,42.063302,-87.694042
+05016558X,10,0000,Pope John XXIII School,1120 Washington St,Evanston,60202 1620,P-8,42.032664,-87.686849
+05016569X,01,0000,Bright Horizons at Motorola,1441 W Shure Dr,Arlington Heights,60004 7810,"P,K",42.136885,-88.002812
+05016574X,16,0000,Three Oaks Montessori School,12 S Linden Ave,Palatine,60074 6341,"P,K",42.110084,-88.032479
+05016580S,19,0000,Mental Health and Deafness Resrce,614 Anthony Trl,Northbrook,60062 2540,K-12,42.142884,-87.853425
+05016594X,01,0000,Creative Childrens Academy,500 N Benton St,Palatine,60067 3564,P-8,42.119205,-88.041444
+05016611S,19,0000,NewHope Academy,6289 W Howard St,Niles,60714 3403,6-12,42.019077,-87.785427
+05016621S,19,0000,Centerview Therapeutic,3444 Dundee Rd,Northbrook,60062 2201,"4-5,7-12",42.138505,-87.86579
+05016658X,10,0000,St Zachary School,567 W Algonquin Rd,Des Plaines,60016 5702,P-8,42.030007,-87.934353
+05016661S,19,0000,Metropolitan Preparatory Schools,2525 E Oakton St # STED47,Arlington Heights,60005 4881,K-12,42.022469,-87.946478
+05016666X,10,0000,St James School,821 N Arlington Heights Rd,Arlington Heights,60004 5665,P-8,42.092306,-87.980306
+05016667X,10,0000,Our Lady of the Wayside,432 S Mitchell Ave,Arlington Heights,60005 1810,P-8,42.076518,-87.987994
+05016670S,19,0000,Arlyn Day School,3013 Illinois Rd,Wilmette,60091 1118,5-12,42.085048,-87.748178
+05016671S,10,0000,St Bernadettes Sch for Spec Educ,7429 N Milwaukee Ave,Niles,60714 3707,"P,1-3,10",42.016719,-87.805257
+05016674X,16,0000,Ronald Knox Montessori School,2031 Elmwood Ave,Wilmette,60091 1431,"P,K",42.082139,-87.726893
+05016675X,26,0000,Christian Heritage Academy,315 Waukegan Rd,Northfield,60093 2719,P-12,42.147098,-87.831516
+05016679Z,27,0000,Glenview New Church School,74 Park Dr,Glenview,60025 2721,"P-6,8-10",42.074853,-87.823801
+05016681X,16,0000,Midwest Montessori School,926 Noyes St,Evanston,60201 2706,"P,K",42.058291,-87.683757
+05016688X,16,0000,Pk Ridge Intl Mont,418 W Touhy Ave,Park Ridge,60068 4207,K-6,42.011382,-87.828145
+05016708Z,14,0000,Valeo Academy,2500 Beverly Rd,Hoffman Estates,60192 3302,K-12,42.080989,-88.223528
+05016734X,05,0000,Gesher Hatorah,5130 Touhy Ave,Skokie,60077 3474,1-7,42.012012,-87.755964
+05016742X,06,0000,Jerusalem Evangelical Lutheran,6218 Capulina Ave,Morton Grove,60053 2809,P-8,42.038295,-87.782069
+05016754X,16,0000,Alexander Graham Bell Montessori,9300 Capitol Dr,Wheeling,60090 7207,P-6,42.110456,-87.909813
+05016756X,16,0000,Acarath Montessori Center,22 Kristin Dr,Schaumburg,60195 3302,P-4,42.058454,-88.083368
+05016771S,19,0000,Bridge View/Challenger Schools,6935 W Touhy Ave,Niles,60714 4521,,42.012106,-87.79997
+05016777X,16,0000,Countryside Montessori School,1985 Pfingsten Rd,Northbrook,60062 5853,P-8,42.116834,-87.848707
+05016783X,10,0000,Embers Elementary School,2000 W Sibley St,Park Ridge,60068 5902,P-5,42.017705,-87.851366
+05016793X,01,0000,Poko Loko Nursery School,300 Waukegan Rd,Glenview,60025 5161,"P,K",42.08913,-87.798006
+05016834X,23,0000,MCC Academy,8601 Menard Ave,Morton Grove,60053 3049,P-8,42.037153,-87.771594
+05016841X,16,0000,Montessori Academy of North Hoffman,1200 Freeman Rd,Hoffman Estates,60192 1727,P-6,42.099302,-88.109298
+05016876S,19,0000,Cove School,350 Lee Rd,Northbrook,60062 1521,K-12,42.146766,-87.809367
+05016896S,19,0000,Jeanine Schultz Memorial School,2101 Oakton St,Park Ridge,60068 1819,"1,4-5,7-12",42.024886,-87.853722
+05016904X,16,0000,Dayspring Montessori Sch,950 Northbrook Ave,Northbrook,60062 3940,K,42.136149,-87.797293
+05016907Z,01,0000,Science and Arts Academy,1825 Miner St,Des Plaines,60016 4778,"P-8,12",42.039171,-87.879107
+05016908X,16,0000,Montessori Academy of Illinois Ltd,418 W Touhy Ave,Park Ridge,60068 4207,K-6,42.011382,-87.828145
+05016909X,16,0000,Arlington Montessori Sch,431 S Arlington Heights Rd,Arlington Heights,60005 1932,"P,K",42.076816,-87.980384
+05016918S,05,0000,Keshet Day School,3210 Dundee Rd,Northbrook,60062 2341,"K-11,U",42.138498,-87.858486
+05016925Z,01,0000,Roycemore School,1200 Davis St,Evanston,60201 4118,P-12,42.047239,-87.688706
+05016942X,01,0000,JFH Academy Inc,1001 Oak Ave,Prospect Heights,60070 1072,P-6,42.118442,-87.932963
+05016979X,10,0000,Our Lady of Perpetual Help,1123 Church St,Glenview,60025 2980,P-8,42.075223,-87.802222
+05016982Z,19,0000,Willows Academy,1015 Rose Ave,Des Plaines,60016 3345,6-12,42.039159,-87.899045
+05016987Z,01,0000,Chicago Futabakai Japanese School,2550 N Arlington Heights Rd,Arlington Heights,60004 2531,P-9,42.12168,-87.980536
+05016989Z,10,0000,Northridge Preparatory School,8320 W Ballard Rd,Niles,60714 1533,6-12,42.043912,-87.833958
+06016001X,16,0000,The Childrens House Montessori School,1015 E 31st St,La Grange Park,60526 1218,"P,K",41.834708,-87.863752
+06016002Z,01,0000,Tallgrass Sudbury School,82 Woodside Rd,Riverside,60546 1903,K-12,41.830323,-87.82207
+06016003Y,25,0000,Tru-Source ALF,1040 North Blvd Ste 250,Oak Park,60301 1191,12,41.887382,-87.801185
+06016004X,01,0000,Wilson Christian Academy,2020 S 10th Ave,Maywood,60153 3106,"P,1,3-4",41.867539,-87.844725
+06016026X,01,0000,The Childrens School,1428 Wesley Ave,Berwyn,60402 1219,P-8,41.861027,-87.791331
+06016027Z,02,0000,Eagles Vision Academy,1405 Madison St,Maywood,60153 1821,3-12,41.878547,-87.851181
+06016028Y,10,0000,Fenwick High School,505 Washington Blvd,Oak Park,60302 4005,9-12,41.881504,-87.787814
+06016063Y,10,0000,Guerin College Prep High Sch,8001 Belmont Ave,River Grove,60171 1012,9-12,41.937898,-87.826317
+06016094Y,10,0000,St Joseph High School,10900 W Cermak Rd,Westchester,60154 4170,9-12,41.848395,-87.88539
+06016115X,06,0000,Concordia Univ E C Educ Center,7400 Augusta St,River Forest,60305 1402,"P,K",41.897993,-87.808539
+06016119Y,10,0000,Trinity High School,7574 Division St,River Forest,60305 1153,9-12,41.901512,-87.814378
+06016121Y,06,0000,Walther Lutheran High School,900 Chicago Ave,Melrose Park,60160 4120,9-12,41.893272,-87.846305
+06016125X,06,0000,St Paul Lutheran,9035 Grant Ave,Brookfield,60513 1625,K-8,41.823846,-87.847698
+06016133X,06,0000,Immanuel Lutheran School,2329 S Wolf Rd,Hillside,60162 2211,P-8,41.845082,-87.901079
+06016134X,06,0000,Trinity Lutheran,11503 German Church Rd,Burr Ridge,60527 0831,P-8,41.738819,-87.905498
+06016136X,06,0000,St Johns Lutheran School,505 S Park Rd,La Grange,60525 6112,P-8,41.804761,-87.8804
+06016149X,16,0000,Montessori Childrens Community,3424 Maple Ave,Brookfield,60513 1243,"P,K",41.828919,-87.85172
+06016151X,16,0000,Forest Prk Montessori Chd Dev Ctr,16 Lathrop Ave,Forest Park,60130 1009,"P,K",41.871993,-87.814188
+06016157X,06,0000,Grace Lutheran School,7300 Division St,River Forest,60305 1224,P-8,41.901645,-87.8086
+06016159X,16,0000,Oak Park Montessori School,937 Garfield St,Oak Park,60304 1848,P-3,41.872209,-87.798048
+06016176X,16,0000,Our Lady Montessori,27 N Lavergne Ave,Northlake,60164 1664,K,41.909072,-87.904399
+06016225X,16,0000,Morningside Montessori Academy,1192 S Cuyler Ave,Oak Park,60304 2240,"P,K",41.865792,-87.782743
+06016232X,01,0000,First Circle Ed for Young Child,56 Lake St,Oak Park,60302 2635,"P,K",41.888237,-87.77704
+06016242Z,14,0000,Word of God Christian Acad,800 N 18th Ave,Melrose Park,60160 3835,K-10,41.894284,-87.855372
+06016261X,10,0000,Our Lady of Charity,3620 S 57th Ct,Cicero,60804 4235,P-8,41.826831,-87.767067
+06016264X,10,0000,St Frances of Rome,1401 S Austin Blvd,Cicero,60804 1004,P-8,41.861959,-87.774028
+06016266X,06,0000,Concordia Little Lambs,3144 Home Ave,Berwyn,60402 2910,"P,K",41.83505,-87.797909
+06016280X,10,0000,St John of the Cross,708 51st St,Western Springs,60558 1925,P-8,41.797325,-87.896366
+06016281X,10,0000,Divine Providence,2500 Mayfair Ave,Westchester,60154 5006,P-8,41.842451,-87.891301
+06016282X,10,0000,Divine Infant Jesus School,1640 Newcastle Ave,Westchester,60154 4447,P-8,41.855774,-87.874888
+06016283X,10,0000,St Leonard School,3322 Clarence Ave,Berwyn,60402 3752,P-8,41.831931,-87.789268
+06016285X,10,0000,St Odilo School,6617 23rd St,Berwyn,60402 2400,P-8,41.848946,-87.789151
+06016299X,10,0000,St Maria Goretti School,10050 Ivanhoe Ave,Schiller Park,60176 2008,P-8,41.947595,-87.876782
+06016304X,10,0000,St Mary School,97 Herrick Rd,Riverside,60546 2014,P-8,41.830029,-87.817206
+06016305X,10,0000,St Cyprian,2561 Clinton St,River Grove,60171 1703,P-8,41.92602,-87.830612
+06016306X,10,0000,St Vincent Ferrer,1515 Lathrop Ave,River Forest,60305 1121,P-8,41.907138,-87.81531
+06016307X,10,0000,St Luke Catholic School,519 Ashland Ave,River Forest,60305 1824,P-8,41.888642,-87.816027
+06016315X,10,0000,St William School,2559 N Sayre Ave,Chicago,60707 2135,P-8,41.926437,-87.800676
+06016473X,10,0000,St John Vianney School,27 N Lavergne Ave,Northlake,60164 1664,P-8,41.909072,-87.904399
+06016482X,10,0000,Ascension,601 Van Buren St,Oak Park,60304 1310,P-8,41.874515,-87.78917
+06016483X,10,0000,St Catherine of Siena-St Lucy,27 Washington Blvd,Oak Park,60302 4308,P-8,41.881914,-87.776326
+06016484X,10,0000,St Edmund School,200 S Oak Park Ave,Oak Park,60302 3202,P-8,41.885183,-87.794409
+06016485X,10,0000,St Giles School,1034 Linden Ave,Oak Park,60302 1351,P-8,41.904342,-87.792347
+06016498X,10,0000,Acad of St Priscilla at Divine Savior,7750 W Montrose Ave,Norridge,60706 7211,P-2,41.959836,-87.820793
+06016500X,10,0000,Sacred Heart School,815 N 16th Ave,Melrose Park,60160 3828,P-8,41.89432,-87.852797
+06016510X,10,0000,St Bernardine School,815 Elgin Ave,Forest Park,60130 2056,P-8,41.87202,-87.805827
+06016528X,10,0000,St Cletus School,700 W 55th St,La Grange,60525 6612,P-8,41.790148,-87.877247
+06016529X,10,0000,St Francis Xavier,145 N Waiola Ave,La Grange,60525 1866,P-8,41.817563,-87.877061
+06016530X,10,0000,St Louise De Marillac School,1125 Harrison Ave,La Grange Park,60526 1334,P-8,41.83838,-87.856854
+06016554X,10,0000,St Celestine School,3017 N 77th Ave,Elmwood Park,60707 1110,P-8,41.934566,-87.818691
+06016700X,16,0000,Montessori Language Academy,314 Circle Ave,Forest Park,60130 1610,"P,K",41.880974,-87.808774
+06016741X,06,0000,Walther Christian Academy,1025 W Lake St,Melrose Park,60160 4146,P-8,41.891324,-87.846893
+06016744X,16,0000,Alcuin Montessori School,324 N Oak Park Ave,Oak Park,60302 2121,P-6,41.882883,-87.794197
+06016758X,26,0000,Meca Elementary School,425 Bohland Ave,Bellwood,60104 1833,P-8,41.884393,-87.877022
+06016779Z,01,0000,Acacia Academy,6425 Willow Springs Rd,La Grange Highlands,60525 4468,3-12,41.772756,-87.887243
+06016786X,14,0000,DCN Christian Academy,3205 S Austin Blvd,Cicero,60804 3732,P-8,41.833872,-87.773108
+06016809Y,10,0000,Nazareth Academy,1209 W Ogden Ave,La Grange Park,60526 1700,9-12,41.819389,-87.884794
+06016811X,16,0000,Grace Montessori Sch,1112 N 9th Ave,Melrose Park,60160 3502,"P,K",41.898384,-87.84474
+06016818X,16,0000,Intercultural Montessori Oak Park,301 S Ridgeland Ave,Oak Park,60302 3519,"P,K",41.883293,-87.784555
+06016826Y,14,0000,Prairie Lake School,10217 Franklin Ave,Franklin Park,60131 1527,6-12,41.939706,-87.880913
+06016856X,16,0000,Hillside Montessori School,4600 Frontage Rd,Hillside,60162 1761,"P,K",41.873385,-87.897696
+06016859X,16,0000,Mosaic Montessori Academy,7970 Lake St,River Forest,60305 1648,"P,K",41.888279,-87.8242
+06016873Z,02,0000,H McNelty Sch of First Baptist,2100 Main St,Melrose Park,60160 3626,P-8,41.891344,-87.859018
+06016906X,16,0000,Childrens Garden Montessori Sch,165 N Lombard Ave,Oak Park,60302 2501,"P,K,U",41.889552,-87.779989
+06016938Z,10,0000,Our Lady Immaculate Academy,410 Washington Blvd,Oak Park,60302 4004,"2-5,7-8",41.881855,-87.784931
+06016943X,16,0000,Keystone Montessori School,PO Box 5548,River Forest,60305 5548,P-8,41.89781,-87.81395
+06016966X,16,0000,Sunflower Montessori School,5129 Wolf Rd,Western Springs,60558 1817,"P,K",41.796659,-87.897951
+06016969X,16,0000,Creative World Montessori School,1200 W Goodman Ave,La Grange,60525 6124,"P,K",41.806841,-87.884727
+06016981X,16,0000,Montessori Sch of Western Springs,1500 Walker St,Western Springs,60558 1374,"P,K",41.808149,-87.909459
+06016990X,01,0000,JFH Educational Academy Inc,7559 W Addison St,Chicago,60634 3234,P-6,41.944966,-87.816009
+06016993Z,27,0000,Westchester Christian School,10600 W Cermak Rd,Westchester,60154 5203,K-10,41.848364,-87.886635
+06016999X,16,0000,West Suburban Montessori School,1039 S East Ave,Oak Park,60304 2103,"P,K",41.870004,-87.789175
+07016002Z,14,0000,Abundant Grace College Preparatory,17516 Butternut Rd,Hazel Crest,60429 2123,P-12,41.571482,-87.680905
+07016003X,14,0000,Higher Heights Christian Academy,1647 Cottage Grove Ave,Ford Heights,60411 3818,P-4,41.503323,-87.596759
+07016004Z,14,0000,New Direction College Preparatory,2750 W Columbus Ave,Chicago,60652 1727,P-12,41.755713,-87.690376
+07016005Z,14,0000,Coras Career Academy,299 Luella Ave,Calumet City,60409 1804,K-12,41.628606,-87.56747
+07016006Z,14,0000,Abundant Living Christian Academy,14540 Lincoln Ave,Dolton,60419 1810,K-12,41.630502,-87.595651
+07016007Y,03,0000,Chicago Christian High,12001 S Oak Park Ave,Palos Heights,60463 1687,9-12,41.673816,-87.78784
+07016008X,16,0000,Branches of Montessori,18036 Gottschalk Ave,Homewood,60430 1712,"P,1-8",41.5623,-87.663671
+07016012X,06,0000,Immanuel Lutheran Crossroads,4800 Sauk Trl,Richton Park,60471 1018,P-2,41.484434,-87.717913
+07016013X,14,0000,Junior Achievers Christian Academy,15536 Canterbury Ln,Orland Park,60462 4992,K-8,41.607785,-87.817696
+07016014Z,14,0000,Carra Academy,17504 E Carriageway Dr,Hazel Crest,60429 2087,P-12,41.571624,-87.690562
+07016015X,23,0000,CMECCA School,15455 S Park Ave,South Holland,60473 1302,P-8,41.614388,-87.607248
+07016016X,01,0000,Word Made Flesh Academy,3709 147th Pl,Midlothian,60445 3507,K-3,41.624618,-87.710536
+07016017Z,14,0000,New Directions Empowerment Acad,15446 Lexington Ave,Harvey,60426 3611,P-12,41.609056,-87.649598
+07016018X,27,0000,Eagle Academy Christian School,2750 Glenwood Lansing Rd,Lansing,60438 3776,P-3,41.54293,-87.54967
+07016019X,27,0000,Outreach Exceptional Learning Academy,15251 Dixie Hwy,Harvey,60426 2952,P-3,41.61266,-87.671647
+07016020X,02,0000,Standberry Christian Academy,536-538 W Sibley Blvd,South Holland,60473,1-8,41.62271,-87.597809
+07016021Y,01,0000,Academic Mastery Academy,16341 S Park Ave,South Holland,60473 2279,K-12,41.59826,-87.607172
+07016023Z,01,0000,Abundant Model College Preparatory,16299 Wallace St,Harvey,60426 5955,P-12,41.593658,-87.630213
+07016024X,14,0000,Worldwide Christian Academy,327 Central Ave,Matteson,60443 1441,"K,2,4",41.519454,-87.74877
+07016025Z,01,0000,Fidley De Fidley Do Academy,15019 Ashland Ave,Harvey,60426 2125,"P,K,3-4,10",41.616548,-87.655803
+07016026Y,10,0000,Seton Academy,16100 Seton Dr,South Holland,60473 1863,9-12,41.602358,-87.585292
+07016027X,27,0000,Little Scholars Christian Academy,7910 163rd Pl,Tinley Park,60477 1444,P-5,41.594495,-87.810848
+07016029X,01,0000,Glenwood Academy,500 W 187th St,Glenwood,60425 1317,2-8,41.549522,-87.62769
+07016039Y,03,0000,Illiana Christian High School,2261 Indiana Ave,Lansing,60438 2106,9-12,41.566408,-87.56271
+07016040X,14,0000,South Suburban Christian Academy,4200 Maple Ave,Matteson,60443 2812,P-3,41.489804,-87.718042
+07016055Y,10,0000,Marian Catholic High School,700 Ashland Ave,Chicago Heights,60411 2073,9-12,41.519831,-87.655023
+07016073Y,10,0000,Queen of Peace High School,7659 Linder Ave,Burbank,60459 1359,9-12,41.752921,-87.758362
+07016080X,26,0000,Valley Kingdom Christian Academy,5217 149th St,Oak Forest,60452 1314,P-8,41.621236,-87.747735
+07016081Z,02,0000,Jordan Baptist School,5040 W 87th St,Burbank,60459 2812,P-12,41.734275,-87.746921
+07016089Z,01,0000,Aquinas Academy,9003 S Kostner Ave,Hometown,60456 1007,9,41.728781,-87.733692
+07016095Y,10,0000,St Laurence High School,5556 W 77th St,Burbank,60459 1300,9-12,41.752649,-87.760202
+07016114X,25,0000,Lots of Love Plus,1701 167th St,Hazel Crest,60429 1481,K-1,41.586181,-87.659801
+07016137X,06,0000,St John Lutheran School,18100 Wentworth Ave,Lansing,60438 3900,P-8,41.566129,-87.529646
+07016138X,06,0000,Trinity Lutheran,18144 Glen Ter,Lansing,60438 2152,P-8,41.565573,-87.556029
+07016142X,06,0000,Zion Lutheran School,3840 216th St,Matteson,60443 2717,P-8,41.497649,-87.709334
+07016147X,06,0000,Zion Lutheran Early Childhood Center,17100 69th Ave,Tinley Park,60477 3412,"P,K",41.580347,-87.787815
+07016152X,06,0000,St Paul Lutheran School,4660 W 94th St,Oak Lawn,60453 2513,P-8,41.722064,-87.73965
+07016163X,06,0000,St John Lutheran,4231 183rd St,Country Club Hills,60478 5337,P-8,41.556971,-87.719033
+07016164X,06,0000,Trinity Ev Lutheran,6850 159th St,Tinley Park,60477 2311,P-8,41.602224,-87.786253
+07016168X,01,0000,Grandma Jones Day Care,777 Sibley Blvd,Calumet City,60409 2523,"P,K",41.622575,-87.543846
+07016173X,06,0000,Gloria Dei Lutheran,5259 S Major Ave,Chicago,60638 1503,P-8,41.797125,-87.764728
+07016180X,14,0000,Heritage of Life Covenant,16779 Trapet Ave,Hazel Crest,60429 1315,P-8,41.584818,-87.668986
+07016193Y,14,0000,Mary-Grace Educational Center,14446 University Ave,Dolton,60419 1904,6-12,41.632644,-87.589519
+07016195X,02,0000,Zion Buds of Promise Christian Acad,PO Box 413,South Holland,60473 0413,P-6,41.60087,-87.60699
+07016200X,01,0000,Nurturing Dev & Learning Ctr,835 E Sibley Blvd,South Holland,60473 1165,"P,K",41.622413,-87.597253
+07016208X,16,0000,Hope Montessori Inc,17007 Oak Park Ave,Tinley Park,60477 2721,"P,K",41.582261,-87.784421
+07016209X,03,0000,Southwest Chicago Christian Sch,10110 S Central Ave,Oak Lawn,60453 3799,P-8,41.70868,-87.760061
+07016214X,03,0000,Calvin Christian School,528 E 161st Pl,South Holland,60473 1617,P-8,41.601891,-87.60428
+07016216X,03,0000,Lansing Christian School,3660 Randolph St,Lansing,60438 2406,P-8,41.566436,-87.527713
+07016227Z,10,0000,LHTBM School of The Saints,20W227 Pleasantdale Dr,Lemont,60439 8809,"P-1,4-7,9,11-12",41.704138,-88.016785
+07016237X,14,0000,Pathways to Learning Academy,15323 Turlington Ave,Harvey,60426 3310,P-8,41.611334,-87.647677
+07016240Y,01,0000,Forum H S for Creative Study,2755 York St,Blue Island,60406 1958,9-12,41.656866,-87.689168
+07016243X,26,0000,Calvary Academy,16300 State St,South Holland,60473 2041,K-8,41.598921,-87.617024
+07016254X,01,0000,Beacon Hill Prep Academy,16511 S Park Ave,South Holland,60473 2257,P-8,41.594916,-87.607173
+07016265Z,01,0000,Youthwatch Ed Services,15416 Lincoln Ave,Harvey,60426 3515,P-12,41.609275,-87.663206
+07016268X,10,0000,Our Lady of the Ridge,10859 Ridgeland Ave,Chicago Ridge,60415 2154,K-8,41.694784,-87.778847
+07016272Y,01,0000,American School,2200 E 170th St,Lansing,60438 1002,9-12,41.586015,-87.533976
+07016274X,01,0000,Altntve Academic Acheivemnt Acad,13801 Chatham St,Blue Island,60406 3219,7-8,41.644764,-87.674981
+07016286X,10,0000,St Benedict,2324 New St,Blue Island,60406 2402,P-8,41.656215,-87.679062
+07016290X,10,0000,St George School,6700 176th St,Tinley Park,60477 4084,P-8,41.57158,-87.782503
+07016291X,10,0000,St Joseph,5641 S 73rd Ave,Summit,60501 1363,P-8,41.788981,-87.80368
+07016337X,25,0000,Christian Hills Church School,9001 159th St,Orland Hills,60487 5978,P-8,41.601325,-87.846665
+07016343Y,25,0000,Marion H Blakely Christian Acad,4137 Sauk Trl,Richton Park,60471 1253,9-12,41.484429,-87.716567
+07016355X,01,0000,Oladiji Day Care,3333 W 159th St,Markham,60428 4007,"P,K",41.600624,-87.697556
+07016362X,10,0000,St Daniel the Prophet School,5337 S Natoma Ave,Chicago,60638 1223,P-8,41.795293,-87.787853
+07016363X,20,0000,Future Scholar Comm Dev Cntr,3115 Lawrence Cres,Flossmoor,60422 2054,K,41.529689,-87.692927
+07016376X,10,0000,St Florian,13110 S Baltimore Ave,Chicago,60633 1396,P-8,41.657059,-87.547286
+07016426X,01,0000,Bobbie Noonans Child Care,4951 W 115th St,Alsip,60803 5144,"P,K",41.683715,-87.742992
+07016427X,01,0000,Bobbie Noonans Child Care,10155 S Roberts Rd,Palos Hills,60465 1542,"P,K",41.706264,-87.817254
+07016428X,16,0000,Hello Montessori Presch & Kinder,18850 Riegel Rd,Homewood,60430 4027,"P,K",41.546835,-87.651598
+07016429X,01,0000,Bobbie Noonans Child Care,17051 Grissom Dr,Tinley Park,60477 2316,"P,K",41.580576,-87.815025
+07016446X,01,0000,Bobbie Noonans Child Care,7901 167th St,Tinley Park,60477 2359,"P,K",41.587293,-87.811246
+07016455X,10,0000,Christ Our Savior Catholic School,900 E 154th St,South Holland,60473 1106,P-8,41.615488,-87.594363
+07016466X,10,0000,St Jane De Chantal School,5201 S McVicker Ave,Chicago,60638 1445,P-8,41.798174,-87.773443
+07016475X,10,0000,St Damian School,5300 155th St,Oak Forest,60452 3321,K-8,41.610512,-87.749901
+07016476X,10,0000,St Albert the Great School,5535 State Rd,Burbank,60459 2049,P-8,41.748576,-87.757743
+07016477X,10,0000,St Catherine of Alexandria,10621 Kedvale Ave,Oak Lawn,60453 4927,P-8,41.700301,-87.72418
+07016478X,10,0000,St Germaine School,9735 S Kolin Ave,Oak Lawn,60453 3581,P-8,41.716023,-87.72957
+07016480X,10,0000,St Linus School,10400 Lawler Ave,Oak Lawn,60453 4717,P-8,41.703612,-87.746457
+07016481X,10,0000,St Louis De Montfort School,8840 Ridgeland Ave,Oak Lawn,60453 1003,P-8,41.731148,-87.780515
+07016486X,10,0000,St Michael School,14355 Highland Ave,Orland Park,60462 2433,K-8,41.629208,-87.865655
+07016488X,10,0000,St Ann School,3014 Ridge Rd,Lansing,60438 3020,K-8,41.564908,-87.543624
+07016490X,10,0000,St Cyril & Methodius,607 Sobieski St,Lemont,60439 4049,P-8,41.671091,-87.994775
+07016491X,10,0000,St Alphonsus - St Patrick,20W145 Davey Rd,Lemont,60439 9009,P-8,41.684412,-88.050257
+07016509X,10,0000,Infant Jesus of Prague,1101 Douglas Ave,Flossmoor,60422 1460,P-8,41.542731,-87.683677
+07016519X,10,0000,St Patricia School,9000 S 86th Ave,Hickory Hills,60457 1351,P-8,41.727352,-87.832935
+07016520X,14,0000,Cornerstone Christian School,PO Box 9,Chicago Heights,60412 0009,P-8,41.811929,-87.68732
+07016525X,10,0000,St Joseph School,17949 Dixie Hwy,Homewood,60430 1703,P-8,41.563444,-87.665274
+07016533X,16,0000,Flossmoor Montessori School,740 Western Ave,Flossmoor,60422 1375,P-6,41.548386,-87.674921
+07016541X,10,0000,St Symphorosa School,6125 S Austin Ave,Chicago,60638 4349,P-8,41.781087,-87.771468
+07016545X,06,0000,St Mark Lutheran School,22012 Torrence Ave,Sauk Village,60411 5706,1-7,41.491109,-87.558203
+07016551X,10,0000,St Alexander School,12600 S 71st Ct,Palos Heights,60463 1552,P-8,41.662381,-87.795639
+07016552X,10,0000,Incarnation School,5705 W 127th St,Palos Heights,60463 2402,P-8,41.661157,-87.762892
+07016555X,25,0000,Promise Christian Academy,PO Box 705,Matteson,60443 0705,P-8,41.50392,-87.7131
+07016559X,10,0000,St Bernadette School,9311 S Francisco Ave,Evergreen Park,60805 2536,P-8,41.724282,-87.69437
+07016560X,10,0000,Most Holy Redeemer School,9536 S Millard Ave,Evergreen Park,60805 2129,P-8,41.71993,-87.712947
+07016564X,01,0000,Nurturing Dev & Learning Acad,525 Wentworth Ave,Calumet City,60409 2729,"P,K",41.620789,-87.529789
+07016566X,01,0000,Epitome of Excellence,20401 Western Ave,Olympia Fields,60461 1530,P-1,41.524978,-87.674503
+07016577X,10,0000,Cardinal J Bernardin Catholic Sch,9250 W 167th St,Orland Hills,60487 5933,P-8,41.586721,-87.844253
+07016582X,10,0000,Our Lady of the Snows School,4810 S Leamington Ave,Chicago,60638 2150,P-8,41.805381,-87.751807
+07016583X,16,0000,Laren Montessori,425 E 164th St,South Holland,60473 2216,P-3,41.597129,-87.607017
+07016589Z,27,0000,Homewood Community Academy,20820 Western Ave,Olympia Fields,60461 1927,P-8,41.524978,-87.674503
+07016593X,01,0000,Mary Sears Childrens Academy,16807 108th Ave,Orland Park,60467 5465,P-2,41.582036,-87.881112
+07016609X,10,0000,St Rene Goupil,6340 S New England Ave,Chicago,60638 4836,P-8,41.776451,-87.793609
+07016629Z,20,0000,Southside Baptist School,5220 W 105th St,Oak Lawn,60453 4789,P-12,41.701879,-87.750391
+07016641X,10,0000,St Agnes School,1501 Chicago Rd,Chicago Heights,60411 3424,P-8,41.504434,-87.640805
+07016654X,10,0000,St Gerald School,9320 S 55th Ct,Oak Lawn,60453 1694,P-8,41.723027,-87.75935
+07016659X,01,0000,First Step Preschool,PO Box 471,South Holland,60473 0471,"P,K",41.60087,-87.60699
+07016683X,17,0000,Koraes Elementary School,11025 S Roberts Rd,Palos Hills,60465 2317,P-8,41.688773,-87.816602
+07016703X,01,0000,Lupees Day Care & Learning Ctr,14209 S Halsted St,Riverdale,60827 2329,P-1,41.636908,-87.641347
+07016724X,14,0000,Apostolic Kingdom,16511 S Park Ave,South Holland,60473 2257,P-7,41.594916,-87.607173
+07016729Z,23,0000,Aqsa School,7361 W 92nd St,Bridgeview,60455 2133,P-12,41.724152,-87.802538
+07016732X,03,0000,Southwest Christian School,17171 84th Ave,Tinley Park,60477 2266,K-8,41.579384,-87.822537
+07016739X,10,0000,St Christopher School,14611 Keeler Ave,Midlothian,60445 2726,P-8,41.627098,-87.722527
+07016751Z,02,0000,New Covenant Christian Academy,15213 5th Ave,Phoenix,60426 2615,P-12,41.613221,-87.629583
+07016752X,01,0000,Martsci School,1038 Leavitt Ave,Flossmoor,60422 1115,"P,K",41.543493,-87.682134
+07016755X,14,0000,Anointed Word International,3434 W 159th St,Markham,60428 4046,P-2,41.600916,-87.700119
+07016768X,01,0000,Triple R Child Care Inc,5500 147th St,Oak Forest,60452 1002,K,41.625057,-87.756763
+07016784X,06,0000,Palos Lutheran School,12428 S 71st Ct,Palos Heights,60463 1570,"P,K",41.665658,-87.795525
+07016790X,16,0000,Montessori Elem School Southwest,16427 135th St,Lemont,60439 4743,"P,K,U",41.641453,-88.02289
+07016792X,01,0000,Mary Sears Childrens Academy,15533 129th St,Lemont,60439 4407,"P,K",41.653132,-87.997716
+07016804X,01,0000,South Subrbn Acadmy of Early Lrng,14311 S 82nd Ave,Orland Park,60462 2901,"P,K",41.630979,-87.819523
+07016814X,26,0000,New Life C C Academy,14243 Dante Ave,Dolton,60419 1348,P-8,41.637192,-87.581946
+07016829X,14,0000,Landmark Christian Academy,6600 W 127th St,Palos Heights,60463 2252,K-8,41.661106,-87.782951
+07016833Z,23,0000,Universal School,7350 W 93rd St,Bridgeview,60455 2138,P-12,41.722637,-87.802559
+07016840X,16,0000,Oak Lawn Montessori School,4625 W 110th St,Oak Lawn,60453 5605,"P,K",41.692667,-87.735926
+07016860S,19,0000,Blue Cap School,2155 Broadway St,Blue Island,60406 3050,P-12,41.650458,-87.674385
+07016872S,19,0000,Childrens Habilitation Center,121 W 154th St,Harvey,60426 3552,P-12,41.609754,-87.663207
+07016875S,19,0000,Beacon Therapeutic Adolescent Prg,12440 S Ada St,Calumet Park,60827 5802,6-12,41.667767,-87.655133
+07016878X,11,0000,South Suburban SDA Christian Sch,119 Chestnut St,Park Forest,60466 2139,P-8,41.47761,-87.67206
+07016880S,03,0000,Elim Christian School,13020 S Central Ave,Palos Heights,60463 2410,"1,3-4,6-12",41.656001,-87.757911
+07016889X,16,0000,Southwest Suburban Montessori Sch,8800 W 119th St,Palos Park,60464 1081,"P,K",41.674353,-87.835527
+07016903S,19,0000,Lt Joseph P Kennedy Jr School,18350 Crossing Dr,Tinley Park,60487 6294,P-12,41.553468,-87.828258
+07016911X,01,0000,Peckwas Preparatory Academy,5714 S Harlem Ave,Summit Argo,60501 1338,"K-5,7-8",41.787325,-87.801481
+07016964X,01,0000,Safe Care Academy,2926 W 147th St,Posen,60469 1435,"P,K",41.626192,-87.691995
+07016983X,10,0000,Everest Academy of Lemont,11550 Bell Rd,Lemont,60439 8722,P-8,41.678719,-87.93266
+07016991X,16,0000,Mi Sol Montessori Pre-Sch,14249 Wolf Rd,Orland Park,60467 1977,P-6,41.632566,-87.892305
+15016001Z,01,0000,Harriet Jamison College Preparatory Academy,1225 W 108th Pl,Chicago,60643 3702,P-12,41.69663,-87.652816
+15016002X,01,0000,Tots Express Learning Center/Express Academy,8950 S Cottage Grove Ave,Chicago,60619 6932,"P,K",41.731817,-87.604854
+15016003Y,10,0000,Leo High School,7901 S Sangamon St,Chicago,60620 2532,9-12,41.750477,-87.647686
+15016004X,01,0000,Catherine Cook School,226 W Schiller St,Chicago,60610 1808,P-8,41.907501,-87.635596
+15016005Y,10,0000,St Patrick High School,5900 W Belmont Ave,Chicago,60634 5107,9-12,41.938645,-87.7724
+15016007Y,14,0000,Legacy Connections Vocational School,6360 S Minerva Ave Rm 1012,Chicago,60637 3638,9-12,41.778631,-87.596654
+15016009Z,01,0000,Stevens Academy of Life,8432 S King Dr,Chicago,60619 6034,P-12,41.816487,-87.616528
+15016011X,01,0000,Creme de la Creme,2230 N Dominick St,Chicago,60614 7801,"P,K",41.921551,-87.66667
+15016012Z,14,0000,Pass It On Academy,2914 W 63rd St,Chicago,60629 3165,P-12,41.779208,-87.697179
+15016014X,01,0000,Resourceful Center Academy of Scholars,11361 S Forrestville Ave,Chicago,60628 5107,P-6,41.687851,-87.609371
+15016015Z,14,0000,Reaching Out Career Acad,1950 S Saint Louis Ave,Chicago,60623 3119,P-12,41.711376,-87.708854
+15016016Y,01,0000,Latino Youth High School,2001 S California Ave,Chicago,60608 2486,9-12,41.854825,-87.69554
+15016017Y,10,0000,Brother Rice High School,10001 S Pulaski Rd,Chicago,60655 3356,9-12,41.711498,-87.721089
+15016020Y,08,0000,Lake View Academy,716 W Addison St,Chicago,60613 4416,,41.947464,-87.647825
+15016022Y,05,0000,Ida Crown Jewish Academy,8233 Central Park Ave,Skokie,60076 2908,9-12,42.033382,-87.71818
+15016023Z,11,0000,Hinsdale Adventist Academy,631 E Hickory St,Hinsdale,60521 2412,P-12,41.808286,-87.915093
+15016024Y,10,0000,De La Salle Institute,3455 S Wabash Ave,Chicago,60616,9-12,41.847033,-87.625366
+15016025Z,23,0000,Hajirah Education Program,6400 N Artesian Ave,Chicago,60645 5302,K-12,41.997859,-87.691103
+15016027X,01,0000,Faulkner School,1750 E 78th St,Chicago,60649 4514,P-6,41.753502,-87.581788
+15016028Z,14,0000,John Amos George College Preparatory,8736 S Blackstone Ave,Chicago,60619 7116,P-12,41.736112,-87.588263
+15016029Z,14,0000,Worship Academy College Preparatory,1400 S Kolin Ave,Chicago,60623 1149,K-12,41.862249,-87.733624
+15016031Y,10,0000,DePaul College Prep,3633 N California Ave,Chicago,60618 4602,9-12,41.947287,-87.697896
+15016032Y,10,0000,Hales Franciscan High School,4930 S Cottage Grove Ave,Chicago,60615 2616,9-12,41.805336,-87.606625
+15016033Z,02,0000,Liberty School of Christrian Educ,6207 S University Ave,Chicago,60637 2729,K-12,41.782215,-87.597718
+15016035X,19,0000,G & L Johnson Career Academy,10648 S Michigan Ave,Chicago,60628 2708,P-6,41.700823,-87.621006
+15016036X,01,0000,Stepping Stones Early Childhood,1300 E 75th St,Chicago,60619 1420,"P,K",41.758771,-87.601725
+15016037X,14,0000,Chance after Chance College Preparatory,309 N Cicero Ave,Chicago,60644 2602,P-8,41.886212,-87.745334
+15016038Y,10,0000,Holy Trinity High School,1443 W Division St,Chicago,60642 3324,9-12,41.903534,-87.663959
+15016039X,01,0000,Together in Love Academy,10237 S State St,Chicago,60628,P-8,41.707901,-87.623387
+15016040X,27,0000,Robert T Walker Leadership Int,1808 W 99th St,Chicago,60643 1812,P-1,41.713736,-87.667668
+15016041Z,14,0000,Rehoboth Educational Academy,11705 S Michigan Ave,Chicago,60628 5646,P-12,41.68133,-87.620468
+15016042Z,10,0000,Josephinum Academy,1501 N Oakley Blvd,Chicago,60622 1850,9-12,41.908377,-87.684732
+15016043Z,01,0000,University of Chicago Lab Schs,1362 E 59th St,Chicago,60637 1793,P-12,41.787989,-87.592868
+15016046Z,01,0000,Poetic Praize Youth Academy,845 W 69th St,Chicago,60621 1709,K-12,41.768664,-87.645977
+15016047Z,01,0000,Greater Pleasant Valley College Preparatory,910 E 83rd St,Chicago,60619 5404,P-12,41.74416,-87.602155
+15016049Z,14,0000,Mountain of Hope College Preparatory,8004 S May St,Chicago,60620 3004,P-12,41.748616,-87.652626
+15016050Z,06,0000,Luther North College Prep,5700 W Berteau Ave,Chicago,60634 1717,9-12,41.95665,-87.769566
+15016053Y,10,0000,Maria High School,6727 S California Ave,Chicago,60629 1816,10-12,41.771337,-87.693043
+15016054X,10,0000,Immaculate Conception,1431 N North Park Ave,Chicago,60610 1226,P-3,41.9081,-87.63642
+15016055X,16,0000,South Loop Montessori School,47 W Polk St Ste G15,Chicago,60605 2768,"P,K",41.872417,-87.630174
+15016056Y,10,0000,Marist High School,4200 W 115th St,Chicago,60655 4306,9-12,41.683733,-87.724896
+15016057Z,01,0000,Ambassadors of Tech and Performing Arts Acad,7859 S Ashland Ave,Chicago,60620 4253,P-12,41.750888,-87.663303
+15016058Y,01,0000,The Shirley Deer Education and Technology Institute,3936 W Roosevelt Rd Fl 2,Chicago,60624 4389,9-10,41.866337,-87.724053
+15016060Y,10,0000,Mother Mcauley Liberal Arts H S,3737 W 99th St,Chicago,60655 3133,9-12,41.713129,-87.713646
+15016061Z,01,0000,Morgan Park Academy,2153 W 111th St,Chicago,60643 3917,P-12,41.691717,-87.675222
+15016062X,10,0000,Immaculate Conception,8739 S Exchange Ave,Chicago,60617 3120,K-7,41.736656,-87.55265
+15016064Z,14,0000,Christ Light World Academy,2405 E 75th St,Chicago,60649 3715,"P,K,6,12",41.758838,-87.56625
+15016065Y,10,0000,Mt Carmel High School,6410 S Dante Ave,Chicago,60637 3810,9-12,41.76981,-87.589539
+15016066X,14,0000,Chicago Friends School,1246 W Thorndale Ave,Chicago,60660 3348,P-2,41.989969,-87.66216
+15016069X,16,0000,All Day Montessori,1819 W 99th St,Chicago,60643 1811,"P,K",41.713734,-87.667754
+15016070Y,10,0000,Notre Dame High School for Girls,3115 N Mason Ave,Chicago,60634 5114,9-12,41.936908,-87.774793
+15016071X,01,0000,New Jerusalem Scholars Acad,7123 S Halsted St,Chicago,60621 1727,"K,3,5-6",41.764796,-87.644251
+15016072Z,01,0000,Providence - St Mel School,119 S Central Park Blvd,Chicago,60624 2941,K-12,41.879304,-87.715694
+15016073Z,25,0000,Beginners Enrichment Academy,4258 W Iowa St,Chicago,60651 3521,P-12,41.89722,-87.733011
+15016075S,19,0000,South Central Comm Serv Inc,1021 E 83rd St,Chicago,60619 5505,3-8,41.743893,-87.59907
+15016076Z,01,0000,Wisdom Learning Academy,12245 S Perry Ave,Chicago,60628 6826,P-12,41.671715,-87.624727
+15016077Y,10,0000,Resurrection High School,7500 W Talcott Ave,Chicago,60631 3705,9-12,41.989498,-87.814165
+15016078Z,01,0000,John Raymond Parker Life House Academy,900 N Waller Ave,Chicago,60651 2649,P-12,41.896789,-87.767888
+15016079Y,01,0000,Prologue,1135 N Cleaver St,Chicago,60642 4002,9-12,41.902956,-87.663664
+15016080X,01,0000,Excellence in Academic Achievement Academy,9612 S Charles St,Chicago,60643 1216,K-12,41.719572,-87.66384
+15016081Y,01,0000,Fresh Anointing Academy of Excellence,6907 S Ashland Ave,Chicago,60636,9-12,41.768208,-87.663732
+15016082Y,01,0000,Comm Christian Alternative Acad,1231 S Pulaski Rd,Chicago,60623 1234,U,41.865624,-87.724999
+15016083X,01,0000,Empowerment Christian Academy,6446 S Ashland Ave,Chicago,60636 2717,P-8,41.776796,-87.6643
+15016085Y,10,0000,St Benedict High School,3900 N Leavitt St,Chicago,60618 3810,9-12,41.952417,-87.683556
+15016086Y,10,0000,Our Lady of Tepeyac High School,2228 S Whipple St,Chicago,60623 3425,9-12,41.851311,-87.701714
+15016088Y,10,0000,St Francis De Sales High School,10155 S Ewing Ave,Chicago,60617 6022,9-12,41.71091,-87.53513
+15016089X,25,0000,Enliven Christian Academy,4503 W Harrison St,Chicago,60624 3004,K-2,41.873125,-87.738463
+15016090X,14,0000,St Sava Academy,5701 N Redwood Dr,Chicago,60631 2933,P-8,41.982831,-87.827996
+15016091X,25,0000,Judah Foundational Comm Sch,856 N Pulaski Rd,Chicago,60651 3608,P,41.896403,-87.726259
+15016092Y,10,0000,St Ignatius College Prep,1076 W Roosevelt Rd,Chicago,60608 1531,9-12,41.867203,-87.6532
+15016093X,05,0000,Chicago Jewish Day School,5959 N Sheridan Rd,Chicago,60660 3643,P-8,41.990703,-87.655252
+15016094Z,14,0000,Center of Life Learning Academy,6643 S Ashland Ave,Chicago,60636 3021,P-12,41.773218,-87.663901
+15016095X,01,0000,Sprout Academy,6738 S Throop St,Chicago,60636 2931,P-6,41.771508,-87.656868
+15016096Z,14,0000,Another Chance Learning Center,1641 W 79th St,Chicago,60620 4212,"P-12,U",41.750185,-87.66478
+15016098X,06,0000,Bethel Christian School,4215 W West End Ave,Chicago,60624 2245,K-8,41.883149,-87.73101
+15016099X,01,0000,Searcie Smith Learning Academy,5627 W Division St,Chicago,60651 1140,K-6,41.901977,-87.766672
+15016100X,01,0000,Chicago Grammar School,900 N Franklin St Ste 104,Chicago,60610 8108,P-7,41.899112,-87.635772
+15016101X,01,0000,HOPE Excel Reaching the World Acad,4821 W Chicago Ave,Chicago,60651 3224,"P,K",41.894847,-87.746545
+15016102X,01,0000,Philadelphia School of Arts,3335 W Washington Blvd,Chicago,60624 2454,P-5,41.882608,-87.709274
+15016106Y,25,0000,Excel Institute,6240 S Bishop St,Chicago,60636 2316,12,41.780481,-87.660751
+15016107X,01,0000,Northwest Inst for Contemp Acad,5108 W Division St,Chicago,60651 1436,P-8,41.902422,-87.753478
+15016108Y,10,0000,St Rita High School,7740 S Western Ave,Chicago,60620 5820,9-12,41.752818,-87.68307
+15016111S,19,0000,PACTT Learning Center,7101 N Greenview Ave,Chicago,60626 2628,U,42.011377,-87.667987
+15016112X,14,0000,Masters Academy,6620 S King Dr,Chicago,60637 3210,K-8,41.774826,-87.615642
+15016113X,01,0000,German School Chicago,1447 W Montrose Ave,Chicago,60613 1348,P-6,41.961473,-87.666672
+15016114X,16,0000,Futureworld NFP,1744 E 55th St,Chicago,60615 5966,P-6,41.795396,-87.582177
+15016115X,01,0000,Intercultural Montessori of Chicago,114 S Racine Ave Ste 100,Chicago,60607 2954,P-6,41.88014,-87.657244
+15016116Z,01,0000,Chicago Waldorf School,1300 W Loyola Ave,Chicago,60626 5104,P-12,42.00124,-87.663501
+15016117Y,01,0000,Puerto Rican H S - Pedro A Campos,2739 W Division St,Chicago,60622 2854,9-12,41.902789,-87.695348
+15016118Y,05,0000,Telshe High School,3535 W Foster Ave,Chicago,60625 5526,9-12,41.975499,-87.717276
+15016119Z,01,0000,Children of the City College Prep,5411 S Halsted St,Chicago,60609,P-11,41.795783,-87.645045
+15016121X,02,0000,Sweet Angels Learning Academy,4247-49 W Division,Chicago,60651,K,41.671119,-88.006731
+15016122Y,01,0000,Wolcott School,524 N Wolcott Ave,Chicago,60622 6256,9-12,41.891464,-87.674632
+15016123Y,14,0000,Changing Oasis,2532 W Warren Blvd Fl 2,Chicago,60612 2124,9-12,41.882205,-87.689658
+15016124X,01,0000,Freedom International School,208-210 S Cicero,Chicago,60644,"P,K",41.877911,-87.745336
+15016125X,01,0000,Fizer Temple Academy,3926 W Roosevelt Rd,Chicago,60624 4233,P-5,41.866339,-87.723886
+15016126X,02,0000,Mount Ebenezer,3555 W Huron St,Chicago,60624 1346,"P,K",41.893485,-87.715447
+15016127X,01,0000,Morgan Street Learning Academy,5524 S Morgan St,Chicago,60621 1534,P-5,41.793278,-87.650145
+15016128X,02,0000,Greater Rock Gifted Learning Academy,718 S Independence Blvd,Chicago,60624 3626,"P,K",41.872484,-87.720479
+15016130X,02,0000,Peaceful New Beginings Academy,345 S Cicero Ave,Chicago,60644 4905,P-1,41.875721,-87.744943
+15016131X,19,0000,Jack Activity School of Art,444 W 118th St,Chicago,60628 5352,P-5,41.679868,-87.633773
+15016132Z,06,0000,New Hope Lutheran School,6416 S Washtenaw Ave,Chicago,60629 1734,P-9,41.776965,-87.69105
+15016133X,01,0000,Altus Academy,751 S Sacramento Blvd,Chicago,60612 3365,4-7,41.871637,-87.700795
+15016136X,14,0000,Anointed Heirs Kingdom Academy,7601 S Kostner Ave Ste 400,Chicago,60652 1120,K-4,41.760291,-87.732567
+15016137X,16,0000,Gateway Montessori School,3748 W Montrose Ave,Chicago,60618 1027,P-3,41.961169,-87.722028
+15016138X,02,0000,Loving Spirit Community Outreach and Development Center,424 W 103rd St,Chicago,60628 2402,K,41.707173,-87.634419
+15016139X,02,0000,JLM Academy,2622 W Jackson Blvd,Chicago,60612 2807,"P,K",41.877642,-87.691287
+15016141X,02,0000,Mind Shapers Christian Academy,1845 W 95th St,Chicago,60643 1103,P-6,41.721013,-87.669278
+15016142Z,02,0000,1st Holy Zion Center for Learning,6110 S Ashland Ave,Chicago,60636 2322,"P,K,7,9",41.782905,-87.664454
+15016143X,01,0000,Chicago Free School,1100 E Hyde Park Blvd,Chicago,60615 2810,P-8,41.802489,-87.599131
+15016144X,01,0000,New Dimensions Academy,6450 S Ashland Ave # 52,Chicago,60636 2717,K-6,41.776721,-87.664298
+15016145X,27,0000,Christian S.T.E.M. Scholars Academy,9406 S Perry Ave,Chicago,60620 1423,P-8,41.723402,-87.626433
+15016146X,02,0000,Gospel Quartets Academy,7915 S Halsted St,Chicago,60620 2541,P-8,41.750079,-87.643878
+15016147Y,01,0000,The Hunter Lab Academy,5946 S Prairie Ave Unit 1,Chicago,60637 1336,12,41.786592,-87.619169
+15016148X,02,0000,Performing Christ Christian Academy,5209 W Lake St,Chicago,60644 2421,"P,K",41.887074,-87.755622
+15016149X,01,0000,CS Academy II,1443 W 63rd St,Chicago,60636 2353,P-8,41.779373,-87.660727
+15016151X,01,0000,Everlasting Love Academy,124 S Cicero Ave,Chicago,60644 4460,P-5,41.87914,-87.745378
+15016152S,19,0000,City Elementary,1100 E Hyde Park Blvd,Chicago,60615 2810,K-2,41.802489,-87.599131
+15016153X,01,0000,City Garden Waldorf School,920 W 19th St,Chicago,60608 3412,"P,K",41.856842,-87.649084
+15016154X,01,0000,Bennett Day School,955 W Grand Ave,Chicago,60642 6511,P-1,41.890987,-87.651813
+15016155Z,14,0000,Living Free Center,2158 W Randolph St,Chicago,60612 2243,"5,9,11",41.884659,-87.680387
+15016156X,02,0000,Faith Walk Community Christian Academy,8001 S Racine Ave,Chicago,60620 3012,"K-1,3",41.748827,-87.653689
+15016157X,02,0000,Greater New Mt Moriah MBC School,5453 W North Ave,Chicago,60639 4346,P-7,41.909263,-87.76252
+15016157X,23,0000,Guidance Education Academy,7045 N Western Ave,Chicago,60645 3491,P-8,42.010718,-87.690216
+15016159X,01,0000,World Language Acad of Scholars,8431 S Escanaba Ave,Chicago,60617 2504,P-3,41.742251,-87.5538
+15016160Y,01,0000,Accountax School of Business,5726 S Stony Island Ave,Chicago,60637 2000,9-12,41.791041,-87.586856
+15016165X,01,0000,Little Angels,5117 N Lincoln Ave,Chicago,60625 2501,"P,K,7",41.974609,-87.692043
+15016175X,06,0000,Grace Christian Academy,4106 W 28th St,Chicago,60623 4358,P-8,41.840681,-87.727187
+15016177X,27,0000,Eslup Rapid Learning Center,710 W 61st Pl,Chicago,60621 2022,"K,2,8-12",41.782663,-87.642682
+15016178X,06,0000,Jehovah Lutheran School,3740 W Belden Ave,Chicago,60647 2348,P-8,41.922875,-87.720718
+15016180Z,27,0000,Mount of Transformation Christian Sch,4747 S Princeton Ave,Chicago,60609 4544,P-12,41.808115,-87.633186
+15016181X,06,0000,Our Saviour,7151 W Cornelia Ave,Chicago,60634 3628,"P,K",41.94331,-87.80607
+15016182X,01,0000,Village Leadership Academy,800 S Wells St Ste 90,Chicago,60607 4530,K-8,41.872,-87.633572
+15016183X,01,0000,Mosaic Early Childhood Academy,5334 W Addison St,Chicago,60641 3356,"P,K",41.946111,-87.760138
+15016185X,06,0000,St James Lutheran,2101 N Fremont St,Chicago,60614 4305,P-8,41.919808,-87.650998
+15016186X,06,0000,St John Ev Lutheran School,4939 W Montrose Ave,Chicago,60641 1525,P-8,41.960526,-87.751287
+15016187X,06,0000,St Luke Academy,1500 W Belmont Ave,Chicago,60657 3108,P-8,41.939579,-87.666241
+15016189X,06,0000,St Paul Lutheran School,846 N Menard Ave,Chicago,60651 2663,K-8,41.896292,-87.770307
+15016190X,06,0000,St Paul Lutheran School,7621 S Dorchester Ave,Chicago,60619 3425,P-8,41.756589,-87.590598
+15016191X,10,0000,Corcoran Elementary,5909 W 63rd Pl,Chicago,60638 5415,1-8,41.776861,-87.769161
+15016192X,06,0000,Lutheran Unity School,5650 N Canfield Ave,Chicago,60631 3318,P-8,41.982423,-87.823619
+15016194X,06,0000,St Philip Lutheran,2500 W Bryn Mawr Ave,Chicago,60659 5104,P-8,41.983007,-87.691873
+15016197Z,14,0000,Gods Battle Axe Prayer Academy,6969 N Western Ave,Chicago,60645 4710,P-12,42.008145,-87.689998
+15016201X,06,0000,Bethesda International Academy,6803 N Campbell Ave,Chicago,60645 4679,P-8,42.005053,-87.692359
+15016203X,06,0000,Grace English Lutheran School,2725 N Laramie Ave,Chicago,60639 1615,P-7,41.930368,-87.75623
+15016206X,06,0000,Pilgrim Lutheran School,4300 N Winchester Ave,Chicago,60613 1016,P-8,41.959798,-87.67743
+15016210X,05,0000,Akiba-Schechter Day School,5235 S Cornell Ave,Chicago,60615 4211,P-8,41.800546,-87.585702
+15016211X,05,0000,Bernard Zell Anshe Emet Day Sch,3751 N Broadway St,Chicago,60613 4104,P-8,41.950431,-87.648879
+15016215X,25,0000,Chicago Christian Academy,3101 N Parkside Ave,Chicago,60634 5326,P-8,41.936581,-87.767651
+15016217X,26,0000,Midwestern Christian Academy,3465 N Cicero Ave,Chicago,60641 3719,P-8,41.94392,-87.746849
+15016221Z,02,0000,Operation Restoration Development Sch,8758 S Peoria St,Chicago,60620 3258,P-12,41.73494,-87.646208
+15016224Y,01,0000,Comm Youth Development Institute,7836 S Union Ave,Chicago,60620 2409,U,41.75181,-87.641782
+15016226X,03,0000,Roseland Christian School,314 W 108th St,Chicago,60628 3332,P-8,41.698109,-87.630681
+15016228X,10,0000,Augustus Tolton Catholic Academy,7120 S Calumet Ave,Chicago,60619 1119,P-8,41.765303,-87.617008
+15016231X,05,0000,Joan Dachs Bais Yaakov Yeshivas Tiferes Tzvi,3200 W Peterson Ave,Chicago,60659 3622,P-8,41.990233,-87.709164
+15016238Y,10,0000,Christ the King Jesuit College Preparatory School,5088 W Jackson Blvd,Chicago,60644 4324,9-12,41.876833,-87.752893
+15016241X,01,0000,North Park Elementary School,2017 W Montrose Ave,Chicago,60618 1713,P-8,41.961599,-87.679595
+15016248Y,05,0000,Bnos Rabbeinu High School,6236 N Sacramento Ave,Chicago,60659 1616,9-12,41.994559,-87.704542
+15016251Z,02,0000,Woodlawn Academy College Preparatory,4817 W Chicago Ave,Chicago,60651 3224,P-12,41.894848,-87.74648
+15016256Y,14,0000,Sullivan House H S,8164 S South Chicago Ave,Chicago,60617 1041,9-12,41.747368,-87.580104
+15016267X,20,0000,Lordanchild Christian Daycare,3344 W 79th St,Chicago,60652 1528,"P,K",41.749891,-87.70622
+15016269X,16,0000,Sauganash Montessori Sch,5750 N Rogers Ave,Chicago,60646 5955,"P,K",41.985419,-87.740684
+15016270X,06,0000,Lutheran Day Nursery,1802 N Fairfield Ave,Chicago,60647 4214,"P,K",41.913949,-87.69602
+15016271X,10,0000,Academy Sacred Heart/Hardey Prep,6250 N Sheridan Rd,Chicago,60660 1730,K-8,41.995526,-87.655703
+15016273Y,27,0000,Alpha Omega Ministries,1251 N Parkside Ave,Chicago,60651 1144,9-12,41.903053,-87.766745
+15016279Z,02,0000,New Life Community Zone Sch,3540 W Cermak Rd,Chicago,60623 3164,P-12,41.851825,-87.71381
+15016293Z,14,0000,Greater Helping Hand Christian Acad,555 E 87th St,Chicago,60619 6005,P-12,41.736413,-87.610674
+15016294Z,14,0000,Love Faith and Praise Academy,6948 S Stewart Ave,Chicago,60621 2403,P-12,41.768099,-87.634889
+15016317X,10,0000,St Walter School,11741 S Western Ave,Chicago,60643 4731,P-8,41.680426,-87.68065
+15016319X,10,0000,Visitation Catholic School,900 W Garfield Blvd,Chicago,60609 6165,P-8,41.794128,-87.647598
+15016321X,10,0000,St Viator School,4140 W Addison St,Chicago,60641 3913,P-8,41.946181,-87.730629
+15016323Y,01,0000,Hunter-Bolden Academy,5946 S Prairie Ave,Chicago,60637 1336,12,41.786592,-87.619169
+15016324X,10,0000,St Barbara,2867 S Throop St,Chicago,60608 5922,P-8,41.842149,-87.652999
+15016325X,10,0000,St Barnabas School,10121 S Longwood Dr,Chicago,60643 2097,P-8,41.710683,-87.66897
+15016326X,10,0000,St Bartholomew School,4941 W Patterson Ave,Chicago,60641 3512,P-8,41.946844,-87.75052
+15016327Z,01,0000,British School of Chicago,814 W Eastman St,Chicago,60642 2609,P-12,41.907313,-87.648795
+15016328X,10,0000,St Bede the Venerable,4440 W 83rd St,Chicago,60652 2111,P-8,41.74185,-87.73179
+15016329X,10,0000,St Benedict Elem School,3920 N Leavitt St,Chicago,60618 3810,P-8,41.952641,-87.683717
+15016331X,10,0000,St Agnes of Bohemia,2643 S Central Park Ave,Chicago,60623 4631,P-8,41.843518,-87.714616
+15016333X,16,0000,Chicagoland Montessori Academy,5700 N Pulaski Rd,Chicago,60646 6719,1-6,41.984454,-87.728473
+15016339X,10,0000,St Bruno School,4839 S Harding Ave,Chicago,60632 3630,P-8,41.805348,-87.722136
+15016340X,10,0000,St Cajetan,2447 W 112th St,Chicago,60655 1351,P-8,41.689643,-87.682991
+15016344X,10,0000,Our Lady of Tepeyac,2235 S Albany Ave,Chicago,60623 3414,P-8,41.851018,-87.702632
+15016346X,01,0000,Ridge Academy,2501 W 103rd St,Chicago,60655 1003,1-8,41.706539,-87.684117
+15016348X,10,0000,Christ the King,9240 S Hoyne Ave,Chicago,60643 6303,P-8,41.725776,-87.674688
+15016349X,10,0000,St Christina,3333 W 110th St,Chicago,60655 2735,P-8,41.693486,-87.704589
+15016350X,03,0000,Humboldt Comm Christian School,1847 N Humboldt Blvd,Chicago,60647 5003,P-8,41.914726,-87.701504
+15016352X,10,0000,St Clement School,2524 N Orchard St,Chicago,60614 2536,P-8,41.928319,-87.646576
+15016356X,10,0000,St Constance School,5841 W Strong St,Chicago,60630 2026,P-8,41.970437,-87.774649
+15016357X,10,0000,St Cornelius,5252 N Long Ave,Chicago,60630 1438,P-8,41.976068,-87.763284
+15016366X,10,0000,St Edward,4343 W Sunnyside Ave,Chicago,60630 4147,P-8,41.962513,-87.737162
+15016368X,10,0000,Epiphany School,4223 W 25th St,Chicago,60623 3638,P-8,41.845856,-87.72982
+15016369X,10,0000,St Ethelreda School,8734 S Paulina St,Chicago,60620 4815,P-8,41.735141,-87.665629
+15016370X,10,0000,St Eugene,7930 W Foster Ave,Chicago,60656 1651,P-8,41.97414,-87.829222
+15016372X,10,0000,St Ferdinand School,3131 N Mason Ave,Chicago,60634 5114,P-8,41.937211,-87.774806
+15016375X,10,0000,Pope John Paul II Catholic School,4325 S Richmond St,Chicago,60632 2504,P-8,41.815184,-87.698099
+15016378X,10,0000,St Francis Borgia School,3535 N Panama Ave,Chicago,60634 2927,P-8,41.94381,-87.828867
+15016381X,05,0000,Cheder Lubavitch Hebrew Day Sch,2809 W Jarvis Ave,Chicago,60645 1205,1-8,42.015541,-87.699946
+15016382X,10,0000,St Gabriel,4500 S Wallace St,Chicago,60609 3536,P-8,41.812459,-87.640769
+15016383X,10,0000,St Gall,5515 S Sawyer Ave,Chicago,60629 3125,P-8,41.793232,-87.704623
+15016384X,10,0000,St Genevieve School,4854 W Montana St,Chicago,60639 2500,P-8,41.925319,-87.747748
+15016392X,10,0000,St Helen School,2347 W Augusta Blvd,Chicago,60622 4841,P-8,41.899248,-87.685725
+15016395X,10,0000,St Hilary School,5614 N Fairfield Ave,Chicago,60659 4817,P-8,41.983388,-87.698101
+15016396X,10,0000,Holy Angels School,750 E 40th St,Chicago,60653 2804,P-8,41.821616,-87.609733
+15016397X,10,0000,Chicago Jesuit Academy,5058 W Jackson Blvd,Chicago,60644 4324,5-8,41.876849,-87.751317
+15016405X,26,0000,Pui Tak Christian School,2301 S Wentworth Ave,Chicago,60616 2013,P-6,41.850946,-87.632123
+15016409S,10,0000,Misericordia Mcauley Residence,2060 W Granville Ave,Chicago,60659 3097,P-12,41.994383,-87.68149
+15016412X,10,0000,Northside Catholic Academy,5525 N Magnolia Ave,Chicago,60640 1306,P-5,41.982227,-87.661154
+15016415X,01,0000,Little Hands Learning Center,2324 W 111th St,Chicago,60643 3933,"P,K",41.691944,-87.679335
+15016417X,10,0000,Immaculate Conception School,7263 W Talcott Ave,Chicago,60631 3012,P-8,41.986799,-87.809197
+15016422X,10,0000,St Thomas of Canterbury,4827 N Kenmore Ave,Chicago,60640 3705,P-8,41.969898,-87.656084
+15016434X,10,0000,Annunciata School,3750 E 112th St,Chicago,60617 7096,P-8,41.691981,-87.532559
+15016436X,10,0000,St Ann,2211 W 18th Pl,Chicago,60608 2506,P-8,41.856542,-87.681482
+15016437X,10,0000,St Angela School,1332 N Massasoit Ave,Chicago,60651 1108,P-8,41.904488,-87.769525
+15016439X,10,0000,St Andrew School,1710 W Addison St,Chicago,60613 3501,P-8,41.947101,-87.671674
+15016441X,10,0000,Alphonsus Acad & Cntr for Arts,1439 W Wellington Ave,Chicago,60657 4121,P-8,41.935949,-87.664811
+15016445X,10,0000,St Ailbe School,9037 S Harper Ave,Chicago,60619 7990,P-8,41.730753,-87.586637
+15016447Y,01,0000,Banner Academy South High Sch,2330 E 99th St,Chicago,60617 5296,9-12,41.715459,-87.567224
+15016451S,19,0000,Carc/Mary Alyce Remedial Center,8701 S Bennett Ave,Chicago,60617 2951,U,41.737171,-87.578148
+15016453X,10,0000,St Josaphat,2245 N Southport Ave,Chicago,60614 3175,P-8,41.922544,-87.663074
+15016456X,10,0000,St John Fisher,10200 S Washtenaw Ave,Chicago,60655 1654,P-8,41.707982,-87.689077
+15016459X,10,0000,St John Berchmans School,2511 W Logan Blvd,Chicago,60647 1926,P-8,41.928099,-87.690571
+15016460X,10,0000,St John De La Salle School,10212 S Vernon Ave,Chicago,60628 2216,P-8,41.708921,-87.612742
+15016463X,10,0000,St Jerome School,2801 S Princeton Ave,Chicago,60616 2602,P-8,41.842735,-87.634214
+15016492X,10,0000,St Margaret of Scotland School,9833 S Throop St,Chicago,60643 1490,P-8,41.714963,-87.655057
+15016497Y,01,0000,Pnuema Institute,400 W 76th St Rm 206,Chicago,60620 1640,9-11,41.756103,-87.634439
+15016501X,16,0000,Montessori Dela Citta,1501 W Fullerton Ave,Chicago,60614 9021,"P,K",41.925332,-87.665768
+15016505X,10,0000,St Margaret Mary School,7318 N Oakley Ave,Chicago,60645 1810,P-8,42.014721,-87.687679
+15016506X,10,0000,St Malachy School,2252 W Washington Blvd,Chicago,60612 2236,P-8,41.883195,-87.682662
+15016507X,14,0000,Just For Kids,5036 S Blackstone Ave,Chicago,60615 3006,"P,K",41.803582,-87.590678
+15016521X,10,0000,Santa Lucia,3017 S Wells St,Chicago,60616 2739,P-8,41.989186,-87.754187
+15016535X,10,0000,Sacred Heart School,2926 E 96th St,Chicago,60617 5010,K-8,41.721068,-87.552702
+15016539X,10,0000,St Stanislaus Kostka School,1255 N Noble St,Chicago,60642 3336,P-8,41.905208,-87.662669
+15016540X,10,0000,St Sylvester School,3027 W Palmer Blvd,Chicago,60647 2816,P-8,41.920544,-87.703143
+15016542X,10,0000,St Tarcissus School,6040 W Ardmore Ave,Chicago,60646 5320,P-8,41.986701,-87.779477
+15016544X,10,0000,St Thecla,6323 N Newcastle Ave,Chicago,60631 2026,P-8,41.995617,-87.796673
+15016546X,10,0000,St Therese School,247 W 23rd St,Chicago,60616 1903,P-8,41.850806,-87.633085
+15016547X,10,0000,St Thomas the Apostle Elementary,5467 S Woodlawn Ave,Chicago,60615 5209,P-8,41.796245,-87.596421
+15016548X,10,0000,St Juliana School,7400 W Touhy Ave,Chicago,60631 4300,P-8,42.011433,-87.811531
+15016561X,10,0000,St Richard School,5025 S Kenneth Ave,Chicago,60632 4535,P-8,41.801548,-87.734275
+15016563X,10,0000,St Robert Bellarmine School,6036 W Eastwood Ave,Chicago,60630 3118,K-8,41.96461,-87.778381
+15016567X,10,0000,St Sabina Academy,7801 S Throop St,Chicago,60620 3758,P-8,41.752443,-87.655392
+15016571X,10,0000,Our Lady of Grace School,2446 N Ridgeway Ave,Chicago,60647 2325,P-8,41.925515,-87.72083
+15016572X,10,0000,Our Lady of Guadalupe,9050 S Burley Ave,Chicago,60617 4404,P-8,41.731026,-87.545833
+15016575X,10,0000,Our Lady of Lourdes,4641 N Ashland Ave,Chicago,60640 4785,P-8,41.965978,-87.669213
+15016578X,10,0000,Mount Carmel Academy,720 W Belmont Ave,Chicago,60657 4513,P-8,41.940157,-87.64733
+15016585X,10,0000,Our Lady of Victory,4434 N Laramie Ave,Chicago,60630 3740,P-8,41.961981,-87.75758
+15016588X,10,0000,St Pascal School,6143 W Irving Park Rd,Chicago,60634 2564,P-8,41.952843,-87.780577
+15016590X,16,0000,Ezzard Charles School,7946 S Ashland Ave,Chicago,60620 4335,"P,K",41.749496,-87.66357
+15016591X,10,0000,St Paul - Our Lady of Vilna,2114 W 22nd Pl,Chicago,60608 4004,P-8,41.851354,-87.679675
+15016595X,10,0000,Old St Marys School,1474 S Michigan Ave,Chicago,60605 4836,P-8,41.862353,-87.624198
+15016596X,10,0000,St Philip Neri School,2110 E 72nd St,Chicago,60649 3010,P-8,41.764513,-87.57331
+15016598X,10,0000,St Pius V School,1919 S Ashland Ave,Chicago,60608 2903,P-8,41.855806,-87.665936
+15016599X,10,0000,St Agatha Catholic Academy,3151 W Douglas Blvd,Chicago,60623 1816,P-8,41.86237,-87.704699
+15016602X,10,0000,St Procopius Elem School,1625 S Allport St,Chicago,60608 2131,P-8,41.85953,-87.65755
+15016603X,01,0000,Just for Kids,11024 S Bell Ave,Chicago,60643 3926,"P,K",41.693657,-87.677186
+15016604X,10,0000,Queen of All Saints School,6230 N Lemont Ave,Chicago,60646 4910,P-8,41.994489,-87.744746
+15016605X,10,0000,Queen of Angels School,4520 N Western Ave,Chicago,60625 2117,P-8,41.963594,-87.688899
+15016606X,10,0000,Queen of Martyrs,3550 W 103rd St,Evergreen Park,60805 2417,P-8,41.706031,-87.70194
+15016607X,10,0000,Queen of the Universe,7130 S Hamlin Ave,Chicago,60629 4321,P-8,41.763445,-87.717624
+15016608X,10,0000,Academy of St Benedict,6020 S Laflin St,Chicago,60636 2310,P-8,41.78459,-87.662065
+15016612X,26,0000,Oak Park Christian Academy,3105 N Oak Park Ave,Chicago,60634 4633,K-8,41.936425,-87.795491
+15016613X,10,0000,St Mary of the Angels,1810 N Hermitage Ave,Chicago,60622 1101,P-8,41.914453,-87.6716
+15016614X,10,0000,St Mary of the Lake School,1026 W Buena Ave,Chicago,60613 2009,P-8,41.958567,-87.655434
+15016618X,10,0000,St Mary Star of the Sea,6424 S Kenneth Ave,Chicago,60629 5525,P-8,41.776259,-87.73383
+15016619X,10,0000,St Mary of the Woods School,7033 N Moselle Ave,Chicago,60646 1211,P-8,42.008477,-87.776745
+15016620X,10,0000,Maternity B V M School,1537 N Lawndale Ave,Chicago,60651 2105,P-8,41.908812,-87.719039
+15016622X,10,0000,St Matthias/Transfiguration Sch,4910 N Claremont Ave,Chicago,60625 1972,P-8,41.970624,-87.687908
+15016624X,10,0000,St Nicholas of Tolentine School,3741 W 62nd St,Chicago,60629 4014,P-8,41.780427,-87.716318
+15016626X,14,0000,St Nicholas Cathedral,2200 W Rice St,Chicago,60622 4811,P-8,41.896597,-87.681972
+15016627X,10,0000,Bridgeport Catholic - S Campus,3700 S Lowe Ave,Chicago,60609 1643,P-8,41.826999,-87.642359
+15016630X,10,0000,St Monica School,5115 N Mont Clare Ave,Chicago,60656 3601,P-8,41.973959,-87.804593
+15016632X,10,0000,St Michael School,8231 S South Shore Dr,Chicago,60617 2152,P-8,41.745968,-87.547781
+15016643X,16,0000,Chicago Montessori,1713 W Cullom Ave,Chicago,60613 1101,"P,K",41.959589,-87.67125
+15016647X,10,0000,St Ladislaus,3330 N Lockwood Ave,Chicago,60641 4184,P-8,41.941556,-87.759232
+15016650Y,14,0000,Lydia Urban Academy,4300 W Irving Park Rd,Chicago,60641 2825,9-12,41.953408,-87.735436
+15016662X,26,0000,United Educational Cultural Acad,1236 W 103rd St # 42,Chicago,60643 2361,P-8,41.70694,-87.655772
+15016665S,05,0000,Jewish Child and Family Services,3145 W Pratt Blvd,Chicago,60645 4125,K-12,42.004523,-87.708551
+15016682X,01,0000,Lake Shore Preparatory School,300 W Hill St,Chicago,60610 2549,P-3,41.901927,-87.636478
+15016685X,01,0000,A-Karrasel,5510 W Fullerton Ave,Chicago,60639 1329,"P-1,U",41.924156,-87.76392
+15016686Z,11,0000,Chicago S D A Academy,7008 S Michigan Ave,Chicago,60637 4512,P-12,41.767246,-87.621888
+15016692X,01,0000,Lake Shore School,6759 N Greenview Ave,Chicago,60626 4207,P-8,42.004679,-87.667986
+15016693X,03,0000,Daystar School,1550 S State St,Chicago,60605 7805,P-8,41.860593,-87.627201
+15016697S,19,0000,Hyde Park Day School,6254 S Ellis Ave,Chicago,60637 2616,1-8,41.781735,-87.601245
+15016699X,01,0000,Institute of Positive Education,7825 S Ellis Ave,Chicago,60619 3294,P,41.752717,-87.600219
+15016705X,06,0000,Holy Family School,3415 W Arthington St,Chicago,60624 4104,K-8,41.869848,-87.710921
+15016712X,16,0000,Brickton Montessori School,8622 W Catalpa Ave,Chicago,60656 1116,P-8,41.979358,-87.84204
+15016725X,01,0000,Urban Prairie Waldorf School,1220 W Lexington St,Chicago,60607 4111,1-7,41.872388,-87.657622
+15016727S,19,0000,Rush Day School,2150 W Harrison St,Chicago,60612 3706,3-8,41.874133,-87.679957
+15016735X,16,0000,Beverly Montessori School,9916 S Walden Pkwy,Chicago,60643 1806,"P,K",41.713587,-87.66784
+15016738X,16,0000,Rogers Park Montessori School,1800 W Balmoral Ave,Chicago,60640 1002,P-8,41.979598,-87.674463
+15016743Z,01,0000,Francis W Parker School,330 W Webster Ave,Chicago,60614 3820,P-12,41.921829,-87.637602
+15016745Y,01,0000,Howard Area Leadership Academy,7647 N Paulina St,Chicago,60626 1017,9-12,42.020224,-87.672938
+15016757S,14,0000,Uhlich Academy,3110 W Grand Ave,Chicago,60622 4324,K-12,41.898146,-87.705803
+15016761Y,01,0000,ASPIRA Antonia Pantoja Alt H S,3121 N Pulaski Rd,Chicago,60641 5447,9-12,41.937654,-87.726992
+15016763X,06,0000,Christ the King Lutheran School,3701 S Lake Park Ave,Chicago,60653 2012,P-8,41.828783,-87.60631
+15016767X,01,0000,Learning Network,5911 W Midway Park,Chicago,60644 1846,"P-3,5-8",41.888853,-87.774727
+15016770S,19,0000,So Central Comm Serv-So Shore,7550 S Phillips Ave,Chicago,60649 3724,9-12,41.757944,-87.565295
+15016778Z,14,0000,CS Academy,6014 S Racine Ave,Chicago,60636 1918,P-12,41.784662,-87.654779
+15016780X,01,0000,Latin School of Chicago Lower,1531 N Dearborn Pkwy,Chicago,60610 2472,P-4,41.909995,-87.630017
+15016781X,05,0000,Yeshiva Ohr Boruch,2620 W Touhy Ave,Chicago,60645 3110,P-8,42.012314,-87.69547
+15016785Y,01,0000,Latin School of Chicago Upper,59 W North Blvd,Chicago,60610 1403,5-12,41.911044,-87.630605
+15016787X,11,0000,Beverly Hills S D A School,9356 S Justine St,Chicago,60620 5126,"P,2,4-8",41.723829,-87.661675
+15016788X,16,0000,Childrens House of Miss Tammie,1448 E 53rd St,Chicago,60615 4512,"P,U",41.799678,-87.590293
+15016789Z,11,0000,North Shore SDa Junior Academy,5220 N California Ave,Chicago,60625 3502,P-10,41.976467,-87.699088
+15016791Y,05,0000,Lubavitch Mesivta of Chicago,2756 W Morse Ave,Chicago,60645 4519,9-12,42.006825,-87.698535
+15016796Y,01,0000,Chicago Academy for the Arts,1010 W Chicago Ave,Chicago,60642 5414,9-12,41.896447,-87.653129
+15016798X,14,0000,New Birth Training Institute,1140 N Lamon Ave,Chicago,60651 3103,11-12,41.90087,-87.748537
+15016802X,14,0000,West Englewood Christian Comm Sch,7326 S Racine Ave,Chicago,60636 4112,"P-4,6-7",41.760628,-87.654145
+15016805Y,05,0000,Brisk Academy-Yeshivas Brisk,3000 W Devon Ave,Chicago,60659 1406,9-12,41.997603,-87.705731
+15016806X,10,0000,Frances Xavier Warde Schools,751 N State St,Chicago,60654 3835,P-8,41.895995,-87.628031
+15016810X,03,0000,The Cambridge Sch Chicago,4611 S Ellis Ave,Chicago,60653 3624,P-6,41.811067,-87.601583
+15016813S,19,0000,Anixter School,6610 N Clark St,Chicago,60626 4062,U,42.001991,-87.672115
+15016815X,23,0000,ICCI Academy,6435 W Belmont Ave,Chicago,60634 3924,P-6,41.938146,-87.787294
+15016822X,23,0000,ICC Full Time School,5933 N Lincoln Ave,Chicago,60659 3728,"P-2,4",41.989065,-87.704788
+15016823Y,05,0000,Yeshivas Meor Hatorah,3635 W Devon Ave,Chicago,60659 1212,9-12,41.997428,-87.720297
+15016824Y,05,0000,Lubavitch Girls High Sch,6350 N Whipple St,Chicago,60659 1420,U,41.99608,-87.705817
+15016825X,14,0000,Salem Christian Acad,11816 S Indiana Ave,Chicago,60628 6227,P-8,41.679394,-87.618012
+15016827X,14,0000,Educate Empower Academy,12900 S Halsted St,Chicago,60628 7433,P-5,41.659163,-87.641136
+15016828X,06,0000,Holy Spirit Academy,1335 W 115th St,Chicago,60643 4446,P,41.684749,-87.655684
+15016831Z,23,0000,Muhammad University,7351 S Stony Island Ave,Chicago,60649 3106,P-8,41.761404,-87.586055
+15016838X,16,0000,Council Oak Montessori School,11030 S Longwood Dr,Chicago,60643 4012,P-8,41.693482,-87.671701
+15016845Y,05,0000,Bais Yaakov High Sch of Chicago,5800 N Kimball Ave,Chicago,60659 3504,9-12,41.986791,-87.713867
+15016853X,16,0000,Ancona School Society Inc,4770 S Dorchester Ave,Chicago,60615 2023,P-8,41.808616,-87.592005
+15016858S,19,0000,Beacon Therapeutic School,10650 S Longwood Dr,Chicago,60643 2617,K-8,41.699998,-87.671182
+15016861Y,01,0000,Jane Addams High School,1814 S Union Ave,Chicago,60616 1045,9-12,41.857449,-87.64493
+15016862Y,01,0000,West Town Academy,534 N Sacramento Blvd,Chicago,60612 1024,9-12,41.89138,-87.70213
+15016864Y,05,0000,Hanna Sacks Bais Yaakov High Sch,3021 W Devon Ave,Chicago,60659 1405,9-12,41.997317,-87.705061
+15016868S,19,0000,Stuart G Ferst School,6050 N California Ave,Chicago,60659 3916,2-12,41.991419,-87.699577
+15016869S,19,0000,Chicago Lighthouse Develmnt Cntr,1850 W Roosevelt Rd,Chicago,60608 1200,K-12,41.866954,-87.672547
+15016874Y,01,0000,Westside Holistic Leadership Aca,4909 W Division St,Chicago,60651 3161,9-12,41.902174,-87.748566
+15016883S,19,0000,Esperanza School,520 N Marshfield Ave,Chicago,60622 6731,1-12,41.892023,-87.668544
+15016885X,01,0000,Holman Leadership Academy,7100 S South Shore Dr,Chicago,60649 2700,P-6,41.766136,-87.562815
+15016886S,19,0000,Gateway to Learning School,4925 N Lincoln Ave,Chicago,60625 2609,U,41.971206,-87.690021
+15016888X,01,0000,Sanders Academy of Excellence,11515 S Prairie Ave,Chicago,60628 5611,P-8,41.684933,-87.616633
+15016892X,10,0000,Cardinal Bernardin Center,1651 W Diversey Pkwy,Chicago,60614 1027,"P-3,U",41.932233,-87.669937
+15016894X,20,0000,Oakdale Christian Academy,9440 S Vincennes Ave,Chicago,60620 3680,P-6,41.722481,-87.650392
+15016898Y,26,0000,Chicago Hope Academy,2189 W Bowler St,Chicago,60612 4201,9-12,41.870092,-87.680791
+15016899S,19,0000,Lawrence Hall Youth Services,4833 N Francisco Ave,Chicago,60625 3640,5-12,41.969239,-87.700092
+15016900X,03,0000,Chicago West Side Christian Sch,1240 S Pulaski Rd,Chicago,60623 1233,P-8,41.865432,-87.725296
+15016905Z,01,0000,GCE Lab School,1535 N Dayton St,Chicago,60642 8054,"6,10-11",41.909612,-87.649313
+15016910X,16,0000,Near North Montessori School,1434 W Division St,Chicago,60642 3778,P-8,41.903237,-87.663829
+15016915Z,02,0000,Ravenswood Baptist Christian Sch,4437 N Seeley Ave,Chicago,60625 1703,K-12,41.962537,-87.680471
+15016927X,16,0000,Wonder Montessori School,5644 N Pulaski Rd,Chicago,60646 6717,K-1,41.983489,-87.728597
+15016931X,01,0000,Kidwatch Plus Inc,3901 N Ridgeway Ave,Chicago,60618 3109,"P,K",41.951767,-87.721432
+15016932S,19,0000,Sonia Shankman Orthogenic School,1365 E 60th St,Chicago,60637 2856,"4,6-12",41.785937,-87.592417
+15016947S,16,0000,Chicago Urban Day School,1248 W 69th St,Chicago,60636 3552,"P,3-4,7-8",41.76882,-87.655743
+15016949Y,03,0000,Cornerstone Academy,1111 N Wells St # 4TH,Chicago,60610 7635,U,41.902433,-87.634272
+15016950X,01,0000,P L A I D Academy,2407 W 111th St,Chicago,60655 1309,P-8,41.69163,-87.681435
+15016951S,19,0000,North Ctr Handicapped Children,5104 W Belmont Ave,Chicago,60641 4206,11,41.93888,-87.75432
+15016957Y,01,0000,Academy of Scholastic Achievement,4651 W Madison St,Chicago,60644 3646,U,41.880391,-87.741301
+15016962X,10,0000,Children of Peace School,1900 W Taylor St,Chicago,60612 3742,P-8,41.869265,-87.675966
+15016963S,19,0000,New Horizon Center for the DD,6737 W Forest Preserve Ave,Chicago,60634 1470,"3-6,8-12",41.958852,-87.796481
+15016967X,14,0000,Circle/Rock Preparatory School,118 N Central Ave,Chicago,60644 3101,P-8,41.882607,-87.765089
+15016970X,10,0000,San Miguel/Back-of-the-Yards,1949 W 48th St,Chicago,60609 4145,6-8,41.806844,-87.674028
+15016974Z,01,0000,Lycee Francais De Chicago,1929 W Wilson Ave,Chicago,60640,P-12,41.964972,-87.677306
+15016975Y,01,0000,Austin Career Education Center,5352 W Chicago Ave,Chicago,60651 2857,10-12,41.895047,-87.759705
+15016980X,03,0000,Salem Christian School,2018 N Richmond St,Chicago,60647 3911,P-8,41.917932,-87.700155
+15016984X,01,0000,Childrens Center Outreach,12803 S Halsted St,Chicago,60628 7430,P-5,41.660929,-87.641203
+15016985Y,10,0000,Cristo Rey Jesuit High School,1852 W 22nd Pl,Chicago,60608 4302,9-12,41.851601,-87.672014
+15016986Z,01,0000,Reach Christian Academy,7400 S Michigan Ave,Chicago,60619 1621,P-8,41.759964,-87.621572
+15016994X,01,0000,Chicago City Day School,541 W Hawthorne Pl,Chicago,60657 2922,P-8,41.944377,-87.642989
+15016996X,26,0000,Rescue Missionary Christian Sch,7956 S King Dr,Chicago,60619 3702,"1-8,U",41.816487,-87.616528
+15016999X,01,0000,A Place of Hope Christian Ministries,2434 E 87th St,Chicago,60617 2332,P-3,41.73736,-87.56475

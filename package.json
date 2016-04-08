@@ -10,9 +10,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "download:educationalentities": "mkdir -p .learning-collaborative-maps/cache; curl -o .learning-collaborative-maps/cache/dir_ed_entities.xlsx http://www.isbe.net/research/xls/dir_ed_entities.xls",
-    "filterschools": "./scripts/filter_schools.js .learning-collaborative-maps/cache/dir_ed_entities.xlsx > .learning-collaborative-maps/cache/dir_ed_entities__cook_schools.csv",
-    "geocodeschools": "cat .learning-collaborative-maps/cache/dir_ed_entities__cook_schools.csv | ./scripts/geocode_schools.js  > data/dir_ed_entities__cook_schools__with_coordinates.csv",
-    "createschools": "cat data/dir_ed_entities__cook_schools__with_coordinates.csv | ./scripts/create_schools.js",
+    "filterschools": "./scripts/filter_schools.js .learning-collaborative-maps/cache/dir_ed_entities.xlsx > .learning-collaborative-maps/cache/dir_ed_entities__filtered_schools.csv",
+    "geocodeschools": "cat .learning-collaborative-maps/cache/dir_ed_entities__filtered_schools.csv | ./scripts/geocode_schools.js  > data/dir_ed_entities__filtered_schools__with_coordinates.csv",
+    "createschools": "cat data/dir_ed_entities__filtered_schools__with_coordinates.csv | ./scripts/create_schools.js",
     "createagencies": "./scripts/create_agencies.js",
     "createprograms": "./scripts/create_programs.js",
     "deleteprograms": "./scripts/delete_programs.js",
