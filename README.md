@@ -50,6 +50,10 @@ To load programs:
 
     cat data/programs.json | npm run createprograms
 
+### Known issues
+
+Since Heroku puts the service to sleep when it's not being accessed, you may need to load the production site in your browser before running management commands that load data to production.
+
 Building front-end assets
 -------------------------
 
