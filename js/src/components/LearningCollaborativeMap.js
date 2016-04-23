@@ -171,9 +171,13 @@ const LearningCollaborativeMap = React.createClass({
   _onChange: function() {
     let schools = SchoolStore.getAll();
     let map = this.state.map;
-    let [schoolMarkers, markerLookup] = this._getSchoolMarkers(schools);
-    schoolMarkers.addTo(map);
-    map.fitBounds(schoolMarkers.getBounds());
+    let schoolMarkers, markerLookup;
+    [schoolMarkers, markerLookup] = this._getSchoolMarkers(schools);
+
+    if (schools.length) {
+      schoolMarkers.addTo(map);
+      map.fitBounds(schoolMarkers.getBounds());
+    }
 
     this.setState({
       schools: schools,
