@@ -137,7 +137,7 @@ app.post('/api/1/schools/:rcdts/programs', function(req, res) {
       age_group: program.age_group,
       program_type: program.program_type
     };
-    dbApi.addSchoolProgram(req.school, programProps, dbConnection, function() {
+    dbApi.addSchoolProgram(req.school, programProps, dbConnection, function(err, program) {
       res.status(201).json(program);
     })
   });

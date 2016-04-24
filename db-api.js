@@ -126,7 +126,7 @@ function addSchoolProgram(school, program, db, callback) {
       }
     },
     function(err, results) {
-      callback();
+      callback(err, insertProgram);
     }
   );
 }
