@@ -3,7 +3,7 @@ var express = require('express');
 var exphbs  = require('express-handlebars');
 var MongoClient = require('mongodb').MongoClient;
 
-var dbApi = require('./db-api');
+var routes = require('./routes');
 
 var DATABASE_URL = process.env.LC_DATABASE_URL;
 var PORT = process.env.PORT || 3000;
@@ -22,149 +22,53 @@ app.use(bodyParser.json());
 // create.
 // TODO: Set location header for creates
 
-
-function getSchoolsWithProgramAgencies(dbConnection, callback) {
-  dbApi.getAgencies({}, dbConnection, function(agencies) {
-    var agencyLookup = agencies.reduce(function(lookup, agency) {
-      lookup[agency.slug] = agency;
-      return lookup;
-    }, {});
-
-    dbApi.getSchools({}, dbConnection, function(schools) {
-      callback(null, schools.map(dbApi.fixSchoolProgramAgencies.bind(undefined, agencyLookup)));
-    });
-  });
-}
+// Make database connection available as a property of the request object
+// for all requests.  This will make it easier to decouple the handlers from
+// Express and therefore easier to test
+app.all('*', function(req, response, next) {
+    req.dbConnection = dbConnection;
+    next();
+});
 
 app.get('/', function (req, res) {
     res.render('index');
 });
 
-app.get('/api/1/agencies', function(req, res) {
-  var format = req.query.format || 'json';
-  dbApi.getAgencies({}, dbConnection, function(agencies) {
-    if (format == 'geojson') {
-      res.json(dbApi.geoJsonCollection(agencies));
-    }
-    else {
-      res.json(agencies);
-    }
-  });
-});
+// Agencies
+//
+app.get('/api/1/agencies', routes.getAgencies);
 
-app.post('/api/1/agencies', function(req, res) {
-  var agencies = req.body;
-  if (!agencies.length) {
-    agencies = [agencies]; 
-  }
-  dbApi.createAgencies(agencies, dbConnection, function() {
-    res.status(201).json(agencies);
-  });
-});
+app.post('/api/1/agencies', routes.createAgency);
+
+app.delete('/api/1/agencies', routes.deleteAgency);
+
+app.param('agencySlug', routes.setAgencySlug);
+
+app.get('/api/1/agencies/:agencySlug', routes.getAgency);
 
 
-app.delete('/api/1/agencies', function(req, res) {
-  dbApi.deleteAgencies({}, dbConnection, function() {
-    res.json();
-  });
-});
+// Schools
 
-app.param('agencySlug', function(req, res, next, agencySlug) {
-  dbApi.getAgencies({slug: agencySlug}, dbConnection, function(agencies) {
-    req.agency = agencies[0];
-    next();
-  });
-});
+app.get('/api/1/schools', routes.getSchools);
 
-app.get('/api/1/agencies/:agencySlug', function(req, res) {
-  res.json(req.agency);
-});
+app.post('/api/1/schools', routes.createSchool);
+
+app.delete('/api/1/schools', routes.deleteSchool);
+
+app.param('rcdts', routes.setRcdts);
+
+app.get('/api/1/schools/:rcdts', routes.getSchool);
 
 
-app.get('/api/1/schools', function(req, res) {
-  var format = req.query.format || 'json';
-  getSchoolsWithProgramAgencies(dbConnection, function(err, schools) {
-    if (format == 'geojson') {
-      res.json(dbApi.geoJsonCollection(schools));
-    }
-    else {
-      res.json(schools);
-    }
-  });  
-});
+// Programs
 
-app.post('/api/1/schools', function(req, res) {
-  var schools = req.body;
-  if (!schools.length) {
-    schools = [schools]; 
-  }
-  dbApi.createSchools(schools, dbConnection, function() {
-    res.status(201).json(schools);
-  });
-});
+app.delete('/api/1/schools/:rcdts/programs', routes.deleteAllSchoolPrograms);
 
-app.delete('/api/1/schools', function(req, res) {
-  dbApi.deleteSchools({}, dbConnection, function() {
-    res.json();
-  });
-});
+app.post('/api/1/schools/:rcdts/programs', routes.createProgram);
 
-app.param('rcdts', function(req, res, next, rcdts) {
-  dbApi.getSchools({rcdts: rcdts}, dbConnection, function(schools) {
-    req.school = schools[0];
-    next();
-  });
-});
+app.get('/api/1/programs', routes.getPrograms);
 
-app.get('/api/1/schools/:rcdts', function(req, res) {
-  res.json(req.school);
-});
-
-app.delete('/api/1/schools/:rcdts/programs', function(req, res) {
-  dbApi.deleteSchoolPrograms(req.school, dbConnection, function() {
-    res.json();
-  });
-});
-
-app.post('/api/1/schools/:rcdts/programs', function(req, res) {
-  var program = req.body;
-  var agencyUrlBits = program.agency.split('/');
-  var agencySlug = agencyUrlBits[agencyUrlBits.length - 1];
-  dbApi.getAgencies({'slug': agencySlug}, dbConnection, function(agencies) {
-    var agency = agencies[0];
-    var programProps = {
-      agency: agency.slug,
-      age_group: program.age_group,
-      program_type: program.program_type
-    };
-    dbApi.addSchoolProgram(req.school, programProps, dbConnection, function(err, program) {
-      res.status(201).json(program);
-    })
-  });
-});
-
-app.get('/api/1/programs', function(req, res) {
-  getSchoolsWithProgramAgencies(dbConnection, function(err, schools) {
-    res.json({
-      programs: schools.reduce(function(programs, school) {
-        if (school.programs) {
-          school.programs.forEach(function(program) {
-            programs.push(Object.assign({}, program, {
-              school: '/api/1/schools/' + school.rcdts
-            }));
-          });
-        }
-        return programs;
-      }, [])
-    });
-  });  
-});
-
-app.delete('/api/1/programs', function(req, res) {
-  dbApi.deletePrograms(dbConnection, function() {
-    res.json();
-  });
-});
+app.delete('/api/1/programs', routes.deleteAllPrograms);
 
 
 MongoClient.connect(DATABASE_URL, function(err, db) {
