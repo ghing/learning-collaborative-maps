@@ -148,6 +148,15 @@ function deleteAllPrograms(req, res) {
   });
 }
 
+function setProgramId(req, res, next, programId) {
+  req.programId = programId;
+  next();
+}
+
+function createProgramNote(req, res) {
+  // TODO: Implement this
+  // BOOKMARK
+}
 
 // TODO: Is there a way to declare and export the function at once,
 // other than using the ES6 syntax?
@@ -165,5 +174,7 @@ module.exports = {
  deleteAllSchoolPrograms: deleteAllSchoolPrograms,
  createProgram: createProgram,
  getPrograms: getPrograms,
- deleteAllPrograms: deleteAllPrograms
+ deleteAllPrograms: deleteAllPrograms,
+ setProgramId: setProgramId,
+ createProgramNote: createProgramNote
 };

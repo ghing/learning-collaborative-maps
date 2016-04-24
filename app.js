@@ -70,6 +70,10 @@ app.get('/api/1/programs', routes.getPrograms);
 
 app.delete('/api/1/programs', routes.deleteAllPrograms);
 
+app.param('programId', routes.setProgramId);
+
+app.post('/api/1/schools/:rcdts/programs/:programId/notes', routes.createProgramNote);
+
 
 MongoClient.connect(DATABASE_URL, function(err, db) {
   if (err) {
