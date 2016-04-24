@@ -1,3 +1,5 @@
 node_modules
 .learning-collaborative-maps
 .sass-cache
+# Ignore vim swap files
+*.swp
