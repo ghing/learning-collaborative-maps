@@ -154,8 +154,14 @@ function setProgramId(req, res, next, programId) {
 }
 
 function createProgramNote(req, res) {
-  // TODO: Implement this
-  // BOOKMARK
+  var note = req.body;
+  var program = req.school.programs.find(function(program) {
+    return program._id == req.programId;
+  });
+  // TODO: Handle case when matching program is not found
+  dbApi.createProgramNote(req.dbConnection, req.school, program, note, function(err, note) {
+    res.status(201).json(note);
+  });
 }
 
 // TODO: Is there a way to declare and export the function at once,

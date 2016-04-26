@@ -142,6 +142,36 @@ function deletePrograms(db, callback) {
   });
 }
 
+function createProgramNote(db, school, program, note, callback) {
+  var insertNote = Object.assign({}, note);
+  var programIndex;
+  for (programIndex = 0; programIndex <= school.programs.length; programIndex++) {
+    if (school.programs[programIndex]._id == program._id) {
+      break;
+    }
+  }
+
+  if (!insertNote._id) {
+    insertNote._id = new ObjectID();
+  }
+
+  var programQuery = 'programs.' + programIndex + '.notes';
+  var query = {
+    $addToSet: {}
+  };
+  query.$addToSet[programQuery] = insertNote;
+
+  db.collection('schools').updateOne(
+    {
+      rcdts: school.rcdts
+    },
+    query,
+    function(err, results) {
+      callback(err, insertNote);
+    }
+  );
+}
+
 module.exports = {
   createSchools: createSchools,
   fixSchoolProgramAgencies: fixSchoolProgramAgencies,
@@ -153,5 +183,6 @@ module.exports = {
   deleteSchoolPrograms: deleteSchoolPrograms,
   addSchoolProgram: addSchoolProgram,
   geoJsonCollection: geoJsonCollection,
-  deletePrograms: deletePrograms
+  deletePrograms: deletePrograms,
+  createProgramNote: createProgramNote
 };
