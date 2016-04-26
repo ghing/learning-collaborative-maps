@@ -7,6 +7,7 @@ import LearningCollaborativeConstants from '../constants/LearningCollaborativeCo
 
 const CHANGE_EVENT = 'change';
 const RECEIVE_PROGRAM_EVENT = 'receive:program';
+const RECEIVE_PROGRAM_NOTE_EVENT = 'receive:programNote';
 
 let _schools = []; // Collection of school items
 let _schoolLookup = {};
@@ -55,7 +56,19 @@ let SchoolStore = assign({}, EventEmitter.prototype, {
   },
 
   removeReceiveProgramListener: function(callback) {
-    this.removeListener(RECEIVE_PROGRAM_EVENT, callback);
+    this.removeListener(RECEIVE_PROGRAM_NOTE_EVENT, callback);
+  },
+
+  emitReceiveProgramNote: function(program) {
+    this.emit(RECEIVE_PROGRAM_NOTE_EVENT, program);
+  },
+
+  addReceiveProgramNoteListener: function(callback) {
+    this.on(RECEIVE_PROGRAM_NOTE_EVENT, callback);
+  },
+
+  removeReceiveProgramNoteListener: function(callback) {
+    this.removeListener(RECEIVE_PROGRAM_NOTE_EVENT, callback);
   },
 
   dispatcherIndex: AppDispatcher.register(function(payload) {

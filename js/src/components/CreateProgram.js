@@ -53,6 +53,10 @@ const CreateProgram = React.createClass({
             {programTypeOptions}
           </select>
         </fieldset>
+        <fieldset className="form-group">
+          <label htmlFor="program-notes">Notes</label>
+          <textarea id="program-notes" className="form-control" value={this.state.notes} onChange={this.handleChangeNotes} ref="notes"></textarea> 
+        </fieldset>
         <button type="submit" className="btn btn-primary" disabled={this.buttonDisabled()}>Add Program</button>
       </form>
     );
@@ -78,20 +82,27 @@ const CreateProgram = React.createClass({
     });
   },
 
+  handleChangeNotes: function(event) {
+    this.setState({
+      notes: event.target.value
+    });
+  },
+
   handleSubmit: function(event) {
     event.preventDefault();
 
     let agency = this.state.agency;
     let programType = this.state.programType;
 
-    this.props.createProgram(this.props.school, agency, this.state.ageGroup, programType);
+    this.props.createProgram(this.props.school, agency, this.state.ageGroup, programType, this.state.notes);
 
     // Try to reset the form values.  For some reason, the selects aren't
     // getting reset.
     this.setState({
       agency: undefined,
       ageGroup: undefined,
-      programType: undefined
+      programType: undefined,
+      notes: undefined
     });
   },
 

@@ -18,7 +18,7 @@ const LearningCollaborativeActions = {
     });
   },
 
-  createProgram: function(school, agency, ageGroup, programType) {
+  createProgram: function(school, agency, ageGroup, programType, notes) {
     AppDispatcher.handleViewAction({
       actionType: LearningCollaborativeConstants.CREATE_PROGRAM,
       school: school,
@@ -28,6 +28,11 @@ const LearningCollaborativeActions = {
     });
     LearningCollaborativeApi.createProgram(school, agency, ageGroup, programType).then(program => {
       LearningCollaborativeServerActions.receiveProgram(program);
+      if (notes) {
+        LearningCollaborativeApi.createProgramNote(school, program, notes).then(note => {
+          LearningCollaborativeServerActions.receiveProgramNote(program, note);
+        });
+      }
     });
   }
 };
