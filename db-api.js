@@ -10,7 +10,6 @@ function createSchools(schools, db, callback) {
 }
 
 function fixProgramAgency(agencyLookup, program) {
-  console.log(program.agency);
   var agency = agencyLookup[program.agency];
 
   program.agency = '/api/1/agencies/' + agency.slug;
