@@ -46,6 +46,9 @@ const LearningCollaborativeApi = {
     let url = SCHOOL_PROGRAM_NOTE_JSON_URL
       .replace(':rcdts', school.properties.rcdts)
       .replace(':programId', program._id);
+      let noteReq = {
+        text: note
+      };
 
     return fetch(url, {
       method: 'post',
@@ -53,7 +56,7 @@ const LearningCollaborativeApi = {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify(note)
+      body: JSON.stringify(noteReq)
     }).then(response => response.json())
       .then(json => json);
   }
