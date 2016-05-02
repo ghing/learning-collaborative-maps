@@ -102,7 +102,7 @@ const CreateProgram = React.createClass({
       agency: undefined,
       ageGroup: undefined,
       programType: undefined,
-      notes: undefined
+      notes: '' 
     });
   },
 
