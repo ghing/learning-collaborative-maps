@@ -1,5 +1,7 @@
 import React from 'react';
 
+import SchoolProgram from './SchoolProgram';
+
 const SchoolPrograms = React.createClass({
   render: function() {
     let schoolProps = this.props.school.properties;
@@ -9,21 +11,9 @@ const SchoolPrograms = React.createClass({
     }
 
     let programEls = schoolProps.programs.map(program => {
-      let agencyBits = program.agency.split('/');
-      let agencyId = agencyBits[agencyBits.length - 1];
-      let agency = this.props.agencyLookup[agencyId];
-      let programText = agency.properties.agency;
-      if (program.program_type) {
-        programText += " - " + program.program_type;
-      }
-      if (program.age_group) {
-        programText += " (" + program.age_group + ")";
-      }
-      if (program.dates) {
-        programText += " - " + program.dates;
-      }
-
-      return <li key={program._id}>{programText}</li>;
+      return <SchoolProgram key={program._id}
+                            program={program}
+                            agencyLookup={this.props.agencyLookup} />;
     });
 
     return (
