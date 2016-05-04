@@ -54,6 +54,12 @@
   @include border-radius($input-border-radius);
 }
 
+.create-program {
+  .btn {
+    margin-right: 1em;
+  }
+}
+
 .contact-info {
   position: absolute;
   bottom: 0;
