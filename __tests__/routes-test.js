@@ -1,6 +1,11 @@
 "use strict";
 
+// We need to do this for some reason, otherwise the requirement chain fails horribly
+jest.unmock('bson');
+
 jest.unmock('../routes');
+
+const dbApi = require('../db-api');
 
 describe('routes', () => {
   const routes = require('../routes');
@@ -9,11 +14,11 @@ describe('routes', () => {
     it('sets a programId property on the request object', () => {
       let req = {};
       let res = {};
-      const next = jest.fn();
+      let next = jest.fn();
       const programId = '0036b2142e1e446f9e31aace2f33500e';
 
       routes.setProgramId(req, res, next, programId);
-      expect(next.calls.length).toEqual(1);
+      expect(next.mock.calls.length).toEqual(1);
       expect(req.programId).toEqual(programId);
     });
   });
@@ -49,11 +54,10 @@ describe('routes', () => {
         json: jest.fn()
       };
 
-      // TODO: Probably need to mock db-api here
-
       routes.createProgramNote(req, res);
-      expect(res.status.calls[0][0]).toEqual(201);
-      expect(res.json.calls[0][0].text).toEqual(req.text);
+      expect(dbApi.createProgramNote.mock.calls.length).toEqual(1);
+      expect(dbApi.createProgramNote.mock.calls[0][1]._id).toEqual(req.school._id);
+      expect(dbApi.createProgramNote.mock.calls[0][3].text).toEqual(req.body.text);
     });
   });
 });
