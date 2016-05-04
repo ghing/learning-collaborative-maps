@@ -20,7 +20,7 @@ const LearningCollaborativeApi = {
       .then(json => json.features);
   },
 
-  createProgram: function(school, agency, ageGroup, programType) {
+  createProgram: function(school, agency, ageGroup, programType, dates) {
     let program = {
       agency: '/agencies/' + agency.properties.slug,
       age_group: ageGroup
@@ -29,6 +29,10 @@ const LearningCollaborativeApi = {
 
     if (programType) {
       program.program_type = programType;
+    }
+
+    if (dates) {
+      program.dates = dates;
     }
 
     return fetch(url, {

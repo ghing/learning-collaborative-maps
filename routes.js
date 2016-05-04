@@ -104,7 +104,8 @@ function createProgram(req, res) {
     var programProps = {
       agency: agency.slug,
       age_group: program.age_group,
-      program_type: program.program_type
+      program_type: program.program_type,
+      dates: program.dates
     };
     dbApi.addSchoolProgram(req.school, programProps, req.dbConnection, function(err, program) {
       res.status(201).json(program);

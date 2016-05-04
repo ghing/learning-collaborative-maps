@@ -5,7 +5,8 @@ const CreateProgram = React.createClass({
     return {
       agency: undefined,
       ageGroup: undefined,
-      programType: undefined
+      programType: undefined,
+      dates: undefined
     };
   },
 
@@ -54,6 +55,14 @@ const CreateProgram = React.createClass({
           </select>
         </fieldset>
         <fieldset className="form-group">
+          <label htmlFor="dates">Dates</label>
+          <input type="text"
+                 id="dates"
+                 className="form-control"
+                 value={this.state.dates}
+                 onChange={this.handleChangeDates} />
+        </fieldset>
+        <fieldset className="form-group">
           <label htmlFor="program-notes">Notes</label>
           <textarea id="program-notes" className="form-control" value={this.state.notes} onChange={this.handleChangeNotes} ref="notes"></textarea> 
         </fieldset>
@@ -82,6 +91,12 @@ const CreateProgram = React.createClass({
     });
   },
 
+  handleChangeDates: function(event) {
+    this.setState({
+      dates: event.target.value
+    });
+  },
+
   handleChangeNotes: function(event) {
     this.setState({
       notes: event.target.value
@@ -94,14 +109,20 @@ const CreateProgram = React.createClass({
     let agency = this.state.agency;
     let programType = this.state.programType;
 
-    this.props.createProgram(this.props.school, agency, this.state.ageGroup, programType, this.state.notes);
+    this.props.createProgram(
+      this.props.school,
+      agency,
+      this.state.ageGroup,
+      programType,
+      this.state.dates,
+      this.state.notes
+    );
 
-    // Try to reset the form values.  For some reason, the selects aren't
-    // getting reset.
     this.setState({
       agency: undefined,
       ageGroup: undefined,
       programType: undefined,
+      dates: undefined,
       notes: '' 
     });
   },

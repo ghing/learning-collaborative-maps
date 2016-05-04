@@ -18,7 +18,7 @@ const LearningCollaborativeActions = {
     });
   },
 
-  createProgram: function(school, agency, ageGroup, programType, notes) {
+  createProgram: function(school, agency, ageGroup, programType, dates, notes) {
     AppDispatcher.handleViewAction({
       actionType: LearningCollaborativeConstants.CREATE_PROGRAM,
       school: school,
@@ -26,7 +26,7 @@ const LearningCollaborativeActions = {
       ageGroup: ageGroup,
       programType: programType
     });
-    LearningCollaborativeApi.createProgram(school, agency, ageGroup, programType).then(program => {
+    LearningCollaborativeApi.createProgram(school, agency, ageGroup, programType, dates).then(program => {
       LearningCollaborativeServerActions.receiveProgram(program);
       if (notes) {
         LearningCollaborativeApi.createProgramNote(school, program, notes).then(note => {
