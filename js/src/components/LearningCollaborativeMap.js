@@ -20,7 +20,12 @@ function distinctProgramAgencies(programs) {
     agencySet.add(agencySlug);
   });
   // Convert set to list
-  return [...agencySet];
+  // We could do return [...agencySet] except sets aren't iterable in IE
+  let agencies = [];
+  agencySet.forEach(agencySlug => {
+    agencies.push(agencySlug);
+  });
+  return agencies;
 }
 
 const LearningCollaborativeMap = React.createClass({
