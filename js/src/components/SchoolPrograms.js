@@ -13,7 +13,8 @@ const SchoolPrograms = React.createClass({
     let programEls = schoolProps.programs.map(program => {
       return <SchoolProgram key={program._id}
                             program={program}
-                            agencyLookup={this.props.agencyLookup} />;
+                            agencyLookup={this.props.agencyLookup}
+                            editProgram={this.props.editProgram} />;
     });
 
     return (
