@@ -1,30 +1,25 @@
 import React from 'react';
 
-import {agencyIdFromUrl} from "../utils";
-
-const EditProgram = React.createClass({
+const ProgramForm = React.createClass({
   getInitialState: function() {
-    // Get state from this.props.program
-    // I believe React docs say setting state from props is
-    // an anti-pattern (with some exceptions).  I can't think
-    // of a better way.  Maybe this is an exceptional case
-    console.log(agencyIdFromUrl);
-    let agencyId = agencyIdFromUrl(this.props.program.agency);
-    let initialState = {
-      agency: this.props.agencyLookup[agencyId],
-      ageGroup: this.props.program.age_group,
-      programType: this.props.program.program_type,
-      dates: this.props.program.dates,
+    return {
+      agency: this.props.initialAgency,
+      ageGroup: this.props.initialAgeGroup,
+      programType: this.props.initialProgramType,
+      dates: this.props.initialDates, 
+      notes: this.props.initialNotes
     };
-
-    if (this.props.program.notes && this.props.program.notes.length) {
-      initialState.notes = this.props.program.notes[0].text;
-    }
-
-    return initialState;
   },
 
   render: function() {
+    if (!this.props.school) {
+      return false;
+    }
+
+    if (!this.props.agencies.length) {
+      return false;
+    }
+
     let agencyOptions = [
       <option value="" key=""></option>
     ].concat(this.props.agencies.map(function(agency) {
@@ -38,7 +33,7 @@ const EditProgram = React.createClass({
     }));
 
     return (
-      <form className="edit-program" onSubmit={this.handleSubmit}>
+      <form className="program-form" onSubmit={this.handleSubmit}>
         <fieldset className="form-group">
           <label htmlFor="agency">Agency</label>
           <select className="form-control" id="agency" value={this.state.agency ? this.state.agency.properties.slug : ''} onChange={this.handleChangeAgency} ref="agency">
@@ -72,8 +67,8 @@ const EditProgram = React.createClass({
           <label htmlFor="program-notes">Notes</label>
           <textarea id="program-notes" className="form-control" value={this.state.notes} onChange={this.handleChangeNotes} ref="notes"></textarea> 
         </fieldset>
-        <button type="submit" className="btn btn-primary" disabled={this.buttonDisabled()}>Update Program</button>
-        <button type="button" className="btn btn-secondary" onClick={this.props.cancel}>Cancel</button>
+        <button type="submit" className="btn btn-primary" disabled={this.buttonDisabled()}>Add Program</button>
+        <button type="button" className="btn btn-secondary" onClick={this.props.handleCancel}>Cancel</button>
       </form>
     );
   },
@@ -110,10 +105,28 @@ const EditProgram = React.createClass({
     });
   },
 
-  handleSubmit: function(evt) {
-    evt.preventDefault();
-    // TODO: Fire action to update program
-    // BOOKMARK
+  handleSubmit: function(event) {
+    event.preventDefault();
+
+    let agency = this.state.agency;
+    let programType = this.state.programType;
+
+    this.props.handleSubmit(
+      this.props.school,
+      agency,
+      this.state.ageGroup,
+      programType,
+      this.state.dates,
+      this.state.notes
+    );
+
+    this.setState({
+      agency: undefined,
+      ageGroup: undefined,
+      programType: undefined,
+      dates: undefined,
+      notes: '' 
+    });
   },
 
   buttonDisabled: function() {
@@ -133,4 +146,4 @@ const EditProgram = React.createClass({
   }
 });
 
-export default EditProgram;
+export default ProgramForm;

@@ -1,8 +1,8 @@
 import React from 'react';
 
-import CreateProgram from './CreateProgram';
-import EditProgram from './EditProgram';
+import ProgramForm from './ProgramForm';
 import SchoolPrograms from './SchoolPrograms';
+import {agencyIdFromUrl} from "../utils";
 
 const SchoolDetail = React.createClass({
   getInitialState: function() {
@@ -24,19 +24,30 @@ const SchoolDetail = React.createClass({
     let schoolPrograms = false;
 
     if (this.state.addingProgram) {
-      createProgram = <CreateProgram school={this.props.school}
+      createProgram = <ProgramForm school={this.props.school}
                          agencies={this.props.agencies}
                          agencyLookup={this.props.agencyLookup}
                          programTypes={this.props.programTypes}
-                         createProgram={this._handleCreateProgram}
-                         cancel={this._handleCancelCreateProgram} />;
+                         handleSubmit={this._handleCreateProgram}
+                         handleCancel={this._handleCancelCreateProgram} />;
     }
     else if (this.state.editingProgram) {
-      editProgram = <EditProgram school={this.props.school}
-                                 program={this.state.program}
+      let agencyId = agencyIdFromUrl(this.state.program.agency);
+      let initialNotes;
+      
+      if (this.state.program.notes && this.state.program.notes.length) {
+        initialNotes = this.state.program.notes[0].text;  
+      }
+
+      editProgram = <ProgramForm school={this.props.school}
                                  agencies={this.props.agencies}
                                  agencyLookup={this.props.agencyLookup}
                                  programTypes={this.props.programTypes}
+                                 initialAgency={this.props.agencyLookup[agencyId]}
+                                 initialAgeGroup={this.state.program.age_group}
+                                 initialProgramType={this.state.program.program_type}
+                                 initialDates={this.state.program.dates}
+                                 initialNotes={initialNotes}
                                  updateProgram={this._handleUpdateProgram}
                                  cancel={this._handleCancelEditProgram} />;
     }
@@ -72,8 +83,8 @@ const SchoolDetail = React.createClass({
     });
   },
 
-  _handleUpdateProgram: function(program) {
-
+  _handleUpdateProgram: function(school, agency, ageGroup, programType, dates, notes) {
+    // TODO: Implement this
   },
 
   _handleCancelEditProgram: function(evt) {
