@@ -4,8 +4,10 @@ import 'isomorphic-fetch';
 
 const SCHOOLS_JSON_URL = '/api/1/schools?format=geojson';
 const AGENCIES_JSON_URL = '/api/1/agencies?format=geojson';
-const SCHOOL_PROGRAM_JSON_URL = '/api/1/schools/:rcdts/programs';
-const SCHOOL_PROGRAM_NOTE_JSON_URL = '/api/1/schools/:rcdts/programs/:programId/notes';
+const SCHOOL_PROGRAMS_JSON_URL = '/api/1/schools/:rcdts/programs';
+const SCHOOL_PROGRAM_JSON_URL = '/api/1/schools/:rcdts/programs/:programId';
+const SCHOOL_PROGRAM_NOTES_JSON_URL = '/api/1/schools/:rcdts/programs/:programId/notes';
+const SCHOOL_PROGRAM_NOTE_JSON_URL = '/api/1/schools/:rcdts/programs/:programId/notes/:noteId';
 
 const LearningCollaborativeApi = {
   schools: function() {
@@ -25,7 +27,7 @@ const LearningCollaborativeApi = {
       agency: '/agencies/' + agency.properties.slug,
       age_group: ageGroup
     };
-    let url = SCHOOL_PROGRAM_JSON_URL.replace(':rcdts', school.properties.rcdts);
+    let url = SCHOOL_PROGRAMS_JSON_URL.replace(':rcdts', school.properties.rcdts);
 
     if (programType) {
       program.program_type = programType;
@@ -46,8 +48,30 @@ const LearningCollaborativeApi = {
       .then(json => json);
   },
 
+  updateProgram: function(school, program, agency, ageGroup, programType, dates) {
+    let url = SCHOOL_PROGRAM_JSON_URL
+      .replace(':rcdts', school.properties.rcdts)
+      .replace(':programId', program._id);
+    let programReq = {
+      agency: '/agencies/' + agency.properties.slug,
+      age_group: ageGroup,
+      program_type: programType,
+      dates: dates
+    };
+
+    return fetch(url, {
+      method: 'put',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(programReq)
+    }).then(response => response.json())
+      .then(json => json);
+  },
+
   createProgramNote: function(school, program, note) {
-    let url = SCHOOL_PROGRAM_NOTE_JSON_URL
+    let url = SCHOOL_PROGRAM_NOTES_JSON_URL
       .replace(':rcdts', school.properties.rcdts)
       .replace(':programId', program._id);
       let noteReq = {
@@ -61,6 +85,23 @@ const LearningCollaborativeApi = {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(noteReq)
+    }).then(response => response.json())
+      .then(json => json);
+  },
+
+  updateProgramNote: function(school, program, note) {
+    let url = SCHOOL_PROGRAM_NOTES_JSON_URL
+      .replace(':rcdts', school.properties.rcdts)
+      .replace(':programId', program._id)
+      .replace(':noteId', note._id);
+      
+    return fetch(url, {
+      method: 'put',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(note)
     }).then(response => response.json())
       .then(json => json);
   }

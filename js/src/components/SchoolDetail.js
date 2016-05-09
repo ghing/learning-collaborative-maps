@@ -48,7 +48,7 @@ const SchoolDetail = React.createClass({
                                  initialProgramType={this.state.program.program_type}
                                  initialDates={this.state.program.dates}
                                  initialNotes={initialNotes}
-                                 updateProgram={this._handleUpdateProgram}
+                                 handleSubmit={this._handleUpdateProgram}
                                  handleCancel={this._handleCancelEditProgram} />;
     }
     else {
@@ -84,9 +84,19 @@ const SchoolDetail = React.createClass({
   },
 
   _handleUpdateProgram: function(school, agency, ageGroup, programType, dates, notes) {
-    // BOOKMARK
-    // TODO: Implement this
-    console.log(arguments);
+    this.props.updateProgram(
+      school,
+      this.state.program,
+      agency,
+      ageGroup,
+      programType,
+      dates,
+      notes
+    );
+    this.setState({
+      editingProgram: false,
+      program: undefined
+    });
   },
 
   _handleCancelEditProgram: function(evt) {

@@ -66,6 +66,7 @@ const LearningCollaborativeMap = React.createClass({
                    agencyLookup={this.state.agencyLookup}
                    programTypes={SchoolStore.getProgramTypes()}
                    createProgram={LearningCollaborativeActions.createProgram}
+                   updateProgram={LearningCollaborativeActions.updateProgram}
                    contactEmail={this.props.contactEmail} />
       </div>
     );
