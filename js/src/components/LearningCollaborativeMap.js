@@ -198,10 +198,25 @@ const LearningCollaborativeMap = React.createClass({
   _onReceiveProgram: function(program) {
     if (this.state.selectedSchool) {
       let school = this.state.selectedSchool;
+      let found = false;
       if (!school.properties.programs) {
         school.properties.programs = [];
       }
-      school.properties.programs.push(program);
+      // If the received program is already in the list,
+      // update it
+      school.properties.programs.some(function(p) {
+        if (p._id == program._id) {
+          p = program;
+          found = true;
+          // BOOKMARK
+          // TODO: Force re-render somehow
+          return true;
+        }
+      });
+      // If it's not, add it
+      if (!found) {
+        school.properties.programs.push(program);
+      }
       this.setState({
         selectedSchool: school
       });
