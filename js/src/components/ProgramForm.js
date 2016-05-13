@@ -67,7 +67,7 @@ const ProgramForm = React.createClass({
           <label htmlFor="program-notes">Notes</label>
           <textarea id="program-notes" className="form-control" value={this.state.notes} onChange={this.handleChangeNotes} ref="notes"></textarea> 
         </fieldset>
-        <button type="submit" className="btn btn-primary" disabled={this.buttonDisabled()}>Add Program</button>
+        <button type="submit" className="btn btn-primary" disabled={this.buttonDisabled()}>{this.props.submitLabel}</button>
         <button type="button" className="btn btn-secondary" onClick={this.props.handleCancel}>Cancel</button>
       </form>
     );

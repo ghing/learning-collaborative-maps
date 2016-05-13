@@ -29,7 +29,8 @@ const SchoolDetail = React.createClass({
                          agencyLookup={this.props.agencyLookup}
                          programTypes={this.props.programTypes}
                          handleSubmit={this._handleCreateProgram}
-                         handleCancel={this._handleCancelCreateProgram} />;
+                         handleCancel={this._handleCancelCreateProgram}
+                         submitLabel="Add Program" />;
     }
     else if (this.state.editingProgram) {
       let agencyId = agencyIdFromUrl(this.state.program.agency);
@@ -49,7 +50,8 @@ const SchoolDetail = React.createClass({
                                  initialDates={this.state.program.dates}
                                  initialNotes={initialNotes}
                                  handleSubmit={this._handleUpdateProgram}
-                                 handleCancel={this._handleCancelEditProgram} />;
+                                 handleCancel={this._handleCancelEditProgram}
+                                 submitLabel="Update Program" />;
     }
     else {
       schoolPrograms = <SchoolPrograms school={this.props.school}
