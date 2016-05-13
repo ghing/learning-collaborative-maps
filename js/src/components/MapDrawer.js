@@ -13,7 +13,8 @@ const MapDrawer = React.createClass({
                       agencies={this.props.agencies}
                       agencyLookup={this.props.agencyLookup}
                       programTypes={this.props.programTypes}
-                      createProgram={this.props.createProgram} />
+                      createProgram={this.props.createProgram}
+                      updateProgram={this.props.updateProgram} />
         <ContactInfo contactEmail={this.props.contactEmail} />                 
       </div>
     );
