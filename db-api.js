@@ -130,6 +130,26 @@ function addSchoolProgram(school, program, db, callback) {
   );
 }
 
+function updateSchoolProgram(school, program, db, callback) {
+  db.collection('schools').updateOne(
+    {
+      rcdts: school.rcdts,
+      "programs._id": new ObjectID(program._id)
+    },
+    {
+      $set: {
+        "programs.$.agency": program.agency,
+        "programs.$.age_group": program.age_group,
+        "programs.$.program_type": program.program_type,
+        "programs.$.dates": program.dates
+      }
+    },
+    function(err, results) {
+      callback(err, program);
+    }
+  );
+}
+
 function deletePrograms(db, callback) {
   db.collection('schools').updateMany({}, {
     $unset: {
@@ -171,6 +191,10 @@ function createProgramNote(db, school, program, note, callback) {
   );
 }
 
+function updateProgramNote(db, school, program, note, callback) {
+  // TODO: Implement this
+}
+
 module.exports = {
   createSchools: createSchools,
   fixSchoolProgramAgencies: fixSchoolProgramAgencies,
@@ -181,7 +205,9 @@ module.exports = {
   getAgencies: getAgencies,
   deleteSchoolPrograms: deleteSchoolPrograms,
   addSchoolProgram: addSchoolProgram,
+  updateSchoolProgram: updateSchoolProgram,
   geoJsonCollection: geoJsonCollection,
   deletePrograms: deletePrograms,
-  createProgramNote: createProgramNote
+  createProgramNote: createProgramNote,
+  updateProgramNote: updateProgramNote
 };

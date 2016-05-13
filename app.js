@@ -72,7 +72,11 @@ app.delete('/api/1/programs', routes.deleteAllPrograms);
 
 app.param('programId', routes.setProgramId);
 
+app.put('/api/1/schools/:rcdts/programs/:programId', routes.updateProgram);
+
 app.post('/api/1/schools/:rcdts/programs/:programId/notes', routes.createProgramNote);
+
+app.put('/api/1/schools/:rcdts/programs/:programId/notes', routes.updateProgramNote);
 
 
 MongoClient.connect(DATABASE_URL, function(err, db) {

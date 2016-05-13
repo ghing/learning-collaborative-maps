@@ -154,6 +154,25 @@ function setProgramId(req, res, next, programId) {
   next();
 }
 
+function updateProgram(req, res) {
+  var program = req.body;
+  var agencyUrlBits = program.agency.split('/');
+  var agencySlug = agencyUrlBits[agencyUrlBits.length - 1];
+  dbApi.getAgencies({'slug': agencySlug}, req.dbConnection, function(agencies) {
+    var agency = agencies[0];
+    var programProps = {
+      _id: req.programId,
+      agency: agency.slug,
+      age_group: program.age_group,
+      program_type: program.program_type,
+      dates: program.dates
+    };
+    dbApi.updateSchoolProgram(req.school, programProps, req.dbConnection, function(err, program) {
+      res.status(200).json(program);
+    });
+  });
+}
+
 function createProgramNote(req, res) {
   var note = req.body;
   var program = req.school.programs.find(function(program) {
@@ -163,6 +182,10 @@ function createProgramNote(req, res) {
   dbApi.createProgramNote(req.dbConnection, req.school, program, note, function(err, note) {
     res.status(201).json(note);
   });
+}
+
+function updateProgramNote(req, res) {
+ // TODO: Implement this
 }
 
 // TODO: Is there a way to declare and export the function at once,
@@ -180,8 +203,10 @@ module.exports = {
  getSchool: getSchool,
  deleteAllSchoolPrograms: deleteAllSchoolPrograms,
  createProgram: createProgram,
+ updateProgram: updateProgram,
  getPrograms: getPrograms,
  deleteAllPrograms: deleteAllPrograms,
  setProgramId: setProgramId,
- createProgramNote: createProgramNote
+ createProgramNote: createProgramNote,
+ updateProgramNote: updateProgramNote
 };
