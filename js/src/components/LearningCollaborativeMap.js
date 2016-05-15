@@ -75,6 +75,7 @@ const LearningCollaborativeMap = React.createClass({
   componentDidMount: function() {
     SchoolStore.addChangeListener(this._onChange);
     SchoolStore.addReceiveProgramListener(this._onReceiveProgram);
+    SchoolStore.addReceiveProgramNoteListener(this._onReceiveProgramNote);
     AgencyStore.addChangeListener(this._onChange);
 
     this.setState({
@@ -85,6 +86,7 @@ const LearningCollaborativeMap = React.createClass({
   componentWillUnmount: function() {
     SchoolStore.removeChangeListener(this._onChange);
     SchoolStore.removeReceiveProgramListener(this._onReceiveProgram);
+    SchoolStore.removeReceiveProgramNoteListener(this._onReceiveProgramNote);
     AgencyStore.removeChangeListener(this._onChange);
   },
 
@@ -212,6 +214,36 @@ const LearningCollaborativeMap = React.createClass({
       else {
         school.properties.programs.push(program);
       }
+      this.setState({
+        selectedSchool: school
+      });
+    }
+  },
+
+  _onReceiveProgramNote: function(program, note, method) {
+    if (this.state.selectedSchool) {
+      let school = this.state.selectedSchool;
+      school.properties.programs.some(function(p, i) {
+        if (p._id == program._id) {
+          if (method === 'update') {
+            let noteFound = false;
+            school.properties.programs[i].notes.some(function(n, j) {
+              if (n._id == note._id) {
+                school.properties.programs[i].notes[j] = note;
+                noteFound = true;
+                return true;
+              }
+            });
+          }
+          else {
+            if (!school.properties.programs[i].notes) {
+              school.properties.programs[i].notes = [];
+            }
+            school.properties.programs[i].notes.push(note);
+          }
+          return true;
+        }
+      });
       this.setState({
         selectedSchool: school
       });

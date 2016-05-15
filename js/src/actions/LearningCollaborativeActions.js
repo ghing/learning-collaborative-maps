@@ -30,7 +30,7 @@ const LearningCollaborativeActions = {
       LearningCollaborativeServerActions.receiveProgram(program, 'create');
       if (notes) {
         LearningCollaborativeApi.createProgramNote(school, program, notes).then(note => {
-          LearningCollaborativeServerActions.receiveProgramNote(program, note);
+          LearningCollaborativeServerActions.receiveProgramNote(program, note, 'create');
         });
       }
     });
@@ -46,13 +46,13 @@ const LearningCollaborativeActions = {
            let note = program.notes[0];
            note.text = notes;
            LearningCollaborativeApi.updateProgramNote(school, program, note).then(note => {
-             LearningCollaborativeServerActions.receiveProgramNote(program, note);
-           })
+             LearningCollaborativeServerActions.receiveProgramNote(program, note, 'update');
+           });
          }
          else {
            // If it doesn't, create it
            LearningCollaborativeApi.createProgramNote(school, program, notes).then(note => {
-             LearningCollaborativeServerActions.receiveProgramNote(program, note);
+             LearningCollaborativeServerActions.receiveProgramNote(program, note, 'create');
            });
          }
       }

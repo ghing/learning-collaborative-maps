@@ -59,8 +59,8 @@ let SchoolStore = assign({}, EventEmitter.prototype, {
     this.removeListener(RECEIVE_PROGRAM_NOTE_EVENT, callback);
   },
 
-  emitReceiveProgramNote: function(program) {
-    this.emit(RECEIVE_PROGRAM_NOTE_EVENT, program);
+  emitReceiveProgramNote: function(program, note, method) {
+    this.emit(RECEIVE_PROGRAM_NOTE_EVENT, program, note, method);
   },
 
   addReceiveProgramNoteListener: function(callback) {
@@ -91,6 +91,9 @@ let SchoolStore = assign({}, EventEmitter.prototype, {
         break;
       case LearningCollaborativeConstants.RECEIVE_PROGRAM:
         SchoolStore.emitReceiveProgram(action.program, action.method);
+        break;
+      case LearningCollaborativeConstants.RECEIVE_PROGRAM_NOTE:
+        SchoolStore.emitReceiveProgramNote(action.program, action.note, action.method);
         break;
     }
 

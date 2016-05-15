@@ -185,7 +185,13 @@ function createProgramNote(req, res) {
 }
 
 function updateProgramNote(req, res) {
- // TODO: Implement this
+ var note = req.body;
+ var program = req.school.programs.find(function(program) {
+   return program._id == req.programId;
+ });
+ dbApi.updateProgramNote(req.dbConnection, req.school, program, note, function(err, note) {
+   res.status(200).json(note);
+ });
 }
 
 // TODO: Is there a way to declare and export the function at once,

@@ -76,7 +76,7 @@ app.put('/api/1/schools/:rcdts/programs/:programId', routes.updateProgram);
 
 app.post('/api/1/schools/:rcdts/programs/:programId/notes', routes.createProgramNote);
 
-app.put('/api/1/schools/:rcdts/programs/:programId/notes', routes.updateProgramNote);
+app.put('/api/1/schools/:rcdts/programs/:programId/notes/:noteId', routes.updateProgramNote);
 
 
 MongoClient.connect(DATABASE_URL, function(err, db) {

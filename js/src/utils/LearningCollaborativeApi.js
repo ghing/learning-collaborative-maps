@@ -90,7 +90,7 @@ const LearningCollaborativeApi = {
   },
 
   updateProgramNote: function(school, program, note) {
-    let url = SCHOOL_PROGRAM_NOTES_JSON_URL
+    let url = SCHOOL_PROGRAM_NOTE_JSON_URL
       .replace(':rcdts', school.properties.rcdts)
       .replace(':programId', program._id)
       .replace(':noteId', note._id);

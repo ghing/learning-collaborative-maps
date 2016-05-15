@@ -145,7 +145,26 @@ function updateSchoolProgram(school, program, db, callback) {
       }
     },
     function(err, results) {
-      callback(err, program);
+      // Get the full program, including it's notes field
+      // as the posted program might not have all fields
+      db.collection('schools').findOne(
+        {
+          rcdts: school.rcdts
+        },
+        function(err, foundSchool) {
+          var i;
+          var p;
+          for (i = 0; i < foundSchool.programs.length; i++) {
+            p = foundSchool.programs[i];
+            if (p._id.equals(new ObjectID(program._id))) {
+              callback(err, p);
+              return;
+            }
+          }
+          // TODO: Handle weird case where matching program
+          // is not found
+        }
+      );
     }
   );
 }
@@ -192,7 +211,28 @@ function createProgramNote(db, school, program, note, callback) {
 }
 
 function updateProgramNote(db, school, program, note, callback) {
-  // TODO: Implement this
+  var programIndex;
+  for (programIndex = 0; programIndex <= school.programs.length; programIndex++) {
+    if (school.programs[programIndex]._id === program._id) {
+      break;
+    }
+  }
+
+  var programQuery = 'programs.' + programIndex + '.notes.0.text';
+  var query = {
+    $set: {}
+  };
+  query.$set[programQuery] = note.text;
+
+  db.collection('schools').updateOne(
+    {
+      rcdts: school.rcdts
+    },
+    query,
+    function(err, results) {
+      callback(err, note);
+    }
+  );
 }
 
 module.exports = {

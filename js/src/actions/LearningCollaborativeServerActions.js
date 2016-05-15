@@ -11,13 +11,14 @@ const LearningCollaborativeServerActions = {
     });
   },
 
-  receiveProgramNote: function(program, note) {
+  receiveProgramNote: function(program, note, method) {
     AppDispatcher.handleServerAction({
       actionType: LearningCollaborativeConstants.RECEIVE_PROGRAM_NOTE,
       program: program,
-      note: note
+      note: note,
+      method: method
     });
   }
-}
+};
 
 export default LearningCollaborativeServerActions;
