@@ -3,10 +3,11 @@ import AppDispatcher from '../dispatcher/AppDispatcher';
 import LearningCollaborativeConstants from '../constants/LearningCollaborativeConstants';
 
 const LearningCollaborativeServerActions = {
-  receiveProgram: function(program) {
+  receiveProgram: function(program, method) {
     AppDispatcher.handleServerAction({
       actionType: LearningCollaborativeConstants.RECEIVE_PROGRAM,
-      program: program
+      program: program,
+      method: method
     });
   },
 

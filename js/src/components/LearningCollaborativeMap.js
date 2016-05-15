@@ -195,26 +195,24 @@ const LearningCollaborativeMap = React.createClass({
     });
   },
 
-  _onReceiveProgram: function(program) {
+  _onReceiveProgram: function(program, method) {
     if (this.state.selectedSchool) {
       let school = this.state.selectedSchool;
-      let found = false;
       if (!school.properties.programs) {
         school.properties.programs = [];
       }
-      // If the received program is already in the list,
-      // update it
-      school.properties.programs.some(function(p) {
-        if (p._id == program._id) {
-          p = program;
-          found = true;
-          // BOOKMARK
-          // TODO: Force re-render somehow
-          return true;
-        }
-      });
-      // If it's not, add it
-      if (!found) {
+      if (method == 'update') {
+        school.properties.programs.some(function(p) {
+          if (p._id == program._id) {
+            p = program;
+            found = true;
+            // BOOKMARK
+            // TODO: Force re-render somehow
+            return true;
+          }
+        });
+      }
+      else {
         school.properties.programs.push(program);
       }
       this.setState({

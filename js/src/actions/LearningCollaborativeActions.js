@@ -27,7 +27,7 @@ const LearningCollaborativeActions = {
       programType: programType
     });
     LearningCollaborativeApi.createProgram(school, agency, ageGroup, programType, dates).then(program => {
-      LearningCollaborativeServerActions.receiveProgram(program);
+      LearningCollaborativeServerActions.receiveProgram(program, 'create');
       if (notes) {
         LearningCollaborativeApi.createProgramNote(school, program, notes).then(note => {
           LearningCollaborativeServerActions.receiveProgramNote(program, note);
@@ -38,7 +38,7 @@ const LearningCollaborativeActions = {
 
   updateProgram: function(school, program, agency, ageGroup, programType, dates, notes) {
     LearningCollaborativeApi.updateProgram(school, program, agency, ageGroup, programType, dates).then(program => {
-      LearningCollaborativeServerActions.receiveProgram(program);
+      LearningCollaborativeServerActions.receiveProgram(program, 'update');
       if (notes) {
          // Determine if note already exists.
          if (program.notes && program.notes.length) {
