@@ -202,12 +202,9 @@ const LearningCollaborativeMap = React.createClass({
         school.properties.programs = [];
       }
       if (method == 'update') {
-        school.properties.programs.some(function(p) {
+        school.properties.programs.some(function(p, i) {
           if (p._id == program._id) {
-            p = program;
-            found = true;
-            // BOOKMARK
-            // TODO: Force re-render somehow
+            school.properties.programs[i] = program;
             return true;
           }
         });
