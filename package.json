@@ -48,6 +48,7 @@
     "node-sass": "^3.4.2",
     "nodemon": "^1.9.1",
     "parallelshell": "^2.0.0",
+    "react-addons-test-utils": "^15.0.2",
     "request": "^2.69.0",
     "watchify": "^3.7.0",
     "xlsx": "^0.8.0"
@@ -77,5 +78,12 @@
   },
   "engines": {
     "node": "5.3.0"
+  },
+  "jest": {
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react/",
+      "<rootDir>/node_modules/react-dom/",
+      "<rootDir>/node_modules/react-addons-test-utils/"
+    ]
   }
 }
