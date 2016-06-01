@@ -18,6 +18,29 @@ const LearningCollaborativeActions = {
     });
   },
 
+  showSchoolDetail: function(school, zoomToMarker=false) {
+    AppDispatcher.handleViewAction({
+      actionType: LearningCollaborativeConstants.SHOW_SCHOOL_DETAIL,
+      school: school,
+      zoomToMarker: zoomToMarker
+    });
+  },
+
+  showAddProgramForm: function(school) {
+    AppDispatcher.handleViewAction({
+      actionType: LearningCollaborativeConstants.SHOW_ADD_PROGRAM_FORM,
+      school: school
+    });
+  },
+
+  showEditProgramForm: function(school, program) {
+    AppDispatcher.handleViewAction({
+      actionType: LearningCollaborativeConstants.SHOW_EDIT_PROGRAM_FORM,
+      school: school,
+      program: program
+    });
+  },
+
   createProgram: function(school, agency, ageGroup, programType, dates, notes) {
     AppDispatcher.handleViewAction({
       actionType: LearningCollaborativeConstants.CREATE_PROGRAM,

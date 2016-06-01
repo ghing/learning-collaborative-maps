@@ -88,7 +88,6 @@ const ProgramForm = React.createClass({
   },
 
   handleChangeProgramType: function(programType) {
-    console.log(programType);
     this.setState({
       programType: programType
     });

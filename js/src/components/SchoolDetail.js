@@ -1,17 +1,12 @@
 import React from 'react';
 
+import LearningCollaborativeActions from '../actions/LearningCollaborativeActions';
+import LearningCollaborativeConstants from '../constants/LearningCollaborativeConstants';
 import ProgramForm from './ProgramForm';
 import SchoolPrograms from './SchoolPrograms';
 import {agencyIdFromUrl} from "../utils";
 
 const SchoolDetail = React.createClass({
-  getInitialState: function() {
-    return {
-      addingProgram: false,
-      editingProgram: false
-    };
-  },
-
   render: function() {
     if (!this.props.school) {
       return false;
@@ -23,7 +18,7 @@ const SchoolDetail = React.createClass({
     let editProgram = false;
     let schoolPrograms = false;
 
-    if (this.state.addingProgram) {
+    if (this.props.mode == LearningCollaborativeConstants.ADD_PROGRAM_MODE) {
       createProgram = <ProgramForm school={this.props.school}
                          agencies={this.props.agencies}
                          agencyLookup={this.props.agencyLookup}
@@ -32,12 +27,12 @@ const SchoolDetail = React.createClass({
                          handleCancel={this._handleCancelCreateProgram}
                          submitLabel="Add Program" />;
     }
-    else if (this.state.editingProgram) {
-      let agencyId = agencyIdFromUrl(this.state.program.agency);
+    else if (this.props.mode == LearningCollaborativeConstants.EDIT_PROGRAM_MODE) {
+      let agencyId = agencyIdFromUrl(this.props.program.agency);
       let initialNotes;
       
-      if (this.state.program.notes && this.state.program.notes.length) {
-        initialNotes = this.state.program.notes[0].text;  
+      if (this.props.program.notes && this.props.program.notes.length) {
+        initialNotes = this.props.program.notes[0].text;  
       }
 
       editProgram = <ProgramForm school={this.props.school}
@@ -45,9 +40,9 @@ const SchoolDetail = React.createClass({
                                  agencyLookup={this.props.agencyLookup}
                                  programTypes={this.props.programTypes}
                                  initialAgency={this.props.agencyLookup[agencyId]}
-                                 initialAgeGroup={this.state.program.age_group}
-                                 initialProgramType={this.state.program.program_type}
-                                 initialDates={this.state.program.dates}
+                                 initialAgeGroup={this.props.program.age_group}
+                                 initialProgramType={this.props.program.program_type}
+                                 initialDates={this.props.program.dates}
                                  initialNotes={initialNotes}
                                  handleSubmit={this._handleUpdateProgram}
                                  handleCancel={this._handleCancelEditProgram}
@@ -73,47 +68,33 @@ const SchoolDetail = React.createClass({
 
   _handleClickAddProgram: function(evt) {
     evt.preventDefault();
-    this.setState({
-      addingProgram: true
-    });
+    LearningCollaborativeActions.showAddProgramForm(this.props.school);
   },
 
   _handleEditProgram: function(program) {
-    this.setState({
-      editingProgram: true,
-      program: program
-    });
+    LearningCollaborativeActions.showEditProgramForm(this.props.school, program);
   },
 
   _handleUpdateProgram: function(school, agency, ageGroup, programType, dates, notes) {
     this.props.updateProgram(
       school,
-      this.state.program,
+      this.props.program,
       agency,
       ageGroup,
       programType,
       dates,
       notes
     );
-    this.setState({
-      editingProgram: false,
-      program: undefined
-    });
   },
 
   _handleCancelEditProgram: function(evt) {
     evt.preventDefault();
-    this.setState({
-      editingProgram: false,
-      program: undefined
-    });
+    LearningCollaborativeActions.showSchoolDetail(this.props.school);
   },
 
   _handleCancelCreateProgram: function(evt) {
     evt.preventDefault();
-    this.setState({
-      addingProgram: false
-    });
+    LearningCollaborativeActions.showSchoolDetail(this.props.school);
   },
 
   _handleCreateProgram: function(school, agency, ageGroup, programType, dates, notes) {
@@ -125,9 +106,6 @@ const SchoolDetail = React.createClass({
       dates,
       notes
     );
-    this.setState({
-      addingProgram: false
-    });
   }
 });
 

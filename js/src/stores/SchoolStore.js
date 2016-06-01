@@ -8,6 +8,7 @@ import LearningCollaborativeConstants from '../constants/LearningCollaborativeCo
 const CHANGE_EVENT = 'change';
 const RECEIVE_PROGRAM_EVENT = 'receive:program';
 const RECEIVE_PROGRAM_NOTE_EVENT = 'receive:programNote';
+const CHANGE_MODE_EVENT = 'change:mode';
 
 let _schools = []; // Collection of school items
 let _schoolLookup = {};
@@ -20,7 +21,7 @@ let _programTypes = [
   'Sexual Violence/Exploitation'
 ];
 
-let _engine;
+let _engine, _mode, _selectedSchool, _selectedProgram;
 
 let SchoolStore = assign({}, EventEmitter.prototype, {
   getAll: function() {
@@ -33,6 +34,14 @@ let SchoolStore = assign({}, EventEmitter.prototype, {
 
   getProgramTypes: function() {
     return _programTypes;
+  },
+
+  getSelectedSchool: function() {
+    return _selectedSchool;
+  },
+
+  getSelectedProgram: function() {
+    return _selectedProgram;
   },
 
   emitChange: function() {
@@ -71,6 +80,18 @@ let SchoolStore = assign({}, EventEmitter.prototype, {
     this.removeListener(RECEIVE_PROGRAM_NOTE_EVENT, callback);
   },
 
+  emitChangeMode: function(mode, props) {
+    this.emit(CHANGE_MODE_EVENT, mode, props);
+  },
+
+  addChangeModeListener: function(callback) {
+    this.on(CHANGE_MODE_EVENT, callback);
+  },
+
+  removeChangeModeListener: function(callback) {
+    this.removeListener(CHANGE_MODE_EVENT, callback);
+  },
+
   dispatcherIndex: AppDispatcher.register(function(payload) {
     let action = payload.action;
 
@@ -94,6 +115,21 @@ let SchoolStore = assign({}, EventEmitter.prototype, {
         break;
       case LearningCollaborativeConstants.RECEIVE_PROGRAM_NOTE:
         SchoolStore.emitReceiveProgramNote(action.program, action.note, action.method);
+        break;
+      case LearningCollaborativeConstants.SHOW_SCHOOL_DETAIL:
+        _selectedSchool = action.school;
+        SchoolStore.emitChangeMode(LearningCollaborativeConstants.SCHOOL_DETAIL_MODE, {
+          zoomToMarker: action.zoomToMarker
+        });
+        break;
+      case LearningCollaborativeConstants.SHOW_ADD_PROGRAM_FORM:
+        _selectedSchool = action.school;
+        SchoolStore.emitChangeMode(LearningCollaborativeConstants.ADD_PROGRAM_MODE);
+        break;
+      case LearningCollaborativeConstants.SHOW_EDIT_PROGRAM_FORM:
+        _selectedSchool = action.school;
+        _selectedProgram = action.program;
+        SchoolStore.emitChangeMode(LearningCollaborativeConstants.EDIT_PROGRAM_MODE);
         break;
     }
 

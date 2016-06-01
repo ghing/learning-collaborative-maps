@@ -3,6 +3,7 @@ import L from 'leaflet';
 import React from 'react';
 
 import LearningCollaborativeActions from '../actions/LearningCollaborativeActions';
+import LearningCollaborativeConstants from '../constants/LearningCollaborativeConstants';
 import SchoolStore from '../stores/SchoolStore';
 import AgencyStore from '../stores/AgencyStore';
 
@@ -59,7 +60,9 @@ const LearningCollaborativeMap = React.createClass({
     return (
       <div className="app-container">
         <div ref="mapContainer" className="map-container"></div>
-        <MapDrawer school={this.state.selectedSchool}
+        <MapDrawer mode={this.state.mode}
+                   school={this.state.selectedSchool}
+                   program={this.state.selectedProgram}
                    engine={SchoolStore.getEngine()}
                    handleSelectSchool={this._handleSelectSchool}
                    agencies={this.state.agencies}
@@ -77,6 +80,7 @@ const LearningCollaborativeMap = React.createClass({
     SchoolStore.addReceiveProgramListener(this._onReceiveProgram);
     SchoolStore.addReceiveProgramNoteListener(this._onReceiveProgramNote);
     AgencyStore.addChangeListener(this._onChange);
+    SchoolStore.addChangeModeListener(this._onChangeMode);
 
     this.setState({
       map: this._initializeMap()
@@ -88,6 +92,7 @@ const LearningCollaborativeMap = React.createClass({
     SchoolStore.removeReceiveProgramListener(this._onReceiveProgram);
     SchoolStore.removeReceiveProgramNoteListener(this._onReceiveProgramNote);
     AgencyStore.removeChangeListener(this._onChange);
+    SchoolStore.removeChangeModeListener(this._onChangeMode);
   },
 
   componentDidUpdate: function(prevProps, prevState) {
@@ -103,7 +108,7 @@ const LearningCollaborativeMap = React.createClass({
         marker.setStyle(this._styleSchoolMarker(this.state.selectedSchool));
       }
 
-      if (this.state.schoolSelectMethod == 'search') {
+      if (this.state.zoomToMarker) {
         let center = new L.LatLng(
           this.state.selectedSchool.geometry.coordinates[1],
           this.state.selectedSchool.geometry.coordinates[0]
@@ -214,9 +219,7 @@ const LearningCollaborativeMap = React.createClass({
       else {
         school.properties.programs.push(program);
       }
-      this.setState({
-        selectedSchool: school
-      });
+      LearningCollaborativeActions.showSchoolDetail(school);
     }
   },
 
@@ -251,17 +254,31 @@ const LearningCollaborativeMap = React.createClass({
   },
 
   _handleClickSchoolMarker: function(school) {
-    this.setState({
-      selectedSchool: school,
-      schoolSelectMethod: 'click'
-    });
+    LearningCollaborativeActions.showSchoolDetail(school, false);
   },
 
   _handleSelectSchool: function(school) {
-    this.setState({
-      selectedSchool: school,
-      schoolSelectMethod: 'search'
-    });
+    LearningCollaborativeActions.showSchoolDetail(school, true);
+  },
+
+  _onChangeMode: function(mode, props) {
+    let newState = {
+      mode: mode
+    };
+    switch(mode) {
+      case LearningCollaborativeConstants.SCHOOL_DETAIL_MODE:
+        newState.selectedSchool = SchoolStore.getSelectedSchool();
+        newState.zoomToMarker = props.zoomToMarker;
+        break;
+      case LearningCollaborativeConstants.ADD_PROGRAM_MODE:
+        newState.selectedSchool = SchoolStore.getSelectedSchool();
+        break;
+      case LearningCollaborativeConstants.EDIT_PROGRAM_MODE:
+        newState.selectedSchool = SchoolStore.getSelectedSchool();
+        newState.selectedProgram = SchoolStore.getSelectedProgram();
+        break;
+    }
+    this.setState(newState);
   }
 });
 
