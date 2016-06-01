@@ -1,12 +1,14 @@
 import React from 'react';
 
+import SelectWithOther from './SelectWithOther';
+
 const ProgramForm = React.createClass({
   getInitialState: function() {
     return {
       agency: this.props.initialAgency,
       ageGroup: this.props.initialAgeGroup,
       programType: this.props.initialProgramType,
-      dates: this.props.initialDates, 
+      dates: this.props.initialDates,
       notes: this.props.initialNotes
     };
   },
@@ -24,12 +26,6 @@ const ProgramForm = React.createClass({
       <option value="" key=""></option>
     ].concat(this.props.agencies.map(function(agency) {
       return <option value={agency.properties.slug} key={agency.properties.slug}>{agency.properties.agency}</option>;
-    }));
-
-    let programTypeOptions = [
-      <option value="" key=""></option>
-    ].concat(this.props.programTypes.map(programType => {
-      return <option value={programType} key={programType}>{programType}</option>;
     }));
 
     return (
@@ -51,9 +47,13 @@ const ProgramForm = React.createClass({
         </fieldset>
         <fieldset className="form-group">
           <label htmlFor="program-type">Program Type</label>
-          <select className="form-control" id="program-type" value={this.state.programType ? this.state.programType : ''} onChange={this.handleChangeProgramType} ref="programType">
-            {programTypeOptions}
-          </select>
+          <SelectWithOther id="program-type"
+            className="select-program-type"
+            selectClassName="form-control"
+            inputClassName="form-control other-input"
+            options={this.props.programTypes}
+            value={this.state.programType ? this.state.programType : ''}
+            onChange={this.handleChangeProgramType} />
         </fieldset>
         <fieldset className="form-group">
           <label htmlFor="dates">Dates</label>
@@ -65,7 +65,7 @@ const ProgramForm = React.createClass({
         </fieldset>
         <fieldset className="form-group">
           <label htmlFor="program-notes">Notes</label>
-          <textarea id="program-notes" className="form-control" value={this.state.notes} onChange={this.handleChangeNotes} ref="notes"></textarea> 
+          <textarea id="program-notes" className="form-control" value={this.state.notes} onChange={this.handleChangeNotes} ref="notes"></textarea>
         </fieldset>
         <button type="submit" className="btn btn-primary" disabled={this.buttonDisabled()}>{this.props.submitLabel}</button>
         <button type="button" className="btn btn-secondary" onClick={this.props.handleCancel}>Cancel</button>
@@ -87,9 +87,10 @@ const ProgramForm = React.createClass({
     });
   },
 
-  handleChangeProgramType: function(event) {
+  handleChangeProgramType: function(programType) {
+    console.log(programType);
     this.setState({
-      programType: event.target.value
+      programType: programType
     });
   },
 
@@ -125,7 +126,7 @@ const ProgramForm = React.createClass({
       ageGroup: undefined,
       programType: undefined,
       dates: undefined,
-      notes: '' 
+      notes: ''
     });
   },
 

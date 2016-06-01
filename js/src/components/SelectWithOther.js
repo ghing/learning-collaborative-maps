@@ -4,7 +4,7 @@ import React from 'react';
  * React component that renders a select control that adds a text input
  * allowing the user to enter an "Other" option.
  */
-const SelectOther = React.createClass({
+const SelectWithOther = React.createClass({
   getDefaultProps: function() {
     return {
       options: [],
@@ -51,7 +51,7 @@ const SelectOther = React.createClass({
 
   getInput: function() {
     if (this.state.selectValue == '__other__') {
-      return <input type="text" value={this.state.inputValue} onChange={this.handleChangeInput} />;
+      return <input type="text" className={this.props.inputClassName} value={this.state.inputValue} onChange={this.handleChangeInput} />;
     }
 
     return false;
@@ -72,7 +72,7 @@ const SelectOther = React.createClass({
 
     return (
       <div>
-        <select value={this.state.selectValue} onChange={this.handleChangeSelect}>
+        <select className={this.props.selectClassName} value={this.state.selectValue} onChange={this.handleChangeSelect}>
           {options}
         </select>
         {input}
@@ -106,4 +106,4 @@ const SelectOther = React.createClass({
   }
 });
 
-export default SelectOther;
+export default SelectWithOther;
