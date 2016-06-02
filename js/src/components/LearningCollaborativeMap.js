@@ -219,7 +219,11 @@ const LearningCollaborativeMap = React.createClass({
       else {
         school.properties.programs.push(program);
       }
-      LearningCollaborativeActions.showSchoolDetail(school);
+
+      this.setState({
+        selectedSchool: school,
+        mode: LearningCollaborativeConstants.SCHOOL_DETAIL_MODE
+      });
     }
   },
 
