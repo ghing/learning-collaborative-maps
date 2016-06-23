@@ -3,12 +3,6 @@ import React from 'react';
 import {agencyIdFromUrl} from "../utils";
 
 const SchoolProgram = React.createClass({
-  getInitialState: function() {
-    return {
-      hovering: false
-    };
-  },
-
   render: function() {
     let program = this.props.program;
     let agencyId = agencyIdFromUrl(program.agency);
@@ -24,29 +18,12 @@ const SchoolProgram = React.createClass({
       programText += " - " + program.dates;
     }
 
-    let editLink = false;
-    if (this.state.hovering) {
-      editLink = <a href="#" className="edit-link" onClick={this._handleClickEdit}>Edit</a>;
-    }
-
     return (
-      <li onMouseEnter={this._handleMouseEnter} onMouseLeave={this._handleMouseLeave}>
+      <li className="school-program">
         {programText}
-        {editLink}
+        <a href="#" className="edit-link" onClick={this._handleClickEdit}>Edit</a>
       </li>
     );
-  },
-
-  _handleMouseEnter: function(evt) {
-    this.setState({
-      hovering: true
-    });
-  },
-
-  _handleMouseLeave: function(evt) {
-    this.setState({
-      hovering: false
-    });
   },
 
   _handleClickEdit: function(evt) {
