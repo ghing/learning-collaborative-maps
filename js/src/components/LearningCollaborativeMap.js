@@ -44,7 +44,7 @@ const LearningCollaborativeMap = React.createClass({
       center: [41.881832, -87.623177],
       initialZoom: 13,
       markerOptions: {
-        radius: 6,
+        radius: 9,
         fillColor: "#bdbdbd",
         color: "#000",
         weight: 1,
@@ -163,7 +163,7 @@ const LearningCollaborativeMap = React.createClass({
         layer.bindPopup(feature.properties.FacilityName, {
           // Move the popup arrow higher above the default.
           // Otherwise you can't click on the marker.
-          offset: [0, 0]
+          offset: [0, -6]
         });
         layer.on('mouseover', function (e) {
             this.openPopup();
