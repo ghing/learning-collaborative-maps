@@ -8,6 +8,7 @@ Assumptions
 
 * Geocod.io API KEY (just needed to generate schools list)
 * MongoDB
+* Heroku Command Line Interface (CLI)
 * Ubuntu 16.04, though earlier versions of this software were developed on Mac OS X 10.11 El Capitan
 
 Data sources
