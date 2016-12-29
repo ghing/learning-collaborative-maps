@@ -3,3 +3,7 @@ node_modules
 .sass-cache
 # Ignore vim swap files
 *.swp
+# Ignore environment variable setting secrets files
+secrets*.sh
+# Ignore generated front-end assets
+public
