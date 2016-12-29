@@ -70,6 +70,14 @@ Install front-end build dependencies:
 
     npm install
 
+Connect your local repo to the production Heroku app:
+
+    heroku git:remote -a learning-collaborative-maps -r production
+
+Connect your local repo to the staging Heroku app:
+
+    heroku git:remote -a lc-maps-staging -r staging
+
 Building front-end assets
 -------------------------
 
@@ -141,7 +149,13 @@ Set the `NPM_CONFIG_PRODUCTION` environment variable so that the `devDependencie
 Deploying the app
 -----------------
 
-    git push heroku master
+To deploy to staging:
+
+    git push staging master
+
+To deploy to production:
+
+    git push production master
 
 Dumping the production database
 -------------------------------
@@ -154,11 +168,13 @@ You can find the connection parameters from the mLab dashboard that you can acce
 
 By default `mongodump` stores the dump files in a directory named `dump` in the current working directory.
 
-You can restore dump you created into your local development environment using the [mongorestore](https://docs.mongodb.com/manual/reference/program/mongorestore/) command:
+You can restore the dump you created into your local development environment using the [mongorestore](https://docs.mongodb.com/manual/reference/program/mongorestore/) command:
 
     mongorestore --db learning_collaborative dump/heroku_1ab23c45
 
 In the example above, replace `heroku_1ab23c45` with the subdirectory created when you ran mongodump.
+
+You can restore the dump you created to the staging environment using `mongorestore` as well.  
 
 
 Collaborators
