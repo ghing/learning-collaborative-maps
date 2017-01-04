@@ -1,4 +1,4 @@
-eearning Collaborative Maps
+Learning Collaborative Maps
 ===========================
 
 Web map to help coordinate healthy relationships education in the Chicago area.
