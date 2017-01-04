@@ -1,6 +1,6 @@
 {
   "name": "learning-collaborative-maps",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Interactive map to help coordinate healthy relationship education in the Chicago area.",
   "main": "app.js",
   "config": {
