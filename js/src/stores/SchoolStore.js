@@ -12,9 +12,15 @@ const CHANGE_MODE_EVENT = 'change:mode';
 
 let _schools = []; // Collection of school items
 let _schoolLookup = {};
+// TODO: Don't hard-code these, instead allow adding/editing them through
+// an admin interface.
+// See https://github.com/ghing/learning-collaborative-maps/issues/59
 let _programTypes = [
+  'Community Violence',
   'Dating/Partner Violence',
   'Dating/Partner Violence/Bullying',
+  'General Health',
+  'Leadership Development',
   'Prevention + Intervention',
   'Sexual Health',
   'Sexual Violence',
