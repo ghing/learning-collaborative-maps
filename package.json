@@ -41,6 +41,8 @@
     "browserify": "^13.0.0",
     "clean-css": "^3.4.10",
     "csv": "^0.4.6",
+    "csv-parse": "^1.1.7",
+    "csv-stringify": "^1.0.4",
     "geocodio": "^2.0.0",
     "http-server": "^0.9.0",
     "jest-cli": "^11.0.2",
