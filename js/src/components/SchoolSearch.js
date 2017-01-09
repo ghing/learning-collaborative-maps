@@ -1,5 +1,5 @@
 import React from 'react';
-import $ from 'jquery'; 
+import $ from 'jquery';
 import 'typeahead.js/dist/typeahead.jquery.js';
 
 
@@ -20,7 +20,12 @@ const SchoolSearch = React.createClass({
 
   componentDidUpdate: function() {
     if (this.props.engine) {
-      this._initializeTypeahead();
+      // If the typeahead jQuery plugin hasn't been initialized yet,
+      // initialize it.
+      // This guard prevents initializing the jQuery plugin multiple times.
+      if (!$(this.refs.searchInput).data('ttTypeahead')) {
+        this._initializeTypeahead();
+      }
     }
   },
 
