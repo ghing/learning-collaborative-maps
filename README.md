@@ -162,7 +162,7 @@ Dumping the production database
 
 Use the [mongodump](https://docs.mongodb.com/manual/reference/program/mongodump/) command to create a dump of the production database:
 
-    mongodump --host <mlab_database_host> --port <mlab_database_port> --user <mlab_database_user> --db <mlab_database_name> 
+    mongodump --host <mlab_database_host> --port <mlab_database_port> --username <mlab_database_user> --db <mlab_database_name> 
 
 You can find the connection parameters from the mLab dashboard that you can access when viewing your app in Heroku's dashboard.
 
