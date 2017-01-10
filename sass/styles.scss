@@ -49,9 +49,20 @@
 
   border: 1px solid #ccc;
 
-  // Match the Bootstrap input styles
-  padding: $input-padding-y $input-padding-x;
+  // Match the Bootstrap input styles for vertical padding.
+  // Get rid of horizontal padding so we can set a background color.
+  padding: $input-padding-y 0;
   @include border-radius($input-border-radius);
+}
+
+
+.tt-suggestion {
+  padding: 0 $input-padding-x;
+
+  &:hover {
+    cursor: default; // Make sure cursor is an arrow
+    background-color: #eee;
+  }
 }
 
 .program-form {
