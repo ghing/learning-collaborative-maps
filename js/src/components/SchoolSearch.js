@@ -37,7 +37,12 @@ const SchoolSearch = React.createClass({
     {
       name: 'schools',
       source: this.props.engine,
-      display: school => school.properties.FacilityName
+      //display: school => school.properties.FacilityName
+      templates: {
+        suggestion: school => {
+          return `<div class="school-suggestion"><div class="school-suggestion__facility-name">${school.properties.FacilityName}</div><div class="school-suggestion__address">${school.properties.Address}</div></div>`;
+        }
+      },
     }).on('typeahead:select', (ev, school) => {
       this.props.handleSelectSchool(school);
     });
