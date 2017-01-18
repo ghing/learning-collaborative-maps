@@ -5,7 +5,7 @@ import LearningCollaborativeApi from './utils/LearningCollaborativeApi';
 import LearningCollaborativeActions from './actions/LearningCollaborativeActions';
 import LearningCollaborativeMap from './components/LearningCollaborativeMap'; 
 
-export const LearningCollaborativeMapApp = function(options) {
+export const MapApp = function(options) {
   ReactDOM.render(
     <LearningCollaborativeMap />,
     options.container
