@@ -29,53 +29,43 @@ function distinctProgramAgencies(programs) {
   return agencies;
 }
 
-const LearningCollaborativeMap = React.createClass({
-  getInitialState: function() {
-    return {
+class LearningCollaborativeMap extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
       schools: SchoolStore.getAll(),
       agencies: AgencyStore.getAll(),
       agencyLookup: AgencyStore.getLookup(),
       agencyColorScale: AgencyStore.getColorScale()
     };
-  },
 
-  getDefaultProps: function() {
-    return {
-      center: [41.881832, -87.623177],
-      initialZoom: 13,
-      markerOptions: {
-        radius: 9,
-        fillColor: "#bdbdbd",
-        color: "#000",
-        weight: 1,
-        opacity: 1,
-        fillOpacity: 0.8
-      },
-      multipleAgencyFillColor: 'black',
-      contactEmail: 'Mwalsh@betweenfriendschicago.org'
-    }
-  },
+    this._onChange = this._onChange.bind(this);
+    this._onReceiveProgram = this._onReceiveProgram.bind(this);
+    this._onReceiveProgramNote = this._onReceiveProgramNote.bind(this);
+    this._onChangeMode = this._onChangeMode.bind(this);
+    this._styleSchoolMarker = this._styleSchoolMarker.bind(this);
+  }
 
-  render: function() {
+  render() {
     return (
-      <div className="app-container">
-        <div ref="mapContainer" className="map-container"></div>
-        <MapDrawer mode={this.state.mode}
-                   school={this.state.selectedSchool}
-                   program={this.state.selectedProgram}
-                   engine={SchoolStore.getEngine()}
-                   handleSelectSchool={this._handleSelectSchool}
-                   agencies={this.state.agencies}
-                   agencyLookup={this.state.agencyLookup}
-                   programTypes={SchoolStore.getProgramTypes()}
-                   createProgram={LearningCollaborativeActions.createProgram}
-                   updateProgram={LearningCollaborativeActions.updateProgram}
-                   contactEmail={this.props.contactEmail} />
-      </div>
+        <div className="app-container">
+          <div ref="mapContainer" className="map-container"></div>
+          <MapDrawer mode={this.state.mode}
+                     school={this.state.selectedSchool}
+                     program={this.state.selectedProgram}
+                     engine={SchoolStore.getEngine()}
+                     handleSelectSchool={this._handleSelectSchool}
+                     agencies={this.state.agencies}
+                     agencyLookup={this.state.agencyLookup}
+                     programTypes={SchoolStore.getProgramTypes()}
+                     createProgram={LearningCollaborativeActions.createProgram}
+                     updateProgram={LearningCollaborativeActions.updateProgram}
+                     contactEmail={this.props.contactEmail} />
+        </div>
     );
-  },
+  }
 
-  componentDidMount: function() {
+  componentDidMount() {
     SchoolStore.addChangeListener(this._onChange);
     SchoolStore.addReceiveProgramListener(this._onReceiveProgram);
     SchoolStore.addReceiveProgramNoteListener(this._onReceiveProgramNote);
@@ -85,17 +75,17 @@ const LearningCollaborativeMap = React.createClass({
     this.setState({
       map: this._initializeMap()
     });
-  },
+  }
 
-  componentWillUnmount: function() {
+  componentWillUnmount() {
     SchoolStore.removeChangeListener(this._onChange);
     SchoolStore.removeReceiveProgramListener(this._onReceiveProgram);
     SchoolStore.removeReceiveProgramNoteListener(this._onReceiveProgramNote);
     AgencyStore.removeChangeListener(this._onChange);
     SchoolStore.removeChangeModeListener(this._onChangeMode);
-  },
+  }
 
-  componentDidUpdate: function(prevProps, prevState) {
+  componentDidUpdate(prevProps, prevState) {
     if (this.state.selectedSchool) {
       let schoolProps = this.state.selectedSchool.properties;
       let programs = this.state.selectedSchool.properties.programs;
@@ -118,9 +108,9 @@ const LearningCollaborativeMap = React.createClass({
       }
     }
 
-  },
+  }
 
-  _initializeMap: function() {
+  _initializeMap() {
     let map = L.map(this.refs.mapContainer, {
         zoomControl: false
       })
@@ -131,9 +121,9 @@ const LearningCollaborativeMap = React.createClass({
       attribution: 'Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
     }).addTo(map);
     return map;
-  },
+  }
 
-  _styleSchoolMarker: function(feature) {
+  _styleSchoolMarker(feature) {
     let markerOptions = assign({}, this.props.markerOptions);
     let programs = feature.properties.programs;
 
@@ -148,9 +138,9 @@ const LearningCollaborativeMap = React.createClass({
       }
     }
     return markerOptions;
-  },
+  }
 
-  _getSchoolMarkers: function(schools) {
+  _getSchoolMarkers(schools) {
     let component = this;
 
     let markerLookup = {};
@@ -179,9 +169,9 @@ const LearningCollaborativeMap = React.createClass({
     });
 
     return [schoolMarkers, markerLookup];
-  },
+  }
 
-  _onChange: function() {
+  _onChange() {
     let schools = SchoolStore.getAll();
     let map = this.state.map;
     let schoolMarkers, markerLookup;
@@ -200,9 +190,9 @@ const LearningCollaborativeMap = React.createClass({
       schoolMarkers: schoolMarkers,
       schoolMarkerLookup: markerLookup
     });
-  },
+  }
 
-  _onReceiveProgram: function(program, method) {
+  _onReceiveProgram(program, method) {
     if (this.state.selectedSchool) {
       let school = this.state.selectedSchool;
       if (!school.properties.programs) {
@@ -225,9 +215,9 @@ const LearningCollaborativeMap = React.createClass({
         mode: LearningCollaborativeConstants.SCHOOL_DETAIL_MODE
       });
     }
-  },
+  }
 
-  _onReceiveProgramNote: function(program, note, method) {
+  _onReceiveProgramNote(program, note, method) {
     if (this.state.selectedSchool) {
       let school = this.state.selectedSchool;
       school.properties.programs.some(function(p, i) {
@@ -255,17 +245,17 @@ const LearningCollaborativeMap = React.createClass({
         selectedSchool: school
       });
     }
-  },
+  }
 
-  _handleClickSchoolMarker: function(school) {
+  _handleClickSchoolMarker(school) {
     LearningCollaborativeActions.showSchoolDetail(school, false);
-  },
+  }
 
-  _handleSelectSchool: function(school) {
+  _handleSelectSchool(school) {
     LearningCollaborativeActions.showSchoolDetail(school, true);
-  },
+  }
 
-  _onChangeMode: function(mode, props) {
+  _onChangeMode(mode, props) {
     let newState = {
       mode: mode
     };
@@ -284,6 +274,21 @@ const LearningCollaborativeMap = React.createClass({
     }
     this.setState(newState);
   }
-});
+}
+
+LearningCollaborativeMap.defaultProps = {
+  center: [41.881832, -87.623177],
+  initialZoom: 13,
+  markerOptions: {
+    radius: 9,
+    fillColor: "#bdbdbd",
+    color: "#000",
+    weight: 1,
+    opacity: 1,
+    fillOpacity: 0.8
+  },
+  multipleAgencyFillColor: 'black',
+  contactEmail: 'Mwalsh@betweenfriendschicago.org'
+};
 
 export default LearningCollaborativeMap;

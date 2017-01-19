@@ -4,8 +4,8 @@
   "description": "Interactive map to help coordinate healthy relationship education in the Chicago area.",
   "main": "app.js",
   "config": {
-    "requireargs": "--require leaflet --require react --require react-dom --require es6-promise --require isomorphic-fetch --require flux --require object-assign --require keymirror --require d3 --require jquery --require typeahead.js",
-    "externalargs": "--external leaflet --external react --external react-dom --external es6-promise --external isomorphic-fetch --external flux --external object-assign --external keymirror --external d3 --external jquery --external typeahead.js"
+    "requireargs": "--require leaflet --require react --require react-dom --require react-router --require es6-promise --require isomorphic-fetch --require flux --require object-assign --require keymirror --require d3 --require jquery --require typeahead.js",
+    "externalargs": "--external leaflet --external react --external react-dom --external react-router --external es6-promise --external isomorphic-fetch --external flux --external object-assign --external keymirror --external d3 --external jquery --external typeahead.js"
   },
   "scripts": {
     "test": "jest",
@@ -75,6 +75,7 @@
     "object-assign": "^4.0.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
+    "react-router": "^3.0.2",
     "typeahead.js": "^0.11.1",
     "xhr-promise": "^2.0.0"
   },
