@@ -1,6 +1,10 @@
 import assign from 'object-assign';
 import {EventEmitter} from 'events';
-import Bloodhound from 'typeahead.js/dist/bloodhound';
+// Bloodhound doesn't seem to work outside the browser.
+// Load it conditionally.
+if (typeof window != 'undefined') {
+  var Bloodhound = require('typeahead.js/dist/bloodhound');
+}
 
 import AppDispatcher from '../dispatcher/AppDispatcher';
 import LearningCollaborativeConstants from '../constants/LearningCollaborativeConstants';
@@ -108,12 +112,14 @@ let SchoolStore = assign({}, EventEmitter.prototype, {
            lookup[school.properties.rcdts] = school;
            return lookup;
         }, {});
-        _engine = new Bloodhound({
-          local: _schools,
-          queryTokenizer: Bloodhound.tokenizers.whitespace,
-          datumTokenizer: school => Bloodhound.tokenizers.whitespace(school.properties.FacilityName),
-          identify: school => school.properties.rcdts
-        });
+        if (typeof Bloodhound != 'undefined') {
+          _engine = new Bloodhound({
+            local: _schools,
+            queryTokenizer: Bloodhound.tokenizers.whitespace,
+            datumTokenizer: school => Bloodhound.tokenizers.whitespace(school.properties.FacilityName),
+            identify: school => school.properties.rcdts
+          });
+        }
         SchoolStore.emitChange();
         break;
       case LearningCollaborativeConstants.RECEIVE_PROGRAM:

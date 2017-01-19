@@ -1,5 +1,12 @@
 import assign from 'object-assign';
-import L from 'leaflet';
+// We have to use require() here because ES6 module loading doesn't seem
+// to support conditional imports
+// We have to import conditionally, because Leaflet doesn't check if
+// `window` is defined, and it won't be when we render server side
+var L;
+if (typeof window != 'undefined') {
+  L = require('leaflet');
+}
 import React from 'react';
 
 import LearningCollaborativeActions from '../actions/LearningCollaborativeActions';

@@ -7,3 +7,5 @@ node_modules
 secrets*.sh
 # Ignore generated front-end assets
 public
+# Ignore generated non-ES6 versions of files in js/src
+dist

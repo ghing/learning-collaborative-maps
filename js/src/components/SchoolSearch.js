@@ -1,6 +1,11 @@
 import React from 'react';
-import $ from 'jquery';
-import 'typeahead.js/dist/typeahead.jquery.js';
+
+// Only import jQuery and Typeahead.js if we're running in the browser.
+// These shouldn't come into play for server-side rendering
+if (typeof window != 'undefined') {
+  var $ = require('jquery');
+  require('typeahead.js/dist/typeahead.jquery');
+}
 
 
 const SchoolSearch = React.createClass({

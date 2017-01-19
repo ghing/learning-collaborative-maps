@@ -2,8 +2,14 @@ var bodyParser = require('body-parser');
 var express = require('express');
 var exphbs  = require('express-handlebars');
 var MongoClient = require('mongodb').MongoClient;
+var React = require('react');
+var renderToString = require('react-dom/server').renderToString;
+var reactRouter = require('react-router');
+var match = reactRouter.match;
+var RouterContext = reactRouter.RouterContext;
+var routes = require('./dist/routes');
 
-var routes = require('./routes');
+var middleware = require('./middleware');
 
 var DATABASE_URL = process.env.LC_DATABASE_URL;
 var PORT = process.env.PORT || 3000;
@@ -30,53 +36,84 @@ app.all('*', function(req, response, next) {
     next();
 });
 
-app.get('/', function (req, res) {
-    res.render('index');
-});
-
 // Agencies
-//
-app.get('/api/1/agencies', routes.getAgencies);
 
-app.post('/api/1/agencies', routes.createAgency);
+app.get('/api/1/agencies', middleware.getAgencies);
 
-app.delete('/api/1/agencies', routes.deleteAgency);
+app.post('/api/1/agencies', middleware.createAgency);
 
-app.param('agencySlug', routes.setAgencySlug);
+app.delete('/api/1/agencies', middleware.deleteAgency);
 
-app.get('/api/1/agencies/:agencySlug', routes.getAgency);
+app.param('agencySlug', middleware.setAgencySlug);
+
+app.get('/api/1/agencies/:agencySlug', middleware.getAgency);
 
 
 // Schools
 
-app.get('/api/1/schools', routes.getSchools);
+app.get('/api/1/schools', middleware.getSchools);
 
-app.post('/api/1/schools', routes.createSchool);
+app.post('/api/1/schools', middleware.createSchool);
 
-app.delete('/api/1/schools', routes.deleteSchool);
+app.delete('/api/1/schools', middleware.deleteSchool);
 
-app.param('rcdts', routes.setRcdts);
+app.param('rcdts', middleware.setRcdts);
 
-app.get('/api/1/schools/:rcdts', routes.getSchool);
+app.get('/api/1/schools/:rcdts', middleware.getSchool);
 
 
 // Programs
 
-app.delete('/api/1/schools/:rcdts/programs', routes.deleteAllSchoolPrograms);
+app.delete('/api/1/schools/:rcdts/programs', middleware.deleteAllSchoolPrograms);
 
-app.post('/api/1/schools/:rcdts/programs', routes.createProgram);
+app.post('/api/1/schools/:rcdts/programs', middleware.createProgram);
 
-app.get('/api/1/programs', routes.getPrograms);
+app.get('/api/1/programs', middleware.getPrograms);
 
-app.delete('/api/1/programs', routes.deleteAllPrograms);
+app.delete('/api/1/programs', middleware.deleteAllPrograms);
 
-app.param('programId', routes.setProgramId);
+app.param('programId', middleware.setProgramId);
 
-app.put('/api/1/schools/:rcdts/programs/:programId', routes.updateProgram);
+app.put('/api/1/schools/:rcdts/programs/:programId', middleware.updateProgram);
 
-app.post('/api/1/schools/:rcdts/programs/:programId/notes', routes.createProgramNote);
+app.post('/api/1/schools/:rcdts/programs/:programId/notes', middleware.createProgramNote);
 
-app.put('/api/1/schools/:rcdts/programs/:programId/notes/:noteId', routes.updateProgramNote);
+app.put('/api/1/schools/:rcdts/programs/:programId/notes/:noteId', middleware.updateProgramNote);
+
+// Non-API routes
+//
+// These will be handled by React Router
+// This needs to be defined last so that API routes don't get handled by
+// the router.
+
+// This is based on the pattern described at
+// https://github.com/reactjs/react-router-tutorial/tree/master/lessons/13-server-rendering
+// Send all requests to index.html so browserHistory works
+app.get('*', function (req, res) {
+  // Match the routes to the url
+  match({ routes: routes, location: req.url }, function(err, redirect, props) {
+    // `RouterContext` is what the `Router` renders. `Router` keeps these
+    // `props` in its state as it listens to `browserHistory`. But on the
+    // server our app is stateless, so we need to use `match` to
+    // get these props before rendering.
+
+    if (err) {
+      // There was an error somewhere during route matching
+      res.status(500).send(err.message)
+    }
+    else if (redirect) {
+      res.redirect(redirect.pathname + redirect.search)
+    }
+    else {
+      // If we got props then we matched a route and can render
+      var appHtml = renderToString(React.createElement(RouterContext, props, null));
+      // Dump the HTML into a template
+      res.render('index', {appHtml: appHtml});
+
+      // TODO: Handle 404
+    }
+  });
+});
 
 
 MongoClient.connect(DATABASE_URL, function(err, db) {
