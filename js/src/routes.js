@@ -1,5 +1,7 @@
 import LearningCollaborativeApp from './components/LearningCollaborativeApp';
 import LearningCollaborativeMap from './components/LearningCollaborativeMap';
+import ProgramForm from './components/ProgramForm';
+import SchoolDetail from './components/SchoolDetail';
 
 const routes = {
   path: '/',
@@ -12,7 +14,23 @@ const routes = {
   childRoutes: [
     {
       path: 'schools',
-      component: LearningCollaborativeMap
+      component: LearningCollaborativeMap,
+      childRoutes: [
+        {
+          path: ':schoolId',
+          component: SchoolDetail,
+          childRoutes: [
+            {
+              path: 'programs/add',
+              component: ProgramForm
+            },
+            {
+              path: 'programs/:programId/edit',
+              component: ProgramForm
+            }
+          ]
+        }
+      ]
     }
   ]
 };

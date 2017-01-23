@@ -1,81 +1,70 @@
 import React from 'react';
 
 import LearningCollaborativeActions from '../actions/LearningCollaborativeActions';
-import LearningCollaborativeConstants from '../constants/LearningCollaborativeConstants';
 import ProgramForm from './ProgramForm';
 import SchoolPrograms from './SchoolPrograms';
-import {agencyIdFromUrl} from "../utils";
 
-const SchoolDetail = React.createClass({
-  render: function() {
+class SchoolDetail extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this._handleClickAddProgram = this._handleClickAddProgram.bind(this);
+    this._handleCancelProgram = this._handleCancelProgram.bind(this);
+    this._handleUpdateProgram = this._handleUpdateProgram.bind(this);
+    this._handleCreateProgram = this._handleCreateProgram.bind(this);
+  }
+
+  render() {
     if (!this.props.school) {
       return false;
     }
 
-    let schoolProps = this.props.school.properties;
-    let addProgramButton = false;
-    let createProgram = false;
-    let editProgram = false;
-    let schoolPrograms = false;
-
-    if (this.props.mode == LearningCollaborativeConstants.ADD_PROGRAM_MODE) {
-      createProgram = <ProgramForm school={this.props.school}
-                         agencies={this.props.agencies}
-                         agencyLookup={this.props.agencyLookup}
-                         programTypes={this.props.programTypes}
-                         handleSubmit={this._handleCreateProgram}
-                         handleCancel={this._handleCancelCreateProgram}
-                         submitLabel="Add Program" />;
-    }
-    else if (this.props.mode == LearningCollaborativeConstants.EDIT_PROGRAM_MODE) {
-      let agencyId = agencyIdFromUrl(this.props.program.agency);
-      let initialNotes;
-      
-      if (this.props.program.notes && this.props.program.notes.length) {
-        initialNotes = this.props.program.notes[0].text;  
-      }
-
-      editProgram = <ProgramForm school={this.props.school}
-                                 agencies={this.props.agencies}
-                                 agencyLookup={this.props.agencyLookup}
-                                 programTypes={this.props.programTypes}
-                                 initialAgency={this.props.agencyLookup[agencyId]}
-                                 initialAgeGroup={this.props.program.age_group}
-                                 initialProgramType={this.props.program.program_type}
-                                 initialDates={this.props.program.dates}
-                                 initialNotes={initialNotes}
-                                 handleSubmit={this._handleUpdateProgram}
-                                 handleCancel={this._handleCancelEditProgram}
-                                 submitLabel="Update Program" />;
-    }
-    else {
-      schoolPrograms = <SchoolPrograms school={this.props.school}
-                                       agencyLookup={this.props.agencyLookup}
-                                       editProgram={this._handleEditProgram} />
-      addProgramButton = <button className="btn btn-primary" onClick={this._handleClickAddProgram}>Add Program</button>;
-    }
-
     return (
       <div className="school-detail">
-        <h2>{schoolProps.FacilityName}</h2>
-        {schoolPrograms}
-        {createProgram}
-        {editProgram}
-        {addProgramButton}
+        <h2>{this.props.school.properties.FacilityName}</h2>
+        {this._getChildren(this.props)}
       </div>
     );
-  },
+  }
 
-  _handleClickAddProgram: function(evt) {
+  _getChildren(props) {
+    if (props.children) {
+      // There are children of this component. They are set by the router and
+      // will be a form to either add or edit a program.
+      const programFormProps = this._getProgramFormProps(props);
+
+      return React.Children.map(props.children, child => React.cloneElement(child, programFormProps));
+    }
+    else {
+      // props.children is not set.  Just show a list of existing programs.
+      return [
+        <SchoolPrograms school={this.props.school}
+          agencyLookup={this.props.agencyLookup}
+          key="programs" />,
+        <button className="btn btn-primary" onClick={this._handleClickAddProgram} key="add-program-button">Add Program</button>
+      ];
+    }
+  }
+
+  _getProgramFormProps(props) {
+    return {
+      school: props.school,
+      program: props.program,
+      agencies: props.agencies,
+      agencyLookup: props.agencyLookup,
+      programTypes: props.programTypes,
+      handleCreateProgram: this._handleCreateProgram,
+      handleUpdateProgram: this._handleUpdateProgram,
+      handleCancel: this._handleCancelProgram
+    };
+  }
+
+  _handleClickAddProgram(evt) {
     evt.preventDefault();
-    LearningCollaborativeActions.showAddProgramForm(this.props.school);
-  },
+    this.props.router.push(`/schools/${this.props.school.properties.rcdts}/programs/add`)
+  }
 
-  _handleEditProgram: function(program) {
-    LearningCollaborativeActions.showEditProgramForm(this.props.school, program);
-  },
-
-  _handleUpdateProgram: function(school, agency, ageGroup, programType, dates, notes) {
+  _handleUpdateProgram(school, agency, ageGroup, programType, dates, notes) {
     this.props.updateProgram(
       school,
       this.props.program,
@@ -85,19 +74,14 @@ const SchoolDetail = React.createClass({
       dates,
       notes
     );
-  },
+  }
 
-  _handleCancelEditProgram: function(evt) {
+  _handleCancelProgram(evt) {
     evt.preventDefault();
     LearningCollaborativeActions.showSchoolDetail(this.props.school);
-  },
+  }
 
-  _handleCancelCreateProgram: function(evt) {
-    evt.preventDefault();
-    LearningCollaborativeActions.showSchoolDetail(this.props.school);
-  },
-
-  _handleCreateProgram: function(school, agency, ageGroup, programType, dates, notes) {
+  _handleCreateProgram(school, agency, ageGroup, programType, dates, notes) {
     this.props.createProgram(
       school,
       agency,
@@ -107,6 +91,6 @@ const SchoolDetail = React.createClass({
       notes
     );
   }
-});
+}
 
 export default SchoolDetail;

@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 import {agencyIdFromUrl} from "../utils";
 
-const SchoolProgram = React.createClass({
-  render: function() {
+class SchoolProgram extends React.Component {
+  render() {
     let program = this.props.program;
     let agencyId = agencyIdFromUrl(program.agency);
     let agency = this.props.agencyLookup[agencyId];
@@ -17,19 +18,17 @@ const SchoolProgram = React.createClass({
     if (program.dates) {
       programText += " - " + program.dates;
     }
+    const schoolId = this.props.school.properties.rcdts;
+    const programId = program._id;
+    const editProgramPath = `/schools/${schoolId}/programs/${programId}/edit`;
 
     return (
       <li className="school-program">
         {programText}
-        <a href="#" className="edit-link" onClick={this._handleClickEdit}>Edit</a>
+        <Link to={editProgramPath} className="edit-link">Edit</Link>
       </li>
     );
-  },
-
-  _handleClickEdit: function(evt) {
-    evt.preventDefault();
-    this.props.editProgram(this.props.program);
   }
-});
+}
 
 export default SchoolProgram;

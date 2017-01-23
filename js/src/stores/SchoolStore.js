@@ -12,7 +12,7 @@ import LearningCollaborativeConstants from '../constants/LearningCollaborativeCo
 const CHANGE_EVENT = 'change';
 const RECEIVE_PROGRAM_EVENT = 'receive:program';
 const RECEIVE_PROGRAM_NOTE_EVENT = 'receive:programNote';
-const CHANGE_MODE_EVENT = 'change:mode';
+const ZOOM_TO_MARKER_EVENT = 'marker:zoom';
 
 let _schools = []; // Collection of school items
 let _schoolLookup = {};
@@ -31,11 +31,15 @@ let _programTypes = [
   'Sexual Violence/Exploitation'
 ];
 
-let _engine, _mode, _selectedSchool, _selectedProgram;
+let _engine;
 
 let SchoolStore = assign({}, EventEmitter.prototype, {
   getAll: function() {
     return _schools;
+  },
+
+  getSchool: function(rcdts) {
+    return _schoolLookup[rcdts];
   },
 
   getEngine: function() {
@@ -46,12 +50,9 @@ let SchoolStore = assign({}, EventEmitter.prototype, {
     return _programTypes;
   },
 
-  getSelectedSchool: function() {
-    return _selectedSchool;
-  },
-
-  getSelectedProgram: function() {
-    return _selectedProgram;
+  getProgram: function(rcdts, programId) {
+    const school = this.getSchool(rcdts);
+    return school.properties.programs.filter(program => program._id == programId)[0];
   },
 
   emitChange: function() {
@@ -90,16 +91,16 @@ let SchoolStore = assign({}, EventEmitter.prototype, {
     this.removeListener(RECEIVE_PROGRAM_NOTE_EVENT, callback);
   },
 
-  emitChangeMode: function(mode, props) {
-    this.emit(CHANGE_MODE_EVENT, mode, props);
+  emitZoomToMarker: function(school) {
+    this.emit(ZOOM_TO_MARKER_EVENT, school);
   },
 
-  addChangeModeListener: function(callback) {
-    this.on(CHANGE_MODE_EVENT, callback);
+  addZoomToMarkerListener: function(callback) {
+    this.addListener(ZOOM_TO_MARKER_EVENT, callback);
   },
 
-  removeChangeModeListener: function(callback) {
-    this.removeListener(CHANGE_MODE_EVENT, callback);
+  removeZoomToMarkerListener: function(callback) {
+    this.removeListener(ZOOM_TO_MARKER_EVENT, callback);
   },
 
   dispatcherIndex: AppDispatcher.register(function(payload) {
@@ -128,20 +129,8 @@ let SchoolStore = assign({}, EventEmitter.prototype, {
       case LearningCollaborativeConstants.RECEIVE_PROGRAM_NOTE:
         SchoolStore.emitReceiveProgramNote(action.program, action.note, action.method);
         break;
-      case LearningCollaborativeConstants.SHOW_SCHOOL_DETAIL:
-        _selectedSchool = action.school;
-        SchoolStore.emitChangeMode(LearningCollaborativeConstants.SCHOOL_DETAIL_MODE, {
-          zoomToMarker: action.zoomToMarker
-        });
-        break;
-      case LearningCollaborativeConstants.SHOW_ADD_PROGRAM_FORM:
-        _selectedSchool = action.school;
-        SchoolStore.emitChangeMode(LearningCollaborativeConstants.ADD_PROGRAM_MODE);
-        break;
-      case LearningCollaborativeConstants.SHOW_EDIT_PROGRAM_FORM:
-        _selectedSchool = action.school;
-        _selectedProgram = action.program;
-        SchoolStore.emitChangeMode(LearningCollaborativeConstants.EDIT_PROGRAM_MODE);
+      case LearningCollaborativeConstants.ZOOM_TO_MARKER:
+        SchoolStore.emitZoomToMarker(action.school);
         break;
     }
 

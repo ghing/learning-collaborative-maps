@@ -10,7 +10,6 @@ if (typeof window != 'undefined') {
 import React from 'react';
 
 import LearningCollaborativeActions from '../actions/LearningCollaborativeActions';
-import LearningCollaborativeConstants from '../constants/LearningCollaborativeConstants';
 import SchoolStore from '../stores/SchoolStore';
 import AgencyStore from '../stores/AgencyStore';
 
@@ -49,25 +48,20 @@ class LearningCollaborativeMap extends React.Component {
     this._onChange = this._onChange.bind(this);
     this._onReceiveProgram = this._onReceiveProgram.bind(this);
     this._onReceiveProgramNote = this._onReceiveProgramNote.bind(this);
-    this._onChangeMode = this._onChangeMode.bind(this);
+    this._onZoomToMarker = this._onZoomToMarker.bind(this);
     this._styleSchoolMarker = this._styleSchoolMarker.bind(this);
   }
 
   render() {
+    const children = this._getChildren(this.props);
     return (
         <div className="app-container">
           <div ref="mapContainer" className="map-container"></div>
-          <MapDrawer mode={this.state.mode}
-                     school={this.state.selectedSchool}
-                     program={this.state.selectedProgram}
-                     engine={SchoolStore.getEngine()}
+          <MapDrawer engine={SchoolStore.getEngine()}
                      handleSelectSchool={this._handleSelectSchool}
-                     agencies={this.state.agencies}
-                     agencyLookup={this.state.agencyLookup}
-                     programTypes={SchoolStore.getProgramTypes()}
-                     createProgram={LearningCollaborativeActions.createProgram}
-                     updateProgram={LearningCollaborativeActions.updateProgram}
-                     contactEmail={this.props.contactEmail} />
+                     contactEmail={this.props.contactEmail} >
+            {children}
+          </MapDrawer>
         </div>
     );
   }
@@ -77,7 +71,7 @@ class LearningCollaborativeMap extends React.Component {
     SchoolStore.addReceiveProgramListener(this._onReceiveProgram);
     SchoolStore.addReceiveProgramNoteListener(this._onReceiveProgramNote);
     AgencyStore.addChangeListener(this._onChange);
-    SchoolStore.addChangeModeListener(this._onChangeMode);
+    SchoolStore.addZoomToMarkerListener(this._onZoomToMarker);
 
     this.setState({
       map: this._initializeMap()
@@ -89,32 +83,57 @@ class LearningCollaborativeMap extends React.Component {
     SchoolStore.removeReceiveProgramListener(this._onReceiveProgram);
     SchoolStore.removeReceiveProgramNoteListener(this._onReceiveProgramNote);
     AgencyStore.removeChangeListener(this._onChange);
-    SchoolStore.removeChangeModeListener(this._onChangeMode);
+    SchoolStore.removeZoomToMarkerListener(this._onZoomToMarker);
   }
 
   componentDidUpdate(prevProps, prevState) {
-    if (this.state.selectedSchool) {
-      let schoolProps = this.state.selectedSchool.properties;
-      let programs = this.state.selectedSchool.properties.programs;
+    if (this.props.params.schoolId && this._hasSchools()) {
+      const school = SchoolStore.getSchool(this.props.params.schoolId);
+      const schoolProps = school.properties;
+      const programs = school.properties.programs;
       // HACK: Always redraw the marker, to detect possible color changes
       // based on a school's programs.  If we want to redraw only if the
       // programs change, we should represent the selected school using
       // something like Immutable.js
       if (programs && programs.length) {
-        let marker = this.state.schoolMarkerLookup[schoolProps.rcdts];
-        marker.setStyle(this._styleSchoolMarker(this.state.selectedSchool));
+        const marker = this.state.schoolMarkerLookup[schoolProps.rcdts];
+        marker.setStyle(this._styleSchoolMarker(school));
       }
 
-      if (this.state.zoomToMarker) {
-        let center = new L.LatLng(
-          this.state.selectedSchool.geometry.coordinates[1],
-          this.state.selectedSchool.geometry.coordinates[0]
+      if (this.state.zoomToMarkerSchool) {
+        const center = new L.LatLng(
+          this.state.zoomToMarkerSchool.geometry.coordinates[1],
+          this.state.zoomToMarkerSchool.geometry.coordinates[0]
         );
-        let zoom = 15;
+        const zoom = 15;
         this.state.map.setView(center, zoom);
       }
     }
+  }
 
+  _getChildren(props) {
+    if (props.params.schoolId && this._hasSchools()) {
+      let schoolProps = {
+        school: SchoolStore.getSchool(props.params.schoolId),
+        agencies: this.state.agencies,
+        agencyLookup: this.state.agencyLookup,
+        programTypes: SchoolStore.getProgramTypes(),
+        createProgram: LearningCollaborativeActions.createProgram,
+        updateProgram: LearningCollaborativeActions.updateProgram
+      };
+
+      if (props.params.programId) {
+        schoolProps.program = SchoolStore.getProgram(props.params.schoolId,
+          props.params.programId);
+      }
+      return React.Children.map(props.children, child => React.cloneElement(child, schoolProps));
+    }
+
+    return props.children;
+  }
+
+  _hasSchools() {
+    return (this.state.schools && this.state.schools.length > 0);
   }
 
   _initializeMap() {
@@ -200,8 +219,9 @@ class LearningCollaborativeMap extends React.Component {
   }
 
   _onReceiveProgram(program, method) {
-    if (this.state.selectedSchool) {
-      let school = this.state.selectedSchool;
+    if (this.props.params.schoolId) {
+      const school = SchoolStore.getSchool(this.props.params.schoolId);
+
       if (!school.properties.programs) {
         school.properties.programs = [];
       }
@@ -217,16 +237,13 @@ class LearningCollaborativeMap extends React.Component {
         school.properties.programs.push(program);
       }
 
-      this.setState({
-        selectedSchool: school,
-        mode: LearningCollaborativeConstants.SCHOOL_DETAIL_MODE
-      });
+      this.props.router.push(`/schools/${this.props.params.schoolId}`);
     }
   }
 
   _onReceiveProgramNote(program, note, method) {
-    if (this.state.selectedSchool) {
-      let school = this.state.selectedSchool;
+    if (this.props.params.schoolId) {
+      const school = SchoolStore.getSchool(this.props.params.schoolId);
       school.properties.programs.some(function(p, i) {
         if (p._id == program._id) {
           if (method === 'update') {
@@ -248,38 +265,22 @@ class LearningCollaborativeMap extends React.Component {
           return true;
         }
       });
-      this.setState({
-        selectedSchool: school
-      });
     }
   }
 
   _handleClickSchoolMarker(school) {
-    LearningCollaborativeActions.showSchoolDetail(school, false);
+    LearningCollaborativeActions.showSchoolDetail(school);
   }
 
   _handleSelectSchool(school) {
-    LearningCollaborativeActions.showSchoolDetail(school, true);
+    LearningCollaborativeActions.showSchoolDetail(school);
+    LearningCollaborativeActions.zoomToMarker(school);
   }
 
-  _onChangeMode(mode, props) {
-    let newState = {
-      mode: mode
-    };
-    switch(mode) {
-      case LearningCollaborativeConstants.SCHOOL_DETAIL_MODE:
-        newState.selectedSchool = SchoolStore.getSelectedSchool();
-        newState.zoomToMarker = props.zoomToMarker;
-        break;
-      case LearningCollaborativeConstants.ADD_PROGRAM_MODE:
-        newState.selectedSchool = SchoolStore.getSelectedSchool();
-        break;
-      case LearningCollaborativeConstants.EDIT_PROGRAM_MODE:
-        newState.selectedSchool = SchoolStore.getSelectedSchool();
-        newState.selectedProgram = SchoolStore.getSelectedProgram();
-        break;
-    }
-    this.setState(newState);
+  _onZoomToMarker(school) {
+    this.setState({
+      zoomToMarkerSchool: school
+    });
   }
 }
 

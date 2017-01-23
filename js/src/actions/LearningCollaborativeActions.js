@@ -1,3 +1,5 @@
+import { browserHistory } from 'react-router';
+
 import AppDispatcher from '../dispatcher/AppDispatcher';
 import LearningCollaborativeApi from '../utils/LearningCollaborativeApi';
 import LearningCollaborativeConstants from '../constants/LearningCollaborativeConstants';
@@ -18,26 +20,14 @@ const LearningCollaborativeActions = {
     });
   },
 
-  showSchoolDetail: function(school, zoomToMarker=false) {
-    AppDispatcher.handleViewAction({
-      actionType: LearningCollaborativeConstants.SHOW_SCHOOL_DETAIL,
-      school: school,
-      zoomToMarker: zoomToMarker
-    });
+  showSchoolDetail: function(school) {
+    browserHistory.push('/schools/' + school.properties.rcdts);
   },
 
-  showAddProgramForm: function(school) {
+  zoomToMarker: function(school) {
     AppDispatcher.handleViewAction({
-      actionType: LearningCollaborativeConstants.SHOW_ADD_PROGRAM_FORM,
+      actionType: LearningCollaborativeConstants.ZOOM_TO_MARKER,
       school: school
-    });
-  },
-
-  showEditProgramForm: function(school, program) {
-    AppDispatcher.handleViewAction({
-      actionType: LearningCollaborativeConstants.SHOW_EDIT_PROGRAM_FORM,
-      school: school,
-      program: program
     });
   },
 

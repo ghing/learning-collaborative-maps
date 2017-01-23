@@ -1,19 +1,44 @@
 import React from 'react';
 
 import SelectWithOther from './SelectWithOther';
+import {agencyIdFromUrl} from "../utils";
 
-const ProgramForm = React.createClass({
-  getInitialState: function() {
-    return {
-      agency: this.props.initialAgency,
-      ageGroup: this.props.initialAgeGroup,
-      programType: this.props.initialProgramType,
-      dates: this.props.initialDates,
-      notes: this.props.initialNotes
-    };
-  },
+class ProgramForm extends React.Component {
+  constructor(props) {
+    super(props);
 
-  render: function() {
+    if (props.program) {
+      // A program has been passed so we're editing a program rather than
+      // adding one.  Set initial form values in the state
+      const agencyId = agencyIdFromUrl(props.program.agency);
+
+      let initialNotes;
+
+      if (props.program.notes && props.program.notes.length) {
+        initialNotes = props.program.notes[0].text;
+      }
+
+      this.state = {
+        agency: props.agencyLookup[agencyId],
+        ageGroup: props.program.age_group,
+        programType: props.program.program_type,
+        dates: props.program.dates,
+        notes: initialNotes
+      };
+    }
+    else {
+      this.state = {};
+    }
+
+    this.handleChangeAgency = this.handleChangeAgency.bind(this);
+    this.handleChangeAgeGroup = this.handleChangeAgeGroup.bind(this);
+    this.handleChangeProgramType = this.handleChangeProgramType.bind(this);
+    this.handleChangeDates = this.handleChangeDates.bind(this);
+    this.handleChangeNotes = this.handleChangeNotes.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  render() {
     if (!this.props.school) {
       return false;
     }
@@ -27,6 +52,8 @@ const ProgramForm = React.createClass({
     ].concat(this.props.agencies.map(function(agency) {
       return <option value={agency.properties.slug} key={agency.properties.slug}>{agency.properties.agency}</option>;
     }));
+
+    const submitLabel = this.props.program ? "Update Program" : "Add Program";
 
     return (
       <form className="program-form" onSubmit={this.handleSubmit}>
@@ -42,7 +69,7 @@ const ProgramForm = React.createClass({
                  id="age-group"
                  className="form-control"
                  placeholder="Example: 6th Grade, Grades 9-12"
-                 value={this.state.ageGroup}
+                 value={this.state.ageGroup ? this.state.ageGroup : ''}
                  onChange={this.handleChangeAgeGroup} />
         </fieldset>
         <fieldset className="form-group">
@@ -60,62 +87,61 @@ const ProgramForm = React.createClass({
           <input type="text"
                  id="dates"
                  className="form-control"
-                 value={this.state.dates}
+                 value={this.state.dates ? this.state.dates : ''}
                  onChange={this.handleChangeDates} />
         </fieldset>
         <fieldset className="form-group">
           <label htmlFor="program-notes">Notes</label>
           <textarea id="program-notes" className="form-control" value={this.state.notes} onChange={this.handleChangeNotes} ref="notes"></textarea>
         </fieldset>
-        <button type="submit" className="btn btn-primary" disabled={this.buttonDisabled()}>{this.props.submitLabel}</button>
+        <button type="submit" className="btn btn-primary" disabled={this.buttonDisabled()}>{submitLabel}</button>
         <button type="button" className="btn btn-secondary" onClick={this.props.handleCancel}>Cancel</button>
       </form>
     );
-  },
+  }
 
-  handleChangeAgency: function(event) {
+  handleChangeAgency(event) {
     let agencyId = event.target.value;
 
     this.setState({
       agency: this.props.agencyLookup[agencyId]
     });
-  },
+  }
 
-  handleChangeAgeGroup: function(event) {
+  handleChangeAgeGroup(event) {
     this.setState({
       ageGroup: event.target.value
     });
-  },
+  }
 
-  handleChangeProgramType: function(programType) {
+  handleChangeProgramType(programType) {
     this.setState({
       programType: programType
     });
-  },
+  }
 
-  handleChangeDates: function(event) {
+  handleChangeDates(event) {
     this.setState({
       dates: event.target.value
     });
-  },
+  }
 
-  handleChangeNotes: function(event) {
+  handleChangeNotes(event) {
     this.setState({
       notes: event.target.value
     });
-  },
+  }
 
-  handleSubmit: function(event) {
+  handleSubmit(event) {
     event.preventDefault();
 
-    let agency = this.state.agency;
-    let programType = this.state.programType;
+    const handleSubmit = this.props.program ? this.props.handleUpdateProgram : this.props.handleCreateProgram;
 
-    this.props.handleSubmit(
+    handleSubmit(
       this.props.school,
-      agency,
+      this.state.agency,
       this.state.ageGroup,
-      programType,
+      this.state.programType,
       this.state.dates,
       this.state.notes
     );
@@ -127,9 +153,9 @@ const ProgramForm = React.createClass({
       dates: undefined,
       notes: ''
     });
-  },
+  }
 
-  buttonDisabled: function() {
+  buttonDisabled() {
     if (!this.state.agency) {
       return true;
     }
@@ -144,6 +170,6 @@ const ProgramForm = React.createClass({
 
     return false;
   }
-});
+}
 
 export default ProgramForm;

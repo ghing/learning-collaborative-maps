@@ -2,8 +2,8 @@ import React from 'react';
 
 import SchoolProgram from './SchoolProgram';
 
-const SchoolPrograms = React.createClass({
-  render: function() {
+class SchoolPrograms extends React.Component {
+  render() {
     let schoolProps = this.props.school.properties;
 
     if (!schoolProps.programs || !schoolProps.programs.length) {
@@ -12,6 +12,7 @@ const SchoolPrograms = React.createClass({
 
     let programEls = schoolProps.programs.map(program => {
       return <SchoolProgram key={program._id}
+                            school={this.props.school}
                             program={program}
                             agencyLookup={this.props.agencyLookup}
                             editProgram={this.props.editProgram} />;
@@ -26,6 +27,6 @@ const SchoolPrograms = React.createClass({
       </div>
     );
   }
-});
+}
 
 export default SchoolPrograms;
