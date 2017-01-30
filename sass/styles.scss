@@ -16,13 +16,13 @@
 }
 
 .map-drawer {
+  @include make-container();
+
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 30%;
-
-  @include make-container();
 
   background-color: #fff;
 }
