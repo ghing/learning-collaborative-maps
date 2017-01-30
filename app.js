@@ -1,21 +1,53 @@
 var bodyParser = require('body-parser');
 var express = require('express');
 var exphbs  = require('express-handlebars');
+var session = require('express-session');
+var MongoDBSessionStore = require('connect-mongodb-session')(session);
 var MongoClient = require('mongodb').MongoClient;
 var React = require('react');
 var renderToString = require('react-dom/server').renderToString;
 var reactRouter = require('react-router');
 var match = reactRouter.match;
 var RouterContext = reactRouter.RouterContext;
-var routes = require('./dist/routes');
+var passwordless = require('passwordless');
+var MongoStore = require('passwordless-mongostore');
+var sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
 
 var middleware = require('./middleware');
+var routes = require('./dist/routes');
+var sendgridTokenDelivery = require('./utils').sendgridTokenDelivery;
 
 var DATABASE_URL = process.env.LC_DATABASE_URL;
+var TRANSACTIONAL_EMAIL_ADDRESS = process.env.LC_TRANSACTIONAL_EMAIL_ADDRESS;
 var PORT = process.env.PORT || 3000;
+var APP_URL = process.env.LC_APP_URL || 'http://localhost:' + PORT;
 
 var app = express();
+var store = new MongoDBSessionStore({
+  uri: DATABASE_URL,
+  collection: 'sessions'
+});
+var sess = {
+  secret: process.env.LC_SESSION_SECRET,
+  cookie: {},
+  store: store,
+  resave: false,
+  saveUninitialized: false
+};
 var dbConnection;
+
+if (app.get('env') === 'production') {
+  app.set('trust proxy', 1) // trust first proxy
+  sess.cookie.secure = true // serve secure cookies
+}
+
+app.use(session(sess));
+
+passwordless.init(new MongoStore(DATABASE_URL));
+passwordless.addDelivery(sendgridTokenDelivery(APP_URL, sg, TRANSACTIONAL_EMAIL_ADDRESS));
+
+app.use(passwordless.sessionSupport());
+app.use(passwordless.acceptToken({ successRedirect: '/'}));
 
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
@@ -80,6 +112,10 @@ app.post('/api/1/schools/:rcdts/programs/:programId/notes', middleware.createPro
 
 app.put('/api/1/schools/:rcdts/programs/:programId/notes/:noteId', middleware.updateProgramNote);
 
+// Auth
+
+app.post('/api/1/auth/tokens', middleware.createLoginToken, middleware.sendCreatedUser);
+
 // Non-API routes
 //
 // These will be handled by React Router
@@ -89,7 +125,7 @@ app.put('/api/1/schools/:rcdts/programs/:programId/notes/:noteId', middleware.up
 // This is based on the pattern described at
 // https://github.com/reactjs/react-router-tutorial/tree/master/lessons/13-server-rendering
 // Send all requests to index.html so browserHistory works
-app.get('*', function (req, res) {
+function routeToReact(req, res) {
   // Match the routes to the url
   match({ routes: routes, location: req.url }, function(err, redirect, props) {
     // `RouterContext` is what the `Router` renders. `Router` keeps these
@@ -113,7 +149,12 @@ app.get('*', function (req, res) {
       // TODO: Handle 404
     }
   });
-});
+}
+
+// Separate route here, because we don't want login to be restricted
+app.get('/login', routeToReact);
+
+app.get('*', passwordless.restricted(), routeToReact);
 
 
 MongoClient.connect(DATABASE_URL, function(err, db) {

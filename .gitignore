@@ -4,7 +4,7 @@ node_modules
 # Ignore vim swap files
 *.swp
 # Ignore environment variable setting secrets files
-secrets*.sh
+secrets*.env
 # Ignore generated front-end assets
 public
 # Ignore generated non-ES6 versions of files in js/src

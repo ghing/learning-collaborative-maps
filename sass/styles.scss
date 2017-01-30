@@ -90,3 +90,33 @@
   position: absolute;
   bottom: 0;
 }
+
+// Login form
+
+.login-container {
+  width: 100%;
+
+  padding-top: 25%;
+
+  position: relative;
+
+  text-align: center;
+}
+
+.login-form {
+  box-sizing: border-box;
+
+  padding: 1em;
+
+  margin: 0 auto;
+}
+
+@media (min-width: 520px) {
+  .login-form {
+    width: 66%;
+  }
+}
+
+.submit-login {
+  width: 100%;
+}

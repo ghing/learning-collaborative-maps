@@ -70,6 +70,12 @@ const LearningCollaborativeActions = {
          }
       }
     });
+  },
+
+  requestLoginToken: function(user) {
+    LearningCollaborativeApi.requestLoginToken(user).then(user => {
+      LearningCollaborativeServerActions.receiveLoginUser(user);
+    });
   }
 };
 

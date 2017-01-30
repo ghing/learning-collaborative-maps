@@ -18,6 +18,13 @@ const LearningCollaborativeServerActions = {
       note: note,
       method: method
     });
+  },
+
+  receiveLoginUser: function(user) {
+    AppDispatcher.handleServerAction({
+      actionType: LearningCollaborativeConstants.RECEIVE_LOGIN_USER,
+      user: user
+    });
   }
 };
 

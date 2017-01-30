@@ -123,6 +123,37 @@ Example:
 
     export LC_API_URL="http://localhost:3000/api/1"    
 
+### SENDGRID_API_KEY
+
+API key generated for the [Sendgrid](https://sendgrid.com/) service.
+
+This is needed to send e-mail for token-based authentication.
+
+### LC_APP_URL
+
+The root URL of this instance of the app.  This is needed to properly construct authentication URLs for the token-based authentication.
+
+Example:
+
+    export LC_APP_URL="http://localhost:300"
+
+### LC_TRANSACTONAL_EMAIL_ADDRESS
+
+Address that will appear as the sender for any transactional emails sent from this app.
+
+Example:
+
+    export LC_TRANSACTONAL_EMAIL_ADDRESS="no-reply@example.com"
+
+### LC_SESSION_SECRET
+
+Secret phrase used to encrypt session keys.
+
+Example:
+
+    export LC_SESSION_SECRET="keyboard cat"
+
+
 Provisioning the app
 --------------------
 
@@ -145,6 +176,8 @@ Then set the `LC_DATABASE_URL` configuration variable:
 Set the `NPM_CONFIG_PRODUCTION` environment variable so that the `devDependencies` in `package.json` are installed.  We need these to build our static assets in the `postinstall` script:
 
     heroku config:set NPM_CONFIG_PRODUCTION=false
+
+TODO: Document setting environment variables in Heroku for token-based authentication.  Until then, you can probably figure it out by looking at the variables in the configuration section and the `heroku config:set` examples above.
 
 Deploying the app
 -----------------

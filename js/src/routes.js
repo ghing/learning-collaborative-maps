@@ -2,6 +2,7 @@ import LearningCollaborativeApp from './components/LearningCollaborativeApp';
 import LearningCollaborativeMap from './components/LearningCollaborativeMap';
 import ProgramForm from './components/ProgramForm';
 import SchoolDetail from './components/SchoolDetail';
+import LoginForm from './components/LoginForm';
 
 const routes = {
   path: '/',
@@ -12,6 +13,10 @@ const routes = {
   // See https://github.com/ReactTraining/react-router/blob/master/docs/guides/IndexRoutes.md#index-redirects
   indexRoute: { onEnter: (nextState, replace) => replace('/schools') },
   childRoutes: [
+    {
+      path: 'login',
+      component: LoginForm
+    },
     {
       path: 'schools',
       component: LearningCollaborativeMap,

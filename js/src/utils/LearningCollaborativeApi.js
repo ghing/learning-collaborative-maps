@@ -8,6 +8,7 @@ const SCHOOL_PROGRAMS_JSON_URL = '/api/1/schools/:rcdts/programs';
 const SCHOOL_PROGRAM_JSON_URL = '/api/1/schools/:rcdts/programs/:programId';
 const SCHOOL_PROGRAM_NOTES_JSON_URL = '/api/1/schools/:rcdts/programs/:programId/notes';
 const SCHOOL_PROGRAM_NOTE_JSON_URL = '/api/1/schools/:rcdts/programs/:programId/notes/:noteId';
+const LOGIN_TOKEN_REQUEST_URL = '/api/1/auth/tokens';
 
 const LearningCollaborativeApi = {
   schools: function() {
@@ -102,6 +103,20 @@ const LearningCollaborativeApi = {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(note)
+    }).then(response => response.json())
+      .then(json => json);
+  },
+
+  requestLoginToken: function(user) {
+    let url = LOGIN_TOKEN_REQUEST_URL;
+
+    return fetch(url, {
+      method: 'post',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(user)
     }).then(response => response.json())
       .then(json => json);
   }

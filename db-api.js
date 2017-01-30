@@ -235,6 +235,26 @@ function updateProgramNote(db, school, program, note, callback) {
   );
 }
 
+function getOrCreateUser(db, user, callback) {
+  db.collection('users').findAndModify(
+    {
+      email: user.email,
+    },
+    [['_id', 'asc']],
+    {
+      $setOnInsert: {
+        email: user.email
+      }
+    },
+    {
+      new: true,
+      upsert: true
+    },
+    function(err, result) {
+      callback(result.value);
+    });
+}
+
 module.exports = {
   createSchools: createSchools,
   fixSchoolProgramAgencies: fixSchoolProgramAgencies,
@@ -249,5 +269,6 @@ module.exports = {
   geoJsonCollection: geoJsonCollection,
   deletePrograms: deletePrograms,
   createProgramNote: createProgramNote,
-  updateProgramNote: updateProgramNote
+  updateProgramNote: updateProgramNote,
+  getOrCreateUser: getOrCreateUser
 };

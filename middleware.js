@@ -1,6 +1,9 @@
 /**
  * Express route handlers
  */
+
+var passwordless = require('passwordless');
+
 var dbApi = require('./db-api');
 
 
@@ -194,6 +197,29 @@ function updateProgramNote(req, res) {
  });
 }
 
+var createLoginToken = passwordless.requestToken(function(email, delivery, callback, req) {
+  var user = {
+    email: email
+  };
+
+  dbApi.getOrCreateUser(req.dbConnection, user, function(user) {
+    if (user) {
+      callback(null, user._id)
+    }
+    else {
+      callback(null, null);
+    }
+  });
+},
+{
+  userField: 'email'
+});
+
+function sendCreatedUser(req, res) {
+  var user = req.body;
+  res.status(201).json(user);
+}
+
 // TODO: Is there a way to declare and export the function at once,
 // other than using the ES6 syntax?
 module.exports = {
@@ -214,5 +240,7 @@ module.exports = {
  deleteAllPrograms: deleteAllPrograms,
  setProgramId: setProgramId,
  createProgramNote: createProgramNote,
- updateProgramNote: updateProgramNote
+ updateProgramNote: updateProgramNote,
+ createLoginToken: createLoginToken,
+ sendCreatedUser: sendCreatedUser
 };
