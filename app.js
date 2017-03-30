@@ -154,8 +154,11 @@ function routeToReact(req, res) {
 // Separate route here, because we don't want login to be restricted
 app.get('/login', routeToReact);
 
-app.get('*', passwordless.restricted(), routeToReact);
+app.get('/logout', passwordless.logout({}), function(req, res) {
+  res.redirect('/');
+});
 
+app.get('*', passwordless.restricted({ failureRedirect: '/login' }), routeToReact);
 
 MongoClient.connect(DATABASE_URL, function(err, db) {
   if (err) {
