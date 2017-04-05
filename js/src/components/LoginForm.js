@@ -33,7 +33,8 @@ class LoginForm extends React.Component {
                 placeholder="Enter your email"
                 onChange={this.handleChangeEmail} />
           </fieldset>
-          <button type="submit" className="btn btn-primary submit-login">Submit</button>
+          <button type="submit" className="btn btn-primary submit-login">Send me a login link</button>
+          <small className="form-text text-muted">This app uses a <a href="https://www.sitepoint.com/passwordless-authentication-works/">passwordless login system</a>. Enter your email address and you'll be emailed a special link that will log you in.  You should stay logged in unless you switch devices or clear persona data in your browser.  If that happens, just re-enter your email address and you'll be sent a new login link.</small>
         </form>
       );
     }
