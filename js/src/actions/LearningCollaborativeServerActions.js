@@ -3,6 +3,14 @@ import AppDispatcher from '../dispatcher/AppDispatcher';
 import LearningCollaborativeConstants from '../constants/LearningCollaborativeConstants';
 
 const LearningCollaborativeServerActions = {
+  receiveSchool: function(school, method) {
+    AppDispatcher.handleServerAction({
+      actionType: LearningCollaborativeConstants.RECEIVE_SCHOOL,
+      school: school,
+      method: method
+    });
+  },
+
   receiveProgram: function(program, method) {
     AppDispatcher.handleServerAction({
       actionType: LearningCollaborativeConstants.RECEIVE_PROGRAM,

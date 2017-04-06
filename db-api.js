@@ -9,6 +9,30 @@ function createSchools(schools, db, callback) {
   });
 }
 
+function updateSchool(school, db, callback) {
+  var collection = db.collection('schools');
+  const updateSchool = {
+    'rcdts': school.rcdts,
+    'FacilityName': school.FacilityName,
+    'Address': school.Address,
+    'City': school.City,
+    'Zip': school.Zip,
+    'GradeServed': school.GradeServed,
+    'lat': school.lat,
+    'lng': school.lng
+  };
+
+  collection.updateOne(
+    {'rcdts': school.rcdts},
+    {
+      $set: updateSchool
+    },
+    function (err, results) {
+      callback(err, updateSchool);
+    }
+  );
+}
+
 function fixProgramAgency(agencyLookup, program) {
   var agency = agencyLookup[program.agency];
 
@@ -257,6 +281,7 @@ function getOrCreateUser(db, user, callback) {
 
 module.exports = {
   createSchools: createSchools,
+  updateSchool: updateSchool,
   fixSchoolProgramAgencies: fixSchoolProgramAgencies,
   getSchools: getSchools,
   deleteSchools: deleteSchools,

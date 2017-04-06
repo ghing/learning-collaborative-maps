@@ -2,8 +2,9 @@ import es6Promise from 'es6-promise';
 es6Promise.polyfill();
 import 'isomorphic-fetch';
 
-const SCHOOLS_JSON_URL = '/api/1/schools?format=geojson';
-const AGENCIES_JSON_URL = '/api/1/agencies?format=geojson';
+const SCHOOLS_JSON_URL = '/api/1/schools';
+const SCHOOL_JSON_URL = '/api/1/schools/:rcdts';
+const AGENCIES_JSON_URL = '/api/1/agencies';
 const SCHOOL_PROGRAMS_JSON_URL = '/api/1/schools/:rcdts/programs';
 const SCHOOL_PROGRAM_JSON_URL = '/api/1/schools/:rcdts/programs/:programId';
 const SCHOOL_PROGRAM_NOTES_JSON_URL = '/api/1/schools/:rcdts/programs/:programId/notes';
@@ -12,15 +13,65 @@ const LOGIN_TOKEN_REQUEST_URL = '/api/1/auth/tokens';
 
 const LearningCollaborativeApi = {
   schools: function() {
-    return fetch(SCHOOLS_JSON_URL)
+    return fetch(SCHOOLS_JSON_URL + '?format=geojson')
       .then(response => response.json())
       .then(json => json.features);
   },
 
   agencies: function() {
-    return fetch(AGENCIES_JSON_URL)
+    return fetch(AGENCIES_JSON_URL + '?format=geojson')
       .then(response => response.json())
       .then(json => json.features);
+  },
+
+  createSchool: function(rcdts, name, address, city, zip, gradeServed, lat, lng) {
+    const url = SCHOOLS_JSON_URL;
+
+    const school = {
+      rcdts: rcdts,
+      FacilityName: name,
+      Address: address,
+      City: city,
+      GradeServed: gradeServed,
+      Zip: zip,
+      lat: lat,
+      lng: lng
+    };
+
+    return fetch(url, {
+      method: 'post',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(school)
+    }).then(response => response.json())
+    .then(json => json[0]);
+  },
+
+  updateSchool: function(rcdts, name, address, city, gradeServed, zip, lat, lng) {
+    const url = SCHOOL_JSON_URL.replace(':rcdts', rcdts);
+
+    const school = {
+      rcdts: rcdts,
+      FacilityName: name,
+      Address: address,
+      City: city,
+      GradeServed: gradeServed,
+      Zip: zip,
+      lat: lat,
+      lng: lng
+    };
+
+    return fetch(url, {
+      method: 'put',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(school)
+    }).then(response => response.json())
+      .then(json => json);
   },
 
   createProgram: function(school, agency, ageGroup, programType, dates) {
@@ -95,7 +146,7 @@ const LearningCollaborativeApi = {
       .replace(':rcdts', school.properties.rcdts)
       .replace(':programId', program._id)
       .replace(':noteId', note._id);
-      
+
     return fetch(url, {
       method: 'put',
       headers: {

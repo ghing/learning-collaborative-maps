@@ -72,6 +72,13 @@ function createSchool(req, res) {
   });
 }
 
+function updateSchool(req, res) {
+  var school = req.body;
+  dbApi.updateSchool(school, req.dbConnection, function() {
+    res.status(200).json(school);
+  });
+}
+
 function deleteSchool(req, res) {
   dbApi.deleteSchools({}, req.dbConnection, function() {
     res.json();
@@ -233,6 +240,7 @@ module.exports = {
  deleteSchool: deleteSchool,
  setRcdts: setRcdts,
  getSchool: getSchool,
+ updateSchool: updateSchool,
  deleteAllSchoolPrograms: deleteAllSchoolPrograms,
  createProgram: createProgram,
  updateProgram: updateProgram,

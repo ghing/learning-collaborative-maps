@@ -55,8 +55,8 @@ let SchoolStore = assign({}, EventEmitter.prototype, {
     return school.properties.programs.filter(program => program._id == programId)[0];
   },
 
-  emitChange: function() {
-    this.emit(CHANGE_EVENT);
+  emitChange: function(method) {
+    this.emit(CHANGE_EVENT, method);
   },
 
   addChangeListener: function(callback) {
@@ -103,8 +103,21 @@ let SchoolStore = assign({}, EventEmitter.prototype, {
     this.removeListener(ZOOM_TO_MARKER_EVENT, callback);
   },
 
+  _createEngine: function(schools) {
+    if (typeof Bloodhound != 'undefined') {
+      return new Bloodhound({
+        local: _schools,
+        queryTokenizer: Bloodhound.tokenizers.whitespace,
+        datumTokenizer: school => Bloodhound.tokenizers.whitespace(school.properties.FacilityName),
+        identify: school => school.properties.rcdts
+      });
+    }
+
+    return undefined;
+  },
+
   dispatcherIndex: AppDispatcher.register(function(payload) {
-    let action = payload.action;
+    const action = payload.action;
 
     switch(action.actionType) {
       case LearningCollaborativeConstants.SCHOOLS_SET:
@@ -113,15 +126,32 @@ let SchoolStore = assign({}, EventEmitter.prototype, {
            lookup[school.properties.rcdts] = school;
            return lookup;
         }, {});
-        if (typeof Bloodhound != 'undefined') {
-          _engine = new Bloodhound({
-            local: _schools,
-            queryTokenizer: Bloodhound.tokenizers.whitespace,
-            datumTokenizer: school => Bloodhound.tokenizers.whitespace(school.properties.FacilityName),
-            identify: school => school.properties.rcdts
-          });
+        _engine = SchoolStore._createEngine(_schools);
+        SchoolStore.emitChange('set');
+        break;
+      case LearningCollaborativeConstants.RECEIVE_SCHOOL:
+        if (action.method == 'create') {
+          let schoolToAdd = {
+            type: "Feature",
+            geometry: {
+              type: "Point",
+              coordinates: [action.school.lng, action.school.lat]
+            },
+            properties: action.school
+          };
+          _schools.push(schoolToAdd);
+          _schoolLookup[schoolToAdd.properties.rcdts] = schoolToAdd;
         }
-        SchoolStore.emitChange();
+        else if (action.method == 'update') {
+          _schoolLookup[action.school.rcdts].properties = action.school;
+          _schoolLookup[action.school.rcdts].geometry.coordinates = [
+            action.school.lng,
+            action.school.lat
+          ];
+        }
+
+        _engine = SchoolStore._createEngine(_schools);
+        SchoolStore.emitChange(action.method);
         break;
       case LearningCollaborativeConstants.RECEIVE_PROGRAM:
         SchoolStore.emitReceiveProgram(action.program, action.method);

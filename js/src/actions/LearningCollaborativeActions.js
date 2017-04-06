@@ -72,6 +72,18 @@ const LearningCollaborativeActions = {
     });
   },
 
+  createSchool: function(rcdts, name, address, city, zip, gradeServed, lat, lng) {
+    LearningCollaborativeApi.createSchool(rcdts, name, address, city, zip, gradeServed, lat, lng).then(school => {
+      LearningCollaborativeServerActions.receiveSchool(school, 'create');
+    });
+  },
+
+  updateSchool: function(rcdts, name, address, city, zip, gradeServed, lat, lng) {
+    LearningCollaborativeApi.updateSchool(rcdts, name, address, city, zip, gradeServed, lat, lng).then(school => {
+      LearningCollaborativeServerActions.receiveSchool(school, 'update');
+    });
+  },
+
   requestLoginToken: function(user) {
     LearningCollaborativeApi.requestLoginToken(user).then(user => {
       LearningCollaborativeServerActions.receiveLoginUser(user);

@@ -93,6 +93,8 @@ app.param('rcdts', middleware.setRcdts);
 
 app.get('/api/1/schools/:rcdts', middleware.getSchool);
 
+app.put('/api/1/schools/:rcdts', middleware.updateSchool);
+
 
 // Programs
 

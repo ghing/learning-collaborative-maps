@@ -3,6 +3,9 @@ import LearningCollaborativeMap from './components/LearningCollaborativeMap';
 import ProgramForm from './components/ProgramForm';
 import SchoolDetail from './components/SchoolDetail';
 import LoginForm from './components/LoginForm';
+import Admin from './components/Admin';
+import SchoolsAdmin from './components/SchoolsAdmin';
+import SchoolsAdminForm from './components/SchoolsAdminForm';
 
 const routes = {
   path: '/',
@@ -32,6 +35,26 @@ const routes = {
             {
               path: 'programs/:programId/edit',
               component: ProgramForm
+            }
+          ]
+        }
+      ]
+    },
+    {
+      path: 'admin',
+      component: Admin,
+      childRoutes: [
+        {
+          path: 'schools',
+          component: SchoolsAdmin,
+          childRoutes: [
+            {
+              path: 'add',
+              component: SchoolsAdminForm
+            },
+            {
+              path: ':schoolId',
+              component: SchoolsAdminForm
             }
           ]
         }

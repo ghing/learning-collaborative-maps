@@ -120,3 +120,35 @@
 .submit-login {
   width: 100%;
 }
+
+// Admin
+
+.admin-list-container {
+  width: 100%;
+
+  padding-top: 12%;
+
+  position: relative;
+
+  text-align: center;
+}
+
+.admin-list {
+  max-width: 100%;
+
+  margin: 0 auto;
+}
+
+@media (min-width: 520px) {
+  .admin-list {
+    width: 33%;
+  }
+}
+
+.container--schools-admin {
+  margin-top: 2em;
+}
+
+.schools-admin-buttons {
+  margin-bottom: 1em;
+}
