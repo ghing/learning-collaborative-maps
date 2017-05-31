@@ -5,6 +5,7 @@ export default keyMirror({
   RECEIVE_SCHOOL: null,
   AGENCIES_SET: null,
   CREATE_PROGRAM: null,
+  RECEIVE_AGENCY: null,
   RECEIVE_PROGRAM: null,
   RECEIVE_PROGRAM_NOTE: null,
   ZOOM_TO_MARKER: null,

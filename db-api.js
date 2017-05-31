@@ -97,6 +97,28 @@ function createAgencies(agencies, db, callback) {
   });
 }
 
+function updateAgency(agency, db, callback) {
+  const collection = db.collection('agencies');
+  const agencyToUpdate = {
+    slug: agency.slug,
+    agency: agency.agency,
+    catchment_area: agency.catchment_area,
+    program_type: agency.program_type,
+    office_location: agency.office_location,
+    lng: agency.lng,
+    lat: agency.lat,
+    marker_color: agency.marker_color
+  };
+
+  collection.updateOne(
+    {'slug': agency.slug},
+    {$set: agencyToUpdate},
+    function (err, results) {
+      callback(err, agencyToUpdate);
+    }
+  );
+}
+
 function deleteAgencies(condition, db, callback) {
   db.collection('agencies').deleteMany(condition, function(err, results) {
     console.log("Deleted agencies");
@@ -286,6 +308,7 @@ module.exports = {
   getSchools: getSchools,
   deleteSchools: deleteSchools,
   createAgencies: createAgencies,
+  updateAgency: updateAgency,
   deleteAgencies: deleteAgencies,
   getAgencies: getAgencies,
   deleteSchoolPrograms: deleteSchoolPrograms,

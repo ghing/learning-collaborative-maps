@@ -5,6 +5,7 @@ import 'isomorphic-fetch';
 const SCHOOLS_JSON_URL = '/api/1/schools';
 const SCHOOL_JSON_URL = '/api/1/schools/:rcdts';
 const AGENCIES_JSON_URL = '/api/1/agencies';
+const AGENCY_JSON_URL = '/api/1/agencies/:slug';
 const SCHOOL_PROGRAMS_JSON_URL = '/api/1/schools/:rcdts/programs';
 const SCHOOL_PROGRAM_JSON_URL = '/api/1/schools/:rcdts/programs/:programId';
 const SCHOOL_PROGRAM_NOTES_JSON_URL = '/api/1/schools/:rcdts/programs/:programId/notes';
@@ -22,6 +23,73 @@ const LearningCollaborativeApi = {
     return fetch(AGENCIES_JSON_URL + '?format=geojson')
       .then(response => response.json())
       .then(json => json.features);
+  },
+
+  createAgency: function (
+    slug,
+    agency,
+    catchmentArea,
+    programType,
+    officeLocation,
+    lat,
+    lng,
+    markerColor
+  ) {
+    const url = AGENCIES_JSON_URL;
+
+    const agencyObj = {
+      slug: slug,
+      agency: agency,
+      catchment_area: catchmentArea,
+      program_type: programType,
+      office_location: officeLocation,
+      lng: lng,
+      lat: lat,
+      marker_color: markerColor
+    };
+
+    return fetch(url, {
+      method: 'post',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(agencyObj)
+    }).then(response => response.json())
+    .then(json => json[0]);
+  },
+
+  updateAgency: function (
+    slug,
+    agency,
+    catchmentArea,
+    programType,
+    officeLocation,
+    lat,
+    lng,
+    markerColor
+  ) {
+    const url = AGENCY_JSON_URL.replace(':slug', slug);
+
+    const agencyObj = {
+      slug: slug,
+      agency: agency,
+      catchment_area: catchmentArea,
+      program_type: programType,
+      office_location: officeLocation,
+      lng: lng,
+      lat: lat,
+      marker_color: markerColor
+    };
+
+    return fetch(url, {
+      method: 'put',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(agencyObj)
+    }).then(response => response.json());
   },
 
   createSchool: function(rcdts, name, address, city, zip, gradeServed, lat, lng) {

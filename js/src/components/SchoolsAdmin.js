@@ -22,7 +22,7 @@ class SchoolsAdmin extends React.Component {
 
   render() {
     return (
-      <div className="container container--schools-admin">
+      <div className="container container--admin">
         <div className="row">
           <div className="col">
             {this._getChildren(this.props)}
@@ -54,7 +54,7 @@ class SchoolsAdmin extends React.Component {
     if (!props.children) {
       return (
         <div>
-          <div className="schools-admin-buttons">
+          <div className="admin-buttons">
             <Link className="btn btn-primary" to="/admin/schools/add">Add a school</Link>
           </div>
           <AdminTable items={this.state.schools}
@@ -64,16 +64,17 @@ class SchoolsAdmin extends React.Component {
       );
     }
 
-    let schoolProps = {
-      handleCreate: LearningCollaborativeActions.createSchool,
-      handleUpdate: LearningCollaborativeActions.updateSchool
-    };
-
+    // TODO: Fix this so add isn't broken
     if (props.params.schoolId && this._hasSchools()) {
-      schoolProps.school = SchoolStore.getSchool(props.params.schoolId);
+      const schoolProps = {
+        handleCreate: LearningCollaborativeActions.createSchool,
+        handleUpdate: LearningCollaborativeActions.updateSchool,
+        school:  SchoolStore.getSchool(props.params.schoolId)
+      };
+      return React.Children.map(props.children, child => React.cloneElement(child, schoolProps));
     }
 
-    return React.Children.map(props.children, child => React.cloneElement(child, schoolProps));
+    return props.children;
   }
 
   _hasSchools() {

@@ -145,10 +145,15 @@
   }
 }
 
-.container--schools-admin {
+.container--admin {
   margin-top: 2em;
 }
 
-.schools-admin-buttons {
+.admin-buttons {
   margin-bottom: 1em;
+}
+
+.agencies-admin-form #marker_color {
+  max-width: 100px;
+  height: 60px;
 }

@@ -1,14 +1,11 @@
 "use strict";
 
-// We need to do this for some reason, otherwise the requirement chain fails horribly
-jest.unmock('bson');
-
-jest.unmock('../routes');
+jest.mock('../db-api');
 
 const dbApi = require('../db-api');
 
-describe('routes', () => {
-  const routes = require('../routes');
+describe('middleware', () => {
+  const middleware = require('../middleware');
 
   describe('setProgramId', () => {
     it('sets a programId property on the request object', () => {
@@ -17,7 +14,7 @@ describe('routes', () => {
       let next = jest.fn();
       const programId = '0036b2142e1e446f9e31aace2f33500e';
 
-      routes.setProgramId(req, res, next, programId);
+      middleware.setProgramId(req, res, next, programId);
       expect(next.mock.calls.length).toEqual(1);
       expect(req.programId).toEqual(programId);
     });
@@ -54,10 +51,33 @@ describe('routes', () => {
         json: jest.fn()
       };
 
-      routes.createProgramNote(req, res);
+      middleware.createProgramNote(req, res);
       expect(dbApi.createProgramNote.mock.calls.length).toEqual(1);
       expect(dbApi.createProgramNote.mock.calls[0][1]._id).toEqual(req.school._id);
       expect(dbApi.createProgramNote.mock.calls[0][3].text).toEqual(req.body.text);
+    });
+  });
+
+  describe('updateAgency', () => {
+    it('responds with an updated agency', () => {
+      const req = {
+        agency: "Apna Ghar",
+        slug: "apna-ghar",
+        catchment_area: "Chicago",
+        program_type: "Prevention + Intervention",
+        office_location: "4350 N. Broadway Chicago",
+        lng: -87.65485,
+        lat: 41.961304,
+        marker_color: "#DBA901"
+      };
+
+      const res = {
+        status: jest.fn(),
+        json: jest.fn()
+      };
+
+      middleware.updateAgency(req, res);
+      expect(dbApi.updateAgency.mock.calls.length).toEqual(1);
     });
   });
 });

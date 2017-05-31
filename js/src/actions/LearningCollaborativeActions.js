@@ -5,6 +5,7 @@ import LearningCollaborativeApi from '../utils/LearningCollaborativeApi';
 import LearningCollaborativeConstants from '../constants/LearningCollaborativeConstants';
 import LearningCollaborativeServerActions from './LearningCollaborativeServerActions';
 
+
 const LearningCollaborativeActions = {
   setSchools: function(schools) {
     AppDispatcher.handleViewAction({
@@ -28,6 +29,54 @@ const LearningCollaborativeActions = {
     AppDispatcher.handleViewAction({
       actionType: LearningCollaborativeConstants.ZOOM_TO_MARKER,
       school: school
+    });
+  },
+
+  createAgency: function (
+    slug,
+    agency,
+    catchmentArea,
+    programType,
+    officeLocation,
+    lat,
+    lng,
+    markerColor
+  ) {
+    LearningCollaborativeApi.createAgency(
+      slug,
+      agency,
+      catchmentArea,
+      programType,
+      officeLocation,
+      lat,
+      lng,
+      markerColor
+    ).then(agency => {
+      LearningCollaborativeServerActions.receiveAgency(agency, 'create');
+    });
+  },
+
+  updateAgency: function(
+    slug,
+    agency,
+    catchmentArea,
+    programType,
+    officeLocation,
+    lat,
+    lng,
+    markerColor
+  ) {
+    LearningCollaborativeApi.updateAgency(
+      slug,
+      agency,
+      catchmentArea,
+      programType,
+      officeLocation,
+      lat,
+      lng,
+      markerColor
+    ).then(agency => {
+      LearningCollaborativeServerActions.receiveAgency(agency, 'update');
     });
   },
 

@@ -48,6 +48,13 @@ function getAgency(req, res) {
   res.json(req.agency);
 }
 
+function updateAgency(req, res) {
+  var agency = req.body;
+  dbApi.updateAgency(agency, req.dbConnection, function() {
+    res.status(200).json(agency);
+  });
+}
+
 // Schools
 
 function getSchools(req, res) {
@@ -232,6 +239,7 @@ function sendCreatedUser(req, res) {
 module.exports = {
  getAgencies: getAgencies,
  createAgency: createAgency,
+ updateAgency: updateAgency,
  deleteAgency: deleteAgency,
  setAgencySlug: setAgencySlug,
  getAgency: getAgency,

@@ -39,14 +39,14 @@ To run this pipeline to prepare the school data:
 
 To load the schools and other data, you will need to have a running instance of the app, either on your local machine, or deployed somewhere.  See below for instructions on deployment or running the development server.  Then set the `LC_API_URL` accordingly.  For example, if running locally:
 
-    export LC_API_URL="http://localhost:3000/api/1"    
+    export LC_API_URL="http://localhost:3000/api/1"
 
 Then run the npm script to create the schools:
 
-    npm run createschools 
+    npm run createschools
 
 To load agencies, first export the agency worksheet from the Google Spreadsheet, as CSV:
-    
+
     cat agencies.csv | npm run createagencies
 
 To load programs:
@@ -121,7 +121,7 @@ URL of a running instance of the application.  This will be used by data loading
 
 Example:
 
-    export LC_API_URL="http://localhost:3000/api/1"    
+    export LC_API_URL="http://localhost:3000/api/1"
 
 ### SENDGRID_API_KEY
 
@@ -195,7 +195,7 @@ Dumping the production database
 
 Use the [mongodump](https://docs.mongodb.com/manual/reference/program/mongodump/) command to create a dump of the production database:
 
-    mongodump --host <mlab_database_host> --port <mlab_database_port> --username <mlab_database_user> --db <mlab_database_name> 
+    mongodump --host <mlab_database_host> --port <mlab_database_port> --username <mlab_database_user> --db <mlab_database_name>
 
 You can find the connection parameters from the mLab dashboard that you can access when viewing your app in Heroku's dashboard.
 
@@ -207,8 +207,95 @@ You can restore the dump you created into your local development environment usi
 
 In the example above, replace `heroku_1ab23c45` with the subdirectory created when you ran mongodump.
 
-You can restore the dump you created to the staging environment using `mongorestore` as well.  
+You can restore the dump you created to the staging environment using `mongorestore` as well.
 
+Tests
+-----
+
+Unit tests for this app are implemented using the [Jest](https://facebook.github.io/jest/) testing framework.
+
+To run all tests, you can simply run:
+
+    npm test
+
+To run tests in a particular suite, you can run:
+
+    ./node_modules/.bin/jest __tests__/LearningCollaborativeApi-test.js
+
+where the argument to the `jest` command is the file containin the test suite.
+
+Application flow
+----------------
+
+This section describes how execution and data moves through the application.  This application uses the [Flux](https://facebook.github.io/flux/) architecture.
+
+I'm abivalent about Flux, but it's one way to have a coherant way that data flows through the application:
+
+![Flux diagram](https://facebook.github.io/flux/img/flux-simple-f8-diagram-explained-1300w.png "Flux diagram")
+
+### Agency creation, reading, updating and deletion (CRUD)
+
+Note that School CRUD will be very similar to this.
+
+#### The initial agencies JSON is fetched from the REST API
+
+In the `MapApp` constructor, defined in `learningcollaborative.js`, `LearningCollaborativeApi.agencies()` is called to fetch agencies from the REST API.
+
+`LearningCollaborativeActions.setAgencies()` is used as the callback for the promise returned by `LearningCollaborativeApi.agencies()`.
+
+#### The `setAgencies()` action creator tells the dispatcher to deal with the agencies
+
+`LearningCollaborativeActions.setAgencies()` creates an action of `AGENCIES_SET` and an argument of the array of agency objects from the REST API.
+
+#### AgencyStore handles the `AGENCIES_SET` action
+
+In `AgencyStore.dispatcherIndex()`, a number of action handlers are registered for different action types, including `AGENCES_SET`.
+
+The code that handles the `AGENCIES_SET` action assigns the array of agency objects from the REST API to a private variable and builds some convenience lookup tables and scales from data in the agency objects.
+
+Finally, it emits a `change` event to any components that are listening for that event on the store.
+
+#### Components update their internal state with the new agenices
+
+Both the `AgenciesAdmin` and `LearningCollaborativeMap` components listen for the `change` event emitted by `AgencyStore` (they subscribe via `AgencyStore.addChangeListener()`).  In `AgencyAdmin`'s event handler for the change event, it sets a state variable for the list of all agencies.
+
+#### User visits /admin/agencies
+
+This causes the `AgenciesAdmin` component to be rendered based on the route configuration in `routes.js`.  The route configuration is used when instantiating a `Router` component in `learningcollaborative.js`.
+
+The `AgencyAdmin` component renders a list of agencies using the state variable containing the agency objects retrieved from `AgencyStore`.
+
+#### User visits /admin/agencies/:slug
+
+This causes the `AgenciesAdminForm` to be rendered as a child component of `AgenciesAdmin` based on the route configuration.
+
+The router component also passes a `params` prop to the components that are rendered.  In this case, it sets `params.slug` to the agency slug in the URL.
+
+`AgencyAdmin` then uses `params.slug` to retrieve the agency matching the slug from `AgencyStore` and set the `agency` prop passed to `AgenciesAdminForm`.
+
+Also `AgencyAdmin` sets `handleCreate` and `handleUpdate` props which are passed to `AgencyAdminForm`.  The values of these props are just the `createAgency()` and `updateAgency()` action creators.
+
+#### The user submits `AgenciesAdminForm`
+
+The `<form>` element rendered by `AgenciesAdminForm` is wired up to the `AgenciesAdminForm.handleSubmit()` method.  This method calls through to the value of the `handleUpdate`.  Again, this is actually the `updateAgency()` action creator.
+
+#### The `updateAgency()` action creator hits the REST API
+
+The `updateAgency()` action creator hits the REST API via `LearningCollaborativeApi.createAgency()`.  The callback for the promise returned by that method calls the `LearningCollaborativeServerActions.receiveAgency()` action creator.
+
+#### The `receiveAgency()` action creator creates a `RECEIVE_AGENCY` action
+
+The `receiveAgency()` action creator creates a `RECEIVE_AGENCY` action via the dispatcher.
+
+#### `AgencyStore` handles the `RECEIVE_AGENCY` action
+
+`AgencyStore` handles the `RECEIVE_AGENCY` action.  It updates the agency object, which now reflects the changes persisted via the REST API, in the private array of agency objects initialized when handling the `AGENCIES_SET` action as well as the derived lookup tables.
+
+Finally, `AgencyStore` emits a `change` event to any listeners that were registered via `AgencyStore.addChangeListener()`.
+
+#### `AgenciesAdmin` handles the change event and redirects to `/admin/agencies`
+
+`AgenciesAdmin` handles the change event from the store.  It updates its local state variable of the array of agencies and redirects the user to the list of all agencies at `/admin/agencies` by calling `this.props.router.push()`.
 
 Collaborators
 -------------

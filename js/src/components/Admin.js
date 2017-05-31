@@ -8,6 +8,7 @@ class Admin extends React.Component {
       <div className="admin-list-container">
         <div className="list-group admin-list">
           <Link to="/admin/schools" className="list-group-item list-group-item-action">Administer schools</Link>
+          <Link to="/admin/agencies" className="list-group-item list-group-item-action">Administer agencies</Link>
         </div>
       </div>
     );

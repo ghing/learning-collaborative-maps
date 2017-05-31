@@ -168,8 +168,8 @@ class LearningCollaborativeMap extends React.Component {
 
   _getSchoolMarkers(schools) {
     let component = this;
-
     let markerLookup = {};
+
     let schoolMarkers = L.geoJson(schools, {
       pointToLayer: function(feature, latlng) {
         return L.circleMarker(latlng, {});
@@ -201,9 +201,9 @@ class LearningCollaborativeMap extends React.Component {
     let schools = SchoolStore.getAll();
     let map = this.state.map;
     let schoolMarkers, markerLookup;
-    [schoolMarkers, markerLookup] = this._getSchoolMarkers(schools);
 
     if (schools.length) {
+      [schoolMarkers, markerLookup] = this._getSchoolMarkers(schools);
       schoolMarkers.addTo(map);
       map.fitBounds(schoolMarkers.getBounds());
     }

@@ -4,6 +4,8 @@ import ProgramForm from './components/ProgramForm';
 import SchoolDetail from './components/SchoolDetail';
 import LoginForm from './components/LoginForm';
 import Admin from './components/Admin';
+import AgenciesAdmin from './components/AgenciesAdmin';
+import AgenciesAdminForm from './components/AgenciesAdminForm';
 import SchoolsAdmin from './components/SchoolsAdmin';
 import SchoolsAdminForm from './components/SchoolsAdminForm';
 
@@ -55,6 +57,20 @@ const routes = {
             {
               path: ':schoolId',
               component: SchoolsAdminForm
+            }
+          ]
+        },
+        {
+          path: 'agencies',
+          component: AgenciesAdmin,
+          childRoutes: [
+            {
+              path: 'add',
+              component: AgenciesAdminForm
+            },
+            {
+              path: ':slug',
+              component: AgenciesAdminForm
             }
           ]
         }

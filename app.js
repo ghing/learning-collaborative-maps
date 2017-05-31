@@ -80,6 +80,8 @@ app.param('agencySlug', middleware.setAgencySlug);
 
 app.get('/api/1/agencies/:agencySlug', middleware.getAgency);
 
+app.put('/api/1/agencies/:agencySlug', middleware.updateAgency);
+
 
 // Schools
 
