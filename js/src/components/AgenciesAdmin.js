@@ -6,7 +6,7 @@ import AgencyStore from '../stores/AgencyStore';
 import AdminTable from './AdminTable';
 
 /**
- * Parent view for listing, editing and creating agencies.
+ * Parent component for listing, editing and creating agencies.
  */
 class AgenciesAdmin extends React.Component {
   constructor(props) {
@@ -56,9 +56,10 @@ class AgenciesAdmin extends React.Component {
     AgencyStore.removeChangeListener(this._onAgenciesChange);
   }
 
-
   componentWillReceiveProps(nextProps) {
     if (nextProps.params.slug) {
+      // We're getting a slug from the router. This means we're editing
+      // an agency.  Set the active agency in the state.
       this.setState({
         activeAgency: AgenciesAdmin.getActiveAgency(nextProps.params.slug)
       });
@@ -68,7 +69,7 @@ class AgenciesAdmin extends React.Component {
   /**
    * Returns the URL for the edit view of a particular agency.
    */
-  getEditUrl(agency) {
+  static getEditUrl(agency) {
     return '/admin/agencies/' + agency.properties.slug;
   }
 
@@ -105,7 +106,7 @@ class AgenciesAdmin extends React.Component {
           </div>
           <AdminTable items={this.state.agencies}
             columns={this.props.columns}
-            getEditUrl={this.getEditUrl} />
+            getEditUrl={AgenciesAdmin.getEditUrl} />
         </div>
       );
     }
@@ -133,10 +134,6 @@ class AgenciesAdmin extends React.Component {
     }
 
     return React.Children.map(props.children, child => React.cloneElement(child, agencyProps));
-  }
-
-  _hasAgencies() {
-    return (this.state.agencies && this.state.agencies.length > 0);
   }
 
   /**

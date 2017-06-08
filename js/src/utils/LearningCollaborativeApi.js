@@ -92,7 +92,16 @@ const LearningCollaborativeApi = {
     }).then(response => response.json());
   },
 
-  createSchool: function(rcdts, name, address, city, zip, gradeServed, lat, lng) {
+  createSchool: function (
+    rcdts,
+    name,
+    address,
+    city,
+    zip,
+    gradeServed,
+    lat,
+    lng
+  ) {
     const url = SCHOOLS_JSON_URL;
 
     const school = {
@@ -117,7 +126,16 @@ const LearningCollaborativeApi = {
     .then(json => json[0]);
   },
 
-  updateSchool: function(rcdts, name, address, city, gradeServed, zip, lat, lng) {
+  updateSchool: function (
+    rcdts,
+    name,
+    address,
+    city,
+    zip,
+    gradeServed,
+    lat,
+    lng
+  ) {
     const url = SCHOOL_JSON_URL.replace(':rcdts', rcdts);
 
     const school = {
