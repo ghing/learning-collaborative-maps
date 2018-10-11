@@ -21,10 +21,12 @@ class SchoolProgram extends React.Component {
     const schoolId = this.props.school.properties.rcdts;
     const programId = program._id;
     const editProgramPath = `/schools/${schoolId}/programs/${programId}/edit`;
+    const schoolYearLabel = program.schoolYearStart ? <span className="school-year-label badge badge-primary">{program.schoolYearStart}</span> : false;
 
     return (
       <li className="school-program">
-        {programText}
+        {schoolYearLabel} 
+        <span>{programText}</span>
         <Link to={editProgramPath} className="edit-link">Edit</Link>
       </li>
     );

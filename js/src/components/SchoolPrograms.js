@@ -10,7 +10,21 @@ class SchoolPrograms extends React.Component {
       return false;
     }
 
-    let programEls = schoolProps.programs.map(program => {
+    let programEls = schoolProps.programs.sort((a, b) => {
+      if (a.schoolYearStart && !b.schoolYearStart) {
+        return -1;
+      }
+      else if (!a.schoolYearStart && b.schoolYearStart) {
+        return 1;
+      }
+      else if (a.schoolYearStart == b.schoolYearStart) {
+        return 0;
+      }
+      else {
+        return b.schoolYearStart - a.schoolYearStart;
+      }
+    })
+    .map(program => {
       return <SchoolProgram key={program._id}
                             school={this.props.school}
                             program={program}

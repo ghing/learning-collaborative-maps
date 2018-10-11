@@ -5,6 +5,7 @@
 var passwordless = require('passwordless');
 
 var dbApi = require('./db-api');
+var currentSchoolYear = require('./utils').currentSchoolYear;
 
 
 // Agencies
@@ -116,13 +117,16 @@ function createProgram(req, res) {
   var program = req.body;
   var agencyUrlBits = program.agency.split('/');
   var agencySlug = agencyUrlBits[agencyUrlBits.length - 1];
+  var schoolYear = currentSchoolYear();
+
   dbApi.getAgencies({'slug': agencySlug}, req.dbConnection, function(agencies) {
     var agency = agencies[0];
     var programProps = {
       agency: agency.slug,
       age_group: program.age_group,
       program_type: program.program_type,
-      dates: program.dates
+      dates: program.dates,
+      schoolYearStart: schoolYear[0]
     };
     dbApi.addSchoolProgram(req.school, programProps, req.dbConnection, function(err, program) {
       res.status(201).json(program);

@@ -1,5 +1,18 @@
 var helper = require('sendgrid').mail;
 
+
+function currentSchoolYear() {
+  var today = new Date();
+  var month = today.getMonth() + 1;
+  var startYear = today.getFullYear();
+  
+  if (month < 8) {
+    startYear = startYear - 1;
+  }
+ 
+  return [startYear, startYear + 1];
+}
+
 function sendgridTokenDelivery(url, sg, sender) {
   return function(tokenToSend, uidToSend, recipient, callback) {
     var loginUrl = url + '?token=' + tokenToSend + '&uid=' + encodeURIComponent(uidToSend);
@@ -22,5 +35,6 @@ function sendgridTokenDelivery(url, sg, sender) {
 }
 
 module.exports = {
+  currentSchoolYear: currentSchoolYear,
   sendgridTokenDelivery: sendgridTokenDelivery
 };

@@ -20,6 +20,18 @@ function agencySlugFromUrl(urlPath) {
   return pathBits[pathBits.length - 1];
 }
 
+function currentSchoolYear() {
+  var today = new Date();
+  var month = today.getMonth() + 1;
+  var startYear = today.getFullYear();
+
+  if (month < 8) {
+    startYear = startYear - 1;
+  }
+
+  return [startYear, startYear + 1];
+}
+
 function distinctProgramAgencies(programs) {
   let agencySet = new Set();
   programs.forEach(program => {
@@ -38,11 +50,13 @@ function distinctProgramAgencies(programs) {
 class LearningCollaborativeMap extends React.Component {
   constructor(props) {
     super(props);
+    const [startYear, endYear] = currentSchoolYear();
     this.state = {
       schools: SchoolStore.getAll(),
       agencies: AgencyStore.getAll(),
       agencyLookup: AgencyStore.getLookup(),
-      agencyColorScale: AgencyStore.getColorScale()
+      agencyColorScale: AgencyStore.getColorScale(),
+      schoolYearStart: startYear
     };
 
     this._onChange = this._onChange.bind(this);
@@ -151,7 +165,13 @@ class LearningCollaborativeMap extends React.Component {
 
   _styleSchoolMarker(feature) {
     let markerOptions = assign({}, this.props.markerOptions);
-    let programs = feature.properties.programs;
+    const programs = (
+      feature.properties.programs ?
+      feature.properties.programs.filter(program => {
+        return program.schoolYearStart && program.schoolYearStart == this.state.schoolYearStart;
+      })
+      : feature.properties.programs
+    );
 
     if (programs && programs.length) {
       let agencies = distinctProgramAgencies(programs);
