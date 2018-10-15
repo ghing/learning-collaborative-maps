@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 var stringify = require('csv-stringify');
+var argv = require('minimist')(process.argv.slice(2));
 var xlsx = require('xlsx');
 
 var SOURCE_WOORKSHEETS = new Set(['Public Dist & Sch', 'Non Pub Sch']);
@@ -34,11 +35,15 @@ var DUPAGE_DISTRICT_RCD = '190220880';
 var LARAWAY_DISTRICT_RCD = '56099070C';
 
 // DISTRICT codes non-Cook schools we want to include, including private schools
-var NON_COOK_RCD_CODES = new Set([
+var DEFAULT_RCD_CODES = new Set([
   GLENBARD_DISTRICT_RCD,
   HINSDALE_DISTRICT_RCD,
   DUPAGE_DISTRICT_RCD,
   LARAWAY_DISTRICT_RCD
+]);
+
+var DEFAULT_COUNTIES = new Set([
+  'Cook'
 ]);
 
 var INDEX_TO_LETTER = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split('').reduce(function(lookup, letter, i) {
@@ -46,7 +51,7 @@ var INDEX_TO_LETTER = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split('').reduce(function(loo
   return lookup;
 }, {});
 
-var filterRow = function(worksheet, i) {
+var filterRow = function(worksheet, i, counties, rcdCodes) {
   var cell;
 
   // Include header row
@@ -64,14 +69,14 @@ var filterRow = function(worksheet, i) {
   // Include schools with an RCD code in our explicit list
   var rcdCodeRef = INDEX_TO_LETTER[RCD_CODE_COLUMN_INDEX] + (i + 1);
   cell = worksheet[rcdCodeRef];
-  if (cell && NON_COOK_RCD_CODES.has(cell.v)) {
+  if (cell && rcdCodes.has(cell.v)) {
     return true;
   }
 
   // Include all schools in cook county
   var countyNameRef = INDEX_TO_LETTER[COUNTY_NAME_COLUMN_INDEX] + (i + 1);
   cell = worksheet[countyNameRef];
-  if (cell && cell.v == 'Cook') {
+  if (cell && counties.has(cell.v)) {
     return true;
   }
 
@@ -79,45 +84,76 @@ var filterRow = function(worksheet, i) {
   return false;
 };
 
-var inputPath = process.argv[2];
+var main = function () {
+  var inputPath = argv._[0];
+  var counties;
+  var rcdCodes;
 
-var workbook = xlsx.readFile(inputPath);
-var writer = stringify();
-writer.pipe(process.stdout);
-
-var sheetNumber = 0;
-workbook.SheetNames.forEach(function(sheetName) {
-  if (!SOURCE_WOORKSHEETS.has(sheetName)) {
-    return;
+  if (argv.county) {
+    if (Array.isArray(argv.county)) {
+      counties = new Set(argv.county);
+    }
+    else {
+      counties = new Set([argv.county]);
+    }
+  }
+  else {
+    counties = DEFAULT_COUNTIES;
   }
 
-  var worksheet = workbook.Sheets[sheetName];
-  var range = worksheet['!range'];
+  if (argv['rcd-code']) {
+    if (Array.isArray(argv['rcd-code'])) {
+      rcdCodes = new Set(argv['rcd-code']);
+    }
+    else {
+      rcdCodes = new Set([argv['rcd-code']]);
+    }
+  }
+  else {
+    rcdCodes = DEFAULT_RCD_CODES;
+  }
 
-  for (var i = range.s.r; i < range.e.r; i++) {
-    if (!filterRow(worksheet, i)) {
-      continue;
+  var workbook = xlsx.readFile(inputPath);
+  var writer = stringify();
+  writer.pipe(process.stdout);
+
+  var sheetNumber = 0;
+  workbook.SheetNames.forEach(function(sheetName) {
+    if (!SOURCE_WOORKSHEETS.has(sheetName)) {
+      return;
     }
 
-    // Only include header rows on first sheet
-    if (i == 0 && sheetNumber != 0) {
-      continue;
-    }
+    var worksheet = workbook.Sheets[sheetName];
+    var range = worksheet['!range'];
 
-    var row = OUTPUT_COLUMNS.map(function(j) {
-      var cellRef = INDEX_TO_LETTER[j] + (i + 1);
-      var cell = worksheet[cellRef];
-      if (cell) {
-        return cell.v;
+    for (var i = range.s.r; i < range.e.r; i++) {
+      if (!filterRow(worksheet, i, counties, rcdCodes)) {
+        continue;
       }
-      else {
-        return null;
-      } 
-    });
-    writer.write(row);
-  }
 
-  sheetNumber += 1;
-});
+      // Only include header rows on first sheet
+      if (i == 0 && sheetNumber != 0) {
+        continue;
+      }
 
-writer.end();
+      var row = OUTPUT_COLUMNS.map(function(j) {
+        var cellRef = INDEX_TO_LETTER[j] + (i + 1);
+        var cell = worksheet[cellRef];
+        if (cell) {
+          return cell.v;
+        }
+        else {
+          return null;
+        }
+      });
+      writer.write(row);
+    }
+
+    sheetNumber += 1;
+  });
+
+  writer.end();
+};
+
+
+main();

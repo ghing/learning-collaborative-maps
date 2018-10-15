@@ -9,8 +9,8 @@
   },
   "scripts": {
     "test": "jest",
-    "download:educationalentities": "mkdir -p .learning-collaborative-maps/cache; curl -o .learning-collaborative-maps/cache/dir_ed_entities.xlsx http://www.isbe.net/research/xls/dir_ed_entities.xls",
-    "filterschools": "./scripts/filter_schools.js .learning-collaborative-maps/cache/dir_ed_entities.xlsx > .learning-collaborative-maps/cache/dir_ed_entities__filtered_schools.csv",
+    "download:educationalentities": "mkdir -p .learning-collaborative-maps/cache; curl -o .learning-collaborative-maps/cache/dir_ed_entities.xls https://www.isbe.net/_layouts/15/Download.aspx?SourceUrl=/Documents/dir_ed_entities.xls",
+    "filterschools": "./scripts/filter_schools.js .learning-collaborative-maps/cache/dir_ed_entities.xls > .learning-collaborative-maps/cache/dir_ed_entities__filtered_schools.csv",
     "geocodeschools": "cat .learning-collaborative-maps/cache/dir_ed_entities__filtered_schools.csv | ./scripts/geocode_schools.js  > data/dir_ed_entities__filtered_schools__with_coordinates.csv",
     "createschools": "cat data/dir_ed_entities__filtered_schools__with_coordinates.csv | ./scripts/create_schools.js",
     "createagencies": "./scripts/create_agencies.js",
@@ -50,6 +50,7 @@
     "http-server": "^0.9.0",
     "jest": "^20.0.4",
     "minifyify": "^7.3.2",
+    "minimist": "^1.2.0",
     "node-sass": "^3.4.2",
     "nodemon": "^1.9.1",
     "npm-run-all": "^4.0.1",

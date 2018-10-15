@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+var argv = require('minimist')(process.argv.slice(2));
 var parse = require('csv-parse');
 var request = require('request');
 
@@ -12,7 +13,7 @@ var CITY_COLUMN_INDEX = 5;
 var ZIP_COLUMN_INDEX = 6;
 var GRADE_SERVED_COLUMN_INDEX = 7;
 
-var LC_API_URL = process.env.LC_API_URL || 'http://localhost:3000/api/1'; 
+var LC_API_URL = process.env.LC_API_URL || 'http://localhost:3000/api/1';
 var SCHOOLS_ENDPOINT = LC_API_URL + '/schools';
 
 var getRCDTSCode = function(row) {
@@ -32,28 +33,17 @@ var getSchoolRecord = function(row, columnNames) {
   return schoolProps;
 };
 
-
-var reader = parse();
-process.stdin.pipe(reader);
-
-var columnNames;
-var i = 0;
-
-// First, clear out the old schools
-request({
-  url: SCHOOLS_ENDPOINT,
-  method: 'DELETE',
-}, function(error, response, body) {
+var createSchools = function (reader) {
   reader.on('readable', function() {
     var row;
     var schools = [];
 
     while(row = reader.read()) {
       if (i == 0) {
-        columnNames = row.slice();  
+        columnNames = row.slice();
         i += 1;
         continue;
-      } 
+      }
 
       schools.push(getSchoolRecord(row, columnNames));
 
@@ -66,7 +56,7 @@ request({
         }, function(error, response, body) {
           // TODO: Handle error
         });
-        schools = []; 
+        schools = [];
       }
 
       i += 1;
@@ -83,4 +73,27 @@ request({
       });
     }
   });
-});
+};
+
+var main = function () {
+  var reader = parse();
+  process.stdin.pipe(reader);
+
+  var columnNames;
+  var i = 0;
+
+  if (argv.delete) {
+    // First, clear out the old schools
+    request({
+      url: SCHOOLS_ENDPOINT,
+      method: 'DELETE',
+    }, function(error, response, body) {
+      createSchools(reader);
+    });
+  }
+  else {
+    createSchools(reader);
+  }
+};
+
+main();
