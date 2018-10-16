@@ -16,12 +16,12 @@ var GRADE_SERVED_COLUMN_INDEX = 7;
 var LC_API_URL = process.env.LC_API_URL || 'http://localhost:3000/api/1';
 var SCHOOLS_ENDPOINT = LC_API_URL + '/schools';
 
-var getRCDTSCode = function(row) {
+var getRCDTSCode = function (row) {
   return row[RCD_CODE_COLUMN_INDEX] + row[TYPE_CODE_COLUMN_INDEX] + row[SCHOOL_CODE_COLUMN_INDEX];
 };
 
-var getSchoolRecord = function(row, columnNames) {
-  var schoolProps = columnNames.reduce(function(school, columnName, i) {
+var getSchoolRecord = function (row, columnNames) {
+  var schoolProps = columnNames.reduce(function (school, columnName, i) {
     if (i != RCD_CODE_COLUMN_INDEX && i != TYPE_CODE_COLUMN_INDEX && i != SCHOOL_CODE_COLUMN_INDEX) {
       school[columnName] = row[i];
     }
@@ -34,7 +34,9 @@ var getSchoolRecord = function(row, columnNames) {
 };
 
 var createSchools = function (reader) {
-  reader.on('readable', function() {
+  var i = 0;
+
+  reader.on('readable', function () {
     var row;
     var schools = [];
 
@@ -80,7 +82,6 @@ var main = function () {
   process.stdin.pipe(reader);
 
   var columnNames;
-  var i = 0;
 
   if (argv.delete) {
     // First, clear out the old schools
