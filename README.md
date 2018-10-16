@@ -57,6 +57,24 @@ To load programs:
 
 Since Heroku puts the service to sleep when it's not being accessed, you may need to load the production site in your browser before running management commands that load data to production.
 
+### Loading additional schools
+
+You can generate a CSV of schools in a different county by using the `--county` argument to the `filter_schools.js` script: 
+
+    ./scripts/filter_schools.js --county Lake --rcd-code '' .learning-collaboraive-maps/cache/dir_ed_entities.xls \
+    > ./learning-collaborative-maps/cche/dir_ed_entities__lake.csv
+
+Then geocode the school address:
+
+    cat ./learning-collaborative-maps/cache/dir_ed_entities__lake.csv | \
+    ./scripts/geocode_schools.js |
+    > ./learning-collaborative-maps/cache/dir_ed_entities__lake__with_coordinates.csv
+
+Finally, create the schools:
+
+    cat ./learning-collaborative-maps/cache/dir_ed_entities__lake__with_coordinates.csv | \
+    ./scripts/create_schools.js
+
 Installation
 ------------
 
