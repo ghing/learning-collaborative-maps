@@ -41,7 +41,7 @@
     "babel-preset-react": "^6.5.0",
     "babelify": "^7.2.0",
     "browserify": "^13.0.0",
-    "clean-css": "^3.4.10",
+    "clean-css": "^4.1.11",
     "csv": "^0.4.6",
     "csv-parse": "^1.1.7",
     "csv-stringify": "^1.0.4",
