@@ -34,7 +34,6 @@
   "license": "MIT",
   "devDependencies": {
     "async": "^1.5.2",
-    "babel": "^6.5.2",
     "babel-cli": "^6.18.0",
     "babel-jest": "^11.0.2",
     "babel-polyfill": "^6.7.4",
