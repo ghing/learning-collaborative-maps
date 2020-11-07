@@ -10,8 +10,9 @@ var reactRouter = require('react-router');
 var match = reactRouter.match;
 var RouterContext = reactRouter.RouterContext;
 var passwordless = require('passwordless');
-var MongoStore = require('passwordless-mongostore');
-var sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
+var MongoStore = require('passwordless-mongostore-bcrypt-node');
+var sgMail = require('@sendgrid/mail');
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 var middleware = require('./middleware');
 var routes = require('./dist/routes');
@@ -44,7 +45,7 @@ if (app.get('env') === 'production') {
 app.use(session(sess));
 
 passwordless.init(new MongoStore(DATABASE_URL));
-passwordless.addDelivery(sendgridTokenDelivery(APP_URL, sg, TRANSACTIONAL_EMAIL_ADDRESS));
+passwordless.addDelivery(sendgridTokenDelivery(APP_URL, sgMail, TRANSACTIONAL_EMAIL_ADDRESS));
 
 app.use(passwordless.sessionSupport());
 app.use(passwordless.acceptToken({ successRedirect: '/'}));
